@@ -63,7 +63,11 @@ button {
        -o-transition-timing-function: ease-in-out;
           transition-timing-function: ease-in-out;
 }
-.swiper-container_1 {position: absolute;}
+.swiper-container_1 {
+  margin-top: 100px;
+  position: absolute;
+}
+/* .swiper-container_1 {display: none!important;} */
 header {
   position: relative;
   z-index: 5;
@@ -133,9 +137,10 @@ header {
 .under-Blanchard {
   margin-top: -1px;
   color: #fff;
-  font-size: 13.74px;
+  font-size: 14px;
   font-weight: 600;
   line-height: 10px;
+  white-space: nowrap;
 }
 .burger {
   width: 36px;
@@ -275,45 +280,47 @@ input::placeholder {color: #cacaca;}
 }
 .menu-item-2 {
   display: flex;
+  position: absolute;
   border: 2px solid rgba(0, 0, 0, 0);
   padding-left: 12px;
   align-items: center;
+  width: 220px;
   height: 40px;
   font-size: 14px;
   font-weight: 600;
   color: #fff;
   text-decoration: none;
-  background-position: center!important;
 }
-.realism li:nth-child(1) .menu-item-2 {background: url('../img/realism-1.jpg') no-repeat;}
-.realism li:nth-child(2) .menu-item-2 {background: url('../img/realism-2.jpg') no-repeat;}
-.realism li:nth-child(3) .menu-item-2 {background: url('../img/realism-3.jpg') no-repeat;}
-.realism li:nth-child(4) .menu-item-2 {background: url('../img/realism-4.jpg') no-repeat;}
-.impressionism li:nth-child(1) .menu-item-2 {background: url('../img/impressionism-1.jpg') no-repeat;}
-.impressionism li:nth-child(2) .menu-item-2 {background: url('../img/impressionism-2.jpg') no-repeat;}
-.impressionism li:nth-child(3) .menu-item-2 {background: url('../img/impressionism-3.jpg') no-repeat;}
-.impressionism li:nth-child(4) .menu-item-2 {background: url('../img/impressionism-4.jpg') no-repeat;}
-.postimpressionism li:nth-child(1) .menu-item-2 {background: url('../img/postimpressionism-1.jpg') no-repeat;}
-.postimpressionism li:nth-child(2) .menu-item-2 {background: url('../img/postimpressionism-2.jpg') no-repeat;}
-.postimpressionism li:nth-child(3) .menu-item-2 {background: url('../img/postimpressionism-3.jpg') no-repeat;}
-.postimpressionism li:nth-child(4) .menu-item-2 {background: url('../img/postimpressionism-4.jpg') no-repeat;}
-.avangard li:nth-child(1) .menu-item-2 {background: url('../img/avangard-1.jpg') no-repeat;}
-.avangard li:nth-child(2) .menu-item-2 {background: url('../img/avangard-2.jpg') no-repeat;}
-.avangard li:nth-child(3) .menu-item-2 {background: url('../img/avangard-3.jpg') no-repeat;}
-.avangard li:nth-child(4) .menu-item-2 {background: url('../img/avangard-4.jpg') no-repeat;}
-.futurism li:nth-child(1) .menu-item-2 {background: url('../img/futurism-1.jpg') no-repeat;}
-.futurism li:nth-child(2) .menu-item-2 {background: url('../img/futurism-2.jpg') no-repeat;}
-.futurism li:nth-child(3) .menu-item-2 {background: url('../img/futurism-3.jpg') no-repeat;}
-.futurism li:nth-child(4) .menu-item-2 {background: url('../img/futurism-4.jpg') no-repeat;}
+.menu-item-2 + div {
+  width: 220px;
+  height: 40px;
+}
+.realism li:nth-child(1) div {background: url('../img/realism-1.jpg') no-repeat;}
+.realism li:nth-child(2) div {background: url('../img/realism-2.jpg') no-repeat;}
+.realism li:nth-child(3) div {background: url('../img/realism-3.jpg') no-repeat;}
+.realism li:nth-child(4) div {background: url('../img/realism-4.jpg') no-repeat;}
+.impressionism li:nth-child(1) div {background: url('../img/impressionism-1.jpg') no-repeat;}
+.impressionism li:nth-child(2) div {background: url('../img/impressionism-2.jpg') no-repeat;}
+.impressionism li:nth-child(3) div {background: url('../img/impressionism-3.jpg') no-repeat;}
+.impressionism li:nth-child(4) div {background: url('../img/impressionism-4.jpg') no-repeat;}
+.postimpressionism li:nth-child(1) div {background: url('../img/postimpressionism-1.jpg') no-repeat;}
+.postimpressionism li:nth-child(2) div {background: url('../img/postimpressionism-2.jpg') no-repeat;}
+.postimpressionism li:nth-child(3) div {background: url('../img/postimpressionism-3.jpg') no-repeat;}
+.postimpressionism li:nth-child(4) div {background: url('../img/postimpressionism-4.jpg') no-repeat;}
+.avangard li:nth-child(1) div {background: url('../img/avangard-1.jpg') no-repeat;}
+.avangard li:nth-child(2) div {background: url('../img/avangard-2.jpg') no-repeat;}
+.avangard li:nth-child(3) div {background: url('../img/avangard-3.jpg') no-repeat;}
+.avangard li:nth-child(4) div {background: url('../img/avangard-4.jpg') no-repeat;}
+.futurism li:nth-child(1) div {background: url('../img/futurism-1.jpg') no-repeat;}
+.futurism li:nth-child(2) div {background: url('../img/futurism-2.jpg') no-repeat;}
+.futurism li:nth-child(3) div {background: url('../img/futurism-3.jpg') no-repeat;}
+.futurism li:nth-child(4) div {background: url('../img/futurism-4.jpg') no-repeat;}
 .simplebar-track.simplebar-vertical {
   right: 19px;
   width: 2px;
   background-color: #000;
 }
-.simplebar-scrollbar {
-  width: 2px;
-  height: 32px!important;
-}
+.simplebar-scrollbar {width: 2px;}
 .simplebar-scrollbar::before {
   width: 2px;
   background: #fff;
@@ -324,7 +331,10 @@ input::placeholder {color: #cacaca;}
   right: 0;
   bottom: 0!important;
 }
-.simplebar-scrollbar.simplebar-visible:before {opacity: 1;}
+.simplebar-scrollbar.simplebar-visible:before {
+  background-color: #9d5cd0;
+  opacity: 1;
+}
 .section {margin-bottom: 80px;}
 .section-top {
   line-height: 59.5px;
@@ -342,17 +352,18 @@ input::placeholder {color: #cacaca;}
 .main-text-1 {
   position: relative;
   margin-left: -5px;
-  margin-top: 142px;
+  margin-top: 72px;
   font-weight: 700;
   font-size: 72px;
   color: #fff;
   line-height: 84px;
-  z-index: 5;
+  z-index: 2;
 }
 .main-text-2 {
   position: relative;
-  z-index: 5;
-  margin-top: 330px;
+  display: flex;
+  z-index: 2;
+  margin-top: 21px;
   font-size: 18px;
   font-weight: 700;
   color: #fff;
@@ -361,7 +372,9 @@ input::placeholder {color: #cacaca;}
 }
 .main-button {
   position: relative;
-  margin-top: 510px;
+  display: inline-block;
+  margin-top: 93px;
+  margin-bottom: 121px;
   border: 3px solid #9d5cd0;
   background-color: #9d5cd0;
   border-radius: 100px;
@@ -371,7 +384,7 @@ input::placeholder {color: #cacaca;}
   font-size: 18px;
   color: #fff;
   text-decoration: none;
-  z-index: 5;
+  z-index: 2;
 }
 .swiper-container_1 .swiper-slide {height: 700px;}
 .swiper-container_1 .swiper-slide-active {-webkit-animation: pulse 2s ease-in-out infinite;animation: pulse 2s ease-in-out infinite;}
@@ -1116,6 +1129,7 @@ input::placeholder {color: #cacaca;}
   .facebook:active, .facebook:focus {background: url(../img/facebook_2.svg) 100% 100% no-repeat;}
 }
 @media (min-width:290px) and (max-width: 320px){
+  .swiper-container_1 {margin-top: 45px;}
   .menu {padding-top: 15px;}
   .menu-close {
     margin-bottom: 17px;
@@ -1156,16 +1170,17 @@ input::placeholder {color: #cacaca;}
   }
   .main-text-2 {
     margin-left: 11px;
-    margin-top: 120px;
+    margin-top: 13px;
     max-width: 270px;
     font-size: 12px;
     line-height: 16.8px;
     text-align: center;
   }
   .main-button {
-    margin-left: 44px;
-    margin-top: 225px;
-    padding: 12px 20px;
+    margin-left: 45px;
+    margin-top: 41px;
+    margin-bottom: 45px;
+    padding: 9px 16px;
     font-size: 12px;
     line-height: 16px;
   }
@@ -1356,6 +1371,7 @@ input::placeholder {color: #cacaca;}
   .footer-content .Blanchard:nth-child(3) {display: block;}
 }
 @media (min-width:321px) and (max-width: 379px){
+  .swiper-container_1 {margin-top: 45px;}
   .menu-close {
     width: 22px;
     height: 22px;
@@ -1387,12 +1403,13 @@ input::placeholder {color: #cacaca;}
     margin-left: 0;
   }
   .main-text-2 {
-    margin-top: 180px;
+    margin-top: 34px;
     max-width: 400px;
     font-size: 12px;
   }
   .main-button {
-    margin-top: 325px;
+    margin-top: 58px;
+    margin-bottom: 77px;
     font-size: 16px;
   }
   .swiper-container_1 .swiper-slide {height: 470px;}
@@ -1506,11 +1523,14 @@ input::placeholder {color: #cacaca;}
   .nav, .nav-2 {width: 380px;}
   .main-text-1 {margin-top: 60px;}
   .main-text-2 {
-    margin-top: 180px;
+    margin-top: 34px;
     max-width: 400px;
     font-size: 16px;
   }
-  .main-button {margin-top: 325px;}
+  .main-button {
+    margin-top: 58px;
+    margin-bottom: 77px;
+  }
   .swiper-container_1 .swiper-slide {height: 470px;}
   #about-us {
     margin-left: 1px;
@@ -1595,11 +1615,14 @@ input::placeholder {color: #cacaca;}
   .nav, .nav-2 {width: 420px;}
   .main-text-1 {margin-top: 60px;}
   .main-text-2 {
-    margin-top: 180px;
+    margin-top: 34px;
     max-width: 400px;
     font-size: 16px;
   }
-  .main-button {margin-top: 325px;}
+  .main-button {
+    margin-top: 58px;
+    margin-bottom: 77px;
+  }
   .swiper-container_1 .swiper-slide {height: 470px;}
   #about-us {
     margin-left: 1px;
@@ -1706,10 +1729,13 @@ input::placeholder {color: #cacaca;}
     line-height: 64px;
   }
   .main-text-2 {
-    margin-top: 230px;
+    margin-top: 42px;
     font-size: 16px;
   }
-  .main-button {margin-top: 405px;}
+  .main-button {
+    margin-top: 88px;
+    margin-bottom: 77px;
+  }
   .swiper-container_1 .swiper-slide {height: 550px;}
   #about-us {
     margin-left: 1px;
@@ -1765,7 +1791,11 @@ input::placeholder {color: #cacaca;}
     font-size: 15px;
   }
   .main-text-1 {margin-top: 111px;}
-  .main-text-2 {margin-top: 291px;}
+  .main-text-2 {margin-top: 12px;}
+  .main-button {
+    margin-top: 136px;
+    margin-bottom: 116px;
+  }
   .swiper-container_1 .swiper-slide {height: 668px;}
   .swiper-button-prev_2 {margin-left: 1px;}
   .gallery .gallery-left {min-width: 317px;}
@@ -1781,7 +1811,6 @@ input::placeholder {color: #cacaca;}
 @media (min-width:600px) and (max-width: 667px){
   .nav, .nav-2 {width: 600px;}
   .main-text-2 {max-width: 550px;}
-  .main-button {margin-top: 485px;}
   #about-us {
     margin-left: 1px;
     -webkit-transform: translateY(-3px);
@@ -1850,7 +1879,6 @@ input::placeholder {color: #cacaca;}
 @media (min-width:668px) and (max-width: 768px){
   .nav, .nav-2 {width: 668px;}
   .main-text-2 {max-width: 660px;}
-  .main-button {margin-top: 485px;}
   #about-us {
     margin-left: 1px;
     -webkit-transform: translateY(-3px);
@@ -1963,7 +1991,7 @@ input::placeholder {color: #cacaca;}
   .menu-item-2:hover {border: 2px solid #9d5cd0;}
   .menu-item-2:active {
     border: 2px solid #d1a9f0;
-    background-color: rgba(194, 131, 243, 0.4);
+    background-color: rgba(194, 131, 243, 0.4)!important;
   }
   .main-button:hover {border: 3px solid #d1a9f0;}
   .second-section-link:hover, .second-section-link:focus {background-image: url(../img/i_2.svg);}
@@ -2026,7 +2054,6 @@ input::placeholder {color: #cacaca;}
 @media (min-width:769px) and (max-width: 823px){
   .nav, .nav-2 {width: 769px;}
   .main-text-2 {max-width: 660px;}
-  .main-button {margin-top: 485px;}
   .gallery {
     height: 1249px;
     padding-top: 35px;
@@ -2083,7 +2110,6 @@ input::placeholder {color: #cacaca;}
 @media (min-width:824px) and (max-width: 923px){
   .nav, .nav-2 {width: 824px;}
   .main-text-2 {max-width: 660px;}
-  .main-button {margin-top: 485px;}
   .gallery {
     height: 1249px;
     padding-top: 35px;
@@ -2174,10 +2200,13 @@ input::placeholder {color: #cacaca;}
   }
   .main-text-1 {margin-top: 111px;}
   .main-text-2 {
-    margin-top: 291px;
+    margin-top: 12px;
     max-width: 660px;
   }
-  .main-button {margin-top: 485px;}
+  .main-button {
+    margin-top: 136px;
+    margin-bottom: 116px;
+  }
   .swiper-container_1 .swiper-slide {height: 668px;}
   .gallery {height: 839px;}
   .gallery .gallery-left {min-width: 317px;}
