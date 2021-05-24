@@ -27,140 +27,124 @@
     </style>
 </head>
 <body>
-    <header>
-        <div class="header-up">
-            <div class="menu">
-                <ul class="container">
-                    <li class="menu-close"></li>
-                    <li class="menu-item-li"><a class="menu-item" href="#about-us">О нас</a></li>
-                    <li class="menu-item-li"><a class="menu-item" href="#gallery">Галерея</a></li>
-                    <li class="menu-item-li"><a class="menu-item" href="#catalog">Каталог</a></li>
-                    <li class="menu-item-li"><a class="menu-item" href="#events">События</a></li>
-                    <li class="menu-item-li"><a class="menu-item" href="#books">Издания</a></li>
-                    <li class="menu-item-li"><a class="menu-item" href="#projects">Проекты</a></li>
-                    <li class="menu-item-li"><a class="menu-item" href="#contacts">Контакты</a></li>
-                    <li class="menu-login"><a class="menu-item" href="#"><div class="login-1"></div><div class="login-2">Войти</div></a></li>
+    <header class="header">
+        <div class="header__up">
+            <nav class="header__nav">
+                <button aria-label="Меню" class="header__burger focus-visible"></button>
+                <div class="logo"><img class="logo__img" src="img/Blanchard.svg" alt="Blanchard"></div>
+                <ul class="header__nav-list without-outline">
+                    <li class="header__nav-list-li"><a class="header__nav-list-a focus-visible" href="#about-us">О нас</a></li>
+                    <li class="header__nav-list-li"><a class="header__nav-list-a focus-visible" href="#gallery">Галерея</a></li>
+                    <li class="header__nav-list-li"><a class="header__nav-list-a focus-visible" href="#catalog">Каталог</a></li>
+                    <li class="header__nav-list-li"><a class="header__nav-list-a focus-visible" href="#events">События</a></li>
+                    <li class="header__nav-list-li"><a class="header__nav-list-a focus-visible" href="#books">Издания</a></li>
+                    <li class="header__nav-list-li"><a class="header__nav-list-a focus-visible" href="#projects">Проекты</a></li>
+                    <li class="header__nav-list-li"><a class="header__nav-list-a focus-visible" href="#contacts">Контакты</a></li>
                 </ul>
-            </div>
-            <nav class="nav">
-                <button aria-label="Меню" class="burger"></button>
-                <div class="Blanchard">
-                    <img src="img/Blanchard.svg" alt="Blanchard">
-                    <div class="under-Blanchard">художественная галерея</div>
-                </div>
-                <ul class="nav-list">
-                    <li><a class="nav-list-item" href="#about-us">О нас</a></li>
-                    <li><a class="nav-list-item" href="#gallery">Галерея</a></li>
-                    <li><a class="nav-list-item" href="#catalog">Каталог</a></li>
-                    <li><a class="nav-list-item" href="#events">События</a></li>
-                    <li><a class="nav-list-item" href="#books">Издания</a></li>
-                    <li><a class="nav-list-item" href="#projects">Проекты</a></li>
-                    <li><a class="nav-list-item" href="#contacts">Контакты</a></li>
-                </ul>
-                <a aria-label="Авторизация" class="login" href="#"><div class="login-1"></div><div class="login-2">Войти</div></a>
-                <button aria-label="Поиск" class="search"></button>
+                <a aria-label="Авторизация" class="header__login focus-visible" href="#">Войти</a>
+                <button aria-label="Поиск" class="header__search focus-visible"></button>
             </nav>
         </div>
-    <div class="header-down">
-        <nav class="nav-2">
-            <ul class="nav-list-2">
-                <li class="flex-align"><button class="nav-list-item-2">Реализм</button>
-                    <div class="way-of-art">
-                        <ul class="realism" data-simplebar>
-                            <li><a class="menu-item-2" href="#">Тинторетто</a><div></div></li>
-                            <li><a class="menu-item-2" href="#">Фридрих</a><div></div></li>
-                            <li><a class="menu-item-2" href="#">Леонардо</a><div></div></li>
-                            <li><a class="menu-item-2" href="#">Верроккьо</a><div></div></li>
-                            <li><a class="menu-item-2" href="#">Реализм 5</a><div></div></li>
-                            <li><a class="menu-item-2" href="#">Реализм 6</a><div></div></li>
-                            <li><a class="menu-item-2" href="#">Реализм 7</a><div></div></li>
-                            <li><a class="menu-item-2" href="#">Реализм 8</a><div></div></li>
-                            <li><a class="menu-item-2" href="#">Реализм 9</a><div></div></li>
-                            <li><a class="menu-item-2" href="#">Реализм 10</a><div></div></li>
+    <div class="header__down">
+        <nav class="header__nav-2">
+            <ul class="header__nav-list-2 without-outline">
+                <li class="flex-align"><button class="header__nav-list-2-li focus-visible">Реализм</button>
+                    <div class="header__way-of-art">
+                        <ul class="header__realism without-outline" data-simplebar>
+                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Тинторетто</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Фридрих</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Леонардо</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Верроккьо</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Реализм 5</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Реализм 6</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Реализм 7</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Реализм 8</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Реализм 9</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Реализм 10</a><div class="header__way-of-art-background"></div></li>
                         </ul>
                     </div>
                 </li>
-                <li class="flex-align"><button class="nav-list-item-2">Импрессионизм</button>
-                    <div class="way-of-art">
-                        <ul class="impressionism" data-simplebar>
-                            <li><a class="menu-item-2" href="#">Моне</a><div></div></li>
-                            <li><a class="menu-item-2" href="#">Сислей</a><div></div></li>
-                            <li><a class="menu-item-2" href="#">Мане</a><div></div></li>
-                            <li><a class="menu-item-2" href="#">Ренуар</a><div></div></li>
-                            <li><a class="menu-item-2" href="#">Импрессионизм 5</a><div></div></li>
-                            <li><a class="menu-item-2" href="#">Импрессионизм 6</a><div></div></li>
-                            <li><a class="menu-item-2" href="#">Импрессионизм 7</a><div></div></li>
-                            <li><a class="menu-item-2" href="#">Импрессионизм 8</a><div></div></li>
-                            <li><a class="menu-item-2" href="#">Импрессионизм 9</a><div></div></li>
-                            <li><a class="menu-item-2" href="#">Импрессионизм 10</a><div></div></li>
+                <li class="flex-align"><button class="header__nav-list-2-li focus-visible">Импрессионизм</button>
+                    <div class="header__way-of-art">
+                        <ul class="header__impressionism without-outline" data-simplebar>
+                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Моне</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Сислей</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Мане</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Ренуар</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Импрессионизм 5</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Импрессионизм 6</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Импрессионизм 7</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Импрессионизм 8</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Импрессионизм 9</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Импрессионизм 10</a><div class="header__way-of-art-background"></div></li>
                         </ul>
                     </div>
                 </li>
-                <li class="flex-align"><button class="nav-list-item-2">Постимпрессионизм</button>
-                    <div class="way-of-art">
-                        <ul class="postimpressionism" data-simplebar>
-                            <li><a class="menu-item-2" href="#">Ван Гог</a><div></div></li>
-                            <li><a class="menu-item-2" href="#">Сезанн</a><div></div></li>
-                            <li><a class="menu-item-2" href="#">Гоген</a><div></div></li>
-                            <li><a class="menu-item-2" href="#">Сёра</a><div></div></li>
-                            <li><a class="menu-item-2" href="#">Постимпрессионизм 5</a><div></div></li>
-                            <li><a class="menu-item-2" href="#">Постимпрессионизм 6</a><div></div></li>
-                            <li><a class="menu-item-2" href="#">Постимпрессионизм 7</a><div></div></li>
-                            <li><a class="menu-item-2" href="#">Постимпрессионизм 8</a><div></div></li>
-                            <li><a class="menu-item-2" href="#">Постимпрессионизм 9</a><div></div></li>
-                            <li><a class="menu-item-2" href="#">Постимпрессионизм 10</a><div></div></li>
+                <li class="flex-align"><button class="header__nav-list-2-li focus-visible">Постимпрессионизм</button>
+                    <div class="header__way-of-art">
+                        <ul class="header__postimpressionism without-outline" data-simplebar>
+                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Ван Гог</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Сезанн</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Гоген</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Сёра</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Постимпрессионизм 5</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Постимпрессионизм 6</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Постимпрессионизм 7</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Постимпрессионизм 8</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Постимпрессионизм 9</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Постимпрессионизм 10</a><div class="header__way-of-art-background"></div></li>
                         </ul>
                     </div>
                 </li>
-                <li class="flex-align"><button class="nav-list-item-2">Авангард</button>
-                    <div class="way-of-art">
-                        <ul class="avangard" data-simplebar>
-                            <li><a class="menu-item-2" href="#">Кандинский</a><div></div></li>
-                            <li><a class="menu-item-2" href="#">Маринетти</a><div></div></li>
-                            <li><a class="menu-item-2" href="#">Малевич</a><div></div></li>
-                            <li><a class="menu-item-2" href="#">Пикассо</a><div></div></li>
-                            <li><a class="menu-item-2" href="#">Авангард 5</a><div></div></li>
-                            <li><a class="menu-item-2" href="#">Авангард 6</a><div></div></li>
-                            <li><a class="menu-item-2" href="#">Авангард 7</a><div></div></li>
-                            <li><a class="menu-item-2" href="#">Авангард 8</a><div></div></li>
-                            <li><a class="menu-item-2" href="#">Авангард 9</a><div></div></li>
-                            <li><a class="menu-item-2" href="#">Авангард 10</a><div></div></li>
+                <li class="flex-align"><button class="header__nav-list-2-li focus-visible">Авангард</button>
+                    <div class="header__way-of-art">
+                        <ul class="header__avangard without-outline" data-simplebar>
+                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Кандинский</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Маринетти</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Малевич</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Пикассо</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Авангард 5</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Авангард 6</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Авангард 7</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Авангард 8</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Авангард 9</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Авангард 10</a><div class="header__way-of-art-background"></div></li>
                         </ul>
                     </div>
                 </li>
-                <li class="flex-align"><button class="nav-list-item-2">Футуризм</button>
-                    <div class="way-of-art">
-                        <ul class="futurism" data-simplebar>
-                            <li><a class="menu-item-2" href="#">Карра</a><div></div></li>
-                            <li><a class="menu-item-2" href="#">Прателла</a><div></div></li>
-                            <li><a class="menu-item-2" href="#">Северини</a><div></div></li>
-                            <li><a class="menu-item-2" href="#">Балла</a><div></div></li>
-                            <li><a class="menu-item-2" href="#">Футуризм 5</a><div></div></li>
-                            <li><a class="menu-item-2" href="#">Футуризм 6</a><div></div></li>
-                            <li><a class="menu-item-2" href="#">Футуризм 7</a><div></div></li>
-                            <li><a class="menu-item-2" href="#">Футуризм 8</a><div></div></li>
-                            <li><a class="menu-item-2" href="#">Футуризм 9</a><div></div></li>
-                            <li><a class="menu-item-2" href="#">Футуризм 10</a><div></div></li>
+                <li class="flex-align"><button class="header__nav-list-2-li focus-visible">Футуризм</button>
+                    <div class="header__way-of-art">
+                        <ul class="header__futurism without-outline" data-simplebar>
+                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Карра</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Прателла</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Северини</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Балла</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Футуризм 5</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Футуризм 6</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Футуризм 7</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Футуризм 8</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Футуризм 9</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Футуризм 10</a><div class="header__way-of-art-background"></div></li>
                         </ul>
                     </div>
                 </li>
             </ul>
-            <form class="search-form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
-                <input tabindex="14" required type="search" name="search" class="search-input" placeholder="Поиск по сайту" value="">
-                <button aria-label="Поиск" class="search-button"></button>
+            <form class="header__search-form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
+                <input tabindex="14" required type="search" name="search" class="header__search-input focus-visible" placeholder="Поиск по сайту" value="">
+                <button aria-label="Поиск" class="header__search-button focus-visible"></button>
             </form>
         </nav>
     </div>
     </header>
     <main>
-        <section class="section">
+        <section class="section section-hero">
             <div class="swiper-container_1">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
                     <!-- Slides -->
-                    <div class="swiper-slide"><img class="main-image" src="img/main-image-1.png" alt="Замок"></div>
-                    <div class="swiper-slide"><img class="main-image" src="img/main-image-2.png" alt="Небеса"></div>
-                    <div class="swiper-slide"><img class="main-image" src="img/main-image-3.png" alt="Природа"></div>
+                    <div class="swiper-slide"><img class="section-hero__image" src="img/main-image-1.png" alt="Замок"></div>
+                    <div class="swiper-slide"><img class="section-hero__image" src="img/main-image-2.png" alt="Небеса"></div>
+                    <div class="swiper-slide"><img class="section-hero__image" src="img/main-image-3.png" alt="Природа"></div>
                 </div>
                 <!-- If we need pagination -->
                 <!-- <div class="swiper-pagination_1"></div> -->
@@ -173,154 +157,154 @@
                 <!-- <div class="swiper-scrollbar_1"></div> -->
             </div>
             <div class="container">
-            <h3 class="main-text-1">Прикоснитесь<br>к прекрасному</h3>
-                <span class="main-text-2">Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.</span> 
-                <a aria-label="Подписаться на рассылку" class="main-button" href="#contacts">Подписаться на рассылку</a>
+            <h3 class="section-hero__text-1 without-outline">Прикоснитесь к прекрасному</h3>
+                <span class="section-hero__text-2 without-outline">Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.</span> 
+                <a aria-label="Подписаться на рассылку" class="section-hero__button focus-visible" href="#contacts">Подписаться на рассылку</a>
             </div>
             </section>
-            <section class="container">
-                <h2 class="section-top" id="about-us">О нас</h2>
-                <div class="second-section-text">Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого участника как способного принимать собственные решения касаемо распределения внутренних резервов и ресурсов. Не следует, однако, забывать, что высококачественный прототип будущего проекта влечет за собой процесс внедрения и модернизации модели развития. Повседневная практика показывает, что высокое качество позиционных исследований создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса распределения внутренних резервов и ресурсов. В рамках спецификации современных стандартов, действия представителей оппозиции набирают популярность среди определенных слоев населения, а значит, должны быть разоблачены.
+            <section class="container about-us">
+                <h2 class="section-top without-outline" id="about-us">О нас</h2>
+                <div class="about-us__text">Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого участника как способного принимать собственные решения касаемо распределения внутренних резервов и ресурсов. Не следует, однако, забывать, что высококачественный прототип будущего проекта влечет за собой процесс внедрения и модернизации модели развития. Повседневная практика показывает, что высокое качество позиционных исследований создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса распределения внутренних резервов и ресурсов. В рамках спецификации современных стандартов, действия представителей оппозиции набирают популярность среди определенных слоев населения, а значит, должны быть разоблачены.
                 </div>
             </section>
             <section class="section gallery">
                 <div class="container">
-                    <div class="gallery-left">
-                        <h2 class="section-top white" id="gallery">Галерея</h2>
-                        <div class="gallery-filter">Фильтровать по:</div>
+                    <div class="gallery__left">
+                        <h2 class="section-top without-outline" id="gallery">Галерея</h2>
+                        <div class="gallery__filter">Фильтровать по:</div>
                         <form action="https://jsonplaceholder.typicode.com/posts" method="POST">
-                            <select tabindex="16" name="select" class="custom-select_1">
+                            <select tabindex="16" name="select" class="custom-select_1 focus-visible">
                                 <option value="" hidden>Автор</option>
                                 <option value="">Направление</option>
                                 <option value="">Техника</option>
                             </select>
                         </form>
-                        <div class="gallery-info">Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний 
-                            <a aria-label="Авторизация" class="gallery-authorize" href="#">авторизуйтесь</a>, либо воспользуйтесь лицензией.</div>
+                        <div class="gallery__info">Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний 
+                            <a aria-label="Авторизация" class="gallery__authorize focus-visible" href="#">авторизуйтесь</a>, либо воспользуйтесь лицензией.</div>
                     </div>
-                    <div class="gallery-right">
-                        <a aria-label="Перейти к предыдущим слайдам" class="swiper-button-prev_2"></a>
+                    <div class="gallery__right">
+                        <a aria-label="Перейти к предыдущим слайдам" class="swiper-button-prev_2 focus-visible"></a>
                         <div class="swiper-pagination_2"></div>
-                        <a aria-label="Перейти к следующим слайдам" class="swiper-button-next_2"></a>
+                        <a aria-label="Перейти к следующим слайдам" class="swiper-button-next_2 focus-visible"></a>
                             
                         <div class="swiper-container_2">
                             <!-- Additional required wrapper -->
                             <div class="swiper-wrapper">
                                 <!-- Slides -->
-                                <div class="swiper-slide"><img src="img/picture-1.jpg" alt="Картина"></div>
-                                <div class="swiper-slide"><img src="img/picture-2.jpg" alt="Картина"></div>
-                                <div class="swiper-slide"><img src="img/picture-3.jpg" alt="Картина"></div>
-                                <div class="swiper-slide"><img src="img/picture-4.jpg" alt="Картина"></div>
-                                <div class="swiper-slide"><img src="img/picture-5.jpg" alt="Картина"></div>
-                                <div class="swiper-slide"><img src="img/picture-6.jpg" alt="Картина"></div>
-                                <div class="swiper-slide"><img src="img/picture-7.jpg" alt="Картина"></div>
-                                <div class="swiper-slide"><img src="img/picture-8.jpg" alt="Картина"></div>
-                                <div class="swiper-slide"><img src="img/picture-9.jpg" alt="Картина"></div>
-                                <div class="swiper-slide"><img src="img/picture-10.jpg" alt="Картина"></div>
-                                <div class="swiper-slide"><img src="img/picture-11.jpg" alt="Картина"></div>
-                                <div class="swiper-slide"><img src="img/picture-12.jpg" alt="Картина"></div>
-                                <div class="swiper-slide"><img src="img/picture-13.jpg" alt="Картина"></div>
-                                <div class="swiper-slide"><img src="img/picture-14.jpg" alt="Картина"></div>
-                                <div class="swiper-slide"><img src="img/picture-15.jpg" alt="Картина"></div>
-                                <div class="swiper-slide"><img src="img/picture-16.jpg" alt="Картина"></div>
-                                <div class="swiper-slide"><img src="img/picture-17.jpg" alt="Картина"></div>
-                                <div class="swiper-slide"><img src="img/picture-18.jpg" alt="Картина"></div>
+                                <div class="swiper-slide"><img class="swiper-container_2__img" src="img/picture-1.jpg" alt="Картина"></div>
+                                <div class="swiper-slide"><img class="swiper-container_2__img" src="img/picture-2.jpg" alt="Картина"></div>
+                                <div class="swiper-slide"><img class="swiper-container_2__img" src="img/picture-3.jpg" alt="Картина"></div>
+                                <div class="swiper-slide"><img class="swiper-container_2__img" src="img/picture-4.jpg" alt="Картина"></div>
+                                <div class="swiper-slide"><img class="swiper-container_2__img" src="img/picture-5.jpg" alt="Картина"></div>
+                                <div class="swiper-slide"><img class="swiper-container_2__img" src="img/picture-6.jpg" alt="Картина"></div>
+                                <div class="swiper-slide"><img class="swiper-container_2__img" src="img/picture-7.jpg" alt="Картина"></div>
+                                <div class="swiper-slide"><img class="swiper-container_2__img" src="img/picture-8.jpg" alt="Картина"></div>
+                                <div class="swiper-slide"><img class="swiper-container_2__img" src="img/picture-9.jpg" alt="Картина"></div>
+                                <div class="swiper-slide"><img class="swiper-container_2__img" src="img/picture-10.jpg" alt="Картина"></div>
+                                <div class="swiper-slide"><img class="swiper-container_2__img" src="img/picture-11.jpg" alt="Картина"></div>
+                                <div class="swiper-slide"><img class="swiper-container_2__img" src="img/picture-12.jpg" alt="Картина"></div>
+                                <div class="swiper-slide"><img class="swiper-container_2__img" src="img/picture-13.jpg" alt="Картина"></div>
+                                <div class="swiper-slide"><img class="swiper-container_2__img" src="img/picture-14.jpg" alt="Картина"></div>
+                                <div class="swiper-slide"><img class="swiper-container_2__img" src="img/picture-15.jpg" alt="Картина"></div>
+                                <div class="swiper-slide"><img class="swiper-container_2__img" src="img/picture-16.jpg" alt="Картина"></div>
+                                <div class="swiper-slide"><img class="swiper-container_2__img" src="img/picture-17.jpg" alt="Картина"></div>
+                                <div class="swiper-slide"><img class="swiper-container_2__img" src="img/picture-18.jpg" alt="Картина"></div>
                             </div>
                         </div>
-                        <div class="gallery-info">Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний 
-                            <a aria-label="Авторизация" class="gallery-authorize" href="#">авторизуйтесь</a>, либо воспользуйтесь лицензией.</div>
+                        <div class="gallery__info">Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний 
+                            <a aria-label="Авторизация" class="gallery__authorize focus-visible" href="#">авторизуйтесь</a>, либо воспользуйтесь лицензией.</div>
                     </div>
             </div>  
             </section>
-            <section class="section container">
-                <h2 class="section-top" id="catalog">Каталог</h2>
-                <a aria-label="Французские художники" class="choose-country choose-country-active"></a>
-                <a aria-label="Немецкие художники" class="choose-country"></a>
-                <a aria-label="Итальянские художники" class="choose-country"></a>
-                <a aria-label="Российские художники" class="choose-country"></a>
-                <a aria-label="Бельгийские художники" class="choose-country"></a>
-                <div class="choose-artist">
-                    <div class="choose-artist-text">Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на независимые элементы.</div>
-                    <div class="left-right">
-                        <div class="align choose-artist-right">
+            <section class="section container catalog">
+                <h2 class="section-top without-outline" id="catalog">Каталог</h2>
+                <a aria-label="Французские художники" class="catalog__choose-country focus-visible catalog__choose-country-active"></a>
+                <a aria-label="Немецкие художники" class="catalog__choose-country focus-visible"></a>
+                <a aria-label="Итальянские художники" class="catalog__choose-country focus-visible"></a>
+                <a aria-label="Российские художники" class="catalog__choose-country focus-visible"></a>
+                <a aria-label="Бельгийские художники" class="catalog__choose-country focus-visible"></a>
+                <div class="catalog__choose-artist">
+                    <div class="catalog__text">Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на независимые элементы.</div>
+                    <div class="catalog__left-right">
+                        <div class="align catalog__right">
                             <div class="grid">
                               <div class="js-ui-accordion">
-                                <div class="periods border-top"><a class="period" aria-label="Период с 1400 года по 1499 год" tabindex="25"> C 1400 по 1499 гг.</a> <div class="periods-img"></div></div>
+                                <div class="catalog__periods border-top"><a class="catalog__period focus-visible" aria-label="Период с 1400 года по 1499 год" tabindex="25"> C 1400 по 1499 гг.</a> <div class="catalog__periods-img"></div></div>
                                 <div>
-                                    <ul class="France country-active">
-                                        <li class="link-active"><a aria-label="Франция 1" href="#f-1">Франция 1</a></li>
-                                        <li><a aria-label="Франция 2" href="#f-2">Франция 2</a></li>
-                                        <li><a aria-label="Франция 3" href="#f-3">Франция 3</a></li>
+                                    <ul class="catalog__France country-active without-outline">
+                                        <li class="link-active"><a class="focus-visible" aria-label="Франция 1" href="#f-1">Франция 1</a></li>
+                                        <li><a class="focus-visible" aria-label="Франция 2" href="#f-2">Франция 2</a></li>
+                                        <li><a class="focus-visible" aria-label="Франция 3" href="#f-3">Франция 3</a></li>
                                     </ul>
-                                    <ul class="Germany">
-                                        <li><a aria-label="Германия 1" href="#g-1">Германия 1</a></li>
-                                        <li><a aria-label="Германия 2" href="#g-2">Германия 2</a></li>
-                                        <li><a aria-label="Германия 3" href="#g-3">Германия 3</a></li>
+                                    <ul class="catalog__Germany without-outline">
+                                        <li><a class="focus-visible" aria-label="Германия 1" href="#g-1">Германия 1</a></li>
+                                        <li><a class="focus-visible" aria-label="Германия 2" href="#g-2">Германия 2</a></li>
+                                        <li><a class="focus-visible" aria-label="Германия 3" href="#g-3">Германия 3</a></li>
                                     </ul>
-                                    <ul class="Italy">
-                                        <li><a aria-label="Бенедетто ди Биндо" href="#Benedetto-di-Bindo">Бенедетто ди Биндо</a></li>
-                                        <li><a aria-label="Бергоньоне, Амброджо" href="#Bergognone-Ambrogio">Бергоньоне, Амброджо</a></li>
-                                        <li><a aria-label="Биссоло, Франческо" href="#Bissolo-Francesco">Биссоло, Франческо</a></li>
-                                        <li><a aria-label="Больтраффио, Джованни" href="#Boltraffio-Giovanni">Больтраффио, Джованни</a></li>
-                                        <li><a aria-label="Бонсиньори, Франческо" href="#Bonsignori-Francesco">Бонсиньори, Франческо</a></li>
-                                        <li><a aria-label="Боттичини, Рафаэлло" href="#Botticini-Raffaello">Боттичини, Рафаэлло</a></li>
-                                        <li><a aria-label="Брамантино" href="#Bramantino">Брамантино</a></li>
-                                        <li><a aria-label="Бреа, Людовико" href="#Brea-Ludovico">Бреа, Людовико</a></li>
-                                        <li><a aria-label="Бьяджо д'Антонио Туччи" href="#Biagio-di-Antonio-Tucci">Бьяджо д'Антонио Туччи</a></li>
-                                        <li><a aria-label="Веккьетта" href="#Vecchietta">Веккьетта</a></li>
-                                        <li><a aria-label="Андреа Верроккьо" href="#Andrea-Verrocchio">Андреа Верроккьо</a></li>
-                                        <li><a aria-label="Доменико Гирландайо" href="#Domenico-Ghirlandaio">Доменико Гирландайо</a></li>
-                                        <li><a aria-label="Беноццо Гоццоли" href="#Benozzo-Gozzoli">Беноццо Гоццоли</a></li>
-                                        <li><a aria-label="Граначчи, Франческо" href="#Granacci-Francesco">Граначчи, Франческо</a></li>
-                                        <li><a aria-label="Грегорио ди Чекко" href="#Gregorio-di-Cecco">Грегорио ди Чекко</a></li>
-                                        <li><a aria-label="Джованни да Удине" href="#Giovanni-da-Udine">Джованни да Удине</a></li>
-                                        <li><a aria-label="Джованни ди Паоло" href="#Giovanni-di-Paolo">Джованни ди Паоло</a></li>
-                                        <li><a aria-label="Джорджоне" href="#Giorgione">Джорджоне</a></li>
-                                        <li><a aria-label="Парентино, Бернардо" href="#Parentino-Bernardo">Парентино, Бернардо</a></li>
-                                        <li><a aria-label="Пезеллино" href="#Pesellino">Пезеллино</a></li>
-                                        <li><a aria-label="Пьетро Перуджино" href="#Pietro-Perugino">Пьетро Перуджино</a></li>
-                                        <li><a aria-label="Перуцци, Бальдассаре" href="#Peruzzi-Baldassare">Перуцци, Бальдассаре</a></li>
-                                        <li><a aria-label="Пизанелло" href="#Pisanello">Пизанелло</a></li>
-                                        <li><a aria-label="Пинтуриккьо" href="#Pinturicchio">Пинтуриккьо</a></li>
+                                    <ul class="catalog__Italy without-outline">
+                                        <li><a class="focus-visible" aria-label="Бенедетто ди Биндо" href="#Benedetto-di-Bindo">Бенедетто ди Биндо</a></li>
+                                        <li><a class="focus-visible" aria-label="Бергоньоне, Амброджо" href="#Bergognone-Ambrogio">Бергоньоне, Амброджо</a></li>
+                                        <li><a class="focus-visible" aria-label="Биссоло, Франческо" href="#Bissolo-Francesco">Биссоло, Франческо</a></li>
+                                        <li><a class="focus-visible" aria-label="Больтраффио, Джованни" href="#Boltraffio-Giovanni">Больтраффио, Джованни</a></li>
+                                        <li><a class="focus-visible" aria-label="Бонсиньори, Франческо" href="#Bonsignori-Francesco">Бонсиньори, Франческо</a></li>
+                                        <li><a class="focus-visible" aria-label="Боттичини, Рафаэлло" href="#Botticini-Raffaello">Боттичини, Рафаэлло</a></li>
+                                        <li><a class="focus-visible" aria-label="Брамантино" href="#Bramantino">Брамантино</a></li>
+                                        <li><a class="focus-visible" aria-label="Бреа, Людовико" href="#Brea-Ludovico">Бреа, Людовико</a></li>
+                                        <li><a class="focus-visible" aria-label="Бьяджо д'Антонио Туччи" href="#Biagio-di-Antonio-Tucci">Бьяджо д'Антонио Туччи</a></li>
+                                        <li><a class="focus-visible" aria-label="Веккьетта" href="#Vecchietta">Веккьетта</a></li>
+                                        <li><a class="focus-visible" aria-label="Андреа Верроккьо" href="#Andrea-Verrocchio">Андреа Верроккьо</a></li>
+                                        <li><a class="focus-visible" aria-label="Доменико Гирландайо" href="#Domenico-Ghirlandaio">Доменико Гирландайо</a></li>
+                                        <li><a class="focus-visible" aria-label="Беноццо Гоццоли" href="#Benozzo-Gozzoli">Беноццо Гоццоли</a></li>
+                                        <li><a class="focus-visible" aria-label="Граначчи, Франческо" href="#Granacci-Francesco">Граначчи, Франческо</a></li>
+                                        <li><a class="focus-visible" aria-label="Грегорио ди Чекко" href="#Gregorio-di-Cecco">Грегорио ди Чекко</a></li>
+                                        <li><a class="focus-visible" aria-label="Джованни да Удине" href="#Giovanni-da-Udine">Джованни да Удине</a></li>
+                                        <li><a class="focus-visible" aria-label="Джованни ди Паоло" href="#Giovanni-di-Paolo">Джованни ди Паоло</a></li>
+                                        <li><a class="focus-visible" aria-label="Джорджоне" href="#Giorgione">Джорджоне</a></li>
+                                        <li><a class="focus-visible" aria-label="Парентино, Бернардо" href="#Parentino-Bernardo">Парентино, Бернардо</a></li>
+                                        <li><a class="focus-visible" aria-label="Пезеллино" href="#Pesellino">Пезеллино</a></li>
+                                        <li><a class="focus-visible" aria-label="Пьетро Перуджино" href="#Pietro-Perugino">Пьетро Перуджино</a></li>
+                                        <li><a class="focus-visible" aria-label="Перуцци, Бальдассаре" href="#Peruzzi-Baldassare">Перуцци, Бальдассаре</a></li>
+                                        <li><a class="focus-visible" aria-label="Пизанелло" href="#Pisanello">Пизанелло</a></li>
+                                        <li><a class="focus-visible" aria-label="Пинтуриккьо" href="#Pinturicchio">Пинтуриккьо</a></li>
                                     </ul>
-                                    <ul class="Russia">
-                                        <li><a aria-label="Россия 1" href="#r-1">Россия 1</a></li>
-                                        <li><a aria-label="Россия 2" href="#r-2">Россия 2</a></li>
-                                        <li><a aria-label="Россия 3" href="#r-3">Россия 3</a></li>
+                                    <ul class="catalog__Russia without-outline">
+                                        <li><a class="focus-visible" aria-label="Россия 1" href="#r-1">Россия 1</a></li>
+                                        <li><a class="focus-visible" aria-label="Россия 2" href="#r-2">Россия 2</a></li>
+                                        <li><a class="focus-visible" aria-label="Россия 3" href="#r-3">Россия 3</a></li>
                                     </ul>
-                                    <ul class="Belgium">
-                                        <li><a aria-label="Бельгия 1" href="#b-1">Бельгия 1</a></li>
-                                        <li><a aria-label="Бельгия 2" href="#b-2">Бельгия 2</a></li>
-                                        <li><a aria-label="Бельгия 3" href="#b-3">Бельгия 3</a></li>
+                                    <ul class="catalog__Belgium without-outline">
+                                        <li><a class="focus-visible" aria-label="Бельгия 1" href="#b-1">Бельгия 1</a></li>
+                                        <li><a class="focus-visible" aria-label="Бельгия 2" href="#b-2">Бельгия 2</a></li>
+                                        <li><a class="focus-visible" aria-label="Бельгия 3" href="#b-3">Бельгия 3</a></li>
                                     </ul>
                                 </div>
                           
-                                <div><a class="period" aria-label="Период с 1500 года по 1599 год"> C 1500 по 1599 гг.</a> <div class="periods-img"></div></div>
+                                <div><a class="catalog__period focus-visible" aria-label="Период с 1500 года по 1599 год"> C 1500 по 1599 гг.</a> <div class="catalog__periods-img"></div></div>
                                 <div>
                                   Текст 2
                                 </div>
                           
-                                <div><a class="period" aria-label="Период с 1600 года по 1699 год"> C 1600 по 1699 гг.</a> <div class="periods-img"></div></div>
+                                <div><a class="catalog__period focus-visible" aria-label="Период с 1600 года по 1699 год"> C 1600 по 1699 гг.</a> <div class="catalog__periods-img"></div></div>
                                 <div>
                                   Текст 3
                                 </div>
     
-                                <div><a class="period" aria-label="Период с 1700 года по 1799 год"> C 1700 по 1799 гг.</a> <div class="periods-img"></div></div>
+                                <div><a class="catalog__period focus-visible" aria-label="Период с 1700 года по 1799 год"> C 1700 по 1799 гг.</a> <div class="catalog__periods-img"></div></div>
                                 <div>
                                   Текст 4
                                 </div>
     
-                                <div><a class="period" aria-label="Период с 1800 года по 1899 год"> C 1800 по 1899 гг.</a> <div class="periods-img"></div></div>
+                                <div><a class="catalog__period focus-visible" aria-label="Период с 1800 года по 1899 год"> C 1800 по 1899 гг.</a> <div class="catalog__periods-img"></div></div>
                                 <div>
                                   Текст 5
                                 </div>
     
-                                <div><a class="period" aria-label="Период с 1900 года по 1999 год"> C 1900 по 1999 гг.</a> <div class="periods-img"></div></div>
+                                <div><a class="catalog__period focus-visible" aria-label="Период с 1900 года по 1999 год"> C 1900 по 1999 гг.</a> <div class="catalog__periods-img"></div></div>
                                 <div>
                                   Текст 6
                                 </div>
     
-                                <div><a class="period" aria-label="Период с 2000 года"> C 2000 г.</a> <div class="periods-img"></div></div>
+                                <div><a class="catalog__period focus-visible" aria-label="Период с 2000 года"> C 2000 г.</a> <div class="catalog__periods-img"></div></div>
                                 <div>
                                   Текст 7
                                 </div>
@@ -330,7 +314,7 @@
                             </div>
                           
                         </div>
-                        <div class="choose-artist-left">
+                        <div class="catalog__left">
                             <div>
                                 <div id="f-1" class="tab tab-active">
                                     Франция 1
@@ -388,10 +372,10 @@
                                     Андреа Верроккьо
                                 </div>
                                 <div id="Domenico-Ghirlandaio" class="tab">
-                                    <img src="img/Domenico-Ghirlandaio.jpg" alt="Доменико Гирландайо">
-                                        <h2 class="artist-name">Доменико Гирландайо</h2>
-                                        <div class="artist-born"> 2 июня 1448 — 11 января 1494.</div>
-                                        <div class="artist-text">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).</div>
+                                    <img class="catalog__left-img" src="img/Domenico-Ghirlandaio.jpg" alt="Доменико Гирландайо">
+                                        <h2 class="catalog__artist-name without-outline">Доменико Гирландайо</h2>
+                                        <div class="catalog__artist-born"> 2 июня 1448 — 11 января 1494.</div>
+                                        <div class="catalog__artist-text">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).</div>
                                 </div>
                                 <div id="Benozzo-Gozzoli" class="tab">
                                     Беноццо Гоццоли
@@ -453,88 +437,88 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="align choose-artist-right">
+                        <div class="align catalog__right">
 
                         <div class="grid">
                       
                           <div class="js-ui-accordion">
                       
-                            <div class="periods border-top"><a class="period" aria-label="Период с 1400 года по 1499 год"> C 1400 по 1499 гг.</a> <div class="periods-img"></div></div>
+                            <div class="catalog__periods border-top"><a class="catalog__period focus-visible" aria-label="Период с 1400 года по 1499 год"> C 1400 по 1499 гг.</a> <div class="catalog__periods-img"></div></div>
                                 <div>
-                                    <ul class="France country-active">
-                                        <li class="link-active"><a aria-label="Франция 1" href="#f-1">Франция 1</a></li>
-                                        <li><a aria-label="Франция 2" href="#f-2">Франция 2</a></li>
-                                        <li><a aria-label="Франция 3" href="#f-3">Франция 3</a></li>
+                                    <ul class="catalog__France country-active without-outline">
+                                        <li class="focus-visible link-active"><a aria-label="Франция 1" href="#f-1">Франция 1</a></li>
+                                        <li><a class="focus-visible" aria-label="Франция 2" href="#f-2">Франция 2</a></li>
+                                        <li><a class="focus-visible" aria-label="Франция 3" href="#f-3">Франция 3</a></li>
                                     </ul>
-                                    <ul class="Germany">
-                                        <li><a aria-label="Германия 1" href="#g-1">Германия 1</a></li>
-                                        <li><a aria-label="Германия 2" href="#g-2">Германия 2</a></li>
-                                        <li><a aria-label="Германия 3" href="#g-3">Германия 3</a></li>
+                                    <ul class="catalog__Germany without-outline">
+                                        <li><a class="focus-visible" aria-label="Германия 1" href="#g-1">Германия 1</a></li>
+                                        <li><a class="focus-visible" aria-label="Германия 2" href="#g-2">Германия 2</a></li>
+                                        <li><a class="focus-visible" aria-label="Германия 3" href="#g-3">Германия 3</a></li>
                                     </ul>
-                                    <ul class="Italy">
-                                        <li><a aria-label="Бенедетто ди Биндо" href="#Benedetto-di-Bindo">Бенедетто ди Биндо</a></li>
-                                        <li><a aria-label="Бергоньоне, Амброджо" href="#Bergognone-Ambrogio">Бергоньоне, Амброджо</a></li>
-                                        <li><a aria-label="Биссоло, Франческо" href="#Bissolo-Francesco">Биссоло, Франческо</a></li>
-                                        <li><a aria-label="Больтраффио, Джованни" href="#Boltraffio-Giovanni">Больтраффио, Джованни</a></li>
-                                        <li><a aria-label="Бонсиньори, Франческо" href="#Bonsignori-Francesco">Бонсиньори, Франческо</a></li>
-                                        <li><a aria-label="Боттичини, Рафаэлло" href="#Botticini-Raffaello">Боттичини, Рафаэлло</a></li>
-                                        <li><a aria-label="Брамантино" href="#Bramantino">Брамантино</a></li>
-                                        <li><a aria-label="Бреа, Людовико" href="#Brea-Ludovico">Бреа, Людовико</a></li>
-                                        <li><a aria-label="Бьяджо д'Антонио Туччи" href="#Biagio-di-Antonio-Tucci">Бьяджо д'Антонио Туччи</a></li>
-                                        <li><a aria-label="Веккьетта" href="#Vecchietta">Веккьетта</a></li>
-                                        <li><a aria-label="Андреа Верроккьо" href="#Andrea-Verrocchio">Андреа Верроккьо</a></li>
-                                        <li><a aria-label="Доменико Гирландайо" href="#Domenico-Ghirlandaio">Доменико Гирландайо</a></li>
-                                        <li><a aria-label="Беноццо Гоццоли" href="#Benozzo-Gozzoli">Беноццо Гоццоли</a></li>
-                                        <li><a aria-label="Граначчи, Франческо" href="#Granacci-Francesco">Граначчи, Франческо</a></li>
-                                        <li><a aria-label="Грегорио ди Чекко" href="#Gregorio-di-Cecco">Грегорио ди Чекко</a></li>
-                                        <li><a aria-label="Джованни да Удине" href="#Giovanni-da-Udine">Джованни да Удине</a></li>
-                                        <li><a aria-label="Джованни ди Паоло" href="#Giovanni-di-Paolo">Джованни ди Паоло</a></li>
-                                        <li><a aria-label="Джорджоне" href="#Giorgione">Джорджоне</a></li>
-                                        <li><a aria-label="Парентино, Бернардо" href="#Parentino-Bernardo">Парентино, Бернардо</a></li>
-                                        <li><a aria-label="Пезеллино" href="#Pesellino">Пезеллино</a></li>
-                                        <li><a aria-label="Пьетро Перуджино" href="#Pietro-Perugino">Пьетро Перуджино</a></li>
-                                        <li><a aria-label="Перуцци, Бальдассаре" href="#Peruzzi-Baldassare">Перуцци, Бальдассаре</a></li>
-                                        <li><a aria-label="Пизанелло" href="#Pisanello">Пизанелло</a></li>
-                                        <li><a aria-label="Пинтуриккьо" href="#Pinturicchio">Пинтуриккьо</a></li>
+                                    <ul class="catalog__Italy without-outline">
+                                        <li><a class="focus-visible" aria-label="Бенедетто ди Биндо" href="#Benedetto-di-Bindo">Бенедетто ди Биндо</a></li>
+                                        <li><a class="focus-visible" aria-label="Бергоньоне, Амброджо" href="#Bergognone-Ambrogio">Бергоньоне, Амброджо</a></li>
+                                        <li><a class="focus-visible" aria-label="Биссоло, Франческо" href="#Bissolo-Francesco">Биссоло, Франческо</a></li>
+                                        <li><a class="focus-visible" aria-label="Больтраффио, Джованни" href="#Boltraffio-Giovanni">Больтраффио, Джованни</a></li>
+                                        <li><a class="focus-visible" aria-label="Бонсиньори, Франческо" href="#Bonsignori-Francesco">Бонсиньори, Франческо</a></li>
+                                        <li><a class="focus-visible" aria-label="Боттичини, Рафаэлло" href="#Botticini-Raffaello">Боттичини, Рафаэлло</a></li>
+                                        <li><a class="focus-visible" aria-label="Брамантино" href="#Bramantino">Брамантино</a></li>
+                                        <li><a class="focus-visible" aria-label="Бреа, Людовико" href="#Brea-Ludovico">Бреа, Людовико</a></li>
+                                        <li><a class="focus-visible" aria-label="Бьяджо д'Антонио Туччи" href="#Biagio-di-Antonio-Tucci">Бьяджо д'Антонио Туччи</a></li>
+                                        <li><a class="focus-visible" aria-label="Веккьетта" href="#Vecchietta">Веккьетта</a></li>
+                                        <li><a class="focus-visible" aria-label="Андреа Верроккьо" href="#Andrea-Verrocchio">Андреа Верроккьо</a></li>
+                                        <li><a class="focus-visible" aria-label="Доменико Гирландайо" href="#Domenico-Ghirlandaio">Доменико Гирландайо</a></li>
+                                        <li><a class="focus-visible" aria-label="Беноццо Гоццоли" href="#Benozzo-Gozzoli">Беноццо Гоццоли</a></li>
+                                        <li><a class="focus-visible" aria-label="Граначчи, Франческо" href="#Granacci-Francesco">Граначчи, Франческо</a></li>
+                                        <li><a class="focus-visible" aria-label="Грегорио ди Чекко" href="#Gregorio-di-Cecco">Грегорио ди Чекко</a></li>
+                                        <li><a class="focus-visible" aria-label="Джованни да Удине" href="#Giovanni-da-Udine">Джованни да Удине</a></li>
+                                        <li><a class="focus-visible" aria-label="Джованни ди Паоло" href="#Giovanni-di-Paolo">Джованни ди Паоло</a></li>
+                                        <li><a class="focus-visible" aria-label="Джорджоне" href="#Giorgione">Джорджоне</a></li>
+                                        <li><a class="focus-visible" aria-label="Парентино, Бернардо" href="#Parentino-Bernardo">Парентино, Бернардо</a></li>
+                                        <li><a class="focus-visible" aria-label="Пезеллино" href="#Pesellino">Пезеллино</a></li>
+                                        <li><a class="focus-visible" aria-label="Пьетро Перуджино" href="#Pietro-Perugino">Пьетро Перуджино</a></li>
+                                        <li><a class="focus-visible" aria-label="Перуцци, Бальдассаре" href="#Peruzzi-Baldassare">Перуцци, Бальдассаре</a></li>
+                                        <li><a class="focus-visible" aria-label="Пизанелло" href="#Pisanello">Пизанелло</a></li>
+                                        <li><a class="focus-visible" aria-label="Пинтуриккьо" href="#Pinturicchio">Пинтуриккьо</a></li>
                                     </ul>
-                                    <ul class="Russia">
-                                        <li><a aria-label="Россия 1" href="#r-1">Россия 1</a></li>
-                                        <li><a aria-label="Россия 2" href="#r-2">Россия 2</a></li>
-                                        <li><a aria-label="Россия 3" href="#r-3">Россия 3</a></li>
+                                    <ul class="catalog__Russia without-outline">
+                                        <li><a class="focus-visible" aria-label="Россия 1" href="#r-1">Россия 1</a></li>
+                                        <li><a class="focus-visible" aria-label="Россия 2" href="#r-2">Россия 2</a></li>
+                                        <li><a class="focus-visible" aria-label="Россия 3" href="#r-3">Россия 3</a></li>
                                     </ul>
-                                    <ul class="Belgium">
-                                        <li><a aria-label="Бельгия 1" href="#b-1">Бельгия 1</a></li>
-                                        <li><a aria-label="Бельгия 2" href="#b-2">Бельгия 2</a></li>
-                                        <li><a aria-label="Бельгия 3" href="#b-3">Бельгия 3</a></li>
+                                    <ul class="catalog__Belgium without-outline">
+                                        <li><a class="focus-visible" aria-label="Бельгия 1" href="#b-1">Бельгия 1</a></li>
+                                        <li><a class="focus-visible" aria-label="Бельгия 2" href="#b-2">Бельгия 2</a></li>
+                                        <li><a class="focus-visible" aria-label="Бельгия 3" href="#b-3">Бельгия 3</a></li>
                                     </ul>
                                 </div>
                           
-                                <div><a class="period" aria-label="Период с 1500 года по 1599 год"> C 1500 по 1599 гг.</a> <div class="periods-img"></div></div>
+                                <div><a class="catalog__period focus-visible" aria-label="Период с 1500 года по 1599 год"> C 1500 по 1599 гг.</a> <div class="catalog__periods-img"></div></div>
                                 <div>
                                   Текст 2
                                 </div>
                           
-                                <div><a class="period" aria-label="Период с 1600 года по 1699 год"> C 1600 по 1699 гг.</a> <div class="periods-img"></div></div>
+                                <div><a class="catalog__period focus-visible" aria-label="Период с 1600 года по 1699 год"> C 1600 по 1699 гг.</a> <div class="catalog__periods-img"></div></div>
                                 <div>
                                   Текст 3
                                 </div>
     
-                                <div><a class="period" aria-label="Период с 1700 года по 1799 год"> C 1700 по 1799 гг.</a> <div class="periods-img"></div></div>
+                                <div><a class="catalog__period focus-visible" aria-label="Период с 1700 года по 1799 год"> C 1700 по 1799 гг.</a> <div class="catalog__periods-img"></div></div>
                                 <div>
                                   Текст 4
                                 </div>
     
-                                <div><a class="period" aria-label="Период с 1800 года по 1899 год"> C 1800 по 1899 гг.</a> <div class="periods-img"></div></div>
+                                <div><a class="catalog__period focus-visible" aria-label="Период с 1800 года по 1899 год"> C 1800 по 1899 гг.</a> <div class="catalog__periods-img"></div></div>
                                 <div>
                                   Текст 5
                                 </div>
     
-                                <div><a class="period" aria-label="Период с 1900 года по 1999 год"> C 1900 по 1999 гг.</a> <div class="periods-img"></div></div>
+                                <div><a class="catalog__period focus-visible" aria-label="Период с 1900 года по 1999 год"> C 1900 по 1999 гг.</a> <div class="catalog__periods-img"></div></div>
                                 <div>
                                   Текст 6
                                 </div>
     
-                                <div><a class="period" aria-label="Период с 2000 года"> C 2000 г.</a> <div class="periods-img"></div></div>
+                                <div><a class="catalog__period focus-visible" aria-label="Период с 2000 года"> C 2000 г.</a> <div class="catalog__periods-img"></div></div>
                                 <div>
                                   Текст 7
                                 </div>
@@ -547,216 +531,252 @@
                     </div> 
                 </div>
             </section>
-            <section class="section container">
-                <h2 class="section-top" id="events">События</h2>                           
+            <section class="section container events">
+                <h2 class="section-top without-outline" id="events">События</h2>                           
                         <div class="swiper-container_2_5">
                             <!-- Additional required wrapper -->
                             <div class="swiper-wrapper">
                                 <!-- Slides -->
                                 <div class="swiper-slide">
                                     <div class="event">
-                                        <img src="img/event-1_769.jpg" alt="Гравюра">
-                                        <div class="place-and-time">Музей им. Щусева<br>с 20 марта по 30 апреля</div>
-                                        <div class="event-text">
-                                            <div>                            
-                                                <h3>Книжная гравюра в живом восприятии</h3>
-                                                <div class="artist-text">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава...</div>                                        
-                                                <div class="artist-text">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело.</div>
+                                        <img class="event__img" src="img/event-1_769.jpg" alt="Гравюра">
+                                        <div class="event__for-place-and-time">
+                                            <div class="event__place-and-time">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                Музей им. Щусева с 20 марта по 30 апреля
                                             </div>
-                                            <div><a aria-label="Подробнее" class="event-more-about" href="#">Подробнее</a></div>
+                                        </div>
+                                        <div class="event__text">
+                                            <div class="event__inside">                            
+                                                <h3 class="event__h3 without-outline">Книжная гравюра в живом восприятии</h3>
+                                                <div class="event__about">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава...</div>                                        
+                                                <div class="event__about">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело.</div>
+                                            </div>
+                                            <div class="event__inside"><a aria-label="Подробнее" class="event-more-about focus-visible" href="#">Подробнее</a></div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="event">
-                                        <img src="img/event-2_769.jpg" alt="Витраж">
-                                        <div class="place-and-time">ММОМА<br>24 марта 19:00</div>
-                                        <div class="event-text">
-                                            <div>                            
-                                                <h3>«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.</h3>
-                                                <div class="artist-text">Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: постоянный...</div>                                        
-                                                <div class="artist-text">Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: постоянный количественный рост и сфера нашей активности представляет собой интересный эксперимент проверки новых принципов формирования...</div>
+                                        <img class="event__img" src="img/event-2_769.jpg" alt="Витраж">
+                                        <div class="event__for-place-and-time">
+                                            <div class="event__place-and-time">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                               ММОМА 24 марта 19:00
                                             </div>
-                                            <div><a aria-label="Подробнее" class="event-more-about" href="#">Подробнее</a></div>
+                                        </div>
+                                        <div class="event__text">
+                                            <div class="event__inside">                            
+                                                <h3 class="event__h3 without-outline">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.</h3>
+                                                <div class="event__about">Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: постоянный...</div>                                        
+                                                <div class="event__about">Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: постоянный количественный рост и сфера нашей активности представляет собой интересный эксперимент проверки новых принципов формирования...</div>
+                                            </div>
+                                            <div class="event__inside"><a aria-label="Подробнее" class="event-more-about focus-visible" href="#">Подробнее</a></div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="event">
-                                        <img src="img/event-3_769.jpg" alt="Выставка">
-                                        <div class="place-and-time">Еврейский музей<br>с 31 марта по 21 апреля</div>
-                                        <div class="event-text">
-                                            <div>                            
-                                                <h3>Выставка «Формация 2020»</h3> 
-                                                <div class="artist-text">Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в формировании глубокомысленных рассуждений. Также как перспективное...</div>                                       
-                                                <div class="artist-text">Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в формировании глубокомысленных рассуждений. Также как перспективное планирование играет определяющее значение для новых принципов формирования материально-технической и кадровой базы.</div>
+                                        <img class="event__img" src="img/event-3_769.jpg" alt="Выставка">
+                                        <div class="event__for-place-and-time">
+                                            <div class="event__place-and-time">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                Еврейский музей с 31 марта по 21 апреля
                                             </div>
-                                            <div><a aria-label="Подробнее" class="event-more-about" href="#">Подробнее</a></div>
+                                        </div>
+                                        <div class="event__text">
+                                            <div class="event__inside">                            
+                                                <h3 class="event__h3 without-outline">Выставка «Формация 2020»</h3> 
+                                                <div class="event__about">Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в формировании глубокомысленных рассуждений. Также как перспективное...</div>                                       
+                                                <div class="event__about">Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в формировании глубокомысленных рассуждений. Также как перспективное планирование играет определяющее значение для новых принципов формирования материально-технической и кадровой базы.</div>
+                                            </div>
+                                            <div class="event__inside"><a aria-label="Подробнее" class="event-more-about focus-visible" href="#">Подробнее</a></div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="event">
-                                        <img src="img/event-4_769.jpg" alt="Современное искусство">
-                                        <div class="place-and-time">Третьяковка на Крымском валу<br>с 30 марта по 30 апреля</div>
-                                        <div class="event-text">
-                                            <div>                            
-                                                <h3>XXIV Международная биеннале молодого искусства</h3>    
-                                                <div class="artist-text">Внезапно, реплицированные с зарубежных источников, современные исследования представляют собой не...</div>                                    
-                                                <div class="artist-text">Внезапно, реплицированные с зарубежных источников, современные исследования представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть рассмотрены исключительно в разрезе маркетинговых и финансовых...</div>
+                                        <img class="event__img" src="img/event-4_769.jpg" alt="Современное искусство">
+                                        <div class="event__for-place-and-time">
+                                            <div class="event__place-and-time">Третьяковка на Крымском валу с 30 марта по 30 апреля</div>
+                                        </div>
+                                        <div class="event__text">
+                                            <div class="event__inside">                            
+                                                <h3 class="event__h3 without-outline">XXIV Международная биеннале молодого искусства</h3>    
+                                                <div class="event__about">Внезапно, реплицированные с зарубежных источников, современные исследования представляют собой не...</div>                                    
+                                                <div class="event__about">Внезапно, реплицированные с зарубежных источников, современные исследования представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть рассмотрены исключительно в разрезе маркетинговых и финансовых...</div>
                                             </div>
-                                            <div><a aria-label="Подробнее" class="event-more-about" href="#">Подробнее</a></div>
+                                            <div class="event__inside"><a aria-label="Подробнее" class="event-more-about focus-visible" href="#">Подробнее</a></div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="event">
-                                        <img src="img/event-5_769.jpg" alt="Метафора серебра">
-                                        <div class="place-and-time">ММАМ<br>с 8 апреля по 20 мая</div>
-                                        <div class="event-text">
-                                            <div>                            
-                                                <h3>Джон Винзор. Фотографии из серии «Метафора серебра»</h3>
-                                                <div class="artist-text">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын...</div>                                        
-                                                <div class="artist-text">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело.</div>
+                                        <img class="event__img" src="img/event-5_769.jpg" alt="Метафора серебра">
+                                        <div class="event__for-place-and-time">
+                                            <div class="event__place-and-time">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                ММАМ с 8 апреля по 20 мая
                                             </div>
-                                            <div><a aria-label="Подробнее" class="event-more-about" href="#">Подробнее</a></div>
+                                        </div>
+                                        <div class="event__text">
+                                            <div class="event__inside">                            
+                                                <h3 class="event__h3 without-outline">Джон Винзор. Фотографии из серии «Метафора серебра»</h3>
+                                                <div class="event__about">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын...</div>                                        
+                                                <div class="event__about">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело.</div>
+                                            </div>
+                                            <div class="event__inside"><a aria-label="Подробнее" class="event-more-about focus-visible" href="#">Подробнее</a></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-pagination_2_5"></div> 
                         </div>
-                <div class="events">
+                <div class="all-events">
                 <div class="event">
-                    <img src="img/event-1_600.jpg" alt="Гравюра">
-                    <img src="img/event-1_769.jpg" alt="Гравюра">
-                    <img src="img/event-1_1025.jpg" alt="Гравюра">
-                    <div class="place-and-time">Музей им. Щусева<br>с 20 марта по 30 апреля</div>
-                    <div class="event-text">
-                        <div>                            
-                            <h3>Книжная гравюра в живом восприятии</h3>
-                            <div class="artist-text">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава...</div>                                        
-                            <div class="artist-text">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело.</div>
+                    <img class="event__img" src="img/event-1_600.jpg" alt="Гравюра">
+                    <img class="event__img" src="img/event-1_769.jpg" alt="Гравюра">
+                    <img class="event__img" src="img/event-1_1025.jpg" alt="Гравюра">
+                    <div class="event__for-place-and-time">
+                        <div class="event__place-and-time">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            Музей им. Щусева с 20 марта по 30 апреля
                         </div>
-                        <div><a aria-label="Подробнее" class="event-more-about" href="#">Подробнее</a></div>
+                    </div>
+                    <div class="event__text">
+                        <div class="event__inside">                            
+                            <h3 class="event__h3 without-outline">Книжная гравюра в живом восприятии</h3>
+                            <div class="event__about">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава...</div>                                        
+                            <div class="event__about">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело.</div>
+                        </div>
+                        <div class="event__inside"><a aria-label="Подробнее" class="event-more-about focus-visible" href="#">Подробнее</a></div>
                     </div>
                 </div>
                 <div class="event">
-                    <img src="img/event-2_600.jpg" alt="Витраж">
-                    <img src="img/event-2_769.jpg" alt="Витраж">
-                    <img src="img/event-2_1025.jpg" alt="Витраж">
-                    <div class="place-and-time">ММОМА<br>24 марта 19:00</div>
-                    <div class="event-text">
-                        <div>                            
-                            <h3>«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.</h3>
-                            <div class="artist-text">Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: постоянный...</div>                                        
-                            <div class="artist-text">Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: постоянный количественный рост и сфера нашей активности представляет собой интересный эксперимент проверки новых принципов формирования...</div>
+                    <img class="event__img" src="img/event-2_600.jpg" alt="Витраж">
+                    <img class="event__img" src="img/event-2_769.jpg" alt="Витраж">
+                    <img class="event__img" src="img/event-2_1025.jpg" alt="Витраж">
+                    <div class="event__for-place-and-time">
+                        <div class="event__place-and-time">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            ММОМА 24 марта 19:00
                         </div>
-                        <div><a aria-label="Подробнее" class="event-more-about" href="#">Подробнее</a></div>
+                    </div>
+                    <div class="event__text">
+                        <div class="event__inside">                            
+                            <h3 class="event__h3 without-outline">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.</h3>
+                            <div class="event__about">Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: постоянный...</div>                                        
+                            <div class="event__about">Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: постоянный количественный рост и сфера нашей активности представляет собой интересный эксперимент проверки новых принципов формирования...</div>
+                        </div>
+                        <div class="event__inside"><a aria-label="Подробнее" class="event-more-about focus-visible" href="#">Подробнее</a></div>
                     </div>
                 </div>
                 <div class="event event-hidden">
-                    <img src="img/event-3_600.jpg" alt="Выставка">
-                    <img src="img/event-3_769.jpg" alt="Выставка">
-                    <img src="img/event-3_1025.jpg" alt="Выставка">
-                    <div class="place-and-time">Еврейский музей<br>с 31 марта по 21 апреля</div>
-                    <div class="event-text">
-                        <div>                            
-                            <h3>Выставка «Формация 2020»</h3> 
-                            <div class="artist-text">Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в формировании глубокомысленных рассуждений. Также как перспективное...</div>                                       
-                            <div class="artist-text">Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в формировании глубокомысленных рассуждений. Также как перспективное планирование играет определяющее значение для новых принципов формирования материально-технической и кадровой базы.</div>
+                    <img class="event__img" src="img/event-3_600.jpg" alt="Выставка">
+                    <img class="event__img" src="img/event-3_769.jpg" alt="Выставка">
+                    <img class="event__img" src="img/event-3_1025.jpg" alt="Выставка">
+                    <div class="event__for-place-and-time">
+                        <div class="event__place-and-time">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            Еврейский музей с 31 марта по 21 апреля
                         </div>
-                        <div><a aria-label="Подробнее" class="event-more-about" href="#">Подробнее</a></div>
+                    </div>
+                    <div class="event__text">
+                        <div class="event__inside">                            
+                            <h3 class="event__h3 without-outline">Выставка «Формация 2020»</h3> 
+                            <div class="event__about">Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в формировании глубокомысленных рассуждений. Также как перспективное...</div>                                       
+                            <div class="event__about">Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в формировании глубокомысленных рассуждений. Также как перспективное планирование играет определяющее значение для новых принципов формирования материально-технической и кадровой базы.</div>
+                        </div>
+                        <div class="event__inside"><a aria-label="Подробнее" class="event-more-about focus-visible" href="#">Подробнее</a></div>
                     </div>
                 </div>
                 <div class="event event-hidden">
-                    <img src="img/event-4_600.jpg" alt="Современное искусство">
-                    <img src="img/event-4_769.jpg" alt="Современное искусство">
-                    <img src="img/event-4_1025.jpg" alt="Современное искусство">
-                    <div class="place-and-time">Третьяковка на Крымском валу<br>с 30 марта по 30 апреля</div>
-                    <div class="event-text">
-                        <div>                            
-                            <h3>XXIV Международная биеннале молодого искусства</h3>    
-                            <div class="artist-text">Внезапно, реплицированные с зарубежных источников, современные исследования представляют собой не...</div>                                    
-                            <div class="artist-text">Внезапно, реплицированные с зарубежных источников, современные исследования представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть рассмотрены исключительно в разрезе маркетинговых и финансовых...</div>
+                    <img class="event__img" src="img/event-4_600.jpg" alt="Современное искусство">
+                    <img class="event__img" src="img/event-4_769.jpg" alt="Современное искусство">
+                    <img class="event__img" src="img/event-4_1025.jpg" alt="Современное искусство">
+                    <div class="event__for-place-and-time">
+                        <div class="event__place-and-time">Третьяковка на Крымском валу с 30 марта по 30 апреля</div>
+                    </div>
+                    <div class="event__text">
+                        <div class="event__inside">                            
+                            <h3 class="event__h3 without-outline">XXIV Международная биеннале молодого искусства</h3>    
+                            <div class="event__about">Внезапно, реплицированные с зарубежных источников, современные исследования представляют собой не...</div>                                    
+                            <div class="event__about">Внезапно, реплицированные с зарубежных источников, современные исследования представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть рассмотрены исключительно в разрезе маркетинговых и финансовых...</div>
                         </div>
-                        <div><a aria-label="Подробнее" class="event-more-about" href="#">Подробнее</a></div>
+                        <div class="event__inside"><a aria-label="Подробнее" class="event-more-about focus-visible" href="#">Подробнее</a></div>
                     </div>
                 </div>
                 <div class="event event-hidden">
-                    <img src="img/event-5_600.jpg" alt="Метафора серебра">
-                    <img src="img/event-5_769.jpg" alt="Метафора серебра">
-                    <img src="img/event-5_1025.jpg" alt="Метафора серебра">
-                    <div class="place-and-time">ММАМ<br>с 8 апреля по 20 мая</div>
-                    <div class="event-text">
-                        <div>                            
-                            <h3>Джон Винзор. Фотографии из серии «Метафора серебра»</h3>
-                            <div class="artist-text">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын...</div>                                        
-                            <div class="artist-text">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело.</div>
+                    <img class="event__img" src="img/event-5_600.jpg" alt="Метафора серебра">
+                    <img class="event__img" src="img/event-5_769.jpg" alt="Метафора серебра">
+                    <img class="event__img" src="img/event-5_1025.jpg" alt="Метафора серебра">
+                    <div class="event__for-place-and-time">
+                        <div class="event__place-and-time">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                           ММАМ с 8 апреля по 20 мая
                         </div>
-                        <div><a aria-label="Подробнее" class="event-more-about" href="#">Подробнее</a></div>
+                    </div>
+                    <div class="event__text">
+                        <div class="event__inside">                            
+                            <h3 class="event__h3 without-outline">Джон Винзор. Фотографии из серии «Метафора серебра»</h3>
+                            <div class="event__about">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын...</div>                                        
+                            <div class="event__about">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело.</div>
+                        </div>
+                        <div class="event__inside"><a aria-label="Подробнее" class="event-more-about focus-visible" href="#">Подробнее</a></div>
                     </div>
                 </div>
                 </div>
-                <div class="for-button">
-                    <a aria-label="Все события" class="event-all" href="#">Все события</a>
+                <div class="event__for-button">
+                    <a aria-label="Все события" class="event__show-all focus-visible" href="#">Все события</a>
                 </div>
             </section>
             <section class="section books">
                 <div class="container">
-                    <div class="gallery-left">
-                        <h2 class="section-top white" id="books">Издания</h2>
+                    <div class="books__left">
+                        <h2 class="section-top without-outline" id="books">Издания</h2>
                         <div class="books-categories">Категории</div>
                         <div class="align">
                             <div class="grid">                          
                               <div class="js-ui-accordion details">                          
-                                <div class="spoiler"><div class="spoiler-categories">Категории</div> <div class="spoiler-arrow"></div></div>
+                                <div class="books__spoiler"><div class="books__spoiler-categories">Категории</div> <div class="books__spoiler-arrow"></div></div>
                                 <div>
-                                    <label aria-label="Бестселлеры" class="label-checkbox" for="check-1-1">Бестселлеры
+                                    <label aria-label="Бестселлеры" class="books__label-checkbox focus-visible" for="check-1-1">Бестселлеры
                                         <input class="check" type="checkbox" name="check" id="check-1-1">
                                         <span></span>
                                     </label>
-                                    <label aria-label="Искусство" class="label-checkbox" for="check-2-1">Искусство
+                                    <label aria-label="Искусство" class="books__label-checkbox focus-visible" for="check-2-1">Искусство
                                         <input class="check" type="checkbox" name="check" id="check-2-1">
                                         <span></span>
                                     </label>        
-                                    <label aria-label="Архитектура" class="label-checkbox" for="check-3-1">Архитектура
+                                    <label aria-label="Архитектура" class="books__label-checkbox focus-visible" for="check-3-1">Архитектура
                                         <input class="check" type="checkbox" name="check" id="check-3-1">
                                         <span></span>
                                     </label>
-                                    <label aria-label="Дизайн" class="label-checkbox" for="check-4-1">Дизайн
+                                    <label aria-label="Дизайн" class="books__label-checkbox focus-visible" for="check-4-1">Дизайн
                                         <input class="check" type="checkbox" name="check" id="check-4-1">
                                         <span></span>
                                     </label>
-                                    <label aria-label="Мода" class="label-checkbox" for="check-5-1">Мода
+                                    <label aria-label="Мода" class="books__label-checkbox focus-visible" for="check-5-1">Мода
                                         <input class="check" type="checkbox" name="check" id="check-5-1">
                                         <span></span>
                                     </label>
-                                    <label aria-label="Детям" class="label-checkbox" for="check-6-1">Детям
+                                    <label aria-label="Детям" class="books__label-checkbox focus-visible" for="check-6-1">Детям
                                         <input class="check" type="checkbox" name="check" id="check-6-1">
                                         <span></span>
                                     </label>
-                                    <label aria-label="Художественная литература" class="label-checkbox" for="check-7-1">Художественная литература
+                                    <label aria-label="Художественная литература" class="books__label-checkbox focus-visible" for="check-7-1">Художественная литература
                                         <input class="check" type="checkbox" name="check" id="check-7-1">
                                         <span></span>
                                     </label>
-                                    <label aria-label="Публицистика" class="label-checkbox" for="check-8-1">Публицистика
+                                    <label aria-label="Публицистика" class="books__label-checkbox focus-visible" for="check-8-1">Публицистика
                                         <input class="check" type="checkbox" name="check" id="check-8-1">
                                         <span></span>
                                     </label>
-                                    <label aria-label="Путеводители" class="label-checkbox" for="check-9-1">Путеводители
+                                    <label aria-label="Путеводители" class="books__label-checkbox focus-visible" for="check-9-1">Путеводители
                                         <input class="check" type="checkbox" name="check" id="check-9-1">
                                         <span></span>
                                     </label>
-                                    <label aria-label="Философия" class="label-checkbox" for="check-10-1">Философия
+                                    <label aria-label="Философия" class="books__label-checkbox focus-visible" for="check-10-1">Философия
                                         <input class="check" type="checkbox" name="check" id="check-10-1">
                                         <span></span>
                                     </label>
-                                    <label aria-label="Учебная литература" class="label-checkbox" for="check-11-1">Учебная литература
+                                    <label aria-label="Учебная литература" class="books__label-checkbox focus-visible" for="check-11-1">Учебная литература
                                         <input class="check" type="checkbox" name="check" id="check-11-1">
                                         <span></span>
                                     </label>
-                                    <label aria-label="Журналы и газеты" class="label-checkbox" for="check-12-1">Журналы и газеты
+                                    <label aria-label="Журналы и газеты" class="books__label-checkbox focus-visible" for="check-12-1">Журналы и газеты
                                         <input class="check" type="checkbox" name="check" id="check-12-1">
                                         <span></span>
                                     </label>
@@ -764,81 +784,81 @@
                               </div>
                             </div>
                           </div>
-                        <form class="form-checkbox" action="https://jsonplaceholder.typicode.com/posts" method="POST">
-                            <label  aria-label="Бестселлеры" tabindex="37" class="label-checkbox" for="check-1">Бестселлеры
+                        <form class="books__form-checkbox" action="https://jsonplaceholder.typicode.com/posts" method="POST">
+                            <label  aria-label="Бестселлеры" tabindex="37" class="books__label-checkbox focus-visible" for="check-1">Бестселлеры
                                 <input class="check" type="checkbox" name="check" id="check-1">
                                 <span></span>
                             </label>
-                            <label aria-label="Искусство" tabindex="38" class="label-checkbox" for="check-2">Искусство
+                            <label aria-label="Искусство" tabindex="38" class="books__label-checkbox focus-visible" for="check-2">Искусство
                                 <input class="check" type="checkbox" name="check" id="check-2">
                                 <span></span>
                             </label>        
-                            <label aria-label="Архитектура" tabindex="39" class="label-checkbox" for="check-3">Архитектура
+                            <label aria-label="Архитектура" tabindex="39" class="books__label-checkbox focus-visible" for="check-3">Архитектура
                                 <input class="check" type="checkbox" name="check" id="check-3">
                                 <span></span>
                             </label>
-                            <label aria-label="Дизайн" tabindex="40" class="label-checkbox" for="check-4">Дизайн
+                            <label aria-label="Дизайн" tabindex="40" class="books__label-checkbox focus-visible" for="check-4">Дизайн
                                 <input class="check" type="checkbox" name="check" id="check-4">
                                 <span></span>
                             </label>
-                            <label aria-label="Мода" tabindex="41" class="label-checkbox" for="check-5">Мода
+                            <label aria-label="Мода" tabindex="41" class="books__label-checkbox focus-visible" for="check-5">Мода
                                 <input class="check" type="checkbox" name="check" id="check-5">
                                 <span></span>
                             </label>
-                            <label aria-label="Детям" tabindex="42" class="label-checkbox" for="check-6">Детям
+                            <label aria-label="Детям" tabindex="42" class="books__label-checkbox focus-visible" for="check-6">Детям
                                 <input class="check" type="checkbox" name="check" id="check-6">
                                 <span></span>
                             </label>
-                            <label aria-label="Художественная литература" tabindex="43" class="label-checkbox" for="check-7">Художественная литература
+                            <label aria-label="Художественная литература" tabindex="43" class="books__label-checkbox focus-visible" for="check-7">Художественная литература
                                 <input class="check" type="checkbox" name="check" id="check-7">
                                 <span></span>
                             </label>
-                            <label aria-label="Публицистика" tabindex="44" class="label-checkbox" for="check-8">Публицистика
+                            <label aria-label="Публицистика" tabindex="44" class="books__label-checkbox focus-visible" for="check-8">Публицистика
                                 <input class="check" type="checkbox" name="check" id="check-8">
                                 <span></span>
                             </label>
-                            <label aria-label="Путеводители" tabindex="45" class="label-checkbox" for="check-9">Путеводители
+                            <label aria-label="Путеводители" tabindex="45" class="books__label-checkbox focus-visible" for="check-9">Путеводители
                                 <input class="check" type="checkbox" name="check" id="check-9">
                                 <span></span>
                             </label>
-                            <label aria-label="Философия" tabindex="46" class="label-checkbox" for="check-10">Философия
+                            <label aria-label="Философия" tabindex="46" class="books__label-checkbox focus-visible" for="check-10">Философия
                                 <input class="check" type="checkbox" name="check" id="check-10">
                                 <span></span>
                             </label>
-                            <label aria-label="Учебная литература" tabindex="47" class="label-checkbox" for="check-11">Учебная литература
+                            <label aria-label="Учебная литература" tabindex="47" class="books__label-checkbox focus-visible" for="check-11">Учебная литература
                                 <input class="check" type="checkbox" name="check" id="check-11">
                                 <span></span>
                             </label>
-                            <label aria-label="Журналы и газеты" tabindex="48" class="label-checkbox" for="check-12">Журналы и газеты
+                            <label aria-label="Журналы и газеты" tabindex="48" class="books__label-checkbox focus-visible" for="check-12">Журналы и газеты
                                 <input class="check" type="checkbox" name="check" id="check-12">
                                 <span></span>
                             </label>
                         </form>
-                        <div class="price">
-                            <h4>Цена</h4>
-                            <div class="flex for-input-1">
-                                <div class="for-input-2">От</div>
-                                <input aria-label="Минимальная стоимость" tabindex="49" class="books-input" type="number">
-                                <div class="for-input-2">до</div>
-                                <input aria-label="Максимальная стоимость" tabindex="50" class="books-input" type="number">
-                                <div class="for-input-2">рублей</div>
-                                <div class="for-input-2">руб.</div>
+                        <div class="books__prices">
+                            <h4 class="without-outline">Цена</h4>
+                            <div class="flex books__for-input">
+                                <div class="books__for-input-text">От</div>
+                                <input aria-label="Минимальная стоимость" tabindex="49" class="books__input focus-visible" type="number">
+                                <div class="books__for-input-text">до</div>
+                                <input aria-label="Максимальная стоимость" tabindex="50" class="books__input focus-visible" type="number">
+                                <div class="books__for-input-text">рублей</div>
+                                <div class="books__for-input-text">руб.</div>
                             </div>
                         </div>
                     </div>
-                    <div class="gallery-right">
-                        <a aria-label="Перейти к предыдущим слайдам" tabindex="51" class="swiper-button-prev_3"></a>
+                    <div class="books__right">
+                        <a aria-label="Перейти к предыдущим слайдам" tabindex="51" class="swiper-button-prev_3 focus-visible"></a>
                         <div class="swiper-pagination_3"></div>
-                        <a aria-label="Перейти к следующим слайдам" tabindex="52" class="swiper-button-next_3"></a>
-                        <div class="price">
-                            <h4>Цена</h4>
-                            <div class="flex for-input-1">
-                                <div class="for-input-2">От</div>
-                                <input aria-label="Минимальная стоимость" tabindex="49" class="books-input" type="number">
-                                <div class="for-input-2">до</div>
-                                <input aria-label="Максимальная стоимость" tabindex="50" class="books-input" type="number">
-                                <div class="for-input-2">рублей</div>
-                                <div class="for-input-2">руб.</div>
+                        <a aria-label="Перейти к следующим слайдам" tabindex="52" class="swiper-button-next_3 focus-visible"></a>
+                        <div class="books__prices">
+                            <h4 class="without-outline">Цена</h4>
+                            <div class="flex books__for-input">
+                                <div class="books__for-input-text">От</div>
+                                <input aria-label="Минимальная стоимость" tabindex="49" class="books__input focus-visible" type="number">
+                                <div class="books__for-input-text">до</div>
+                                <input aria-label="Максимальная стоимость" tabindex="50" class="books__input focus-visible" type="number">
+                                <div class="books__for-input-text">рублей</div>
+                                <div class="books__for-input-text">руб.</div>
                             </div>
                         </div>
                         <div class="swiper-container_3">
@@ -846,94 +866,94 @@
                             <div class="swiper-wrapper">
                                 <!-- Slides -->
                                 <div class="swiper-slide">
-                                    <img src="img/book-1.jpg" alt="Обложка книги">
-                                    <div >
-                                        <div class="about-book">
+                                    <img class="swiper-container_3__img" src="img/book-1.jpg" alt="Обложка книги">
+                                    <div class="books__book-description">
+                                        <div class="books__about-book">
                                             <div>
-                                                <div class="book-name">Искусство цвета</div>
+                                                <div class="books__name">Искусство цвета</div>
                                                 <div>Иттен, Иоханнес</div>
                                             </div>
-                                            <div class="book-price">620 руб</div>
+                                            <div class="books__book-price">620 руб</div>
                                         </div>
-                                        <a aria-label="Заказать книгу" class="buy-book" href="#">Заказать</a>
+                                        <a aria-label="Заказать книгу" class="books__buy-book focus-visible" href="#">Заказать</a>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="img/book-2.jpg" alt="Обложка книги">
-                                    <div >
-                                        <div class="about-book">
+                                    <img class="swiper-container_3__img" src="img/book-2.jpg" alt="Обложка книги">
+                                    <div class="books__book-description">
+                                        <div class="books__about-book">
                                             <div>
-                                                <div class="book-name">Типографика</div>
+                                                <div class="books__name">Типографика</div>
                                                 <div>Рудер, Эмиль</div>
                                             </div>
-                                            <div class="book-price">2 450 руб</div>
+                                            <div class="books__book-price">2 450 руб</div>
                                         </div>
-                                        <a aria-label="Заказать книгу" class="buy-book" href="#">Заказать</a>
+                                        <a aria-label="Заказать книгу" class="books__buy-book focus-visible" href="#">Заказать</a>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="img/book-3.jpg" alt="Обложка книги">
-                                    <div >
-                                        <div class="about-book">
+                                    <img class="swiper-container_3__img" src="img/book-3.jpg" alt="Обложка книги">
+                                    <div class="books__book-description">
+                                        <div class="books__about-book">
                                             <div>
-                                                <div class="book-name">Книга про буквы</div>
+                                                <div class="books__name">Книга про буквы</div>
                                                 <div>Гордон, Юрий </div>
                                             </div>
-                                            <div class="book-price">2 200 руб</div>
+                                            <div class="books__book-price">2 200 руб</div>
                                         </div>
-                                        <a aria-label="Заказать книгу" class="buy-book" href="#">Заказать</a>
+                                        <a aria-label="Заказать книгу" class="books__buy-book focus-visible" href="#">Заказать</a>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="img/book-4.jpg" alt="Обложка книги">
-                                    <div >
-                                        <div class="about-book">
+                                    <img class="swiper-container_3__img" src="img/book-4.jpg" alt="Обложка книги">
+                                    <div class="books__book-description">
+                                        <div class="books__about-book">
                                             <div>
-                                                <div class="book-name">Николай Ильин</div>
+                                                <div class="books__name">Николай Ильин</div>
                                                 <div>Кричевский, Владимир</div>
                                             </div>
-                                            <div class="book-price">1 100 руб</div>
+                                            <div class="books__book-price">1 100 руб</div>
                                         </div>
-                                        <a aria-label="Заказать книгу" class="buy-book" href="#">Заказать</a>
+                                        <a aria-label="Заказать книгу" class="books__buy-book focus-visible" href="#">Заказать</a>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="img/book-5.jpg" alt="Обложка книги">
-                                    <div >
-                                        <div class="about-book">
+                                    <img class="swiper-container_3__img" src="img/book-5.jpg" alt="Обложка книги">
+                                    <div class="books__book-description">
+                                        <div class="books__about-book">
                                             <div>
-                                                <div class="book-name">Модульные сетки в граф...</div>
+                                                <div class="books__name">Модульные сетки в граф...</div>
                                                 <div>Мюллер-Брокманн, Йозеф </div>
                                             </div>
-                                            <div class="book-price">1 450 руб</div>
+                                            <div class="books__book-price">1 450 руб</div>
                                         </div>
-                                        <a aria-label="Заказать книгу" class="buy-book" href="#">Заказать</a>
+                                        <a aria-label="Заказать книгу" class="books__buy-book focus-visible" href="#">Заказать</a>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="img/book-6.jpg" alt="Обложка книги">
-                                    <div >
-                                        <div class="about-book">
+                                    <img class="swiper-container_3__img" src="img/book-6.jpg" alt="Обложка книги">
+                                    <div class="books__book-description">
+                                        <div class="books__about-book">
                                             <div>
-                                                <div class="book-name">Эволюция графических ст...</div>
+                                                <div class="books__name">Эволюция графических ст...</div>
                                                 <div>Хеллер, Чваст</div>
                                             </div>
-                                            <div class="book-price">3 200 руб</div>
+                                            <div class="books__book-price">3 200 руб</div>
                                         </div>
-                                        <a aria-label="Заказать книгу" class="buy-book" href="#">Заказать</a>
+                                        <a aria-label="Заказать книгу" class="books__buy-book focus-visible" href="#">Заказать</a>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="img/book-7.jpg" alt="Обложка книги">
-                                    <div >
-                                        <div class="about-book">
+                                    <img class="swiper-container_3__img" src="img/book-7.jpg" alt="Обложка книги">
+                                    <div class="books__book-description">
+                                        <div class="books__about-book">
                                             <div>
-                                                <div class="book-name">Искусство и визуальное в...</div>
+                                                <div class="books__name">Искусство и визуальное в...</div>
                                                 <div>Арнхейм, Рудольф </div>
                                             </div>
-                                            <div class="book-price">2 200 руб</div>
+                                            <div class="books__book-price">2 200 руб</div>
                                         </div>
-                                        <a aria-label="Заказать книгу" class="buy-book" href="#">Заказать</a>
+                                        <a aria-label="Заказать книгу" class="books__buy-book focus-visible" href="#">Заказать</a>
                                     </div>
                                 </div>
                             </div>
@@ -944,110 +964,115 @@
                     </div>
                     <div class="for-320">
                         <div class="image-for-320">
-                            <img src="img/book-1.jpg" alt="Обложка книги">
-                            <div >
-                                <div class="about-book">
+                            <img class="swiper-container_3__img" src="img/book-1.jpg" alt="Обложка книги">
+                            <div class="books__book-description">
+                                <div class="books__about-book">
                                     <div>
-                                        <div class="book-name">Искусство цвета</div>
+                                        <div class="books__name">Искусство цвета</div>
                                         <div>Иттен, Иоханнес</div>
                                     </div>
-                                    <div class="book-price">620 руб</div>
+                                    <div class="books__book-price">620 руб</div>
                                 </div>
-                                <a aria-label="Заказать книгу" class="buy-book" href="#">Заказать</a>
+                                <a aria-label="Заказать книгу" class="books__buy-book focus-visible" href="#">Заказать</a>
                             </div>
                         </div>
                         <div class="image-for-320">
-                            <img src="img/book-2.jpg" alt="Обложка книги">
-                            <div >
-                                <div class="about-book">
+                            <img class="swiper-container_3__img" src="img/book-2.jpg" alt="Обложка книги">
+                            <div class="books__book-description">
+                                <div class="books__about-book">
                                     <div>
-                                        <div class="book-name">Типографика</div>
+                                        <div class="books__name">Типографика</div>
                                         <div>Рудер, Эмиль</div>
                                     </div>
-                                    <div class="book-price">2 450 руб</div>
+                                    <div class="books__book-price">2 450 руб</div>
                                 </div>
-                                <a aria-label="Заказать книгу" class="buy-book" href="#">Заказать</a>
+                                <a aria-label="Заказать книгу" class="books__buy-book focus-visible" href="#">Заказать</a>
                             </div>
                         </div>
                         <div class="image-for-320">
-                            <img src="img/book-3.jpg" alt="Обложка книги">
-                            <div >
-                                <div class="about-book">
+                            <img class="swiper-container_3__img" src="img/book-3.jpg" alt="Обложка книги">
+                            <div class="books__book-description">
+                                <div class="books__about-book">
                                     <div>
-                                        <div class="book-name">Книга про буквы</div>
+                                        <div class="books__name">Книга про буквы</div>
                                         <div>Гордон, Юрий </div>
                                     </div>
-                                    <div class="book-price">2 200 руб</div>
+                                    <div class="books__book-price">2 200 руб</div>
                                 </div>
-                                <a aria-label="Заказать книгу" class="buy-book" href="#">Заказать</a>
+                                <a aria-label="Заказать книгу" class="books__buy-book focus-visible" href="#">Заказать</a>
                             </div>
                         </div>
                         <div class="image-for-320">
-                            <img src="img/book-4.jpg" alt="Обложка книги">
-                            <div >
-                                <div class="about-book">
+                            <img class="swiper-container_3__img" src="img/book-4.jpg" alt="Обложка книги">
+                            <div class="books__book-description">
+                                <div class="books__about-book">
                                     <div>
-                                        <div class="book-name">Николай Ильин</div>
+                                        <div class="books__name">Николай Ильин</div>
                                         <div>Кричевский, Влади...</div>
                                     </div>
-                                    <div class="book-price">1 100 руб</div>
+                                    <div class="books__book-price">1 100 руб</div>
                                 </div>
-                                <a aria-label="Заказать книгу" class="buy-book" href="#">Заказать</a>
+                                <a aria-label="Заказать книгу" class="books__buy-book focus-visible" href="#">Заказать</a>
                             </div>
                         </div>
                         <div class="image-for-320">
-                            <img src="img/book-5.jpg" alt="Обложка книги">
-                            <div >
-                                <div class="about-book">
+                            <img class="swiper-container_3__img" src="img/book-5.jpg" alt="Обложка книги">
+                            <div class="books__book-description">
+                                <div class="books__about-book">
                                     <div>
-                                        <div class="book-name">Модульные сетки...</div>
+                                        <div class="books__name">Модульные сетки...</div>
                                         <div>Мюллер-Брокманн... </div>
                                     </div>
-                                    <div class="book-price">1 450 руб</div>
+                                    <div class="books__book-price">1 450 руб</div>
                                 </div>
-                                <a aria-label="Заказать книгу" class="buy-book" href="#">Заказать</a>
+                                <a aria-label="Заказать книгу" class="books__buy-book focus-visible" href="#">Заказать</a>
                             </div>
                         </div>
                         <div class="image-for-320">
-                            <img src="img/book-6.jpg" alt="Обложка книги">
-                            <div >
-                                <div class="about-book">
+                            <img class="swiper-container_3__img" src="img/book-6.jpg" alt="Обложка книги">
+                            <div class="books__book-description">
+                                <div class="books__about-book">
                                     <div>
-                                        <div class="book-name">Эволюция графич...</div>
+                                        <div class="books__name">Эволюция графич...</div>
                                         <div>Хеллер, Чваст</div>
                                     </div>
-                                    <div class="book-price">3 200 руб</div>
+                                    <div class="books__book-price">3 200 руб</div>
                                 </div>
-                                <a aria-label="Заказать книгу" class="buy-book" href="#">Заказать</a>
+                                <a aria-label="Заказать книгу" class="books__buy-book focus-visible" href="#">Заказать</a>
                             </div>
                         </div>
                         <div class="image-for-320">
-                            <img src="img/book-7.jpg" alt="Обложка книги">
-                            <div >
-                                <div class="about-book">
+                            <img class="swiper-container_3__img" src="img/book-7.jpg" alt="Обложка книги">
+                            <div class="books__book-description">
+                                <div class="books__about-book">
                                     <div>
-                                        <div class="book-name">Искусство и визуа...</div>
+                                        <div class="books__name">Искусство и визуа...</div>
                                         <div>Арнхейм, Рудольф </div>
                                     </div>
-                                    <div class="book-price">2 200 руб</div>
+                                    <div class="books__book-price">2 200 руб</div>
                                 </div>
-                                <a aria-label="Заказать книгу" class="buy-book" href="#">Заказать</a>
+                                <a aria-label="Заказать книгу" class="books__buy-book focus-visible" href="#">Заказать</a>
                             </div>
                         </div>
                     </div>
             </div>
                 
             </section>
-            <section class="container">
-                <h2 class="section-top" id="projects">Проекты</h2>
-                <div class="projects-text">Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А ещё независимые государства смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности. Прежде всего, постоянное<br> информационно-пропагандистское 
-                    <div class="projects-i-1"></div><div class="projects-i-1-tooltip">Пример современных тенденций - <br> современная методология разработки </div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;обеспечение нашей деятельности однозначно фиксирует необходимость экономической целесообразности принимаемых решений. И нет сомнений, что действия представителей оппозиции могут быть рассмотрены 
-                    <div class="projects-i-2"></div><div class="projects-i-2-tooltip">Приятно, граждане, наблюдать, как<br> сделанные на базе аналитики выводы<br> вызывают у вас эмоции  </div> &nbsp;&nbsp;&nbsp;&nbsp; исключительно в разрезе маркетинговых и финансовых 
-                    <div class="projects-i-3"></div><div class="projects-i-3-tooltip">В стремлении повысить качество </div> &nbsp;&nbsp;&nbsp;&nbsp; предпосылок. Банальные, но неопровержимые выводы, а также представители современных социальных резервов призывают нас к новым свершениям, которые, в свою очередь, должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости. Подробнее: <a class="project-about" href="#">blanchard-art.ru/projects/about</a>
+            <section class="container projects">
+                <h2 class="section-top without-outline" id="projects">Проекты</h2>
+                <div class="projects__text">Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А ещё независимые государства смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности. Прежде всего, постоянное информационно&#8209;пропагандистское 
+                    <div class="projects__i-1"></div><div class="projects__i-1-tooltip">Пример современных тенденций - современная методология разработки </div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;обеспечение нашей деятельности однозначно фиксирует необходимость экономической целесообразности принимаемых решений. И нет сомнений, что действия представителей оппозиции могут быть рассмотрены 
+                    <div class="projects__i-2"></div><div class="projects__i-2-tooltip">Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции  </div> &nbsp;&nbsp;&nbsp;&nbsp; исключительно в разрезе маркетинговых и финансовых 
+                    <div class="projects__i-3"></div><div class="projects__i-3-tooltip">В стремлении повысить качество </div> &nbsp;&nbsp;&nbsp;&nbsp; предпосылок. Банальные, но неопровержимые выводы, а также представители современных социальных резервов призывают нас к новым свершениям, которые, в свою очередь, должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости. Подробнее: <a class="project-about focus-visible" href="#">blanchard-art.ru/projects/about</a>
                 </div>
-                <h3 class="partners">Партнёры проектов:</h3>
+                <div class="projects__text-mobile">Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А ещё независимые государства смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности. Прежде всего, постоянное информационно-пропагандистское 
+                    <div class="projects__i-1"></div><div class="projects__i-1-tooltip">Пример современных тенденций - современная методология разработки </div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;обеспечение нашей деятельности однозначно фиксирует необходимость экономической целесообразности принимаемых решений. И нет сомнений, что действия представителей оппозиции могут быть рассмотрены 
+                    <div class="projects__i-2"></div><div class="projects__i-2-tooltip">Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции  </div> &nbsp;&nbsp;&nbsp;&nbsp; исключительно в разрезе маркетинговых и финансовых 
+                    <div class="projects__i-3"></div><div class="projects__i-3-tooltip">В стремлении повысить качество </div> &nbsp;&nbsp;&nbsp;&nbsp; предпосылок. Банальные, но неопровержимые выводы, а также представители современных социальных резервов призывают нас к новым свершениям, которые, в свою очередь, должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости. Подробнее: <a class="project-about focus-visible" href="#">blanchard-art.ru/projects/about</a>
+                </div>
+                <h3 class="projects__partners without-outline">Партнёры проектов:</h3>
                 <div class="flex-align">
-                    <a aria-label="Перейти к предыдущим слайдам" class="swiper-button-prev_4"></a>
+                    <a aria-label="Перейти к предыдущим слайдам" class="swiper-button-prev_4 focus-visible"></a>
                     <div class="swiper-container_4">
                         <!-- Additional required wrapper -->
                         <div class="swiper-wrapper">
@@ -1063,61 +1088,57 @@
                             <div class="swiper-slide partner-9"></div>
                         </div>
                     </div>
-                    <a aria-label="Перейти к следующим слайдам" class="swiper-button-next_4"></a>
+                    <a aria-label="Перейти к следующим слайдам" class="swiper-button-next_4 focus-visible"></a>
                 </div>
             </section>
             <section class="contacts">
-                <div class="container"><h2 class="section-top" id="contacts">Контакты</h2></div>
-                <div class="contacts-all">
-                    <div class="contacts-left">
-                        <h3 class="showroom">Шоурум №4</h3>
-                        <div class="address">Леонтьевский переулок, дом 5, строение 1</div>
-                        <h3 class="showroom">Заказать обратный звонок</h3>
-                        <form class="call-form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
-                            <input aria-label="Имя" tabindex="55" required type="text" class="call-input" name="name" placeholder="Имя*" value="">
-                            <input aria-label="Телефон" tabindex="56" required type="number" class="call-input" name="number" placeholder="Телефон*" value=""> 
-                            <button aria-label="Заказать обратный звонок" type="submit" class="call-button">Заказать</button>
+                <div class="container"><h2 class="section-top without-outline" id="contacts">Контакты</h2></div>
+                <div class="contacts__all">
+                    <div class="contacts__left">
+                        <h3 class="contacts__showroom without-outline">Шоурум №4</h3>
+                        <div class="contacts__address">Леонтьевский переулок, дом 5, строение 1</div>
+                        <h3 class="contacts__showroom without-outline">Заказать обратный звонок</h3>
+                        <form class="contacts__call-form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
+                            <input aria-label="Имя" tabindex="55" required type="text" class="contacts__call-input focus-visible" name="name" placeholder="Имя*" value="">
+                            <input aria-label="Телефон" tabindex="56" required type="number" class="contacts__call-input focus-visible" name="number" placeholder="Телефон*" value=""> 
+                            <button aria-label="Заказать обратный звонок" type="submit" class="contacts__call-button focus-visible">Заказать</button>
                         </form>
-                        <h3 class="showroom">Связаться в один клик</h3>
+                        <h3 class="contacts__showroom without-outline">Связаться в один клик</h3>
                         <div class="flex">
-                            <a aria-label="Связаться через Whatsapp" href="#" class="whatsapp"></a>
-                            <a aria-label="Связаться через Telegram" href="#" class="telegram"></a>
+                            <a aria-label="Связаться через Whatsapp" href="#" class="contacts__whatsapp focus-visible"></a>
+                            <a aria-label="Связаться через Telegram" href="#" class="contacts__telegram focus-visible"></a>
                         </div>
                     </div>
-                    <div class="contacts-up-down container">
-                        <h3 class="showroom">Шоурум №4</h3>
-                        <div class="address">Леонтьевский переулок, дом 5, строение 1</div>
+                    <div class="contacts__up-down container">
+                        <h3 class="contacts__showroom without-outline">Шоурум №4</h3>
+                        <div class="contacts__address">Леонтьевский переулок, дом 5, строение 1</div>
                     </div>
                     <div id="map"></div>
-<div class="contacts-up-down container">
-    <h3 class="showroom">Заказать обратный звонок</h3>
-                        <form class="call-form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
-                            <input aria-label="Имя" tabindex="55" required type="text" class="call-input" name="name" placeholder="Имя*" value="">
-                            <input aria-label="Телефон" tabindex="56" required type="number" class="call-input" name="number" placeholder="Телефон*" value=""> 
-                            <button aria-label="Заказать обратный звонок" type="submit" class="call-button">Заказать</button>
+<div class="contacts__up-down container">
+    <h3 class="contacts__showroom without-outline">Заказать обратный звонок</h3>
+                        <form class="contacts__call-form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
+                            <input aria-label="Имя" tabindex="55" required type="text" class="contacts__call-input focus-visible" name="name" placeholder="Имя*" value="">
+                            <input aria-label="Телефон" tabindex="56" required type="number" class="contacts__call-input focus-visible" name="number" placeholder="Телефон*" value=""> 
+                            <button aria-label="Заказать обратный звонок" type="submit" class="contacts__call-button focus-visible">Заказать</button>
                         </form>
-                        <h3 class="showroom">Связаться в один клик</h3>
+                        <h3 class="contacts__showroom without-outline">Связаться в один клик</h3>
                         <div class="flex">
-                            <a aria-label="Связаться через Whatsapp" href="#" class="whatsapp"></a>
-                            <a aria-label="Связаться через Telegram" href="#" class="telegram"></a>
+                            <a aria-label="Связаться через Whatsapp" href="#" class="contacts__whatsapp focus-visible"></a>
+                            <a aria-label="Связаться через Telegram" href="#" class="contacts__telegram focus-visible"></a>
                         </div>
 </div>
                 </div>
             </section>
     </main>
         <footer class="footer">
-            <div class="container footer-content">
-                <div class="Blanchard">
-                    <img src="img/Blanchard.svg" alt="Blanchard"><div class="under-Blanchard">художественная галерея</div>
+            <div class="container footer__content">
+                <div class="logo"><img class="logo__img" src="img/Blanchard.svg" alt="Blanchard"></div>
+                <div class="footer__social-media">
+                    <a aria-label="Мы Вконтакте" class="footer__vk focus-visible" href="#"></a>
+                    <a aria-label="Мы в Instagram" class="footer__instagram focus-visible" href="#"></a>
+                    <a aria-label="Мы в Facebook" class="footer__facebook focus-visible" href="#"></a>
                 </div>
-                <div class="social-media">
-                    <a aria-label="Мы Вконтакте" class="vk" href="#"></a>
-                    <a aria-label="Мы в Instagram" class="instagram" href="#"></a>
-                    <a aria-label="Мы в Facebook" class="facebook" href="#"></a>
-                </div>
-                <div class="Blanchard">
-                    <img src="img/Blanchard.svg" alt="Blanchard"><div class="under-Blanchard">художественная галерея</div>
-                </div>
+                <div class="logo"><img class="logo__img" src="img/Blanchard.svg" alt="Blanchard"></div>
             </div>
         </footer>
     

@@ -1,12 +1,12 @@
 window.addEventListener('DOMContentLoaded',  function() {
-  $('.burger').click(function(){
-    $('.menu').addClass('menu-active');
+  $('.header__burger').click(function(){
+    $('.header__menu').addClass('menu-active');
   });
 })
 
 window.addEventListener('DOMContentLoaded',  function() {
-  $('.menu-close').click(function(){
-    $('.menu').removeClass('menu-active');
+  $('.header__menu-close').click(function(){
+    $('.header__menu').removeClass('menu-active');
   });
 })
 
@@ -34,7 +34,7 @@ window.addEventListener('DOMContentLoaded',  function() {
 window.addEventListener('DOMContentLoaded',  function() {
   $(document).ready(function(){
     if(document.documentElement.clientWidth < 824) {
-    $('.left-right a[href^="#"], *[data-href^="#"]').on('click', function(e){
+    $('.catalog__left-right a[href^="#"], *[data-href^="#"]').on('click', function(e){
         var t = 1000;
         var d = $(this).attr('data-href') ? $(this).attr('data-href') : $(this).attr('href');
         $('html,body').stop().animate({ scrollTop: $(d).offset().top }, t);
@@ -45,22 +45,22 @@ window.addEventListener('DOMContentLoaded',  function() {
 
 // переключение меню
 window.addEventListener('DOMContentLoaded',  function() {
-  const button = document.querySelectorAll('.nav-list-item-2');
-  const menu = document.querySelectorAll('.way-of-art');
+  const button = document.querySelectorAll('.header__nav-list-2-li');
+  const menu = document.querySelectorAll('.header__way-of-art');
 
   button.forEach(el => {
     el.addEventListener('click', (e) => {
-      button.forEach(el => {el.classList.remove(('nav-list-item-2-active'))})
+      button.forEach(el => {el.classList.remove(('header__nav-list-2-li-active'))})
       menu.forEach(el => {el.classList.remove(('menu-active'))})
-      e.currentTarget.closest('li').querySelector('.nav-list-item-2').classList.toggle('nav-list-item-2-active');
-      e.currentTarget.closest('li').querySelector('.way-of-art').classList.toggle('menu-active');
+      e.currentTarget.closest('li').querySelector('.header__nav-list-2-li').classList.toggle('header__nav-list-2-li-active');
+      e.currentTarget.closest('li').querySelector('.header__way-of-art').classList.toggle('menu-active');
     });
   });
 
   document.addEventListener('click', (e) => {
     console.log(e.target)
-    if (!e.target.classList.contains('way-of-art') && !e.target.classList.contains('nav-list-item-2')) {
-      button.forEach(el => {el.classList.remove(('nav-list-item-2-active'))})
+    if (!e.target.classList.contains('way-of-art') && !e.target.classList.contains('header__nav-list-2-li')) {
+      button.forEach(el => {el.classList.remove(('header__nav-list-2-li-active'))})
       menu.forEach(el => {el.classList.remove(('menu-active'))})
     }
   });
@@ -181,56 +181,56 @@ window.addEventListener('DOMContentLoaded', function() {
 })
 
 window.addEventListener('DOMContentLoaded',  function() {
-  $('.choose-country').click(function(){
-    $('.choose-country-active').removeClass('choose-country-active');
-    $(this).addClass('choose-country-active');
+  $('.catalog__choose-country').click(function(){
+    $('.catalog__choose-country-active').removeClass('catalog__choose-country-active');
+    $(this).addClass('catalog__choose-country-active');
   });
 })
 
 window.addEventListener('DOMContentLoaded',  function() {
-  $('.choose-country:nth-child(2)').click(function(){
+  $('.catalog__choose-country:nth-child(2)').click(function(){
     $('.country-active').removeClass('country-active');
-    $('.France').addClass('country-active');
+    $('.catalog__France').addClass('country-active');
   });
 })
 
 window.addEventListener('DOMContentLoaded',  function() {
-  $('.choose-country:nth-child(3)').click(function(){
+  $('.catalog__choose-country:nth-child(3)').click(function(){
     $('.country-active').removeClass('country-active');
-    $('.Germany').addClass('country-active');
+    $('.catalog__Germany').addClass('country-active');
   });
 })
 
 window.addEventListener('DOMContentLoaded',  function() {
-  $('.choose-country:nth-child(4)').click(function(){
+  $('.catalog__choose-country:nth-child(4)').click(function(){
     $('.country-active').removeClass('country-active');
-    $('.Italy').addClass('country-active');
+    $('.catalog__Italy').addClass('country-active');
   });
 })
 
 window.addEventListener('DOMContentLoaded',  function() {
-  $('.choose-country:nth-child(5)').click(function(){
+  $('.catalog__choose-country:nth-child(5)').click(function(){
     $('.country-active').removeClass('country-active');
-    $('.Russia').addClass('country-active');
+    $('.catalog__Russia').addClass('country-active');
   });
 })
 
 window.addEventListener('DOMContentLoaded',  function() {
-  $('.choose-country:nth-child(6)').click(function(){
+  $('.catalog__choose-country:nth-child(6)').click(function(){
     $('.country-active').removeClass('country-active');
-    $('.Belgium').addClass('country-active');
+    $('.catalog__Belgium').addClass('country-active');
   });
 })
 
 window.addEventListener('DOMContentLoaded',  function() {
-  jQuery('.choose-artist-right ul li a').on('click', function (e) {
+  jQuery('.catalog__right ul li a').on('click', function (e) {
     e.preventDefault(); // этот код предотвращает стандартное поведение браузера по клику
     // остальной код
   });
 })
 
 window.addEventListener('DOMContentLoaded',  function() {
-  $('.choose-artist-right ul li a').on("click", function() {
+  $('.catalog__right ul li a').on("click", function() {
       $('ul li').removeClass("link-active");
       $(this).parent().addClass("link-active");
       var href = $(this).attr('href');
@@ -277,16 +277,16 @@ window.addEventListener('DOMContentLoaded', function() {
 })
 
 window.addEventListener('DOMContentLoaded',  function() {
-  jQuery('.event-all').on('click', function (e) {
+  jQuery('.event__show-all').on('click', function (e) {
     e.preventDefault(); // этот код предотвращает стандартное поведение браузера по клику
     // остальной код
   });
 })
 
 window.addEventListener('DOMContentLoaded',  function() {
-  $('.event-all').click(function(){
+  $('.event__show-all').click(function(){
     $('.event-hidden').removeClass('event-hidden');
-    $('.for-button').addClass('event-hidden');
+    $('.event__for-button').addClass('event-hidden');
   });
 })
 
