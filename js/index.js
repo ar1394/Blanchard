@@ -45,22 +45,22 @@ window.addEventListener('DOMContentLoaded',  function() {
 
 // переключение меню
 window.addEventListener('DOMContentLoaded',  function() {
-  const button = document.querySelectorAll('.header__nav-list-2-li');
+  const button = document.querySelectorAll('.header__nav-list-2-item');
   const menu = document.querySelectorAll('.header__way-of-art');
 
   button.forEach(el => {
     el.addEventListener('click', (e) => {
-      button.forEach(el => {el.classList.remove(('header__nav-list-2-li-active'))})
+      button.forEach(el => {el.classList.remove(('header__nav-list-2-item-active'))})
       menu.forEach(el => {el.classList.remove(('menu-active'))})
-      e.currentTarget.closest('li').querySelector('.header__nav-list-2-li').classList.toggle('header__nav-list-2-li-active');
+      e.currentTarget.closest('li').querySelector('.header__nav-list-2-item').classList.toggle('header__nav-list-2-item-active');
       e.currentTarget.closest('li').querySelector('.header__way-of-art').classList.toggle('menu-active');
     });
   });
 
   document.addEventListener('click', (e) => {
     console.log(e.target)
-    if (!e.target.classList.contains('way-of-art') && !e.target.classList.contains('header__nav-list-2-li')) {
-      button.forEach(el => {el.classList.remove(('header__nav-list-2-li-active'))})
+    if (!e.target.classList.contains('way-of-art') && !e.target.classList.contains('header__nav-list-2-item')) {
+      button.forEach(el => {el.classList.remove(('header__nav-list-2-item-active'))})
       menu.forEach(el => {el.classList.remove(('menu-active'))})
     }
   });

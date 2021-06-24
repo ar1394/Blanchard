@@ -27,111 +27,119 @@
     </style>
 </head>
 <body>
+    <svg style="display: none;">
+        <symbol viewbox="0 0 13 13" id="login">
+            <path id="login-path" d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z" fill="white"/>
+        </symbol>
+    </svg>
     <header class="header">
         <div class="header__up">
             <nav class="header__nav">
-                <button aria-label="Меню" class="header__burger focus-visible"></button>
+                <button aria-label="Меню" class="header__burger transition-100ms focus-visible"></button>
                 <div class="logo"><img class="logo__img" src="img/Blanchard.svg" alt="Blanchard"></div>
                 <ul class="header__nav-list without-outline">
-                    <li class="header__nav-list-li"><a class="header__nav-list-a focus-visible" href="#about-us">О нас</a></li>
-                    <li class="header__nav-list-li"><a class="header__nav-list-a focus-visible" href="#gallery">Галерея</a></li>
-                    <li class="header__nav-list-li"><a class="header__nav-list-a focus-visible" href="#catalog">Каталог</a></li>
-                    <li class="header__nav-list-li"><a class="header__nav-list-a focus-visible" href="#events">События</a></li>
-                    <li class="header__nav-list-li"><a class="header__nav-list-a focus-visible" href="#books">Издания</a></li>
-                    <li class="header__nav-list-li"><a class="header__nav-list-a focus-visible" href="#projects">Проекты</a></li>
-                    <li class="header__nav-list-li"><a class="header__nav-list-a focus-visible" href="#contacts">Контакты</a></li>
+                    <li class="header__nav-list-item"><a class="header__nav-list-link transition-100ms focus-visible" href="#about-us">О нас</a></li>
+                    <li class="header__nav-list-item"><a class="header__nav-list-link transition-100ms focus-visible" href="#gallery">Галерея</a></li>
+                    <li class="header__nav-list-item"><a class="header__nav-list-link transition-100ms focus-visible" href="#catalog">Каталог</a></li>
+                    <li class="header__nav-list-item"><a class="header__nav-list-link transition-100ms focus-visible" href="#events">События</a></li>
+                    <li class="header__nav-list-item"><a class="header__nav-list-link transition-100ms focus-visible" href="#books">Издания</a></li>
+                    <li class="header__nav-list-item"><a class="header__nav-list-link transition-100ms focus-visible" href="#projects">Проекты</a></li>
+                    <li class="header__nav-list-item"><a class="header__nav-list-link transition-100ms focus-visible" href="#contacts">Контакты</a></li>
                 </ul>
-                <a aria-label="Авторизация" class="header__login focus-visible" href="#">Войти</a>
+                <div class="header__for-login">
+                    <svg class="header__login-image"><use xlink:href="#login"></use></svg>
+                    <a aria-label="Авторизация" class="header__login transition-100ms focus-visible" href="#">Войти</a>
+                </div>
                 <button aria-label="Поиск" class="header__search focus-visible"></button>
             </nav>
         </div>
     <div class="header__down">
         <nav class="header__nav-2">
             <ul class="header__nav-list-2 without-outline">
-                <li class="flex-align"><button class="header__nav-list-2-li focus-visible">Реализм</button>
+                <li class="flex"><button class="header__nav-list-2-item transition-100ms focus-visible">Реализм</button>
                     <div class="header__way-of-art">
                         <ul class="header__realism without-outline" data-simplebar>
-                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Тинторетто</a><div class="header__way-of-art-background"></div></li>
-                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Фридрих</a><div class="header__way-of-art-background"></div></li>
-                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Леонардо</a><div class="header__way-of-art-background"></div></li>
-                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Верроккьо</a><div class="header__way-of-art-background"></div></li>
-                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Реализм 5</a><div class="header__way-of-art-background"></div></li>
-                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Реализм 6</a><div class="header__way-of-art-background"></div></li>
-                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Реализм 7</a><div class="header__way-of-art-background"></div></li>
-                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Реализм 8</a><div class="header__way-of-art-background"></div></li>
-                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Реализм 9</a><div class="header__way-of-art-background"></div></li>
-                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Реализм 10</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-item"><a class="header__way-of-art-link transition-100ms transition-100ms focus-visible" href="#">Тинторетто</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-item"><a class="header__way-of-art-link transition-100ms transition-100ms focus-visible" href="#">Фридрих</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-item"><a class="header__way-of-art-link transition-100ms transition-100ms focus-visible" href="#">Леонардо</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-item"><a class="header__way-of-art-link transition-100ms transition-100ms focus-visible" href="#">Верроккьо</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-item"><a class="header__way-of-art-link transition-100ms transition-100ms focus-visible" href="#">Реализм 5</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-item"><a class="header__way-of-art-link transition-100ms transition-100ms focus-visible" href="#">Реализм 6</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-item"><a class="header__way-of-art-link transition-100ms transition-100ms focus-visible" href="#">Реализм 7</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-item"><a class="header__way-of-art-link transition-100ms transition-100ms focus-visible" href="#">Реализм 8</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-item"><a class="header__way-of-art-link transition-100ms transition-100ms focus-visible" href="#">Реализм 9</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-item"><a class="header__way-of-art-link transition-100ms transition-100ms focus-visible" href="#">Реализм 10</a><div class="header__way-of-art-background"></div></li>
                         </ul>
                     </div>
                 </li>
-                <li class="flex-align"><button class="header__nav-list-2-li focus-visible">Импрессионизм</button>
+                <li class="flex"><button class="header__nav-list-2-item transition-100ms focus-visible">Импрессионизм</button>
                     <div class="header__way-of-art">
                         <ul class="header__impressionism without-outline" data-simplebar>
-                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Моне</a><div class="header__way-of-art-background"></div></li>
-                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Сислей</a><div class="header__way-of-art-background"></div></li>
-                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Мане</a><div class="header__way-of-art-background"></div></li>
-                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Ренуар</a><div class="header__way-of-art-background"></div></li>
-                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Импрессионизм 5</a><div class="header__way-of-art-background"></div></li>
-                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Импрессионизм 6</a><div class="header__way-of-art-background"></div></li>
-                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Импрессионизм 7</a><div class="header__way-of-art-background"></div></li>
-                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Импрессионизм 8</a><div class="header__way-of-art-background"></div></li>
-                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Импрессионизм 9</a><div class="header__way-of-art-background"></div></li>
-                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Импрессионизм 10</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-item"><a class="header__way-of-art-link transition-100ms focus-visible" href="#">Моне</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-item"><a class="header__way-of-art-link transition-100ms focus-visible" href="#">Сислей</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-item"><a class="header__way-of-art-link transition-100ms focus-visible" href="#">Мане</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-item"><a class="header__way-of-art-link transition-100ms focus-visible" href="#">Ренуар</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-item"><a class="header__way-of-art-link transition-100ms focus-visible" href="#">Импрессионизм 5</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-item"><a class="header__way-of-art-link transition-100ms focus-visible" href="#">Импрессионизм 6</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-item"><a class="header__way-of-art-link transition-100ms focus-visible" href="#">Импрессионизм 7</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-item"><a class="header__way-of-art-link transition-100ms focus-visible" href="#">Импрессионизм 8</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-item"><a class="header__way-of-art-link transition-100ms focus-visible" href="#">Импрессионизм 9</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-item"><a class="header__way-of-art-link transition-100ms focus-visible" href="#">Импрессионизм 10</a><div class="header__way-of-art-background"></div></li>
                         </ul>
                     </div>
                 </li>
-                <li class="flex-align"><button class="header__nav-list-2-li focus-visible">Постимпрессионизм</button>
+                <li class="flex"><button class="header__nav-list-2-item transition-100ms focus-visible">Постимпрессионизм</button>
                     <div class="header__way-of-art">
                         <ul class="header__postimpressionism without-outline" data-simplebar>
-                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Ван Гог</a><div class="header__way-of-art-background"></div></li>
-                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Сезанн</a><div class="header__way-of-art-background"></div></li>
-                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Гоген</a><div class="header__way-of-art-background"></div></li>
-                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Сёра</a><div class="header__way-of-art-background"></div></li>
-                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Постимпрессионизм 5</a><div class="header__way-of-art-background"></div></li>
-                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Постимпрессионизм 6</a><div class="header__way-of-art-background"></div></li>
-                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Постимпрессионизм 7</a><div class="header__way-of-art-background"></div></li>
-                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Постимпрессионизм 8</a><div class="header__way-of-art-background"></div></li>
-                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Постимпрессионизм 9</a><div class="header__way-of-art-background"></div></li>
-                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Постимпрессионизм 10</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-item"><a class="header__way-of-art-link transition-100ms focus-visible" href="#">Ван Гог</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-item"><a class="header__way-of-art-link transition-100ms focus-visible" href="#">Сезанн</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-item"><a class="header__way-of-art-link transition-100ms focus-visible" href="#">Гоген</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-item"><a class="header__way-of-art-link transition-100ms focus-visible" href="#">Сёра</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-item"><a class="header__way-of-art-link transition-100ms focus-visible" href="#">Постимпрессионизм 5</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-item"><a class="header__way-of-art-link transition-100ms focus-visible" href="#">Постимпрессионизм 6</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-item"><a class="header__way-of-art-link transition-100ms focus-visible" href="#">Постимпрессионизм 7</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-item"><a class="header__way-of-art-link transition-100ms focus-visible" href="#">Постимпрессионизм 8</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-item"><a class="header__way-of-art-link transition-100ms focus-visible" href="#">Постимпрессионизм 9</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-item"><a class="header__way-of-art-link transition-100ms focus-visible" href="#">Постимпрессионизм 10</a><div class="header__way-of-art-background"></div></li>
                         </ul>
                     </div>
                 </li>
-                <li class="flex-align"><button class="header__nav-list-2-li focus-visible">Авангард</button>
+                <li class="flex"><button class="header__nav-list-2-item transition-100ms focus-visible">Авангард</button>
                     <div class="header__way-of-art">
                         <ul class="header__avangard without-outline" data-simplebar>
-                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Кандинский</a><div class="header__way-of-art-background"></div></li>
-                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Маринетти</a><div class="header__way-of-art-background"></div></li>
-                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Малевич</a><div class="header__way-of-art-background"></div></li>
-                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Пикассо</a><div class="header__way-of-art-background"></div></li>
-                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Авангард 5</a><div class="header__way-of-art-background"></div></li>
-                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Авангард 6</a><div class="header__way-of-art-background"></div></li>
-                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Авангард 7</a><div class="header__way-of-art-background"></div></li>
-                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Авангард 8</a><div class="header__way-of-art-background"></div></li>
-                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Авангард 9</a><div class="header__way-of-art-background"></div></li>
-                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Авангард 10</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-item"><a class="header__way-of-art-link transition-100ms focus-visible" href="#">Кандинский</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-item"><a class="header__way-of-art-link transition-100ms focus-visible" href="#">Маринетти</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-item"><a class="header__way-of-art-link transition-100ms focus-visible" href="#">Малевич</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-item"><a class="header__way-of-art-link transition-100ms focus-visible" href="#">Пикассо</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-item"><a class="header__way-of-art-link transition-100ms focus-visible" href="#">Авангард 5</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-item"><a class="header__way-of-art-link transition-100ms focus-visible" href="#">Авангард 6</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-item"><a class="header__way-of-art-link transition-100ms focus-visible" href="#">Авангард 7</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-item"><a class="header__way-of-art-link transition-100ms focus-visible" href="#">Авангард 8</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-item"><a class="header__way-of-art-link transition-100ms focus-visible" href="#">Авангард 9</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-item"><a class="header__way-of-art-link transition-100ms focus-visible" href="#">Авангард 10</a><div class="header__way-of-art-background"></div></li>
                         </ul>
                     </div>
                 </li>
-                <li class="flex-align"><button class="header__nav-list-2-li focus-visible">Футуризм</button>
+                <li class="flex"><button class="header__nav-list-2-item transition-100ms focus-visible">Футуризм</button>
                     <div class="header__way-of-art">
                         <ul class="header__futurism without-outline" data-simplebar>
-                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Карра</a><div class="header__way-of-art-background"></div></li>
-                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Прателла</a><div class="header__way-of-art-background"></div></li>
-                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Северини</a><div class="header__way-of-art-background"></div></li>
-                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Балла</a><div class="header__way-of-art-background"></div></li>
-                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Футуризм 5</a><div class="header__way-of-art-background"></div></li>
-                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Футуризм 6</a><div class="header__way-of-art-background"></div></li>
-                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Футуризм 7</a><div class="header__way-of-art-background"></div></li>
-                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Футуризм 8</a><div class="header__way-of-art-background"></div></li>
-                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Футуризм 9</a><div class="header__way-of-art-background"></div></li>
-                            <li class="header__way-of-art-li"><a class="header__way-of-art-a focus-visible" href="#">Футуризм 10</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-item"><a class="header__way-of-art-link transition-100ms focus-visible" href="#">Карра</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-item"><a class="header__way-of-art-link transition-100ms focus-visible" href="#">Прателла</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-item"><a class="header__way-of-art-link transition-100ms focus-visible" href="#">Северини</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-item"><a class="header__way-of-art-link transition-100ms focus-visible" href="#">Балла</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-item"><a class="header__way-of-art-link transition-100ms focus-visible" href="#">Футуризм 5</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-item"><a class="header__way-of-art-link transition-100ms focus-visible" href="#">Футуризм 6</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-item"><a class="header__way-of-art-link transition-100ms focus-visible" href="#">Футуризм 7</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-item"><a class="header__way-of-art-link transition-100ms focus-visible" href="#">Футуризм 8</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-item"><a class="header__way-of-art-link transition-100ms focus-visible" href="#">Футуризм 9</a><div class="header__way-of-art-background"></div></li>
+                            <li class="header__way-of-art-item"><a class="header__way-of-art-link transition-100ms focus-visible" href="#">Футуризм 10</a><div class="header__way-of-art-background"></div></li>
                         </ul>
                     </div>
                 </li>
             </ul>
             <form class="header__search-form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
-                <input tabindex="14" required type="search" name="search" class="header__search-input focus-visible" placeholder="Поиск по сайту" value="">
-                <button aria-label="Поиск" class="header__search-button focus-visible"></button>
+                <input required type="search" name="search" class="header__search-input transition-100ms focus-visible" placeholder="Поиск по сайту" value="">
+                <button aria-label="Поиск" class="header__search-button transition-100ms focus-visible"></button>
             </form>
         </nav>
     </div>
@@ -159,7 +167,7 @@
             <div class="container">
             <h3 class="section-hero__text-1 without-outline">Прикоснитесь к прекрасному</h3>
                 <span class="section-hero__text-2 without-outline">Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.</span> 
-                <a aria-label="Подписаться на рассылку" class="section-hero__button focus-visible" href="#contacts">Подписаться на рассылку</a>
+                <a aria-label="Подписаться на рассылку" class="section-hero__button transition-100ms focus-visible" href="#contacts">Подписаться на рассылку</a>
             </div>
             </section>
             <section class="container about-us">
@@ -172,7 +180,7 @@
                     <div class="gallery__left">
                         <h2 class="section-top without-outline" id="gallery">Галерея</h2>
                         <div class="gallery__filter">Фильтровать по:</div>
-                        <form action="https://jsonplaceholder.typicode.com/posts" method="POST">
+                        <form class="gallery__filter-choice" action="https://jsonplaceholder.typicode.com/posts" method="POST">
                             <select tabindex="16" name="select" class="custom-select_1 focus-visible">
                                 <option value="" hidden>Автор</option>
                                 <option value="">Направление</option>
@@ -180,10 +188,10 @@
                             </select>
                         </form>
                         <div class="gallery__info">Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний 
-                            <a aria-label="Авторизация" class="gallery__authorize focus-visible" href="#">авторизуйтесь</a>, либо воспользуйтесь лицензией.</div>
+                            <a aria-label="Авторизация" class="gallery__authorize transition-100ms focus-visible" href="#">авторизуйтесь</a>, либо воспользуйтесь лицензией.</div>
                     </div>
                     <div class="gallery__right">
-                        <a aria-label="Перейти к предыдущим слайдам" class="swiper-button-prev_2 focus-visible"></a>
+                        <a aria-label="Перейти к предыдущим слайдам" class="swiper-button-prev_2 transition-20ms focus-visible"></a>
                         <div class="swiper-pagination_2"></div>
                         <a aria-label="Перейти к следующим слайдам" class="swiper-button-next_2 focus-visible"></a>
                             
@@ -191,38 +199,128 @@
                             <!-- Additional required wrapper -->
                             <div class="swiper-wrapper">
                                 <!-- Slides -->
-                                <div class="swiper-slide"><img class="swiper-container_2__img" src="img/picture-1.jpg" alt="Картина"></div>
-                                <div class="swiper-slide"><img class="swiper-container_2__img" src="img/picture-2.jpg" alt="Картина"></div>
-                                <div class="swiper-slide"><img class="swiper-container_2__img" src="img/picture-3.jpg" alt="Картина"></div>
-                                <div class="swiper-slide"><img class="swiper-container_2__img" src="img/picture-4.jpg" alt="Картина"></div>
-                                <div class="swiper-slide"><img class="swiper-container_2__img" src="img/picture-5.jpg" alt="Картина"></div>
-                                <div class="swiper-slide"><img class="swiper-container_2__img" src="img/picture-6.jpg" alt="Картина"></div>
-                                <div class="swiper-slide"><img class="swiper-container_2__img" src="img/picture-7.jpg" alt="Картина"></div>
-                                <div class="swiper-slide"><img class="swiper-container_2__img" src="img/picture-8.jpg" alt="Картина"></div>
-                                <div class="swiper-slide"><img class="swiper-container_2__img" src="img/picture-9.jpg" alt="Картина"></div>
-                                <div class="swiper-slide"><img class="swiper-container_2__img" src="img/picture-10.jpg" alt="Картина"></div>
-                                <div class="swiper-slide"><img class="swiper-container_2__img" src="img/picture-11.jpg" alt="Картина"></div>
-                                <div class="swiper-slide"><img class="swiper-container_2__img" src="img/picture-12.jpg" alt="Картина"></div>
-                                <div class="swiper-slide"><img class="swiper-container_2__img" src="img/picture-13.jpg" alt="Картина"></div>
-                                <div class="swiper-slide"><img class="swiper-container_2__img" src="img/picture-14.jpg" alt="Картина"></div>
-                                <div class="swiper-slide"><img class="swiper-container_2__img" src="img/picture-15.jpg" alt="Картина"></div>
-                                <div class="swiper-slide"><img class="swiper-container_2__img" src="img/picture-16.jpg" alt="Картина"></div>
-                                <div class="swiper-slide"><img class="swiper-container_2__img" src="img/picture-17.jpg" alt="Картина"></div>
-                                <div class="swiper-slide"><img class="swiper-container_2__img" src="img/picture-18.jpg" alt="Картина"></div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide-hover-active transition-100ms">
+                                        <img class="slide-hover-image" src="img/gallery-slide-hover.svg" alt="plus">
+                                    </div>
+                                    <img class="swiper-container_2__img" src="img/picture-1.jpg" alt="Картина">
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide-hover-active transition-100ms">
+                                        <img class="slide-hover-image" src="img/gallery-slide-hover.svg" alt="plus">
+                                    </div>
+                                    <img class="swiper-container_2__img" src="img/picture-2.jpg" alt="Картина">
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide-hover-active transition-100ms">
+                                        <img class="slide-hover-image" src="img/gallery-slide-hover.svg" alt="plus">
+                                    </div>
+                                    <img class="swiper-container_2__img" src="img/picture-3.jpg" alt="Картина">
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide-hover-active transition-100ms">
+                                        <img class="slide-hover-image" src="img/gallery-slide-hover.svg" alt="plus">
+                                    </div>
+                                    <img class="swiper-container_2__img" src="img/picture-4.jpg" alt="Картина">
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide-hover-active transition-100ms">
+                                        <img class="slide-hover-image" src="img/gallery-slide-hover.svg" alt="plus">
+                                    </div>
+                                    <img class="swiper-container_2__img" src="img/picture-5.jpg" alt="Картина">
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide-hover-active transition-100ms">
+                                        <img class="slide-hover-image" src="img/gallery-slide-hover.svg" alt="plus">
+                                    </div>
+                                    <img class="swiper-container_2__img" src="img/picture-6.jpg" alt="Картина">
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide-hover-active transition-100ms">
+                                        <img class="slide-hover-image" src="img/gallery-slide-hover.svg" alt="plus">
+                                    </div>
+                                    <img class="swiper-container_2__img" src="img/picture-7.jpg" alt="Картина">
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide-hover-active transition-100ms">
+                                        <img class="slide-hover-image" src="img/gallery-slide-hover.svg" alt="plus">
+                                    </div>
+                                    <img class="swiper-container_2__img" src="img/picture-8.jpg" alt="Картина">
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide-hover-active transition-100ms">
+                                        <img class="slide-hover-image" src="img/gallery-slide-hover.svg" alt="plus">
+                                    </div>
+                                    <img class="swiper-container_2__img" src="img/picture-9.jpg" alt="Картина">
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide-hover-active transition-100ms">
+                                        <img class="slide-hover-image" src="img/gallery-slide-hover.svg" alt="plus">
+                                    </div>
+                                    <img class="swiper-container_2__img" src="img/picture-10.jpg" alt="Картина">
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide-hover-active transition-100ms">
+                                        <img class="slide-hover-image" src="img/gallery-slide-hover.svg" alt="plus">
+                                    </div>
+                                    <img class="swiper-container_2__img" src="img/picture-11.jpg" alt="Картина">
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide-hover-active transition-100ms">
+                                        <img class="slide-hover-image" src="img/gallery-slide-hover.svg" alt="plus">
+                                    </div>
+                                    <img class="swiper-container_2__img" src="img/picture-12.jpg" alt="Картина">
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide-hover-active transition-100ms">
+                                        <img class="slide-hover-image" src="img/gallery-slide-hover.svg" alt="plus">
+                                    </div>
+                                    <img class="swiper-container_2__img" src="img/picture-13.jpg" alt="Картина">
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide-hover-active transition-100ms">
+                                        <img class="slide-hover-image" src="img/gallery-slide-hover.svg" alt="plus">
+                                    </div>
+                                    <img class="swiper-container_2__img" src="img/picture-14.jpg" alt="Картина">
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide-hover-active transition-100ms">
+                                        <img class="slide-hover-image" src="img/gallery-slide-hover.svg" alt="plus">
+                                    </div>
+                                    <img class="swiper-container_2__img" src="img/picture-15.jpg" alt="Картина">
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide-hover-active transition-100ms">
+                                        <img class="slide-hover-image" src="img/gallery-slide-hover.svg" alt="plus">
+                                    </div>
+                                    <img class="swiper-container_2__img" src="img/picture-16.jpg" alt="Картина">
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide-hover-active transition-100ms">
+                                        <img class="slide-hover-image" src="img/gallery-slide-hover.svg" alt="plus">
+                                    </div>
+                                    <img class="swiper-container_2__img" src="img/picture-17.jpg" alt="Картина">
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide-hover-active transition-100ms">
+                                        <img class="slide-hover-image" src="img/gallery-slide-hover.svg" alt="plus">
+                                    </div>
+                                    <img class="swiper-container_2__img" src="img/picture-18.jpg" alt="Картина">
+                                </div>
                             </div>
                         </div>
                         <div class="gallery__info">Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний 
-                            <a aria-label="Авторизация" class="gallery__authorize focus-visible" href="#">авторизуйтесь</a>, либо воспользуйтесь лицензией.</div>
+                            <a aria-label="Авторизация" class="gallery__authorize transition-100ms focus-visible" href="#">авторизуйтесь</a>, либо воспользуйтесь лицензией.</div>
                     </div>
             </div>  
             </section>
             <section class="section container catalog">
                 <h2 class="section-top without-outline" id="catalog">Каталог</h2>
-                <a aria-label="Французские художники" class="catalog__choose-country focus-visible catalog__choose-country-active"></a>
-                <a aria-label="Немецкие художники" class="catalog__choose-country focus-visible"></a>
-                <a aria-label="Итальянские художники" class="catalog__choose-country focus-visible"></a>
-                <a aria-label="Российские художники" class="catalog__choose-country focus-visible"></a>
-                <a aria-label="Бельгийские художники" class="catalog__choose-country focus-visible"></a>
+                <a aria-label="Французские художники" class="catalog__choose-country transition-20ms focus-visible catalog__choose-country-active"></a>
+                <a aria-label="Немецкие художники" class="catalog__choose-country transition-20ms focus-visible"></a>
+                <a aria-label="Итальянские художники" class="catalog__choose-country transition-20ms focus-visible"></a>
+                <a aria-label="Российские художники" class="catalog__choose-country transition-20ms focus-visible"></a>
+                <a aria-label="Бельгийские художники" class="catalog__choose-country transition-20ms focus-visible"></a>
                 <div class="catalog__choose-artist">
                     <div class="catalog__text">Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на независимые элементы.</div>
                     <div class="catalog__left-right">
@@ -838,25 +936,25 @@
                             <h4 class="without-outline">Цена</h4>
                             <div class="flex books__for-input">
                                 <div class="books__for-input-text">От</div>
-                                <input aria-label="Минимальная стоимость" tabindex="49" class="books__input focus-visible" type="number">
+                                <input aria-label="Минимальная стоимость" class="books__input focus-visible" type="number">
                                 <div class="books__for-input-text">до</div>
-                                <input aria-label="Максимальная стоимость" tabindex="50" class="books__input focus-visible" type="number">
+                                <input aria-label="Максимальная стоимость" class="books__input focus-visible" type="number">
                                 <div class="books__for-input-text">рублей</div>
                                 <div class="books__for-input-text">руб.</div>
                             </div>
                         </div>
                     </div>
                     <div class="books__right">
-                        <a aria-label="Перейти к предыдущим слайдам" tabindex="51" class="swiper-button-prev_3 focus-visible"></a>
+                        <a aria-label="Перейти к предыдущим слайдам" tabindex="51" class="swiper-button-prev_3 transition-20ms focus-visible"></a>
                         <div class="swiper-pagination_3"></div>
                         <a aria-label="Перейти к следующим слайдам" tabindex="52" class="swiper-button-next_3 focus-visible"></a>
                         <div class="books__prices">
                             <h4 class="without-outline">Цена</h4>
                             <div class="flex books__for-input">
                                 <div class="books__for-input-text">От</div>
-                                <input aria-label="Минимальная стоимость" tabindex="49" class="books__input focus-visible" type="number">
+                                <input aria-label="Минимальная стоимость" class="books__input focus-visible" type="number">
                                 <div class="books__for-input-text">до</div>
-                                <input aria-label="Максимальная стоимость" tabindex="50" class="books__input focus-visible" type="number">
+                                <input aria-label="Максимальная стоимость" class="books__input focus-visible" type="number">
                                 <div class="books__for-input-text">рублей</div>
                                 <div class="books__for-input-text">руб.</div>
                             </div>
@@ -875,7 +973,7 @@
                                             </div>
                                             <div class="books__book-price">620 руб</div>
                                         </div>
-                                        <a aria-label="Заказать книгу" class="books__buy-book focus-visible" href="#">Заказать</a>
+                                        <a aria-label="Заказать книгу" class="books__buy-book transition-20ms focus-visible" href="#">Заказать</a>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
@@ -888,7 +986,7 @@
                                             </div>
                                             <div class="books__book-price">2 450 руб</div>
                                         </div>
-                                        <a aria-label="Заказать книгу" class="books__buy-book focus-visible" href="#">Заказать</a>
+                                        <a aria-label="Заказать книгу" class="books__buy-book transition-20ms focus-visible" href="#">Заказать</a>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
@@ -901,7 +999,7 @@
                                             </div>
                                             <div class="books__book-price">2 200 руб</div>
                                         </div>
-                                        <a aria-label="Заказать книгу" class="books__buy-book focus-visible" href="#">Заказать</a>
+                                        <a aria-label="Заказать книгу" class="books__buy-book transition-20ms focus-visible" href="#">Заказать</a>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
@@ -914,7 +1012,7 @@
                                             </div>
                                             <div class="books__book-price">1 100 руб</div>
                                         </div>
-                                        <a aria-label="Заказать книгу" class="books__buy-book focus-visible" href="#">Заказать</a>
+                                        <a aria-label="Заказать книгу" class="books__buy-book transition-20ms focus-visible" href="#">Заказать</a>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
@@ -927,7 +1025,7 @@
                                             </div>
                                             <div class="books__book-price">1 450 руб</div>
                                         </div>
-                                        <a aria-label="Заказать книгу" class="books__buy-book focus-visible" href="#">Заказать</a>
+                                        <a aria-label="Заказать книгу" class="books__buy-book transition-20ms focus-visible" href="#">Заказать</a>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
@@ -940,7 +1038,7 @@
                                             </div>
                                             <div class="books__book-price">3 200 руб</div>
                                         </div>
-                                        <a aria-label="Заказать книгу" class="books__buy-book focus-visible" href="#">Заказать</a>
+                                        <a aria-label="Заказать книгу" class="books__buy-book transition-20ms focus-visible" href="#">Заказать</a>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
@@ -953,7 +1051,7 @@
                                             </div>
                                             <div class="books__book-price">2 200 руб</div>
                                         </div>
-                                        <a aria-label="Заказать книгу" class="books__buy-book focus-visible" href="#">Заказать</a>
+                                        <a aria-label="Заказать книгу" class="books__buy-book transition-20ms focus-visible" href="#">Заказать</a>
                                     </div>
                                 </div>
                             </div>
@@ -973,7 +1071,7 @@
                                     </div>
                                     <div class="books__book-price">620 руб</div>
                                 </div>
-                                <a aria-label="Заказать книгу" class="books__buy-book focus-visible" href="#">Заказать</a>
+                                <a aria-label="Заказать книгу" class="books__buy-book transition-20ms focus-visible" href="#">Заказать</a>
                             </div>
                         </div>
                         <div class="image-for-320">
@@ -986,7 +1084,7 @@
                                     </div>
                                     <div class="books__book-price">2 450 руб</div>
                                 </div>
-                                <a aria-label="Заказать книгу" class="books__buy-book focus-visible" href="#">Заказать</a>
+                                <a aria-label="Заказать книгу" class="books__buy-book transition-20ms focus-visible" href="#">Заказать</a>
                             </div>
                         </div>
                         <div class="image-for-320">
@@ -999,7 +1097,7 @@
                                     </div>
                                     <div class="books__book-price">2 200 руб</div>
                                 </div>
-                                <a aria-label="Заказать книгу" class="books__buy-book focus-visible" href="#">Заказать</a>
+                                <a aria-label="Заказать книгу" class="books__buy-book transition-20ms focus-visible" href="#">Заказать</a>
                             </div>
                         </div>
                         <div class="image-for-320">
@@ -1012,7 +1110,7 @@
                                     </div>
                                     <div class="books__book-price">1 100 руб</div>
                                 </div>
-                                <a aria-label="Заказать книгу" class="books__buy-book focus-visible" href="#">Заказать</a>
+                                <a aria-label="Заказать книгу" class="books__buy-book transition-20ms focus-visible" href="#">Заказать</a>
                             </div>
                         </div>
                         <div class="image-for-320">
@@ -1025,7 +1123,7 @@
                                     </div>
                                     <div class="books__book-price">1 450 руб</div>
                                 </div>
-                                <a aria-label="Заказать книгу" class="books__buy-book focus-visible" href="#">Заказать</a>
+                                <a aria-label="Заказать книгу" class="books__buy-book transition-20ms focus-visible" href="#">Заказать</a>
                             </div>
                         </div>
                         <div class="image-for-320">
@@ -1038,7 +1136,7 @@
                                     </div>
                                     <div class="books__book-price">3 200 руб</div>
                                 </div>
-                                <a aria-label="Заказать книгу" class="books__buy-book focus-visible" href="#">Заказать</a>
+                                <a aria-label="Заказать книгу" class="books__buy-book transition-20ms focus-visible" href="#">Заказать</a>
                             </div>
                         </div>
                         <div class="image-for-320">
@@ -1051,7 +1149,7 @@
                                     </div>
                                     <div class="books__book-price">2 200 руб</div>
                                 </div>
-                                <a aria-label="Заказать книгу" class="books__buy-book focus-visible" href="#">Заказать</a>
+                                <a aria-label="Заказать книгу" class="books__buy-book transition-20ms focus-visible" href="#">Заказать</a>
                             </div>
                         </div>
                     </div>
@@ -1063,16 +1161,16 @@
                 <div class="projects__text">Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А ещё независимые государства смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности. Прежде всего, постоянное информационно&#8209;пропагандистское 
                     <div class="projects__i-1"></div><div class="projects__i-1-tooltip">Пример современных тенденций - современная методология разработки </div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;обеспечение нашей деятельности однозначно фиксирует необходимость экономической целесообразности принимаемых решений. И нет сомнений, что действия представителей оппозиции могут быть рассмотрены 
                     <div class="projects__i-2"></div><div class="projects__i-2-tooltip">Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции  </div> &nbsp;&nbsp;&nbsp;&nbsp; исключительно в разрезе маркетинговых и финансовых 
-                    <div class="projects__i-3"></div><div class="projects__i-3-tooltip">В стремлении повысить качество </div> &nbsp;&nbsp;&nbsp;&nbsp; предпосылок. Банальные, но неопровержимые выводы, а также представители современных социальных резервов призывают нас к новым свершениям, которые, в свою очередь, должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости. Подробнее: <a class="project-about focus-visible" href="#">blanchard-art.ru/projects/about</a>
+                    <div class="projects__i-3"></div><div class="projects__i-3-tooltip">В стремлении повысить качество </div> &nbsp;&nbsp;&nbsp;&nbsp; предпосылок. Банальные, но неопровержимые выводы, а также представители современных социальных резервов призывают нас к новым свершениям, которые, в свою очередь, должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости. Подробнее: <a class="project-about transition-100ms focus-visible" href="#">blanchard-art.ru/projects/about</a>
                 </div>
                 <div class="projects__text-mobile">Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А ещё независимые государства смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности. Прежде всего, постоянное информационно-пропагандистское 
                     <div class="projects__i-1"></div><div class="projects__i-1-tooltip">Пример современных тенденций - современная методология разработки </div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;обеспечение нашей деятельности однозначно фиксирует необходимость экономической целесообразности принимаемых решений. И нет сомнений, что действия представителей оппозиции могут быть рассмотрены 
                     <div class="projects__i-2"></div><div class="projects__i-2-tooltip">Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции  </div> &nbsp;&nbsp;&nbsp;&nbsp; исключительно в разрезе маркетинговых и финансовых 
-                    <div class="projects__i-3"></div><div class="projects__i-3-tooltip">В стремлении повысить качество </div> &nbsp;&nbsp;&nbsp;&nbsp; предпосылок. Банальные, но неопровержимые выводы, а также представители современных социальных резервов призывают нас к новым свершениям, которые, в свою очередь, должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости. Подробнее: <a class="project-about focus-visible" href="#">blanchard-art.ru/projects/about</a>
+                    <div class="projects__i-3"></div><div class="projects__i-3-tooltip">В стремлении повысить качество </div> &nbsp;&nbsp;&nbsp;&nbsp; предпосылок. Банальные, но неопровержимые выводы, а также представители современных социальных резервов призывают нас к новым свершениям, которые, в свою очередь, должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости. Подробнее: <a class="project-about transition-100ms focus-visible" href="#">blanchard-art.ru/projects/about</a>
                 </div>
                 <h3 class="projects__partners without-outline">Партнёры проектов:</h3>
-                <div class="flex-align">
-                    <a aria-label="Перейти к предыдущим слайдам" class="swiper-button-prev_4 focus-visible"></a>
+                <div class="projects__swiper-elements">
+                    <a aria-label="Перейти к предыдущим слайдам" class="swiper-button-prev_4 transition-20ms focus-visible"></a>
                     <div class="swiper-container_4">
                         <!-- Additional required wrapper -->
                         <div class="swiper-wrapper">
@@ -1099,8 +1197,8 @@
                         <div class="contacts__address">Леонтьевский переулок, дом 5, строение 1</div>
                         <h3 class="contacts__showroom without-outline">Заказать обратный звонок</h3>
                         <form class="contacts__call-form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
-                            <input aria-label="Имя" tabindex="55" required type="text" class="contacts__call-input focus-visible" name="name" placeholder="Имя*" value="">
-                            <input aria-label="Телефон" tabindex="56" required type="number" class="contacts__call-input focus-visible" name="number" placeholder="Телефон*" value=""> 
+                            <input aria-label="Имя" required type="text" class="contacts__call-input focus-visible" name="name" placeholder="Имя*" value="">
+                            <input aria-label="Телефон" required type="number" class="contacts__call-input focus-visible" name="number" placeholder="Телефон*" value=""> 
                             <button aria-label="Заказать обратный звонок" type="submit" class="contacts__call-button focus-visible">Заказать</button>
                         </form>
                         <h3 class="contacts__showroom without-outline">Связаться в один клик</h3>
@@ -1117,8 +1215,8 @@
 <div class="contacts__up-down container">
     <h3 class="contacts__showroom without-outline">Заказать обратный звонок</h3>
                         <form class="contacts__call-form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
-                            <input aria-label="Имя" tabindex="55" required type="text" class="contacts__call-input focus-visible" name="name" placeholder="Имя*" value="">
-                            <input aria-label="Телефон" tabindex="56" required type="number" class="contacts__call-input focus-visible" name="number" placeholder="Телефон*" value=""> 
+                            <input aria-label="Имя" required type="text" class="contacts__call-input focus-visible" name="name" placeholder="Имя*" value="">
+                            <input aria-label="Телефон" required type="number" class="contacts__call-input focus-visible" name="number" placeholder="Телефон*" value=""> 
                             <button aria-label="Заказать обратный звонок" type="submit" class="contacts__call-button focus-visible">Заказать</button>
                         </form>
                         <h3 class="contacts__showroom without-outline">Связаться в один клик</h3>
@@ -1134,9 +1232,9 @@
             <div class="container footer__content">
                 <div class="logo"><img class="logo__img" src="img/Blanchard.svg" alt="Blanchard"></div>
                 <div class="footer__social-media">
-                    <a aria-label="Мы Вконтакте" class="footer__vk focus-visible" href="#"></a>
-                    <a aria-label="Мы в Instagram" class="footer__instagram focus-visible" href="#"></a>
-                    <a aria-label="Мы в Facebook" class="footer__facebook focus-visible" href="#"></a>
+                    <a aria-label="Мы Вконтакте" class="footer__vk transition-100ms focus-visible" href="#"></a>
+                    <a aria-label="Мы в Instagram" class="footer__instagram transition-100ms focus-visible" href="#"></a>
+                    <a aria-label="Мы в Facebook" class="footer__facebook transition-100ms focus-visible" href="#"></a>
                 </div>
                 <div class="logo"><img class="logo__img" src="img/Blanchard.svg" alt="Blanchard"></div>
             </div>
