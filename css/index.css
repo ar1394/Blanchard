@@ -228,7 +228,7 @@ header {
   height: 11px;
   stroke: white;
   fill: none;
-  transition-property: fill, transform;
+  transition-property: stroke, transform;
 }
 .header__nav-list-2-item-active  {color: #9d5cd0;}
 .header__nav-list-2-item-active .header__nav-list-2-image {
@@ -596,7 +596,7 @@ input::placeholder {color: #cacaca;}
   border: 1px solid black;
   border-radius: 100px;
   background-color: #ececec;
-  transition-property: fill, transform;
+  transition-property: stroke, transform, background-color, border;
 }
 .ui-accordion-header {
   display: -webkit-box;
