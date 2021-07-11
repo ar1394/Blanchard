@@ -188,54 +188,72 @@ window.addEventListener('DOMContentLoaded',  function() {
 })
 
 window.addEventListener('DOMContentLoaded',  function() {
-  $('.catalog__choose-country:nth-child(2)').click(function(){
+  $('.catalog__France').click(function(){
     $('.country-active').removeClass('country-active');
-    $('.catalog__France').addClass('country-active');
+    $('.catalog__list-of-artists:nth-child(1)').addClass('country-active');
+    $('ul li').removeClass("link-active");
+    $('.catalog__list-of-artists:nth-child(1) li:nth-child(1)').addClass("link-active");
+    var formaction = $('.catalog__list-of-artists:nth-child(1) li:nth-child(1) button').attr('formaction');
+    $('.tab-active').removeClass("tab-active");
+    $(formaction).addClass("tab-active");
   });
 })
 
 window.addEventListener('DOMContentLoaded',  function() {
-  $('.catalog__choose-country:nth-child(3)').click(function(){
+  $('.catalog__Germany').click(function(){
     $('.country-active').removeClass('country-active');
-    $('.catalog__Germany').addClass('country-active');
+    $('.catalog__list-of-artists:nth-child(2)').addClass('country-active');
+    $('ul li').removeClass("link-active");
+    $('.catalog__list-of-artists:nth-child(2) li:nth-child(1)').addClass("link-active");
+    var formaction = $('.catalog__list-of-artists:nth-child(2) li:nth-child(1) button').attr('formaction');
+    $('.tab-active').removeClass("tab-active");
+    $(formaction).addClass("tab-active");
   });
 })
 
 window.addEventListener('DOMContentLoaded',  function() {
-  $('.catalog__choose-country:nth-child(4)').click(function(){
+  $('.catalog__Italy').click(function(){
     $('.country-active').removeClass('country-active');
-    $('.catalog__Italy').addClass('country-active');
+    $('.catalog__list-of-artists:nth-child(3)').addClass('country-active');
+    $('ul li').removeClass("link-active");
+    $('.catalog__list-of-artists:nth-child(3) li:nth-child(1)').addClass("link-active");
+    var formaction = $('.catalog__list-of-artists:nth-child(3) li:nth-child(1) button').attr('formaction');
+    $('.tab-active').removeClass("tab-active");
+    $(formaction).addClass("tab-active");
   });
 })
 
 window.addEventListener('DOMContentLoaded',  function() {
-  $('.catalog__choose-country:nth-child(5)').click(function(){
+  $('.catalog__Russia').click(function(){
     $('.country-active').removeClass('country-active');
-    $('.catalog__Russia').addClass('country-active');
+    $('.catalog__list-of-artists:nth-child(4)').addClass('country-active');
+    $('ul li').removeClass("link-active");
+    $('.catalog__list-of-artists:nth-child(4) li:nth-child(1)').addClass("link-active");
+    var formaction = $('.catalog__list-of-artists:nth-child(4) li:nth-child(1) button').attr('formaction');
+    $('.tab-active').removeClass("tab-active");
+    $(formaction).addClass("tab-active");
   });
 })
 
 window.addEventListener('DOMContentLoaded',  function() {
-  $('.catalog__choose-country:nth-child(6)').click(function(){
+  $('.catalog__Belgium').click(function(){
     $('.country-active').removeClass('country-active');
-    $('.catalog__Belgium').addClass('country-active');
+    $('.catalog__list-of-artists:nth-child(5)').addClass('country-active');
+    $('ul li').removeClass("link-active");
+    $('.catalog__list-of-artists:nth-child(5) li:nth-child(1)').addClass("link-active");
+    var formaction = $('.catalog__list-of-artists:nth-child(5) li:nth-child(1) button').attr('formaction');
+    $('.tab-active').removeClass("tab-active");
+    $(formaction).addClass("tab-active");
   });
 })
 
 window.addEventListener('DOMContentLoaded',  function() {
-  jQuery('.catalog__right ul li a').on('click', function (e) {
-    e.preventDefault(); // этот код предотвращает стандартное поведение браузера по клику
-    // остальной код
-  });
-})
-
-window.addEventListener('DOMContentLoaded',  function() {
-  $('.catalog__right ul li a').on("click", function() {
+  $('.catalog__right ul li button').on("click", function() {
       $('ul li').removeClass("link-active");
       $(this).parent().addClass("link-active");
-      var href = $(this).attr('href');
+      var formaction = $(this).attr('formaction');
       $('.tab-active').removeClass("tab-active");
-      $(href).addClass("tab-active");
+      $(formaction).addClass("tab-active");
   });
 })
 
