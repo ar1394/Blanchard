@@ -26,7 +26,7 @@
 	  -webkit-box-sizing: border-box;
 	          box-sizing: border-box;
 }
-body {background-color: #e5e5e5;}
+body {background-color: #fff;}
 .focus-visible, .without-outline {
   outline: none;
   padding: 0;
@@ -157,7 +157,6 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: none;
-  padding-top: 2px;
 }
 .header__nav-list-link {
   font-size: 18px;
@@ -208,9 +207,9 @@ header {
   display: flex;
   transform: translateX(-2px);
   margin-right: auto;
-  padding-top: 25px;
-  padding-bottom: 21px;
-  width: 64.65%;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  width: 64.85%;
   justify-content: space-between;
 }
 .header__nav-list-2-item {
@@ -223,7 +222,7 @@ header {
   cursor: pointer;
 }
 .header__nav-list-2-image {
-  transform: translate(3px, -1px);
+  transform: translate(1px, -1px);
   width: 12px;
   height: 11px;
   stroke: white;
@@ -239,8 +238,8 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 24px;
-  padding-bottom: 19px;
+  padding-top: 22px;
+  padding-bottom: 21px;
   flex-direction: row-reverse;
 }
 .header__search-button {
@@ -357,7 +356,7 @@ input::placeholder {color: #cacaca;}
   transform: translateX(-3px);
 }
 .swiper-container_1 + .container {
-  padding-top: 142px;
+  padding-top: 140px;
   padding-bottom: 121px;
 }
 .section-hero__text-1 {
@@ -374,7 +373,7 @@ input::placeholder {color: #cacaca;}
   position: relative;
   display: flex;
   z-index: 2;
-  padding-top: 21px;
+  padding-top: 18px;
   margin-bottom: 93px;
   font-size: 18px;
   font-weight: 700;
@@ -408,7 +407,7 @@ input::placeholder {color: #cacaca;}
 .swiper-container_1 .swiper-slide-active .section-hero__image {position: absolute;}
 .swiper-container_1 .swiper-slide {height: 700px;}
 .swiper-container_1 .swiper-slide-active .section-hero__image {-webkit-animation: pulse 2s ease-in-out infinite;animation: pulse 2s ease-in-out infinite;}
-.about-us {padding-bottom: 68px;}
+.about-us {padding-bottom: 71px;}
 .about-us .section-top {margin-bottom: 16px;}
 .about-us__text {
   max-width: 1080px;
@@ -416,38 +415,57 @@ input::placeholder {color: #cacaca;}
   color: #333;
 }
 .gallery {
-  padding-top: 85px;
+  padding-top: 83px;
   background-image: url('../img/gallery-background.jpg');
   background-size: cover;
 }
 .gallery__left, .books__left {color: #fff;}
+.gallery__left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .gallery .section-top {color: #fff;}
 .gallery__filter {
   padding-top: 22px;
-  margin-bottom: 13px;
+  margin-bottom: 14px;
   font-size: 17px;
-
 }
 .choices__inner {
   padding: 2px 0px 0px 10px;
   font-size: 16px;
+  -webkit-transition-duration: 100ms;
+       -o-transition-duration: 100ms;
+          transition-duration: 100ms;
+  -webkit-transition-timing-function: ease-in-out;
+       -o-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+  transition-property: color, border-color;
 }
 .choices[data-type*=select-one]:after {
   top: 20%;
   right: 66px;
   content: url(../img/arrow-grey-gallery.svg);
   border-style: none;
+  -webkit-transition-duration: 100ms;
+       -o-transition-duration: 100ms;
+          transition-duration: 100ms;
+  -webkit-transition-timing-function: ease-in-out;
+       -o-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
 }
 .choices[data-type*=select-one].is-open:after {margin-top: -2px;}
 .choices {width: 98%;}
+.choices__list--single {padding: 6px 16px 0px 4px;}
 .gallery__info {
   font-weight: 600;
   line-height: 32px;
 }
 .gallery__left .gallery__info {
   display: none;
-  max-width: 370px;
+  margin-bottom: -10px;
   padding-right: 10px;
+  max-width: 370px;
 }
 .gallery__right .gallery__info {padding-left: 2px;}
 .gallery__right, .books__right {
@@ -463,10 +481,10 @@ input::placeholder {color: #cacaca;}
   color: #9d5cd0;
   transition-property: color, border-bottom;
 }
-.swiper-container_2 {padding-top: 21px;}
+.swiper-container_2 {padding-top: 31px;}
 .swiper-slide-hover-active {
   position: absolute;
-  visibility: hidden;
+  opacity: 0;
   width: 100%;
   height: 100%;
   z-index: 2;
@@ -474,6 +492,7 @@ input::placeholder {color: #cacaca;}
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  transition-property: opacity, background-color;
 }
 .slide-hover-image {
   width: 85.715%;
@@ -487,6 +506,18 @@ input::placeholder {color: #cacaca;}
 }
 [class*="swiper-button-prev_"], [class*="swiper-button-next_"], [class*="swiper-pagination_"] {position: static;}
 [class*="swiper-pagination_"] {width: auto;}
+[class*="swiper-button-prev_"], [class*="swiper-button-next_"] {
+  width: auto;
+  height: 30px;
+  padding: 0;
+}
+.pagination-button-image {
+  width: 30px;
+  height: 30px;
+  fill: none;
+  border-radius: 100px;
+}
+[class*="swiper-button-prev_"]:after, [class*="swiper-button-next_"]:after {content: none;}
 .swiper-pagination_2, .swiper-pagination_3 {
   padding-left: 18px;
   margin-right: 20px;
@@ -494,61 +525,70 @@ input::placeholder {color: #cacaca;}
   color: #fff;
   text-align: start;
 }
-.swiper-button-prev_2, .swiper-button-next_2, .swiper-button-prev_3, .swiper-button-next_3 {
-  width: 30px;
-  height: 30px;
-  margin-top: 0;
+.swiper-button-prev_2, .swiper-button-next_2, .swiper-button-prev_3, .swiper-button-next_3 {margin-top: 0;}
+.gallery [class*="swiper-button-"] .pagination-button-image {
+  stroke: white;
+  background-color: #666;
+  border: 1px solid #666;
+  transition-property: background-color, border;
+}
+.books [class*="swiper-button-"] .pagination-button-image {
+  stroke: white;
+  background-color: #666;
+  border: 1px solid #666;
+  transition-property: background-color, border;
 }
 .swiper-button-prev_2 {
   transform: translateX(3px);
   margin-right: 3px;
 }
-.swiper-button-prev_2:after {content: url('../img/button-prev_2.svg');}
-.swiper-button-next_2:after {content: url('../img/button-next_2.svg');}
-
+.catalog .flex {
+  margin-bottom: 7px;
+  flex-wrap: wrap;
+}
 .catalog .section-top {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-transform: translate(-3px, -15px);
-      -ms-transform: translate(-3px, -15px);
-          transform: translate(-3px, -15px);
-  margin-right: 29px;
+  -webkit-transform: translate(-3px, 3px);
+      -ms-transform: translate(-3px, 3px);
+          transform: translate(-3px, 3px);
+  margin-right: 34px;
+}
+.catalog__list-of-countries {
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 .catalog__choose-country {
-  transform: translate(10px, 2px);
-  margin-right: 46px;
+  transform: translate(10px, 12px);
+  margin-right: 50px;
   margin-bottom: 10px;
   width: 46px;
   height: 46px;
   border: 2px solid rgba(0, 0, 0, 0);
   border-radius: 50px;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
   transition-property: border, box-shadow;
 }
-.catalog__choose-country:nth-child(2) {background-image: url('../img/France.png');}
-.catalog__choose-country:nth-child(3) {background-image: url('../img/Germany.png');}
-.catalog__choose-country:nth-child(4) {background-image: url('../img/Italy.png');}
-.catalog__choose-country:nth-child(5) {background-image: url('../img/Russia.png');}
-.catalog__choose-country:nth-child(6) {
-  margin-right: 0;
+.catalog__France {background-image: url('../img/France.png');}
+.catalog__Germany {background-image: url('../img/Germany.png');}
+.catalog__Italy {background-image: url('../img/Italy.png');}
+.catalog__Russia {background-image: url('../img/Russia.png');}
+.catalog__Belgium {
+  margin-right: 0!important;
   background-image: url('../img/Belgium.png');
 }
 .catalog__choose-country-active {
   width: 66px;
   height: 66px;
   transform: translate(0px, 2px);
-  margin-right: 26px;
+  margin-right: 30px;
   margin-bottom: 0;
   border: 2px solid #9d5cd0;
 }
 .catalog__text {
   max-width: 1080px;
+  margin-top: 0;
   margin-bottom: 20px;
   line-height: 32px;
 }
@@ -556,17 +596,12 @@ input::placeholder {color: #cacaca;}
 .catalog__left {width: 100%;}
 .catalog__left-img {width: 100%;}
 .catalog__right:nth-child(3) {display: none;}
-.catalog__France, .catalog__Germany, .catalog__Italy, .catalog__Russia, .catalog__Belgium {
+.catalog__list-of-artists {
   display: none;
   padding-top: 25px;
   margin-bottom: 26px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  max-height: 317px;
   line-height: 32px;
 }
 .country-active {
@@ -575,8 +610,8 @@ input::placeholder {color: #cacaca;}
   display: flex;
   width: 100%;
 }
-.country-active a {color: #333;}
-.link-active a {
+.country-active button {color: #333;}
+.link-active button {
   color: #9d5cd0;
   font-weight: 600;
 }
@@ -606,7 +641,7 @@ input::placeholder {color: #cacaca;}
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.ui-accordion-header {padding: 34px 0px 28px 0px;}
+.ui-accordion-header {padding: 35px 0px 28px 0px;}
 .ui-state-active .catalog__periods-image {transform: rotate(180deg) translateY(4px);}
 .ui-icon {display:none;}
 .catalog__artist-name {
@@ -706,7 +741,7 @@ input::placeholder {color: #cacaca;}
 .event-hidden {display: none;}
 .books {
   padding-top: 85px;
-  min-height: 768px;
+  min-height: 763px;
   background-image: url('../img/books-background.jpg');
 }
 .books .section-top {
@@ -816,7 +851,7 @@ input::placeholder {color: #cacaca;}
 .books__for-input {
   border: 1px solid #fff;
   border-radius: 6px;
-  transform: translateY(16px);
+  transform: translateY(12px);
   margin-bottom: 16px;
   height: 40px;
   -webkit-box-align: center;
@@ -837,9 +872,7 @@ input::placeholder {color: #cacaca;}
   margin-right: 22px;
 }
 .books__right {padding-top: 28px;}
-.swiper-button-prev_3:after {content: url('../img/button-prev_2.svg');}
 .swiper-button-next_3 {margin-right: auto;}
-.swiper-button-next_3:after {content: url('../img/button-next_2.svg');}
 .swiper-container_3 {padding-top: 16px;}
 .swiper-container_3 .swiper-slide {height: 500px;}
 .swiper-container_3__img {width: 100%;}
@@ -941,17 +974,17 @@ input::placeholder {color: #cacaca;}
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+     -ms-flex-align: center;
+        align-items: center;
 }
 .swiper-container_4 {margin-bottom: 82px;}
-.swiper-button-prev_4, .swiper-button-next_4 {
-  width: 30px;
-  height: 30px;
-  margin-top: calc(-1 * var(--swiper-navigation-size) / 0.5);
+.swiper-button-prev_4, .swiper-button-next_4 {margin-top: calc(-1 * var(--swiper-navigation-size) / 0.5);}
+.projects [class*="swiper-button-"] .pagination-button-image {
+  stroke: black;
+  background-color: #ececec;
+  border: 1px solid black;
+  transition-property: stroke, background-color, border;
 }
-.swiper-button-prev_4:after {content: url('../img/button-prev_4.svg');}
-.swiper-button-next_4:after {content: url('../img/button-next_4.svg');}
 .swiper-pagination_4 {
   color: #fff;
   text-align: start;
@@ -976,7 +1009,7 @@ input::placeholder {color: #cacaca;}
 .contacts__all {display: -webkit-box;display: -ms-flexbox;display: flex;}
 .contacts__left {
   display: block;
-  width: 676px;
+  width: 670px;
   border-top: 1px solid #cacaca;
   border-right: 1px solid #cacaca;
   padding-top: 132px;
@@ -1088,7 +1121,7 @@ input::placeholder {color: #cacaca;}
   }
   .catalog .section-top {display: block;}
   .swiper-container_2_5, .contacts__all, .contacts__up-down {display: block;}
-  .country-active .focus-visible {width: 212px;}
+  .country-active li {columns: 212px;}
   .all-events, .event__for-button, .books-categories, .contacts__left {display: none;}
   .align + .books__form-checkbox {display: none;}
   .grid, .event {width: 100%;}
@@ -1147,14 +1180,18 @@ input::placeholder {color: #cacaca;}
   }
   .choices[data-type*=select-one].is-open:after {content: url('../img/arrow-open-gallery.svg');}
   .swiper-container_2, .swiper-container_3, .ui-accordion-header, .ui-accordion-content {width: 100%;}
-  .swiper-button-prev_2:active, .swiper-button-prev_3:active, .swiper-button-prev_4:active {content: url(../img/button-prev-active.svg);}
-  .swiper-button-next_2:active, .swiper-button-next_3:active, .swiper-button-next_4:active {content: url(../img/button-next-active.svg);}
+  [class*="swiper-button-"]:active .pagination-button-image {
+    background-color: #7943A4;
+    border: 1px solid #D1A9F0;
+    border-radius: 100px;
+  }
+  .projects [class*="swiper-button-"]:active .pagination-button-image {stroke: white;}
   .gallery__authorize:active, .project-about:active {
     border-bottom: 1px solid #7943a4;
     color: #7943a4;
   }
   .swiper-slide:active .swiper-slide-hover-active {
-    visibility: visible;
+    opacity: 1;
     background-color: rgba(194, 131, 243, 0.4);
   }
   .catalog__choose-country:active {border: 2px solid #9d5cd0;}
@@ -1170,7 +1207,7 @@ input::placeholder {color: #cacaca;}
     background-color: #7943a4;
   }
   .ui-accordion-header:active .catalog__period {color: #7943a4;}
-  .country-active a:active {
+  .country-active .focus-visible:active {
     border-bottom: none;
     color: #7943a4;
     font-weight: 600;
@@ -1275,51 +1312,47 @@ input::placeholder {color: #cacaca;}
     padding-left: 13px;
     margin-right: 15px;
   }
-  .swiper-button-prev_2 {
-    padding-left: 95px;
-    margin-right: 16px;
-  }
-  .swiper-button-prev_2, .swiper-pagination_2, .swiper-button-next_2 {-webkit-transform: translateY(437px)!important;-ms-transform: translateY(437px)!important;transform: translateY(437px)!important;}
-  .swiper-container_2 {margin-bottom: 71px;}
+  .swiper-button-prev_2, .swiper-pagination_2, .swiper-button-next_2 {-webkit-transform: translate(80px, 438px)!important;-ms-transform: translate(80px, 438px)!important;transform: translate(80px, 438px)!important;}
+  .swiper-container_2 {margin-bottom: 70px;}
   .swiper-container_2 .swiper-slide {height: 367px;}
   .catalog__choose-country {
-    transform: translate(1px, -4px);
-    margin-right: 22px;
+    transform: translate(1px, 2px);
+    margin-right: 28px;
     margin-bottom: 4px;
     width: 38px;
     height: 38px;
     background-size: 90%;
   }
-  .catalog__choose-country:nth-child(2) {
-    transform: translate(-3px, -4px);
-    margin-right: 18px;
+  .catalog__France {
+    transform: translate(-3px, 2px);
+    margin-right: 22px;
   }
-  .catalog__choose-country:nth-child(5) {margin-right: 15px;}
-  .catalog__choose-country:nth-child(6) {transform: translate(8px, -4px);}
-  .catalog__choose-country-active:nth-child(2) {
-    transform: translate(-6px, -5px);
-    margin-right: 13px;
+  
+  .catalog__Russia {margin-right: 17px;}
+  .catalog__Belgium {transform: translate(8px, 2px);}
+  li:nth-child(1) .catalog__choose-country-active {
+    transform: translate(-6px, -1px);
+    margin-right: 16px;
   }
   .catalog__choose-country-active {
-    transform: translate(-1px, -5px);
-    margin-right: 17px;
+    transform: translate(-2px, -1px);
+    margin-right: 22px;
     margin-bottom: 0;
     width: 44px;
     height: 44px;
     background-size: 77%;
-  }
-  .catalog__choose-country-active:nth-child(5) {margin-right: 10px;}
-  .catalog__choose-country-active:nth-child(6) {transform: translate(6px, -5px);}
+  } 
+  li:nth-child(4) .catalog__choose-country-active {margin-right: 11px;} 
+  li:nth-child(5) .catalog__choose-country-active {transform: translate(5px, -1px);}
   .gallery__right .gallery__info {padding-left: 0;}
   .container:nth-child(4) {
-    padding-top: 36px;
+    padding-top: 32px;
     margin-bottom: 43px;
   }
-  .catalog .section-top {-webkit-transform: translate(-3px, 1px);-ms-transform: translate(-3px, 1px);transform: translate(-3px, 1px);}
-  .catalog__France, .catalog__Germany, .catalog__Italy, .catalog__Russia, .catalog__Belgium {
+  .catalog .section-top {-webkit-transform: translate(-3px, 5px);-ms-transform: translate(-3px, 5px);transform: translate(-3px, 5px);}
+  .catalog__list-of-artists {
     padding-top: 18px;
     margin-bottom: 19px;
-    max-height: 805px;
   }
   .catalog__text {display: none;}
   .ui-accordion-header {
@@ -1504,30 +1537,27 @@ input::placeholder {color: #cacaca;}
   }
   .swiper-container_2 .swiper-slide {height: 400px;}
   .catalog__choose-country {
-    transform: translate(1px, -5px);
-    margin-right: 28px;
+    transform: translate(1px, 13px);
+    margin-right: 30px;
     margin-bottom: 4px;
     width: 38px;
     height: 38px;
     background-size: 90%;
   }
-  .catalog__choose-country:nth-child(5) {margin-right: 23px;}
-  .catalog__choose-country:nth-child(6) {transform: translate(6px, -5px);}
+  .catalog__Russia {margin-right: 25px;}
+  .catalog__Belgium {transform: translate(6px, 13px);}
   .catalog__choose-country-active {
-    transform: translate(-2px, -6px);
-    margin-right: 22px;
+    transform: translate(-2px, 10px);
+    margin-right: 24px;
     margin-bottom: 0;
     width: 44px;
     height: 44px;
     background-size: 77%;
   }
-  .catalog__choose-country-active:nth-child(5) {margin-right: 17px;}
-  .catalog__choose-country-active:nth-child(6) {transform: translate(3px, -6px)}
+  li:nth-child(4) .catalog__choose-country-active  {margin-right: 19px;}
+  li:nth-child(5) .catalog__choose-country-active {transform: translate(3px, 10px)}
   .container:nth-child(4) {margin-bottom: 74px;}
-  .catalog__France, .catalog__Germany, .catalog__Italy, .catalog__Russia, .catalog__Belgium {
-    margin-bottom: 30px;
-    max-height: 805px;
-  }
+  .catalog__list-of-artists {margin-bottom: 30px;}
   .catalog__text {display: none;}
   .ui-accordion-header {font-size: 18px;}
   .catalog__periods-image {
@@ -1553,8 +1583,8 @@ input::placeholder {color: #cacaca;}
     padding-top: 18px;
     margin-bottom: 25px;
     max-width: 660px;
-  }
-  .catalog__choose-country:nth-child(6) {margin-right: 0;}
+  } 
+  .catalog__Belgium {margin-right: 0;}
   .projects__i-1 {transform: translate(145px, -24px);}
   .projects__i-2 {transform: translate(288px, -24px);}
   .projects__i-3 {transform: translate(240px, -24px);}
@@ -1614,30 +1644,27 @@ input::placeholder {color: #cacaca;}
   }
   .swiper-container_2 .swiper-slide {height: 590px;}
   .catalog__choose-country {
-    transform: translate(1px, -5px);
+    transform: translate(1px, 13px);
     margin-right: 42px;
     margin-bottom: 4px;
     width: 38px;
     height: 38px;
     background-size: 90%;
   }
-  .catalog__choose-country:nth-child(5) {margin-right: 36px;}
-  .catalog__choose-country:nth-child(6) {transform: translate(6px, -5px);}
+  .catalog__Russia {margin-right: 36px;}
+  .catalog__Belgium {transform: translate(6px, 13px);}
   .catalog__choose-country-active {
-    transform: translate(-2px, -6px);
+    transform: translate(-2px, 10px);
     margin-right: 36px;
     margin-bottom: 0;
     width: 44px;
     height: 44px;
     background-size: 77%;
   }
-  .catalog__choose-country-active:nth-child(5) {margin-right: 30px;}
-  .catalog__choose-country-active:nth-child(6) {transform: translate(3px, -6px);}
+  li:nth-child(4) .catalog__choose-country-active  {margin-right: 30px;}
+  li:nth-child(5) .catalog__choose-country-active {transform: translate(3px, 10px);}
   .container:nth-child(4) {margin-bottom: 74px;}
-  .catalog__France, .catalog__Germany, .catalog__Italy, .catalog__Russia, .catalog__Belgium {
-    margin-bottom: 30px;
-    max-height: 805px;
-  }
+  .catalog__list-of-artists {margin-bottom: 30px;}
   .event {margin-bottom: 50px;}
   .event__text {min-height: 295px;}
   .books {min-height: 858px;}
@@ -1698,30 +1725,27 @@ input::placeholder {color: #cacaca;}
   }
   .swiper-container_2 .swiper-slide {height: 590px;}
   .catalog__choose-country {
-    transform: translate(1px, -5px);
-    margin-right: 52px;
+    transform: translate(1px, 13px);
+    margin-right: 54px;
     margin-bottom: 4px;
     width: 38px;
     height: 38px;
     background-size: 90%;
   }
-  .catalog__choose-country:nth-child(5) {margin-right: 45px;}
-  .catalog__choose-country:nth-child(6) {transform: translate(6px, -5px);}
+  .catalog__Russia {margin-right: 47px;}
+  .catalog__Belgium {transform: translate(6px, 13px);}
   .catalog__choose-country-active {
-    transform: translate(-2px, -6px);
-    margin-right: 46px;
+    transform: translate(-2px, 10px);
+    margin-right: 48px;
     margin-bottom: 0;
     width: 44px;
     height: 44px;
     background-size: 77%;
   }
-  .catalog__choose-country-active:nth-child(5) {margin-right: 39px;}
-  .catalog__choose-country-active:nth-child(6) {transform: translate(3px, -6px);}
+  li:nth-child(4) .catalog__choose-country-active {margin-right: 41px;}
+  li:nth-child(5) .catalog__choose-country-active {transform: translate(3px, 10px);}
   .container:nth-child(4) {margin-bottom: 74px;}
-  .catalog__France, .catalog__Germany, .catalog__Italy, .catalog__Russia, .catalog__Belgium {
-    margin-bottom: 30px;
-    max-height: 413px;
-  }
+  .catalog__list-of-artists {margin-bottom: 30px;}
   .event {margin-bottom: 50px;}
   .event__text {min-height: 245px;}
   .books {min-height: 858px;}
@@ -1803,10 +1827,7 @@ input::placeholder {color: #cacaca;}
   }
   .swiper-container_2 .swiper-slide {height: 290px;}
   .container:nth-child(4) {margin-bottom: 74px;}
-  .catalog__France, .catalog__Germany, .catalog__Italy, .catalog__Russia, .catalog__Belgium {
-    margin-bottom: 30px;
-    max-height: 409px;
-  }
+  .catalog__list-of-artists {margin-bottom: 30px;}
   .event {margin-bottom: 50px;}
   .event__text {min-height: 245px;}
   .books {min-height: 818px;}
@@ -1880,9 +1901,9 @@ input::placeholder {color: #cacaca;}
   .choices__inner {padding: 0px 0px 0px 11px;}
   .container:nth-child(4) {margin-bottom: 74px;}
   .catalog .section-top {display: block;}
-  .catalog__France, .catalog__Germany, .catalog__Italy, .catalog__Russia, .catalog__Belgium {margin-bottom: 30px;}
+  .catalog__list-of-artists {margin-bottom: 30px;}
   .grid {width: 100%;}
-  .country-active .focus-visible {width: 212px;}
+  .country-active li {columns: 212px;}
   .event {
     margin-bottom: 50px;
     width: 290px;
@@ -1953,34 +1974,34 @@ input::placeholder {color: #cacaca;}
     height: 280px;
   }
   .catalog__choose-country {
-    transform: translate(10px, -2px);
-    margin-right: 50px;
+    transform: translate(10px, 8px);
+    margin-right: 54px;
   }
-  .catalog__choose-country:nth-child(5) {margin-right: 38px;}
-  .catalog__choose-country:nth-child(6) {transform: translate(20px, -2px);}
+  .catalog__Russia {margin-right: 38px;}
+  .catalog__Belgium {transform: translate(26px, 8px);}
   .catalog__choose-country-active {
     transform: translate(0px, -2px);
-    margin-right: 30px;
+    margin-right: 34px;
   }
-  .catalog__choose-country-active:nth-child(5) {margin-right: 18px;}
-  .catalog__choose-country-active:nth-child(6) {transform: translate(10px, -2px);}
+  li:nth-child(4) .catalog__choose-country-active {margin-right: 18px;}
+  li:nth-child(5) .catalog__choose-country-active {transform: translate(16px, -2px);}
   .gallery__right .gallery__info {padding-left: 1px;}
   .container:nth-child(4) {
     margin-bottom: 74px;
     padding-top: 2px;
   }
-  .catalog__France, .catalog__Germany, .catalog__Italy, .catalog__Russia, .catalog__Belgium {
+  .catalog__list-of-artists {
     padding-top: 25px;
     margin-bottom: 29px;
   }
   .grid {width: 100%;}
   .catalog .section-top {
-    -webkit-transform: translate(-3px, -19px);
-        -ms-transform: translate(-3px, -19px);
-            transform: translate(-3px, -19px);
-    margin-right: 27px;
+    -webkit-transform: translate(-3px, -1px);
+        -ms-transform: translate(-3px, -1px);
+            transform: translate(-3px, -1px);
+    margin-right: 30px;
   }
-  .country-active .focus-visible {width: 242px;}
+  .country-active li {columns: 222px;}
   .catalog__artist-born, .catalog__artist-text {padding-left: 1px;}
   .event {
     margin-bottom: 50px;
@@ -2079,13 +2100,19 @@ input::placeholder {color: #cacaca;}
     border-bottom: 1px solid #7943a4;
     color: #7943a4;
   }
-  .swiper-button-prev_2:hover, .swiper-button-prev_3:hover, .swiper-button-prev_4:hover {content: url(../img/button-prev-hover.svg);}
-  .swiper-button-next_2:hover, .swiper-button-next_3:hover, .swiper-button-next_4:hover {content: url(../img/button-next-hover.svg);}
-  .swiper-button-prev_2:active, .swiper-button-prev_3:active, .swiper-button-prev_4:active {content: url(../img/button-prev-active.svg);}
-  .swiper-button-next_2:active, .swiper-button-next_3:active, .swiper-button-next_4:active {content: url(../img/button-next-active.svg);}
-  .swiper-slide:hover .swiper-slide-hover-active {visibility: visible;}
+  [class*="swiper-button-"]:hover .pagination-button-image {
+    background-color: #9D5CD0;
+    border: 1px solid #9D5CD0;
+  }
+  .projects [class*="swiper-button-"]:hover .pagination-button-image {stroke: white;}
+  [class*="swiper-button-"]:active .pagination-button-image {
+    background-color: #7943A4;
+    border: 1px solid #D1A9F0;
+  }
+  .projects [class*="swiper-button-"]:active .pagination-button-image {stroke: white;}
+  .swiper-slide:hover .swiper-slide-hover-active {opacity: 1;}
   .swiper-slide:active .swiper-slide-hover-active {
-    visibility: visible;
+    opacity: 1;
     background-color: rgba(194, 131, 243, 0.4);
   }
   .catalog__choose-country:hover {box-shadow: 0px 0px 20px rgba(157, 92, 208, 0.7);}
@@ -2115,12 +2142,12 @@ input::placeholder {color: #cacaca;}
   }
   .ui-state-hover .catalog__period {color: #9d5cd0;}
   .ui-accordion-header:active .catalog__period {color: #7943a4;}
-  .country-active a:hover {
+  .country-active .focus-visible:hover {
     border-bottom: 1px solid #9d5cd0;
     color: #9d5cd0;
     font-weight: 600;
   }
-  .country-active a:active {
+  .country-active .focus-visible:active {
     border-bottom: none;
     color: #7943a4;
     font-weight: 600;
@@ -2150,6 +2177,7 @@ input::placeholder {color: #cacaca;}
   .projects__i-2:hover + .projects__i-2-tooltip {display: inline-block;}
   .projects__i-3:hover + .projects__i-3-tooltip {display: inline-block;}
   .footer__link:hover, .footer__link:focus {fill: #fff;}
+  .footer__social-media {padding-top: 4px;}
 }
 @media (min-width:769px) and (max-width: 823px){
   .header__nav, .header__nav-2 {width: 769px;}
@@ -2166,22 +2194,19 @@ input::placeholder {color: #cacaca;}
     height: 342px;
   }
   .catalog__choose-country {
-    -webkit-transform: translate(10px, 9px);
-        -ms-transform: translate(10px, 9px);
-            transform: translate(10px, 9px);
+    -webkit-transform: translate(10px, 20px);
+        -ms-transform: translate(10px, 20px);
+            transform: translate(10px, 20px);
   }
   .catalog__choose-country-active {
-    -webkit-transform: translate(0px, 9px);
-        -ms-transform: translate(0px, 9px);
-            transform: translate(0px, 9px);
+    -webkit-transform: translate(0px, 10px);
+        -ms-transform: translate(0px, 10px);
+            transform: translate(0px, 10px);
   }
-  .catalog__France, .catalog__Germany, .catalog__Italy, .catalog__Russia, .catalog__Belgium {
-    max-height: 409px;
-    margin-bottom: 30px;
-  }
+  .catalog__list-of-artists {margin-bottom: 30px;}
   .grid {width: 95%;}
-  .country-active {width: 448px;}
-  .country-active .focus-visible {width: 249px;}
+  .country-active {width: 498px;}
+  .country-active li {columns: 249px;}
   .ui-accordion-header, .ui-accordion-content {width: 95%;}
   .catalog__left {padding-left: 10px;}
   .event {
@@ -2232,20 +2257,17 @@ input::placeholder {color: #cacaca;}
   }
 
   .catalog__choose-country {
-    -webkit-transform: translate(10px, 9px);
-        -ms-transform: translate(10px, 9px);
-            transform: translate(10px, 9px);
+    -webkit-transform: translate(10px, 20px);
+        -ms-transform: translate(10px, 20px);
+            transform: translate(10px, 20px);
   }
   .catalog__choose-country-active {
-    -webkit-transform: translate(0px, 9px);
-        -ms-transform: translate(0px, 9px);
-            transform: translate(0px, 9px);
+    -webkit-transform: translate(0px, 10px);
+        -ms-transform: translate(0px, 10px);
+            transform: translate(0px, 10px);
   }
   .catalog__left-right {display: -webkit-box;display: -ms-flexbox;display: flex;}
-  .catalog__France, .catalog__Germany, .catalog__Italy, .catalog__Russia, .catalog__Belgium {
-    max-height: 409px;
-    margin-bottom: 30px;
-  }
+  .catalog__list-of-artists {margin-bottom: 30px;}
   .catalog__left {
     width: 477px;
     padding-right: 10px;
@@ -2253,8 +2275,8 @@ input::placeholder {color: #cacaca;}
   .catalog__right:nth-child(1) {display: none;}
   .catalog__right:nth-child(3) {display: block;}
   .grid {width: 95%;}
-  .country-active {width: 448px;}
-  .country-active .focus-visible {width: 249px;}
+  .country-active {width: 498px;}
+  .country-active li {columns: 249px;}
   .ui-accordion-header, .ui-accordion-content {width: 436px;}
   .event {
     margin-bottom: 50px;
@@ -2324,11 +2346,10 @@ input::placeholder {color: #cacaca;}
   .about-us {padding-bottom: 70px;}
   .gallery {height: 839px;}
   .gallery__left {min-width: 317px;}
-  .gallery__filter-choice {margin-bottom: 362px}
   .gallery__left .gallery__info {padding-right: 30px;}
   .gallery__right {
     padding-left: 13px;
-    padding-top: 19px;
+    padding-top: 21px;
   }
   .swiper-button-prev_2 {
     transform: translateX(1px);
@@ -2343,21 +2364,18 @@ input::placeholder {color: #cacaca;}
     top: 26%;
     right: 56px;
   }
-  .catalog .section-top {margin-right: 25px;}
+  .catalog .section-top {margin-right: 30px;}
   .catalog__choose-country {
-    -webkit-transform: translate(10px, 9px);
-        -ms-transform: translate(10px, 9px);
-            transform: translate(10px, 9px);
+    -webkit-transform: translate(10px, 20px);
+        -ms-transform: translate(10px, 20px);
+            transform: translate(10px, 20px);
   }
   .catalog__choose-country-active {
-    -webkit-transform: translate(0px, 9px);
-        -ms-transform: translate(0px, 9px);
-            transform: translate(0px, 9px);
+    -webkit-transform: translate(0px, 10px);
+        -ms-transform: translate(0px, 10px);
+            transform: translate(0px, 10px);
   }
-  .catalog__France, .catalog__Germany, .catalog__Italy, .catalog__Russia, .catalog__Belgium {
-    max-height: 410px;
-    margin-bottom: 30px;
-  }
+  .catalog__list-of-artists {margin-bottom: 30px;}
   .catalog__left {
     width: 477px;
     padding-right: 40px;
@@ -2365,8 +2383,8 @@ input::placeholder {color: #cacaca;}
   .catalog__artist-born, .catalog__artist-text {padding-left: 2px;}
   .catalog__artist-text {width: 101%;}
   .grid {width: 95%;}
-  .country-active {width: 478px;}
-  .country-active .focus-visible {width: 249px;}
+  .country-active {width: 498px;}
+  .country-active li {columns: 249px;}
   .ui-accordion-header, .ui-accordion-content {width: 436px;}
   .event {
     margin-bottom: 50px;
@@ -2432,16 +2450,14 @@ input::placeholder {color: #cacaca;}
     padding-top: 21px;
     margin-bottom: 15px;
   }
-  .gallery__filter-choice {margin-bottom: 460px;}
   .swiper-container_2 .swiper-slide {
     width: 310px!important;
     height: 310px;
   }
-  .catalog__France, .catalog__Germany, .catalog__Italy, .catalog__Russia, .catalog__Belgium {max-height: 409px;}
   .catalog__left {width: 660px;}
   .grid {width: 95%;}
-  .country-active {width: 448px;}
-  .country-active .focus-visible {width: 258px;}
+  .country-active {width: 516px;}
+  .country-active li {columns: 258px;}
   .ui-accordion-header, .ui-accordion-content {width: 450px;}
   .event {width: 330px;}
   .event__img:nth-child(2) {display: none;}
@@ -2476,16 +2492,14 @@ input::placeholder {color: #cacaca;}
     padding-top: 21px;
     margin-bottom: 15px;
   }
-  .gallery__filter-choice {margin-bottom: 550px;}
   .swiper-container_2 .swiper-slide {
     width: 350px!important;
     height: 350px;
   }
-  .catalog__France, .catalog__Germany, .catalog__Italy, .catalog__Russia, .catalog__Belgium {max-height: 409px;}
   .catalog__left {width: 660px;}
   .grid {width: 95%;}
-  .country-active {width: 448px;}
-  .country-active .focus-visible {width: 258px;}
+  .country-active {width: 516px;}
+  .country-active li {columns: 258px;}
   .ui-accordion-header, .ui-accordion-content {width: 475px;}
   .event {width: 380px;}
   .event__text {min-height: 301px;}
@@ -2513,12 +2527,13 @@ input::placeholder {color: #cacaca;}
     padding-top: 21px;
     margin-bottom: 15px;
   }
-  .gallery__filter-choice {margin-bottom: 460px;}
   .swiper-container_2 .swiper-slide {
     width: 324px!important;
     height: 324px;
   }
   .ui-accordion-header, .ui-accordion-content {width: 600px;}
+  .country-active {width: 600px;}
+  .country-active li {columns: 300px;}
   .event {width: 450px;}
   .event__text {min-height: 371px;}
   .event__text .event__inside {width: 90%;}
@@ -2549,32 +2564,33 @@ input::placeholder {color: #cacaca;}
   .header__nav-list, .header__login {display: -webkit-box;display: -ms-flexbox;display: flex;}
   .header__down {display: block;}
   .container:nth-child(2) .section-top {padding-top: 3px;}
-  .about-us__text, .catalog__France, .catalog__Germany, .catalog__Italy, .catalog__Russia, .catalog__Belgium, .catalog__artist-text, .event__about, .books__label-checkbox {line-height: 33px;}
   .gallery {height: 995px;}
   .gallery__left {min-width: 450px;}
   .gallery__filter {
     padding-top: 21px;
     margin-bottom: 15px;
   }
-  .gallery__filter-choice {margin-bottom: 550px;}
   .swiper-container_2, .swiper-container_3 {width: 1150px;}
   .swiper-container_2 .swiper-slide {
     width: 350px!important;
     height: 350px;
   }
-  .country-active {width: 748px;}
-  .country-active .focus-visible {width: 258px;}
-  .catalog .section-top {margin-right: 27px;}
-  .catalog__text {margin-bottom: 42px;}
+  .country-active {width: 774px;}
+  .country-active li {columns: 258px;}
+  .container:nth-child(4) {margin-bottom: 80px;}
+  .catalog .section-top {margin-right: 30px;}
+  .catalog__text {margin-bottom: 38px;}
   .catalog__left {padding-right: 10px;}
-  .catalog__France, .catalog__Germany, .catalog__Italy, .catalog__Russia, .catalog__Belgium {padding-top: 23px;}
+  .catalog__list-of-artists {margin-bottom: 28px;}
   .all-events {padding-top: 16px;}
+  .events {margin-bottom: 83px;}
   .event {
     width: 500px;
     margin-bottom: 47px;
   }
+  .event__place-and-time {margin-bottom: 2px;}
   .event__text {
-    margin-bottom: 48px;
+    margin-bottom: 44px;
     min-height: 306px;
   }
   .event__text .event__inside {width: 90%;}
@@ -2589,7 +2605,7 @@ input::placeholder {color: #cacaca;}
   }
   .books__about-book {padding-top: 17px;}
   .projects .section-top {transform: translate(-3px, 4px);}
-  .projects__text {line-height: 33px;}
+  .projects__text {padding-top: 22px;}
   .swiper-container_4 {
     width: 1450px;
     margin-bottom: 84px;
@@ -2597,7 +2613,7 @@ input::placeholder {color: #cacaca;}
   .swiper-container_4 .swiper-slide {width: 450px!important;}
   .contacts .section-top {transform: translate(-3px, 2px);}
   .contacts__left {
-    padding-left: 150px;
+    padding-left: 152px;
     padding-top: 130px;
   }
 }

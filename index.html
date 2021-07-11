@@ -47,6 +47,12 @@
             <rect width="6.8678" height="1.71695" transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)"/>
             <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z"/> 
         </symbol>
+        <symbol viewbox="0 0 30 30" id="pagination-prev">
+            <path d="M16 20L11 15L16 10"/>
+        </symbol>
+        <symbol viewbox="0 0 30 30" id="pagination-next">
+            <path d="M14 20L19 15L14 10"/>
+        </symbol>
         <symbol viewbox="0 0 50 50" id="arrow-without-circle-down">
             <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333"/>
         </symbol>
@@ -223,131 +229,133 @@
             <section class="section gallery">
                 <div class="container">
                     <div class="gallery__left">
-                        <h2 class="section-top without-outline" id="gallery">Галерея</h2>
-                        <div class="gallery__filter">Фильтровать по:</div>
-                        <form class="gallery__filter-choice" action="https://jsonplaceholder.typicode.com/posts" method="POST">
-                            <select tabindex="16" name="select" class="custom-select_1 focus-visible">
-                                <option value="" hidden>Автор</option>
-                                <option value="">Направление</option>
-                                <option value="">Техника</option>
-                            </select>
-                        </form>
+                        <div>
+                            <h2 class="section-top without-outline" id="gallery">Галерея</h2>
+                            <div class="gallery__filter">Фильтровать по:</div>
+                            <form class="gallery__filter-choice" action="https://jsonplaceholder.typicode.com/posts" method="POST">
+                                <select tabindex="16" name="select" class="custom-select_1 focus-visible">
+                                    <option value="" hidden>Автор</option>
+                                    <option value="">Направление</option>
+                                    <option value="">Техника</option>
+                                </select>
+                            </form>
+                        </div>
                         <div class="gallery__info">Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний 
-                            <a aria-label="Авторизация" class="gallery__authorize transition-100ms focus-visible" href="#">авторизуйтесь</a>, либо воспользуйтесь лицензией.</div>
+                            <a aria-label="Авторизация" class="gallery__authorize transition-200ms focus-visible" href="#">авторизуйтесь</a>, либо воспользуйтесь лицензией.</div>
                     </div>
                     <div class="gallery__right">
-                        <a aria-label="Перейти к предыдущим слайдам" class="swiper-button-prev_2 transition-20ms focus-visible"></a>
+                        <button aria-label="Перейти к предыдущим слайдам" class="swiper-button-prev_2"><svg class="pagination-button-image transition-100ms focus-visible"><use xlink:href="#pagination-prev"></use></svg></button>
                         <div class="swiper-pagination_2"></div>
-                        <a aria-label="Перейти к следующим слайдам" class="swiper-button-next_2 focus-visible"></a>
+                        <button aria-label="Перейти к следующим слайдам" class="swiper-button-next_2"><svg class="pagination-button-image transition-100ms focus-visible"><use xlink:href="#pagination-next"></use></svg></button>
                             
                         <div class="swiper-container_2">
                             <!-- Additional required wrapper -->
                             <div class="swiper-wrapper">
                                 <!-- Slides -->
                                 <div class="swiper-slide">
-                                    <div class="swiper-slide-hover-active transition-100ms">
+                                    <div class="swiper-slide-hover-active transition-200ms">
                                         <img class="slide-hover-image" src="img/gallery-slide-hover.svg" alt="plus">
                                     </div>
                                     <img class="swiper-container_2__img" src="img/picture-1.jpg" alt="Картина">
                                 </div>
                                 <div class="swiper-slide">
-                                    <div class="swiper-slide-hover-active transition-100ms">
+                                    <div class="swiper-slide-hover-active transition-200ms">
                                         <img class="slide-hover-image" src="img/gallery-slide-hover.svg" alt="plus">
                                     </div>
                                     <img class="swiper-container_2__img" src="img/picture-2.jpg" alt="Картина">
                                 </div>
                                 <div class="swiper-slide">
-                                    <div class="swiper-slide-hover-active transition-100ms">
+                                    <div class="swiper-slide-hover-active transition-200ms">
                                         <img class="slide-hover-image" src="img/gallery-slide-hover.svg" alt="plus">
                                     </div>
                                     <img class="swiper-container_2__img" src="img/picture-3.jpg" alt="Картина">
                                 </div>
                                 <div class="swiper-slide">
-                                    <div class="swiper-slide-hover-active transition-100ms">
+                                    <div class="swiper-slide-hover-active transition-200ms">
                                         <img class="slide-hover-image" src="img/gallery-slide-hover.svg" alt="plus">
                                     </div>
                                     <img class="swiper-container_2__img" src="img/picture-4.jpg" alt="Картина">
                                 </div>
                                 <div class="swiper-slide">
-                                    <div class="swiper-slide-hover-active transition-100ms">
+                                    <div class="swiper-slide-hover-active transition-200ms">
                                         <img class="slide-hover-image" src="img/gallery-slide-hover.svg" alt="plus">
                                     </div>
                                     <img class="swiper-container_2__img" src="img/picture-5.jpg" alt="Картина">
                                 </div>
                                 <div class="swiper-slide">
-                                    <div class="swiper-slide-hover-active transition-100ms">
+                                    <div class="swiper-slide-hover-active transition-200ms">
                                         <img class="slide-hover-image" src="img/gallery-slide-hover.svg" alt="plus">
                                     </div>
                                     <img class="swiper-container_2__img" src="img/picture-6.jpg" alt="Картина">
                                 </div>
                                 <div class="swiper-slide">
-                                    <div class="swiper-slide-hover-active transition-100ms">
+                                    <div class="swiper-slide-hover-active transition-200ms">
                                         <img class="slide-hover-image" src="img/gallery-slide-hover.svg" alt="plus">
                                     </div>
                                     <img class="swiper-container_2__img" src="img/picture-7.jpg" alt="Картина">
                                 </div>
                                 <div class="swiper-slide">
-                                    <div class="swiper-slide-hover-active transition-100ms">
+                                    <div class="swiper-slide-hover-active transition-200ms">
                                         <img class="slide-hover-image" src="img/gallery-slide-hover.svg" alt="plus">
                                     </div>
                                     <img class="swiper-container_2__img" src="img/picture-8.jpg" alt="Картина">
                                 </div>
                                 <div class="swiper-slide">
-                                    <div class="swiper-slide-hover-active transition-100ms">
+                                    <div class="swiper-slide-hover-active transition-200ms">
                                         <img class="slide-hover-image" src="img/gallery-slide-hover.svg" alt="plus">
                                     </div>
                                     <img class="swiper-container_2__img" src="img/picture-9.jpg" alt="Картина">
                                 </div>
                                 <div class="swiper-slide">
-                                    <div class="swiper-slide-hover-active transition-100ms">
+                                    <div class="swiper-slide-hover-active transition-200ms">
                                         <img class="slide-hover-image" src="img/gallery-slide-hover.svg" alt="plus">
                                     </div>
                                     <img class="swiper-container_2__img" src="img/picture-10.jpg" alt="Картина">
                                 </div>
                                 <div class="swiper-slide">
-                                    <div class="swiper-slide-hover-active transition-100ms">
+                                    <div class="swiper-slide-hover-active transition-200ms">
                                         <img class="slide-hover-image" src="img/gallery-slide-hover.svg" alt="plus">
                                     </div>
                                     <img class="swiper-container_2__img" src="img/picture-11.jpg" alt="Картина">
                                 </div>
                                 <div class="swiper-slide">
-                                    <div class="swiper-slide-hover-active transition-100ms">
+                                    <div class="swiper-slide-hover-active transition-200ms">
                                         <img class="slide-hover-image" src="img/gallery-slide-hover.svg" alt="plus">
                                     </div>
                                     <img class="swiper-container_2__img" src="img/picture-12.jpg" alt="Картина">
                                 </div>
                                 <div class="swiper-slide">
-                                    <div class="swiper-slide-hover-active transition-100ms">
+                                    <div class="swiper-slide-hover-active transition-200ms">
                                         <img class="slide-hover-image" src="img/gallery-slide-hover.svg" alt="plus">
                                     </div>
                                     <img class="swiper-container_2__img" src="img/picture-13.jpg" alt="Картина">
                                 </div>
                                 <div class="swiper-slide">
-                                    <div class="swiper-slide-hover-active transition-100ms">
+                                    <div class="swiper-slide-hover-active transition-200ms">
                                         <img class="slide-hover-image" src="img/gallery-slide-hover.svg" alt="plus">
                                     </div>
                                     <img class="swiper-container_2__img" src="img/picture-14.jpg" alt="Картина">
                                 </div>
                                 <div class="swiper-slide">
-                                    <div class="swiper-slide-hover-active transition-100ms">
+                                    <div class="swiper-slide-hover-active transition-200ms">
                                         <img class="slide-hover-image" src="img/gallery-slide-hover.svg" alt="plus">
                                     </div>
                                     <img class="swiper-container_2__img" src="img/picture-15.jpg" alt="Картина">
                                 </div>
                                 <div class="swiper-slide">
-                                    <div class="swiper-slide-hover-active transition-100ms">
+                                    <div class="swiper-slide-hover-active transition-200ms">
                                         <img class="slide-hover-image" src="img/gallery-slide-hover.svg" alt="plus">
                                     </div>
                                     <img class="swiper-container_2__img" src="img/picture-16.jpg" alt="Картина">
                                 </div>
                                 <div class="swiper-slide">
-                                    <div class="swiper-slide-hover-active transition-100ms">
+                                    <div class="swiper-slide-hover-active transition-200ms">
                                         <img class="slide-hover-image" src="img/gallery-slide-hover.svg" alt="plus">
                                     </div>
                                     <img class="swiper-container_2__img" src="img/picture-17.jpg" alt="Картина">
                                 </div>
                                 <div class="swiper-slide">
-                                    <div class="swiper-slide-hover-active transition-100ms">
+                                    <div class="swiper-slide-hover-active transition-200ms">
                                         <img class="slide-hover-image" src="img/gallery-slide-hover.svg" alt="plus">
                                     </div>
                                     <img class="swiper-container_2__img" src="img/picture-18.jpg" alt="Картина">
@@ -360,73 +368,77 @@
             </div>  
             </section>
             <section class="section container catalog">
-                <h2 class="section-top without-outline" id="catalog">Каталог</h2>
-                <a aria-label="Французские художники" class="catalog__choose-country transition-200ms focus-visible catalog__choose-country-active"></a>
-                <a aria-label="Немецкие художники" class="catalog__choose-country transition-200ms focus-visible"></a>
-                <a aria-label="Итальянские художники" class="catalog__choose-country transition-200ms focus-visible"></a>
-                <a aria-label="Российские художники" class="catalog__choose-country transition-200ms focus-visible"></a>
-                <a aria-label="Бельгийские художники" class="catalog__choose-country transition-200ms focus-visible"></a>
+                <div class="flex">
+                    <h2 class="section-top without-outline" id="catalog">Каталог</h2>
+                    <ul class="catalog__list-of-countries">
+                        <li><button aria-label="Французские художники" class="catalog__choose-country catalog__France transition-200ms focus-visible catalog__choose-country-active"></button></li>
+                        <li><button aria-label="Немецкие художники" class="catalog__choose-country catalog__Germany transition-200ms focus-visible"></button></li>
+                        <li><button aria-label="Итальянские художники" class="catalog__choose-country catalog__Italy transition-200ms focus-visible"></button></li>
+                        <li><button aria-label="Российские художники" class="catalog__choose-country catalog__Russia transition-200ms focus-visible"></button></li>
+                        <li><button aria-label="Бельгийские художники" class="catalog__choose-country catalog__Belgium transition-200ms focus-visible"></button></li>
+                </ul>
+                </div>
                 <div class="catalog__choose-artist">
-                    <div class="catalog__text">Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на независимые элементы.</div>
+                    <p class="catalog__text">Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на независимые элементы.</p>
                     <div class="catalog__left-right">
                         <div class="align catalog__right">
                             <div class="grid">
                               <div class="js-ui-accordion">
                                 <div class="catalog__periods border-top">
-                                    <a class="catalog__period transition-100ms transition-color focus-visible" aria-label="Период с 1400 года по 1499 год" tabindex="25"> C 1400 по 1499 гг.</a> 
+                                    <h4 class="catalog__period transition-100ms transition-color focus-visible" aria-label="Период с 1400 года по 1499 год" tabindex="25"> C 1400 по 1499 гг.</h4> 
                                     <svg class="catalog__periods-image transition-100ms"><use xlink:href="#arrow-without-circle-down"></use></svg>
                                 </div>
                                 <div>
-                                    <ul class="catalog__France country-active without-outline">
-                                        <li class="link-active"><a class="focus-visible" aria-label="Франция 1" href="#f-1">Франция 1</a></li>
-                                        <li><a class="focus-visible" aria-label="Франция 2" href="#f-2">Франция 2</a></li>
-                                        <li><a class="focus-visible" aria-label="Франция 3" href="#f-3">Франция 3</a></li>
+                                    <ul class="catalog__list-of-artists without-outline country-active">
+                                        <li class="link-active"><button class="focus-visible" aria-label="Франция 1" formaction="#f-1">Франция 1</button></li>
+                                        <li><button class="focus-visible" aria-label="Франция 2" formaction="#f-2">Франция 2</button></li>
+                                        <li><button class="focus-visible" aria-label="Франция 3" formaction="#f-3">Франция 3</button></li>
                                     </ul>
-                                    <ul class="catalog__Germany without-outline">
-                                        <li><a class="focus-visible" aria-label="Германия 1" href="#g-1">Германия 1</a></li>
-                                        <li><a class="focus-visible" aria-label="Германия 2" href="#g-2">Германия 2</a></li>
-                                        <li><a class="focus-visible" aria-label="Германия 3" href="#g-3">Германия 3</a></li>
+                                    <ul class="catalog__list-of-artists without-outline">
+                                        <li><button class="focus-visible" aria-label="Германия 1" formaction="#g-1">Германия 1</button></li>
+                                        <li><button class="focus-visible" aria-label="Германия 2" formaction="#g-2">Германия 2</button></li>
+                                        <li><button class="focus-visible" aria-label="Германия 3" formaction="#g-3">Германия 3</button></li>
                                     </ul>
-                                    <ul class="catalog__Italy without-outline">
-                                        <li><a class="focus-visible" aria-label="Бенедетто ди Биндо" href="#Benedetto-di-Bindo">Бенедетто ди Биндо</a></li>
-                                        <li><a class="focus-visible" aria-label="Бергоньоне, Амброджо" href="#Bergognone-Ambrogio">Бергоньоне, Амброджо</a></li>
-                                        <li><a class="focus-visible" aria-label="Биссоло, Франческо" href="#Bissolo-Francesco">Биссоло, Франческо</a></li>
-                                        <li><a class="focus-visible" aria-label="Больтраффио, Джованни" href="#Boltraffio-Giovanni">Больтраффио, Джованни</a></li>
-                                        <li><a class="focus-visible" aria-label="Бонсиньори, Франческо" href="#Bonsignori-Francesco">Бонсиньори, Франческо</a></li>
-                                        <li><a class="focus-visible" aria-label="Боттичини, Рафаэлло" href="#Botticini-Raffaello">Боттичини, Рафаэлло</a></li>
-                                        <li><a class="focus-visible" aria-label="Брамантино" href="#Bramantino">Брамантино</a></li>
-                                        <li><a class="focus-visible" aria-label="Бреа, Людовико" href="#Brea-Ludovico">Бреа, Людовико</a></li>
-                                        <li><a class="focus-visible" aria-label="Бьяджо д'Антонио Туччи" href="#Biagio-di-Antonio-Tucci">Бьяджо д'Антонио Туччи</a></li>
-                                        <li><a class="focus-visible" aria-label="Веккьетта" href="#Vecchietta">Веккьетта</a></li>
-                                        <li><a class="focus-visible" aria-label="Андреа Верроккьо" href="#Andrea-Verrocchio">Андреа Верроккьо</a></li>
-                                        <li><a class="focus-visible" aria-label="Доменико Гирландайо" href="#Domenico-Ghirlandaio">Доменико Гирландайо</a></li>
-                                        <li><a class="focus-visible" aria-label="Беноццо Гоццоли" href="#Benozzo-Gozzoli">Беноццо Гоццоли</a></li>
-                                        <li><a class="focus-visible" aria-label="Граначчи, Франческо" href="#Granacci-Francesco">Граначчи, Франческо</a></li>
-                                        <li><a class="focus-visible" aria-label="Грегорио ди Чекко" href="#Gregorio-di-Cecco">Грегорио ди Чекко</a></li>
-                                        <li><a class="focus-visible" aria-label="Джованни да Удине" href="#Giovanni-da-Udine">Джованни да Удине</a></li>
-                                        <li><a class="focus-visible" aria-label="Джованни ди Паоло" href="#Giovanni-di-Paolo">Джованни ди Паоло</a></li>
-                                        <li><a class="focus-visible" aria-label="Джорджоне" href="#Giorgione">Джорджоне</a></li>
-                                        <li><a class="focus-visible" aria-label="Парентино, Бернардо" href="#Parentino-Bernardo">Парентино, Бернардо</a></li>
-                                        <li><a class="focus-visible" aria-label="Пезеллино" href="#Pesellino">Пезеллино</a></li>
-                                        <li><a class="focus-visible" aria-label="Пьетро Перуджино" href="#Pietro-Perugino">Пьетро Перуджино</a></li>
-                                        <li><a class="focus-visible" aria-label="Перуцци, Бальдассаре" href="#Peruzzi-Baldassare">Перуцци, Бальдассаре</a></li>
-                                        <li><a class="focus-visible" aria-label="Пизанелло" href="#Pisanello">Пизанелло</a></li>
-                                        <li><a class="focus-visible" aria-label="Пинтуриккьо" href="#Pinturicchio">Пинтуриккьо</a></li>
+                                    <ul class="catalog__list-of-artists without-outline">
+                                        <li><button class="focus-visible" aria-label="Бенедетто ди Биндо" formaction="#Benedetto-di-Bindo">Бенедетто ди Биндо</button></li>
+                                        <li><button class="focus-visible" aria-label="Бергоньоне, Амброджо" formaction="#Bergognone-Ambrogio">Бергоньоне, Амброджо</button></li>
+                                        <li><button class="focus-visible" aria-label="Биссоло, Франческо" formaction="#Bissolo-Francesco">Биссоло, Франческо</button></li>
+                                        <li><button class="focus-visible" aria-label="Больтраффио, Джованни" formaction="#Boltraffio-Giovanni">Больтраффио, Джованни</button></li>
+                                        <li><button class="focus-visible" aria-label="Бонсиньори, Франческо" formaction="#Bonsignori-Francesco">Бонсиньори, Франческо</button></li>
+                                        <li><button class="focus-visible" aria-label="Боттичини, Рафаэлло" formaction="#Botticini-Raffaello">Боттичини, Рафаэлло</button></li>
+                                        <li><button class="focus-visible" aria-label="Брамантино" formaction="#Bramantino">Брамантино</button></li>
+                                        <li><button class="focus-visible" aria-label="Бреа, Людовико" formaction="#Brea-Ludovico">Бреа, Людовико</button></li>
+                                        <li><button class="focus-visible" aria-label="Бьяджо д'Антонио Туччи" formaction="#Biagio-di-Antonio-Tucci">Бьяджо д'Антонио Туччи</button></li>
+                                        <li><button class="focus-visible" aria-label="Веккьетта" formaction="#Vecchietta">Веккьетта</button></li>
+                                        <li><button class="focus-visible" aria-label="Андреа Верроккьо" formaction="#Andrea-Verrocchio">Андреа Верроккьо</button></li>
+                                        <li><button class="focus-visible" aria-label="Доменико Гирландайо" formaction="#Domenico-Ghirlandaio">Доменико Гирландайо</button></li>
+                                        <li><button class="focus-visible" aria-label="Беноццо Гоццоли" formaction="#Benozzo-Gozzoli">Беноццо Гоццоли</button></li>
+                                        <li><button class="focus-visible" aria-label="Граначчи, Франческо" formaction="#Granacci-Francesco">Граначчи, Франческо</button></li>
+                                        <li><button class="focus-visible" aria-label="Грегорио ди Чекко" formaction="#Gregorio-di-Cecco">Грегорио ди Чекко</button></li>
+                                        <li><button class="focus-visible" aria-label="Джованни да Удине" formaction="#Giovanni-da-Udine">Джованни да Удине</button></li>
+                                        <li><button class="focus-visible" aria-label="Джованни ди Паоло" formaction="#Giovanni-di-Paolo">Джованни ди Паоло</button></li>
+                                        <li><button class="focus-visible" aria-label="Джорджоне" formaction="#Giorgione">Джорджоне</button></li>
+                                        <li><button class="focus-visible" aria-label="Парентино, Бернардо" formaction="#Parentino-Bernardo">Парентино, Бернардо</button></li>
+                                        <li><button class="focus-visible" aria-label="Пезеллино" formaction="#Pesellino">Пезеллино</button></li>
+                                        <li><button class="focus-visible" aria-label="Пьетро Перуджино" formaction="#Pietro-Perugino">Пьетро Перуджино</button></li>
+                                        <li><button class="focus-visible" aria-label="Перуцци, Бальдассаре" formaction="#Peruzzi-Baldassare">Перуцци, Бальдассаре</button></li>
+                                        <li><button class="focus-visible" aria-label="Пизанелло" formaction="#Pisanello">Пизанелло</button></li>
+                                        <li><button class="focus-visible" aria-label="Пинтуриккьо" formaction="#Pinturicchio">Пинтуриккьо</button></li>
                                     </ul>
-                                    <ul class="catalog__Russia without-outline">
-                                        <li><a class="focus-visible" aria-label="Россия 1" href="#r-1">Россия 1</a></li>
-                                        <li><a class="focus-visible" aria-label="Россия 2" href="#r-2">Россия 2</a></li>
-                                        <li><a class="focus-visible" aria-label="Россия 3" href="#r-3">Россия 3</a></li>
+                                    <ul class="catalog__list-of-artists without-outline">
+                                        <li><button class="focus-visible" aria-label="Россия 1" formaction="#r-1">Россия 1</button></li>
+                                        <li><button class="focus-visible" aria-label="Россия 2" formaction="#r-2">Россия 2</button></li>
+                                        <li><button class="focus-visible" aria-label="Россия 3" formaction="#r-3">Россия 3</button></li>
                                     </ul>
-                                    <ul class="catalog__Belgium without-outline">
-                                        <li><a class="focus-visible" aria-label="Бельгия 1" href="#b-1">Бельгия 1</a></li>
-                                        <li><a class="focus-visible" aria-label="Бельгия 2" href="#b-2">Бельгия 2</a></li>
-                                        <li><a class="focus-visible" aria-label="Бельгия 3" href="#b-3">Бельгия 3</a></li>
+                                    <ul class="catalog__list-of-artists without-outline">
+                                        <li><button class="focus-visible" aria-label="Бельгия 1" formaction="#b-1">Бельгия 1</button></li>
+                                        <li><button class="focus-visible" aria-label="Бельгия 2" formaction="#b-2">Бельгия 2</button></li>
+                                        <li><button class="focus-visible" aria-label="Бельгия 3" formaction="#b-3">Бельгия 3</button></li>
                                     </ul>
                                 </div>
                           
                                 <div>
-                                    <a class="catalog__period transition-100ms transition-color focus-visible" aria-label="Период с 1500 года по 1599 год"> C 1500 по 1599 гг.</a> 
+                                    <h4 class="catalog__period transition-100ms transition-color focus-visible" aria-label="Период с 1500 года по 1599 год"> C 1500 по 1599 гг.</h4> 
                                     <svg class="catalog__periods-image transition-100ms"><use xlink:href="#arrow-without-circle-down"></use></svg>
                                 </div>
                                 <div>
@@ -434,7 +446,7 @@
                                 </div>
                           
                                 <div>
-                                    <a class="catalog__period transition-100ms transition-color focus-visible" aria-label="Период с 1600 года по 1699 год"> C 1600 по 1699 гг.</a> 
+                                    <h4 class="catalog__period transition-100ms transition-color focus-visible" aria-label="Период с 1600 года по 1699 год"> C 1600 по 1699 гг.</h4> 
                                     <svg class="catalog__periods-image transition-100ms"><use xlink:href="#arrow-without-circle-down"></use></svg>
                                 </div>
                                 <div>
@@ -442,7 +454,7 @@
                                 </div>
     
                                 <div>
-                                    <a class="catalog__period transition-100ms transition-color focus-visible" aria-label="Период с 1700 года по 1799 год"> C 1700 по 1799 гг.</a> 
+                                    <h4 class="catalog__period transition-100ms transition-color focus-visible" aria-label="Период с 1700 года по 1799 год"> C 1700 по 1799 гг.</h4> 
                                     <svg class="catalog__periods-image transition-100ms"><use xlink:href="#arrow-without-circle-down"></use></svg>
                                 </div>
                                 <div>
@@ -450,7 +462,7 @@
                                 </div>
     
                                 <div>
-                                    <a class="catalog__period transition-100ms transition-color focus-visible" aria-label="Период с 1800 года по 1899 год"> C 1800 по 1899 гг.</a> 
+                                    <h4 class="catalog__period transition-100ms transition-color focus-visible" aria-label="Период с 1800 года по 1899 год"> C 1800 по 1899 гг.</h4> 
                                     <svg class="catalog__periods-image transition-100ms"><use xlink:href="#arrow-without-circle-down"></use></svg>
                                 </div>
                                 <div>
@@ -458,7 +470,7 @@
                                 </div>
     
                                 <div>
-                                    <a class="catalog__period transition-100ms transition-color focus-visible" aria-label="Период с 1900 года по 1999 год"> C 1900 по 1999 гг.</a> 
+                                    <h4 class="catalog__period transition-100ms transition-color focus-visible" aria-label="Период с 1900 года по 1999 год"> C 1900 по 1999 гг.</h4> 
                                     <svg class="catalog__periods-image transition-100ms"><use xlink:href="#arrow-without-circle-down"></use></svg>
                                 </div>
                                 <div>
@@ -466,7 +478,7 @@
                                 </div>
     
                                 <div>
-                                    <a class="catalog__period transition-100ms transition-color focus-visible" aria-label="Период с 2000 года"> C 2000 г.</a> 
+                                    <h4 class="catalog__period transition-100ms transition-color focus-visible" aria-label="Период с 2000 года"> C 2000 г.</h4> 
                                     <svg class="catalog__periods-image transition-100ms"><use xlink:href="#arrow-without-circle-down"></use></svg>
                                 </div>
                                 <div>
@@ -608,60 +620,60 @@
                           <div class="js-ui-accordion">
                       
                             <div class="catalog__periods border-top">
-                                <a class="catalog__period transition-200ms transition-color focus-visible" aria-label="Период с 1400 года по 1499 год"> C 1400 по 1499 гг.</a> 
+                                <h4 class="catalog__period transition-200ms transition-color focus-visible" aria-label="Период с 1400 года по 1499 год"> C 1400 по 1499 гг.</h4> 
                                 <svg class="catalog__periods-image transition-200ms"><use xlink:href="#arrow-without-circle-down"></use></svg>
                             </div>
                                 <div>
-                                    <ul class="catalog__France country-active without-outline">
-                                        <li class="focus-visible link-active"><a aria-label="Франция 1" href="#f-1">Франция 1</a></li>
-                                        <li><a class="focus-visible" aria-label="Франция 2" href="#f-2">Франция 2</a></li>
-                                        <li><a class="focus-visible" aria-label="Франция 3" href="#f-3">Франция 3</a></li>
+                                    <ul class="catalog__list-of-artists country-active without-outline">
+                                        <li class="link-active"><button class="focus-visible" aria-label="Франция 1" formaction="#f-1">Франция 1</button></li>
+                                        <li><button class="focus-visible" aria-label="Франция 2" formaction="#f-2">Франция 2</button></li>
+                                        <li><button class="focus-visible" aria-label="Франция 3" formaction="#f-3">Франция 3</button></li>
                                     </ul>
-                                    <ul class="catalog__Germany without-outline">
-                                        <li><a class="focus-visible" aria-label="Германия 1" href="#g-1">Германия 1</a></li>
-                                        <li><a class="focus-visible" aria-label="Германия 2" href="#g-2">Германия 2</a></li>
-                                        <li><a class="focus-visible" aria-label="Германия 3" href="#g-3">Германия 3</a></li>
+                                    <ul class="catalog__list-of-artists without-outline">
+                                        <li><button class="focus-visible" aria-label="Германия 1" formaction="#g-1">Германия 1</button></li>
+                                        <li><button class="focus-visible" aria-label="Германия 2" formaction="#g-2">Германия 2</button></li>
+                                        <li><button class="focus-visible" aria-label="Германия 3" formaction="#g-3">Германия 3</button></li>
                                     </ul>
-                                    <ul class="catalog__Italy without-outline">
-                                        <li><a class="focus-visible" aria-label="Бенедетто ди Биндо" href="#Benedetto-di-Bindo">Бенедетто ди Биндо</a></li>
-                                        <li><a class="focus-visible" aria-label="Бергоньоне, Амброджо" href="#Bergognone-Ambrogio">Бергоньоне, Амброджо</a></li>
-                                        <li><a class="focus-visible" aria-label="Биссоло, Франческо" href="#Bissolo-Francesco">Биссоло, Франческо</a></li>
-                                        <li><a class="focus-visible" aria-label="Больтраффио, Джованни" href="#Boltraffio-Giovanni">Больтраффио, Джованни</a></li>
-                                        <li><a class="focus-visible" aria-label="Бонсиньори, Франческо" href="#Bonsignori-Francesco">Бонсиньори, Франческо</a></li>
-                                        <li><a class="focus-visible" aria-label="Боттичини, Рафаэлло" href="#Botticini-Raffaello">Боттичини, Рафаэлло</a></li>
-                                        <li><a class="focus-visible" aria-label="Брамантино" href="#Bramantino">Брамантино</a></li>
-                                        <li><a class="focus-visible" aria-label="Бреа, Людовико" href="#Brea-Ludovico">Бреа, Людовико</a></li>
-                                        <li><a class="focus-visible" aria-label="Бьяджо д'Антонио Туччи" href="#Biagio-di-Antonio-Tucci">Бьяджо д'Антонио Туччи</a></li>
-                                        <li><a class="focus-visible" aria-label="Веккьетта" href="#Vecchietta">Веккьетта</a></li>
-                                        <li><a class="focus-visible" aria-label="Андреа Верроккьо" href="#Andrea-Verrocchio">Андреа Верроккьо</a></li>
-                                        <li><a class="focus-visible" aria-label="Доменико Гирландайо" href="#Domenico-Ghirlandaio">Доменико Гирландайо</a></li>
-                                        <li><a class="focus-visible" aria-label="Беноццо Гоццоли" href="#Benozzo-Gozzoli">Беноццо Гоццоли</a></li>
-                                        <li><a class="focus-visible" aria-label="Граначчи, Франческо" href="#Granacci-Francesco">Граначчи, Франческо</a></li>
-                                        <li><a class="focus-visible" aria-label="Грегорио ди Чекко" href="#Gregorio-di-Cecco">Грегорио ди Чекко</a></li>
-                                        <li><a class="focus-visible" aria-label="Джованни да Удине" href="#Giovanni-da-Udine">Джованни да Удине</a></li>
-                                        <li><a class="focus-visible" aria-label="Джованни ди Паоло" href="#Giovanni-di-Paolo">Джованни ди Паоло</a></li>
-                                        <li><a class="focus-visible" aria-label="Джорджоне" href="#Giorgione">Джорджоне</a></li>
-                                        <li><a class="focus-visible" aria-label="Парентино, Бернардо" href="#Parentino-Bernardo">Парентино, Бернардо</a></li>
-                                        <li><a class="focus-visible" aria-label="Пезеллино" href="#Pesellino">Пезеллино</a></li>
-                                        <li><a class="focus-visible" aria-label="Пьетро Перуджино" href="#Pietro-Perugino">Пьетро Перуджино</a></li>
-                                        <li><a class="focus-visible" aria-label="Перуцци, Бальдассаре" href="#Peruzzi-Baldassare">Перуцци, Бальдассаре</a></li>
-                                        <li><a class="focus-visible" aria-label="Пизанелло" href="#Pisanello">Пизанелло</a></li>
-                                        <li><a class="focus-visible" aria-label="Пинтуриккьо" href="#Pinturicchio">Пинтуриккьо</a></li>
+                                    <ul class="catalog__list-of-artists without-outline">
+                                        <li><button class="focus-visible" aria-label="Бенедетто ди Биндо" formaction="#Benedetto-di-Bindo">Бенедетто ди Биндо</button></li>
+                                        <li><button class="focus-visible" aria-label="Беноццо Гоццоли" formaction="#Benozzo-Gozzoli">Беноццо Гоццоли</button></li>
+                                        <li><button class="focus-visible" aria-label="Бергоньоне, Амброджо" formaction="#Bergognone-Ambrogio">Бергоньоне, Амброджо</button></li>
+                                        <li><button class="focus-visible" aria-label="Граначчи, Франческо" formaction="#Granacci-Francesco">Граначчи, Франческо</button></li>
+                                        <li><button class="focus-visible" aria-label="Биссоло, Франческо" formaction="#Bissolo-Francesco">Биссоло, Франческо</button></li>
+                                        <li><button class="focus-visible" aria-label="Грегорио ди Чекко" formaction="#Gregorio-di-Cecco">Грегорио ди Чекко</button></li>
+                                        <li><button class="focus-visible" aria-label="Больтраффио, Джованни" formaction="#Boltraffio-Giovanni">Больтраффио, Джованни</button></li>
+                                        <li><button class="focus-visible" aria-label="Джованни да Удине" formaction="#Giovanni-da-Udine">Джованни да Удине</button></li>
+                                        <li><button class="focus-visible" aria-label="Бонсиньори, Франческо" formaction="#Bonsignori-Francesco">Бонсиньори, Франческо</button></li>
+                                        <li><button class="focus-visible" aria-label="Джованни ди Паоло" formaction="#Giovanni-di-Paolo">Джованни ди Паоло</button></li>
+                                        <li><button class="focus-visible" aria-label="Боттичини, Рафаэлло" formaction="#Botticini-Raffaello">Боттичини, Рафаэлло</button></li>
+                                        <li><button class="focus-visible" aria-label="Джорджоне" formaction="#Giorgione">Джорджоне</button></li>
+                                        <li><button class="focus-visible" aria-label="Брамантино" formaction="#Bramantino">Брамантино</button></li>
+                                        <li><button class="focus-visible" aria-label="Парентино, Бернардо" formaction="#Parentino-Bernardo">Парентино, Бернардо</button></li>
+                                        <li><button class="focus-visible" aria-label="Бреа, Людовико" formaction="#Brea-Ludovico">Бреа, Людовико</button></li>
+                                        <li><button class="focus-visible" aria-label="Пезеллино" formaction="#Pesellino">Пезеллино</button></li>
+                                        <li><button class="focus-visible" aria-label="Бьяджо д'Антонио Туччи" formaction="#Biagio-di-Antonio-Tucci">Бьяджо д'Антонио Туччи</button></li>
+                                        <li><button class="focus-visible" aria-label="Пьетро Перуджино" formaction="#Pietro-Perugino">Пьетро Перуджино</button></li>
+                                        <li><button class="focus-visible" aria-label="Веккьетта" formaction="#Vecchietta">Веккьетта</button></li>
+                                        <li><button class="focus-visible" aria-label="Перуцци, Бальдассаре" formaction="#Peruzzi-Baldassare">Перуцци, Бальдассаре</button></li>
+                                        <li><button class="focus-visible" aria-label="Андреа Верроккьо" formaction="#Andrea-Verrocchio">Андреа Верроккьо</button></li>
+                                        <li><button class="focus-visible" aria-label="Пизанелло" formaction="#Pisanello">Пизанелло</button></li>
+                                        <li><button class="focus-visible" aria-label="Доменико Гирландайо" formaction="#Domenico-Ghirlandaio">Доменико Гирландайо</button></li>
+                                        <li><button class="focus-visible" aria-label="Пинтуриккьо" formaction="#Pinturicchio">Пинтуриккьо</button></li>
                                     </ul>
-                                    <ul class="catalog__Russia without-outline">
-                                        <li><a class="focus-visible" aria-label="Россия 1" href="#r-1">Россия 1</a></li>
-                                        <li><a class="focus-visible" aria-label="Россия 2" href="#r-2">Россия 2</a></li>
-                                        <li><a class="focus-visible" aria-label="Россия 3" href="#r-3">Россия 3</a></li>
+                                    <ul class="catalog__list-of-artists without-outline">
+                                        <li><button class="focus-visible" aria-label="Россия 1" formaction="#r-1">Россия 1</button></li>
+                                        <li><button class="focus-visible" aria-label="Россия 2" formaction="#r-2">Россия 2</button></li>
+                                        <li><button class="focus-visible" aria-label="Россия 3" formaction="#r-3">Россия 3</button></li>
                                     </ul>
-                                    <ul class="catalog__Belgium without-outline">
-                                        <li><a class="focus-visible" aria-label="Бельгия 1" href="#b-1">Бельгия 1</a></li>
-                                        <li><a class="focus-visible" aria-label="Бельгия 2" href="#b-2">Бельгия 2</a></li>
-                                        <li><a class="focus-visible" aria-label="Бельгия 3" href="#b-3">Бельгия 3</a></li>
+                                    <ul class="catalog__list-of-artists without-outline">
+                                        <li><button class="focus-visible" aria-label="Бельгия 1" formaction="#b-1">Бельгия 1</button></li>
+                                        <li><button class="focus-visible" aria-label="Бельгия 2" formaction="#b-2">Бельгия 2</button></li>
+                                        <li><button class="focus-visible" aria-label="Бельгия 3" formaction="#b-3">Бельгия 3</button></li>
                                     </ul>
                                 </div>
                           
                                 <div>
-                                    <a class="catalog__period transition-200ms transition-color focus-visible" aria-label="Период с 1500 года по 1599 год"> C 1500 по 1599 гг.</a> 
+                                    <h4 class="catalog__period transition-200ms transition-color focus-visible" aria-label="Период с 1500 года по 1599 год"> C 1500 по 1599 гг.</h4> 
                                     <svg class="catalog__periods-image transition-200ms"><use xlink:href="#arrow-without-circle-down"></use></svg>
                                 </div>
                                 <div>
@@ -669,7 +681,7 @@
                                 </div>
                           
                                 <div>
-                                    <a class="catalog__period transition-200ms transition-color focus-visible" aria-label="Период с 1600 года по 1699 год"> C 1600 по 1699 гг.</a> 
+                                    <h4 class="catalog__period transition-200ms transition-color focus-visible" aria-label="Период с 1600 года по 1699 год"> C 1600 по 1699 гг.</h4> 
                                     <svg class="catalog__periods-image transition-200ms"><use xlink:href="#arrow-without-circle-down"></use></svg>
                                 </div>
                                 <div>
@@ -677,7 +689,7 @@
                                 </div>
     
                                 <div>
-                                    <a class="catalog__period transition-200ms transition-color focus-visible" aria-label="Период с 1700 года по 1799 год"> C 1700 по 1799 гг.</a> 
+                                    <h4 class="catalog__period transition-200ms transition-color focus-visible" aria-label="Период с 1700 года по 1799 год"> C 1700 по 1799 гг.</h4> 
                                     <svg class="catalog__periods-image transition-200ms"><use xlink:href="#arrow-without-circle-down"></use></svg>
                                 </div>
                                 <div>
@@ -685,7 +697,7 @@
                                 </div>
     
                                 <div>
-                                    <a class="catalog__period transition-200ms transition-color focus-visible" aria-label="Период с 1800 года по 1899 год"> C 1800 по 1899 гг.</a> 
+                                    <h4 class="catalog__period transition-200ms transition-color focus-visible" aria-label="Период с 1800 года по 1899 год"> C 1800 по 1899 гг.</h4> 
                                     <svg class="catalog__periods-image transition-200ms"><use xlink:href="#arrow-without-circle-down"></use></svg>
                                 </div>
                                 <div>
@@ -693,7 +705,7 @@
                                 </div>
     
                                 <div>
-                                    <a class="catalog__period transition-200ms transition-color focus-visible" aria-label="Период с 1900 года по 1999 год"> C 1900 по 1999 гг.</a> 
+                                    <h4 class="catalog__period transition-200ms transition-color focus-visible" aria-label="Период с 1900 года по 1999 год"> C 1900 по 1999 гг.</h4> 
                                     <svg class="catalog__periods-image transition-200ms"><use xlink:href="#arrow-without-circle-down"></use></svg>
                                 </div>
                                 <div>
@@ -701,7 +713,7 @@
                                 </div>
     
                                 <div>
-                                    <a class="catalog__period transition-200ms transition-color focus-visible" aria-label="Период с 2000 года"> C 2000 г.</a> 
+                                    <h4 class="catalog__period transition-200ms transition-color focus-visible" aria-label="Период с 2000 года"> C 2000 г.</h4> 
                                     <svg class="catalog__periods-image transition-200ms"><use xlink:href="#arrow-without-circle-down"></use></svg>
                                 </div>
                                 <div>
@@ -1032,9 +1044,9 @@
                         </div>
                     </div>
                     <div class="books__right">
-                        <a aria-label="Перейти к предыдущим слайдам" tabindex="51" class="swiper-button-prev_3 transition-20ms focus-visible"></a>
+                        <button aria-label="Перейти к предыдущим слайдам" class="swiper-button-prev_3"><svg class="pagination-button-image transition-100ms focus-visible"><use xlink:href="#pagination-prev"></use></svg></button>
                         <div class="swiper-pagination_3"></div>
-                        <a aria-label="Перейти к следующим слайдам" tabindex="52" class="swiper-button-next_3 focus-visible"></a>
+                        <button aria-label="Перейти к следующим слайдам" class="swiper-button-next_3"><svg class="pagination-button-image transition-100ms focus-visible"><use xlink:href="#pagination-next"></use></svg></button>
                         <div class="books__prices">
                             <h4 class="without-outline">Цена</h4>
                             <div class="flex books__for-input">
@@ -1060,7 +1072,7 @@
                                             </div>
                                             <div class="books__book-price">620 руб</div>
                                         </div>
-                                        <a aria-label="Заказать книгу" class="books__buy-book transition-20ms focus-visible" href="#">Заказать</a>
+                                        <a aria-label="Заказать книгу" class="books__buy-book transition-100ms focus-visible" href="#">Заказать</a>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
@@ -1073,7 +1085,7 @@
                                             </div>
                                             <div class="books__book-price">2 450 руб</div>
                                         </div>
-                                        <a aria-label="Заказать книгу" class="books__buy-book transition-20ms focus-visible" href="#">Заказать</a>
+                                        <a aria-label="Заказать книгу" class="books__buy-book transition-100ms focus-visible" href="#">Заказать</a>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
@@ -1086,7 +1098,7 @@
                                             </div>
                                             <div class="books__book-price">2 200 руб</div>
                                         </div>
-                                        <a aria-label="Заказать книгу" class="books__buy-book transition-20ms focus-visible" href="#">Заказать</a>
+                                        <a aria-label="Заказать книгу" class="books__buy-book transition-100ms focus-visible" href="#">Заказать</a>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
@@ -1099,7 +1111,7 @@
                                             </div>
                                             <div class="books__book-price">1 100 руб</div>
                                         </div>
-                                        <a aria-label="Заказать книгу" class="books__buy-book transition-20ms focus-visible" href="#">Заказать</a>
+                                        <a aria-label="Заказать книгу" class="books__buy-book transition-100ms focus-visible" href="#">Заказать</a>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
@@ -1112,7 +1124,7 @@
                                             </div>
                                             <div class="books__book-price">1 450 руб</div>
                                         </div>
-                                        <a aria-label="Заказать книгу" class="books__buy-book transition-20ms focus-visible" href="#">Заказать</a>
+                                        <a aria-label="Заказать книгу" class="books__buy-book transition-100ms focus-visible" href="#">Заказать</a>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
@@ -1125,7 +1137,7 @@
                                             </div>
                                             <div class="books__book-price">3 200 руб</div>
                                         </div>
-                                        <a aria-label="Заказать книгу" class="books__buy-book transition-20ms focus-visible" href="#">Заказать</a>
+                                        <a aria-label="Заказать книгу" class="books__buy-book transition-100ms focus-visible" href="#">Заказать</a>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
@@ -1138,7 +1150,7 @@
                                             </div>
                                             <div class="books__book-price">2 200 руб</div>
                                         </div>
-                                        <a aria-label="Заказать книгу" class="books__buy-book transition-20ms focus-visible" href="#">Заказать</a>
+                                        <a aria-label="Заказать книгу" class="books__buy-book transition-100ms focus-visible" href="#">Заказать</a>
                                     </div>
                                 </div>
                             </div>
@@ -1158,7 +1170,7 @@
                                     </div>
                                     <div class="books__book-price">620 руб</div>
                                 </div>
-                                <a aria-label="Заказать книгу" class="books__buy-book transition-20ms focus-visible" href="#">Заказать</a>
+                                <a aria-label="Заказать книгу" class="books__buy-book transition-100ms focus-visible" href="#">Заказать</a>
                             </div>
                         </div>
                         <div class="image-for-320">
@@ -1171,7 +1183,7 @@
                                     </div>
                                     <div class="books__book-price">2 450 руб</div>
                                 </div>
-                                <a aria-label="Заказать книгу" class="books__buy-book transition-20ms focus-visible" href="#">Заказать</a>
+                                <a aria-label="Заказать книгу" class="books__buy-book transition-100ms focus-visible" href="#">Заказать</a>
                             </div>
                         </div>
                         <div class="image-for-320">
@@ -1184,7 +1196,7 @@
                                     </div>
                                     <div class="books__book-price">2 200 руб</div>
                                 </div>
-                                <a aria-label="Заказать книгу" class="books__buy-book transition-20ms focus-visible" href="#">Заказать</a>
+                                <a aria-label="Заказать книгу" class="books__buy-book transition-100ms focus-visible" href="#">Заказать</a>
                             </div>
                         </div>
                         <div class="image-for-320">
@@ -1197,7 +1209,7 @@
                                     </div>
                                     <div class="books__book-price">1 100 руб</div>
                                 </div>
-                                <a aria-label="Заказать книгу" class="books__buy-book transition-20ms focus-visible" href="#">Заказать</a>
+                                <a aria-label="Заказать книгу" class="books__buy-book transition-100ms focus-visible" href="#">Заказать</a>
                             </div>
                         </div>
                         <div class="image-for-320">
@@ -1210,7 +1222,7 @@
                                     </div>
                                     <div class="books__book-price">1 450 руб</div>
                                 </div>
-                                <a aria-label="Заказать книгу" class="books__buy-book transition-20ms focus-visible" href="#">Заказать</a>
+                                <a aria-label="Заказать книгу" class="books__buy-book transition-100ms focus-visible" href="#">Заказать</a>
                             </div>
                         </div>
                         <div class="image-for-320">
@@ -1223,7 +1235,7 @@
                                     </div>
                                     <div class="books__book-price">3 200 руб</div>
                                 </div>
-                                <a aria-label="Заказать книгу" class="books__buy-book transition-20ms focus-visible" href="#">Заказать</a>
+                                <a aria-label="Заказать книгу" class="books__buy-book transition-100ms focus-visible" href="#">Заказать</a>
                             </div>
                         </div>
                         <div class="image-for-320">
@@ -1236,7 +1248,7 @@
                                     </div>
                                     <div class="books__book-price">2 200 руб</div>
                                 </div>
-                                <a aria-label="Заказать книгу" class="books__buy-book transition-20ms focus-visible" href="#">Заказать</a>
+                                <a aria-label="Заказать книгу" class="books__buy-book transition-100ms focus-visible" href="#">Заказать</a>
                             </div>
                         </div>
                     </div>
@@ -1257,7 +1269,7 @@
                 </div>
                 <h3 class="projects__partners without-outline">Партнёры проектов:</h3>
                 <div class="projects__swiper-elements">
-                    <a aria-label="Перейти к предыдущим слайдам" class="swiper-button-prev_4 transition-20ms focus-visible"></a>
+                    <button aria-label="Перейти к предыдущим слайдам" class="swiper-button-prev_2"><svg class="pagination-button-image transition-100ms focus-visible"><use xlink:href="#pagination-prev"></use></svg></button>
                     <div class="swiper-container_4">
                         <!-- Additional required wrapper -->
                         <div class="swiper-wrapper">
@@ -1273,7 +1285,7 @@
                             <div class="swiper-slide partner-9"></div>
                         </div>
                     </div>
-                    <a aria-label="Перейти к следующим слайдам" class="swiper-button-next_4 focus-visible"></a>
+                    <button aria-label="Перейти к следующим слайдам" class="swiper-button-next_4"><svg class="pagination-button-image transition-100ms focus-visible"><use xlink:href="#pagination-next"></use></svg></button>
                 </div>
             </section>
             <section class="contacts">
