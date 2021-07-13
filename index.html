@@ -70,8 +70,21 @@
     </svg>
     <header class="header">
         <div class="header__up">
+            <div class="header__menu">
+                <ul class="container without-outline">
+                    <li><svg class="header__menu-close transition-100ms transition-fill focus-visible"><use xlink:href="#close"></use></svg></li>
+                    <li class="header__menu-item"><a class="header__menu-link transition-100ms transition-color focus-visible" href="#about-us">О нас</a></li>
+                    <li class="header__menu-item"><a class="header__menu-link transition-100ms transition-color focus-visible" href="#gallery">Галерея</a></li>
+                    <li class="header__menu-item"><a class="header__menu-link transition-100ms transition-color focus-visible" href="#catalog">Каталог</a></li>
+                    <li class="header__menu-item"><a class="header__menu-link transition-100ms transition-color focus-visible" href="#events">События</a></li>
+                    <li class="header__menu-item"><a class="header__menu-link transition-100ms transition-color focus-visible" href="#books">Издания</a></li>
+                    <li class="header__menu-item"><a class="header__menu-link transition-100ms transition-color focus-visible" href="#projects">Проекты</a></li>
+                    <li class="header__menu-item"><a class="header__menu-link transition-100ms transition-color focus-visible" href="#contacts">Контакты</a></li>
+                    <li class="header__menu-login"><a class="header__login transition-100ms focus-visible" href="#">transition-color <svg class="header__login-image transition-100ms"><use xlink:href="#login"></use></svg>Войти</a></li>
+                </ul>
+            </div>
             <nav class="header__nav">
-                <button aria-label="Меню" class="header__burger transition-100ms focus-visible"><svg class="header__burger-image transition-100ms transition-fill"><use xlink:href="#burger"></use></svg></button>
+                <button aria-label="Меню" class="header__burger transition-100ms without-outline"><svg class="header__burger-image transition-100ms transition-fill"><use xlink:href="#burger"></use></svg></button>
                 <div class="logo"><img class="logo__img" src="img/Blanchard.svg" alt="Blanchard"></div>
                 <ul class="header__nav-list without-outline">
                     <li class="header__nav-list-item"><a class="header__nav-list-link transition-100ms transition-color focus-visible" href="#about-us">О нас</a></li>
@@ -218,7 +231,7 @@
             <div class="container">
             <h3 class="section-hero__text-1 without-outline">Прикоснитесь к прекрасному</h3>
                 <span class="section-hero__text-2 without-outline">Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.</span> 
-                <a aria-label="Подписаться на рассылку" class="section-hero__button transition-100ms focus-visible" href="#contacts">Подписаться на рассылку</a>
+                <a aria-label="Подписаться на рассылку" class="section-hero__button transition-100ms without-outline" href="#contacts">Подписаться на рассылку</a>
             </div>
             </section>
             <section class="container about-us">
@@ -244,9 +257,9 @@
                             <a aria-label="Авторизация" class="gallery__authorize transition-200ms focus-visible" href="#">авторизуйтесь</a>, либо воспользуйтесь лицензией.</div>
                     </div>
                     <div class="gallery__right">
-                        <button aria-label="Перейти к предыдущим слайдам" class="swiper-button-prev_2"><svg class="pagination-button-image transition-100ms focus-visible"><use xlink:href="#pagination-prev"></use></svg></button>
+                        <button aria-label="Перейти к предыдущим слайдам" class="swiper-button-prev_2"><svg class="pagination-button-image transition-100ms without-outline"><use xlink:href="#pagination-prev"></use></svg></button>
                         <div class="swiper-pagination_2"></div>
-                        <button aria-label="Перейти к следующим слайдам" class="swiper-button-next_2"><svg class="pagination-button-image transition-100ms focus-visible"><use xlink:href="#pagination-next"></use></svg></button>
+                        <button aria-label="Перейти к следующим слайдам" class="swiper-button-next_2"><svg class="pagination-button-image transition-100ms without-outline"><use xlink:href="#pagination-next"></use></svg></button>
                             
                         <div class="swiper-container_2">
                             <!-- Additional required wrapper -->
@@ -371,11 +384,11 @@
                 <div class="flex">
                     <h2 class="section-top without-outline" id="catalog">Каталог</h2>
                     <ul class="catalog__list-of-countries">
-                        <li><button aria-label="Французские художники" class="catalog__choose-country catalog__France transition-200ms focus-visible catalog__choose-country-active"></button></li>
-                        <li><button aria-label="Немецкие художники" class="catalog__choose-country catalog__Germany transition-200ms focus-visible"></button></li>
-                        <li><button aria-label="Итальянские художники" class="catalog__choose-country catalog__Italy transition-200ms focus-visible"></button></li>
-                        <li><button aria-label="Российские художники" class="catalog__choose-country catalog__Russia transition-200ms focus-visible"></button></li>
-                        <li><button aria-label="Бельгийские художники" class="catalog__choose-country catalog__Belgium transition-200ms focus-visible"></button></li>
+                        <li><button aria-label="Французские художники" class="catalog__choose-country catalog__France transition-200ms without-outline catalog__choose-country-active"></button></li>
+                        <li><button aria-label="Немецкие художники" class="catalog__choose-country catalog__Germany transition-200ms without-outline"></button></li>
+                        <li><button aria-label="Итальянские художники" class="catalog__choose-country catalog__Italy transition-200ms without-outline"></button></li>
+                        <li><button aria-label="Российские художники" class="catalog__choose-country catalog__Russia transition-200ms without-outline"></button></li>
+                        <li><button aria-label="Бельгийские художники" class="catalog__choose-country catalog__Belgium transition-200ms without-outline"></button></li>
                 </ul>
                 </div>
                 <div class="catalog__choose-artist">
@@ -385,7 +398,7 @@
                             <div class="grid">
                               <div class="js-ui-accordion">
                                 <div class="catalog__periods border-top">
-                                    <h4 class="catalog__period transition-100ms transition-color focus-visible" aria-label="Период с 1400 года по 1499 год" tabindex="25"> C 1400 по 1499 гг.</h4> 
+                                    <h4 class="catalog__period transition-100ms transition-color" aria-label="Период с 1400 года по 1499 год" tabindex="25"> C 1400 по 1499 гг.</h4> 
                                     <svg class="catalog__periods-image transition-100ms"><use xlink:href="#arrow-without-circle-down"></use></svg>
                                 </div>
                                 <div>
@@ -438,7 +451,7 @@
                                 </div>
                           
                                 <div>
-                                    <h4 class="catalog__period transition-100ms transition-color focus-visible" aria-label="Период с 1500 года по 1599 год"> C 1500 по 1599 гг.</h4> 
+                                    <h4 class="catalog__period transition-100ms transition-color" aria-label="Период с 1500 года по 1599 год"> C 1500 по 1599 гг.</h4> 
                                     <svg class="catalog__periods-image transition-100ms"><use xlink:href="#arrow-without-circle-down"></use></svg>
                                 </div>
                                 <div>
@@ -446,7 +459,7 @@
                                 </div>
                           
                                 <div>
-                                    <h4 class="catalog__period transition-100ms transition-color focus-visible" aria-label="Период с 1600 года по 1699 год"> C 1600 по 1699 гг.</h4> 
+                                    <h4 class="catalog__period transition-100ms transition-color" aria-label="Период с 1600 года по 1699 год"> C 1600 по 1699 гг.</h4> 
                                     <svg class="catalog__periods-image transition-100ms"><use xlink:href="#arrow-without-circle-down"></use></svg>
                                 </div>
                                 <div>
@@ -454,7 +467,7 @@
                                 </div>
     
                                 <div>
-                                    <h4 class="catalog__period transition-100ms transition-color focus-visible" aria-label="Период с 1700 года по 1799 год"> C 1700 по 1799 гг.</h4> 
+                                    <h4 class="catalog__period transition-100ms transition-color" aria-label="Период с 1700 года по 1799 год"> C 1700 по 1799 гг.</h4> 
                                     <svg class="catalog__periods-image transition-100ms"><use xlink:href="#arrow-without-circle-down"></use></svg>
                                 </div>
                                 <div>
@@ -462,7 +475,7 @@
                                 </div>
     
                                 <div>
-                                    <h4 class="catalog__period transition-100ms transition-color focus-visible" aria-label="Период с 1800 года по 1899 год"> C 1800 по 1899 гг.</h4> 
+                                    <h4 class="catalog__period transition-100ms transition-color" aria-label="Период с 1800 года по 1899 год"> C 1800 по 1899 гг.</h4> 
                                     <svg class="catalog__periods-image transition-100ms"><use xlink:href="#arrow-without-circle-down"></use></svg>
                                 </div>
                                 <div>
@@ -470,7 +483,7 @@
                                 </div>
     
                                 <div>
-                                    <h4 class="catalog__period transition-100ms transition-color focus-visible" aria-label="Период с 1900 года по 1999 год"> C 1900 по 1999 гг.</h4> 
+                                    <h4 class="catalog__period transition-100ms transition-color" aria-label="Период с 1900 года по 1999 год"> C 1900 по 1999 гг.</h4> 
                                     <svg class="catalog__periods-image transition-100ms"><use xlink:href="#arrow-without-circle-down"></use></svg>
                                 </div>
                                 <div>
@@ -478,7 +491,7 @@
                                 </div>
     
                                 <div>
-                                    <h4 class="catalog__period transition-100ms transition-color focus-visible" aria-label="Период с 2000 года"> C 2000 г.</h4> 
+                                    <h4 class="catalog__period transition-100ms transition-color" aria-label="Период с 2000 года"> C 2000 г.</h4> 
                                     <svg class="catalog__periods-image transition-100ms"><use xlink:href="#arrow-without-circle-down"></use></svg>
                                 </div>
                                 <div>
@@ -620,7 +633,7 @@
                           <div class="js-ui-accordion">
                       
                             <div class="catalog__periods border-top">
-                                <h4 class="catalog__period transition-200ms transition-color focus-visible" aria-label="Период с 1400 года по 1499 год"> C 1400 по 1499 гг.</h4> 
+                                <h4 class="catalog__period transition-200ms transition-color" aria-label="Период с 1400 года по 1499 год"> C 1400 по 1499 гг.</h4> 
                                 <svg class="catalog__periods-image transition-200ms"><use xlink:href="#arrow-without-circle-down"></use></svg>
                             </div>
                                 <div>
@@ -673,7 +686,7 @@
                                 </div>
                           
                                 <div>
-                                    <h4 class="catalog__period transition-200ms transition-color focus-visible" aria-label="Период с 1500 года по 1599 год"> C 1500 по 1599 гг.</h4> 
+                                    <h4 class="catalog__period transition-200ms transition-color" aria-label="Период с 1500 года по 1599 год"> C 1500 по 1599 гг.</h4> 
                                     <svg class="catalog__periods-image transition-200ms"><use xlink:href="#arrow-without-circle-down"></use></svg>
                                 </div>
                                 <div>
@@ -681,7 +694,7 @@
                                 </div>
                           
                                 <div>
-                                    <h4 class="catalog__period transition-200ms transition-color focus-visible" aria-label="Период с 1600 года по 1699 год"> C 1600 по 1699 гг.</h4> 
+                                    <h4 class="catalog__period transition-200ms transition-color" aria-label="Период с 1600 года по 1699 год"> C 1600 по 1699 гг.</h4> 
                                     <svg class="catalog__periods-image transition-200ms"><use xlink:href="#arrow-without-circle-down"></use></svg>
                                 </div>
                                 <div>
@@ -689,7 +702,7 @@
                                 </div>
     
                                 <div>
-                                    <h4 class="catalog__period transition-200ms transition-color focus-visible" aria-label="Период с 1700 года по 1799 год"> C 1700 по 1799 гг.</h4> 
+                                    <h4 class="catalog__period transition-200ms transition-color" aria-label="Период с 1700 года по 1799 год"> C 1700 по 1799 гг.</h4> 
                                     <svg class="catalog__periods-image transition-200ms"><use xlink:href="#arrow-without-circle-down"></use></svg>
                                 </div>
                                 <div>
@@ -697,7 +710,7 @@
                                 </div>
     
                                 <div>
-                                    <h4 class="catalog__period transition-200ms transition-color focus-visible" aria-label="Период с 1800 года по 1899 год"> C 1800 по 1899 гг.</h4> 
+                                    <h4 class="catalog__period transition-200ms transition-color" aria-label="Период с 1800 года по 1899 год"> C 1800 по 1899 гг.</h4> 
                                     <svg class="catalog__periods-image transition-200ms"><use xlink:href="#arrow-without-circle-down"></use></svg>
                                 </div>
                                 <div>
@@ -705,7 +718,7 @@
                                 </div>
     
                                 <div>
-                                    <h4 class="catalog__period transition-200ms transition-color focus-visible" aria-label="Период с 1900 года по 1999 год"> C 1900 по 1999 гг.</h4> 
+                                    <h4 class="catalog__period transition-200ms transition-color" aria-label="Период с 1900 года по 1999 год"> C 1900 по 1999 гг.</h4> 
                                     <svg class="catalog__periods-image transition-200ms"><use xlink:href="#arrow-without-circle-down"></use></svg>
                                 </div>
                                 <div>
@@ -713,7 +726,7 @@
                                 </div>
     
                                 <div>
-                                    <h4 class="catalog__period transition-200ms transition-color focus-visible" aria-label="Период с 2000 года"> C 2000 г.</h4> 
+                                    <h4 class="catalog__period transition-200ms transition-color" aria-label="Период с 2000 года"> C 2000 г.</h4> 
                                     <svg class="catalog__periods-image transition-200ms"><use xlink:href="#arrow-without-circle-down"></use></svg>
                                 </div>
                                 <div>
@@ -929,51 +942,51 @@
                               <div class="js-ui-accordion details">                          
                                 <div class="books__spoiler"><div class="books__spoiler-categories">Категории</div> <div class="books__spoiler-arrow"></div></div>
                                 <div>
-                                    <label aria-label="Бестселлеры" class="books__label-checkbox transition-color focus-visible" for="check-1-1">Бестселлеры
+                                    <label aria-label="Бестселлеры" class="books__label-checkbox transition-color without-outline" for="check-1-1">Бестселлеры
                                         <input class="check" type="checkbox" name="check" id="check-1-1">
                                         <span></span>
                                     </label>
-                                    <label aria-label="Искусство" class="books__label-checkbox transition-color focus-visible" for="check-2-1">Искусство
+                                    <label aria-label="Искусство" class="books__label-checkbox transition-color without-outline" for="check-2-1">Искусство
                                         <input class="check" type="checkbox" name="check" id="check-2-1">
                                         <span></span>
                                     </label>        
-                                    <label aria-label="Архитектура" class="books__label-checkbox transition-color focus-visible" for="check-3-1">Архитектура
+                                    <label aria-label="Архитектура" class="books__label-checkbox transition-color without-outline" for="check-3-1">Архитектура
                                         <input class="check" type="checkbox" name="check" id="check-3-1">
                                         <span></span>
                                     </label>
-                                    <label aria-label="Дизайн" class="books__label-checkbox transition-color focus-visible" for="check-4-1">Дизайн
+                                    <label aria-label="Дизайн" class="books__label-checkbox transition-color without-outline" for="check-4-1">Дизайн
                                         <input class="check" type="checkbox" name="check" id="check-4-1">
                                         <span></span>
                                     </label>
-                                    <label aria-label="Мода" class="books__label-checkbox transition-color focus-visible" for="check-5-1">Мода
+                                    <label aria-label="Мода" class="books__label-checkbox transition-color without-outline" for="check-5-1">Мода
                                         <input class="check" type="checkbox" name="check" id="check-5-1">
                                         <span></span>
                                     </label>
-                                    <label aria-label="Детям" class="books__label-checkbox transition-color focus-visible" for="check-6-1">Детям
+                                    <label aria-label="Детям" class="books__label-checkbox transition-color without-outline" for="check-6-1">Детям
                                         <input class="check" type="checkbox" name="check" id="check-6-1">
                                         <span></span>
                                     </label>
-                                    <label aria-label="Художественная литература" class="books__label-checkbox transition-color focus-visible" for="check-7-1">Художественная литература
+                                    <label aria-label="Художественная литература" class="books__label-checkbox transition-color without-outline" for="check-7-1">Художественная литература
                                         <input class="check" type="checkbox" name="check" id="check-7-1">
                                         <span></span>
                                     </label>
-                                    <label aria-label="Публицистика" class="books__label-checkbox transition-color focus-visible" for="check-8-1">Публицистика
+                                    <label aria-label="Публицистика" class="books__label-checkbox transition-color without-outline" for="check-8-1">Публицистика
                                         <input class="check" type="checkbox" name="check" id="check-8-1">
                                         <span></span>
                                     </label>
-                                    <label aria-label="Путеводители" class="books__label-checkbox transition-color focus-visible" for="check-9-1">Путеводители
+                                    <label aria-label="Путеводители" class="books__label-checkbox transition-color without-outline" for="check-9-1">Путеводители
                                         <input class="check" type="checkbox" name="check" id="check-9-1">
                                         <span></span>
                                     </label>
-                                    <label aria-label="Философия" class="books__label-checkbox transition-color focus-visible" for="check-10-1">Философия
+                                    <label aria-label="Философия" class="books__label-checkbox transition-color without-outline" for="check-10-1">Философия
                                         <input class="check" type="checkbox" name="check" id="check-10-1">
                                         <span></span>
                                     </label>
-                                    <label aria-label="Учебная литература" class="books__label-checkbox transition-color focus-visible" for="check-11-1">Учебная литература
+                                    <label aria-label="Учебная литература" class="books__label-checkbox transition-color without-outline" for="check-11-1">Учебная литература
                                         <input class="check" type="checkbox" name="check" id="check-11-1">
                                         <span></span>
                                     </label>
-                                    <label aria-label="Журналы и газеты" class="books__label-checkbox transition-color focus-visible" for="check-12-1">Журналы и газеты
+                                    <label aria-label="Журналы и газеты" class="books__label-checkbox transition-color without-outline" for="check-12-1">Журналы и газеты
                                         <input class="check" type="checkbox" name="check" id="check-12-1">
                                         <span></span>
                                     </label>
@@ -982,51 +995,51 @@
                             </div>
                           </div>
                         <form class="books__form-checkbox" action="https://jsonplaceholder.typicode.com/posts" method="POST">
-                            <label  aria-label="Бестселлеры" tabindex="37" class="books__label-checkbox transition-color focus-visible" for="check-1">Бестселлеры
+                            <label  aria-label="Бестселлеры" tabindex="37" class="books__label-checkbox transition-color without-outline" for="check-1">Бестселлеры
                                 <input class="check" type="checkbox" name="check" id="check-1">
                                 <span></span>
                             </label>
-                            <label aria-label="Искусство" tabindex="38" class="books__label-checkbox transition-color focus-visible" for="check-2">Искусство
+                            <label aria-label="Искусство" tabindex="38" class="books__label-checkbox transition-color without-outline" for="check-2">Искусство
                                 <input class="check" type="checkbox" name="check" id="check-2">
                                 <span></span>
                             </label>        
-                            <label aria-label="Архитектура" tabindex="39" class="books__label-checkbox transition-color focus-visible" for="check-3">Архитектура
+                            <label aria-label="Архитектура" tabindex="39" class="books__label-checkbox transition-color without-outline" for="check-3">Архитектура
                                 <input class="check" type="checkbox" name="check" id="check-3">
                                 <span></span>
                             </label>
-                            <label aria-label="Дизайн" tabindex="40" class="books__label-checkbox transition-color focus-visible" for="check-4">Дизайн
+                            <label aria-label="Дизайн" tabindex="40" class="books__label-checkbox transition-color without-outline" for="check-4">Дизайн
                                 <input class="check" type="checkbox" name="check" id="check-4">
                                 <span></span>
                             </label>
-                            <label aria-label="Мода" tabindex="41" class="books__label-checkbox transition-color focus-visible" for="check-5">Мода
+                            <label aria-label="Мода" tabindex="41" class="books__label-checkbox transition-color without-outline" for="check-5">Мода
                                 <input class="check" type="checkbox" name="check" id="check-5">
                                 <span></span>
                             </label>
-                            <label aria-label="Детям" tabindex="42" class="books__label-checkbox transition-color focus-visible" for="check-6">Детям
+                            <label aria-label="Детям" tabindex="42" class="books__label-checkbox transition-color without-outline" for="check-6">Детям
                                 <input class="check" type="checkbox" name="check" id="check-6">
                                 <span></span>
                             </label>
-                            <label aria-label="Художественная литература" tabindex="43" class="books__label-checkbox transition-color focus-visible" for="check-7">Художественная литература
+                            <label aria-label="Художественная литература" tabindex="43" class="books__label-checkbox transition-color without-outline" for="check-7">Художественная литература
                                 <input class="check" type="checkbox" name="check" id="check-7">
                                 <span></span>
                             </label>
-                            <label aria-label="Публицистика" tabindex="44" class="books__label-checkbox transition-color focus-visible" for="check-8">Публицистика
+                            <label aria-label="Публицистика" tabindex="44" class="books__label-checkbox transition-color without-outline" for="check-8">Публицистика
                                 <input class="check" type="checkbox" name="check" id="check-8">
                                 <span></span>
                             </label>
-                            <label aria-label="Путеводители" tabindex="45" class="books__label-checkbox transition-color focus-visible" for="check-9">Путеводители
+                            <label aria-label="Путеводители" tabindex="45" class="books__label-checkbox transition-color without-outline" for="check-9">Путеводители
                                 <input class="check" type="checkbox" name="check" id="check-9">
                                 <span></span>
                             </label>
-                            <label aria-label="Философия" tabindex="46" class="books__label-checkbox transition-color focus-visible" for="check-10">Философия
+                            <label aria-label="Философия" tabindex="46" class="books__label-checkbox transition-color without-outline" for="check-10">Философия
                                 <input class="check" type="checkbox" name="check" id="check-10">
                                 <span></span>
                             </label>
-                            <label aria-label="Учебная литература" tabindex="47" class="books__label-checkbox transition-color focus-visible" for="check-11">Учебная литература
+                            <label aria-label="Учебная литература" tabindex="47" class="books__label-checkbox transition-color without-outline" for="check-11">Учебная литература
                                 <input class="check" type="checkbox" name="check" id="check-11">
                                 <span></span>
                             </label>
-                            <label aria-label="Журналы и газеты" tabindex="48" class="books__label-checkbox transition-color focus-visible" for="check-12">Журналы и газеты
+                            <label aria-label="Журналы и газеты" tabindex="48" class="books__label-checkbox transition-color without-outline" for="check-12">Журналы и газеты
                                 <input class="check" type="checkbox" name="check" id="check-12">
                                 <span></span>
                             </label>
@@ -1072,7 +1085,7 @@
                                             </div>
                                             <div class="books__book-price">620 руб</div>
                                         </div>
-                                        <a aria-label="Заказать книгу" class="books__buy-book transition-100ms focus-visible" href="#">Заказать</a>
+                                        <a aria-label="Заказать книгу" class="books__buy-book transition-100ms without-outline" href="#">Заказать</a>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
@@ -1085,7 +1098,7 @@
                                             </div>
                                             <div class="books__book-price">2 450 руб</div>
                                         </div>
-                                        <a aria-label="Заказать книгу" class="books__buy-book transition-100ms focus-visible" href="#">Заказать</a>
+                                        <a aria-label="Заказать книгу" class="books__buy-book transition-100ms without-outline" href="#">Заказать</a>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
@@ -1098,7 +1111,7 @@
                                             </div>
                                             <div class="books__book-price">2 200 руб</div>
                                         </div>
-                                        <a aria-label="Заказать книгу" class="books__buy-book transition-100ms focus-visible" href="#">Заказать</a>
+                                        <a aria-label="Заказать книгу" class="books__buy-book transition-100ms without-outline" href="#">Заказать</a>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
@@ -1111,7 +1124,7 @@
                                             </div>
                                             <div class="books__book-price">1 100 руб</div>
                                         </div>
-                                        <a aria-label="Заказать книгу" class="books__buy-book transition-100ms focus-visible" href="#">Заказать</a>
+                                        <a aria-label="Заказать книгу" class="books__buy-book transition-100ms without-outline" href="#">Заказать</a>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
@@ -1124,7 +1137,7 @@
                                             </div>
                                             <div class="books__book-price">1 450 руб</div>
                                         </div>
-                                        <a aria-label="Заказать книгу" class="books__buy-book transition-100ms focus-visible" href="#">Заказать</a>
+                                        <a aria-label="Заказать книгу" class="books__buy-book transition-100ms without-outline" href="#">Заказать</a>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
@@ -1137,7 +1150,7 @@
                                             </div>
                                             <div class="books__book-price">3 200 руб</div>
                                         </div>
-                                        <a aria-label="Заказать книгу" class="books__buy-book transition-100ms focus-visible" href="#">Заказать</a>
+                                        <a aria-label="Заказать книгу" class="books__buy-book transition-100ms without-outline" href="#">Заказать</a>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
@@ -1150,7 +1163,7 @@
                                             </div>
                                             <div class="books__book-price">2 200 руб</div>
                                         </div>
-                                        <a aria-label="Заказать книгу" class="books__buy-book transition-100ms focus-visible" href="#">Заказать</a>
+                                        <a aria-label="Заказать книгу" class="books__buy-book transition-100ms without-outline" href="#">Заказать</a>
                                     </div>
                                 </div>
                             </div>
@@ -1170,7 +1183,7 @@
                                     </div>
                                     <div class="books__book-price">620 руб</div>
                                 </div>
-                                <a aria-label="Заказать книгу" class="books__buy-book transition-100ms focus-visible" href="#">Заказать</a>
+                                <a aria-label="Заказать книгу" class="books__buy-book transition-100ms without-outline" href="#">Заказать</a>
                             </div>
                         </div>
                         <div class="image-for-320">
@@ -1183,7 +1196,7 @@
                                     </div>
                                     <div class="books__book-price">2 450 руб</div>
                                 </div>
-                                <a aria-label="Заказать книгу" class="books__buy-book transition-100ms focus-visible" href="#">Заказать</a>
+                                <a aria-label="Заказать книгу" class="books__buy-book transition-100ms without-outline" href="#">Заказать</a>
                             </div>
                         </div>
                         <div class="image-for-320">
@@ -1196,7 +1209,7 @@
                                     </div>
                                     <div class="books__book-price">2 200 руб</div>
                                 </div>
-                                <a aria-label="Заказать книгу" class="books__buy-book transition-100ms focus-visible" href="#">Заказать</a>
+                                <a aria-label="Заказать книгу" class="books__buy-book transition-100ms without-outline" href="#">Заказать</a>
                             </div>
                         </div>
                         <div class="image-for-320">
@@ -1209,7 +1222,7 @@
                                     </div>
                                     <div class="books__book-price">1 100 руб</div>
                                 </div>
-                                <a aria-label="Заказать книгу" class="books__buy-book transition-100ms focus-visible" href="#">Заказать</a>
+                                <a aria-label="Заказать книгу" class="books__buy-book transition-100ms without-outline" href="#">Заказать</a>
                             </div>
                         </div>
                         <div class="image-for-320">
@@ -1222,7 +1235,7 @@
                                     </div>
                                     <div class="books__book-price">1 450 руб</div>
                                 </div>
-                                <a aria-label="Заказать книгу" class="books__buy-book transition-100ms focus-visible" href="#">Заказать</a>
+                                <a aria-label="Заказать книгу" class="books__buy-book transition-100ms without-outline" href="#">Заказать</a>
                             </div>
                         </div>
                         <div class="image-for-320">
@@ -1235,7 +1248,7 @@
                                     </div>
                                     <div class="books__book-price">3 200 руб</div>
                                 </div>
-                                <a aria-label="Заказать книгу" class="books__buy-book transition-100ms focus-visible" href="#">Заказать</a>
+                                <a aria-label="Заказать книгу" class="books__buy-book transition-100ms without-outline" href="#">Заказать</a>
                             </div>
                         </div>
                         <div class="image-for-320">
@@ -1248,7 +1261,7 @@
                                     </div>
                                     <div class="books__book-price">2 200 руб</div>
                                 </div>
-                                <a aria-label="Заказать книгу" class="books__buy-book transition-100ms focus-visible" href="#">Заказать</a>
+                                <a aria-label="Заказать книгу" class="books__buy-book transition-100ms without-outline" href="#">Заказать</a>
                             </div>
                         </div>
                     </div>
@@ -1269,7 +1282,7 @@
                 </div>
                 <h3 class="projects__partners without-outline">Партнёры проектов:</h3>
                 <div class="projects__swiper-elements">
-                    <button aria-label="Перейти к предыдущим слайдам" class="swiper-button-prev_2"><svg class="pagination-button-image transition-100ms focus-visible"><use xlink:href="#pagination-prev"></use></svg></button>
+                    <button aria-label="Перейти к предыдущим слайдам" class="swiper-button-prev_4"><svg class="pagination-button-image transition-100ms focus-visible"><use xlink:href="#pagination-prev"></use></svg></button>
                     <div class="swiper-container_4">
                         <!-- Additional required wrapper -->
                         <div class="swiper-wrapper">
@@ -1296,14 +1309,14 @@
                         <div class="contacts__address">Леонтьевский переулок, дом 5, строение 1</div>
                         <h3 class="contacts__showroom without-outline">Заказать обратный звонок</h3>
                         <form class="contacts__call-form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
-                            <input aria-label="Имя" required type="text" class="contacts__call-input focus-visible" name="name" placeholder="Имя*" value="">
-                            <input aria-label="Телефон" required type="number" class="contacts__call-input focus-visible" name="number" placeholder="Телефон*" value=""> 
-                            <button aria-label="Заказать обратный звонок" type="submit" class="contacts__call-button focus-visible">Заказать</button>
+                            <input aria-label="Имя" required type="text" class="contacts__call-input transition-100ms focus-visible" name="name" placeholder="Имя*" value="">
+                            <input aria-label="Телефон" required type="number" class="contacts__call-input transition-100ms focus-visible" name="number" placeholder="Телефон*" value=""> 
+                            <button aria-label="Заказать обратный звонок" type="submit" class="contacts__call-button transition-200ms focus-visible">Заказать</button>
                         </form>
                         <h3 class="contacts__showroom without-outline">Связаться в один клик</h3>
                         <div class="flex">
-                            <a aria-label="Связаться через Whatsapp" href="#" class="contacts__whatsapp focus-visible"></a>
-                            <a aria-label="Связаться через Telegram" href="#" class="contacts__telegram focus-visible"></a>
+                            <a aria-label="Связаться через Whatsapp" href="#" class="contacts__whatsapp transition-100ms without-outline"></a>
+                            <a aria-label="Связаться через Telegram" href="#" class="contacts__telegram transition-100ms without-outline"></a>
                         </div>
                     </div>
                     <div class="contacts__up-down container">
@@ -1314,14 +1327,14 @@
 <div class="contacts__up-down container">
     <h3 class="contacts__showroom without-outline">Заказать обратный звонок</h3>
                         <form class="contacts__call-form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
-                            <input aria-label="Имя" required type="text" class="contacts__call-input focus-visible" name="name" placeholder="Имя*" value="">
-                            <input aria-label="Телефон" required type="number" class="contacts__call-input focus-visible" name="number" placeholder="Телефон*" value=""> 
-                            <button aria-label="Заказать обратный звонок" type="submit" class="contacts__call-button focus-visible">Заказать</button>
+                            <input aria-label="Имя" required type="text" class="contacts__call-input transition-100ms focus-visible" name="name" placeholder="Имя*" value="">
+                            <input aria-label="Телефон" required type="number" class="contacts__call-input transition-100ms focus-visible" name="number" placeholder="Телефон*" value=""> 
+                            <button aria-label="Заказать обратный звонок" type="submit" class="contacts__call-button transition-200ms focus-visible">Заказать</button>
                         </form>
                         <h3 class="contacts__showroom without-outline">Связаться в один клик</h3>
                         <div class="flex">
-                            <a aria-label="Связаться через Whatsapp" href="#" class="contacts__whatsapp focus-visible"></a>
-                            <a aria-label="Связаться через Telegram" href="#" class="contacts__telegram focus-visible"></a>
+                            <a aria-label="Связаться через Whatsapp" href="#" class="contacts__whatsapp transition-100ms without-outline"></a>
+                            <a aria-label="Связаться через Telegram" href="#" class="contacts__telegram transition-100ms without-outline"></a>
                         </div>
 </div>
                 </div>
