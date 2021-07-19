@@ -34,12 +34,22 @@ window.addEventListener('DOMContentLoaded',  function() {
 window.addEventListener('DOMContentLoaded',  function() {
   $(document).ready(function(){
     if(document.documentElement.clientWidth < 824) {
-    $('.catalog__left-right a[href^="#"], *[data-href^="#"]').on('click', function(e){
+    $('.catalog__left-right button[formaction^="#"], *[data-formaction^="#"]').on('click', function(e){
+        var t = 1000;
+        var d = $(this).attr('data-formaction') ? $(this).attr('data-formaction') : $(this).attr('formaction');
+        $('html,body').stop().animate({ scrollTop: $(d).offset().top }, t);
+    });
+  }
+  })
+})
+
+window.addEventListener('DOMContentLoaded',  function() {
+  $(document).ready(function(){
+    $('.catalog__left a[href^="#"], *[data-href^="#"]').on('click', function(e){
         var t = 1000;
         var d = $(this).attr('data-href') ? $(this).attr('data-href') : $(this).attr('href');
         $('html,body').stop().animate({ scrollTop: $(d).offset().top }, t);
     });
-  }
   })
 })
 
@@ -73,13 +83,13 @@ window.addEventListener('DOMContentLoaded', function(){
     itemSelectText: ''
   });
 })
-window.addEventListener('DOMContentLoaded', function(){
-  const element = document.querySelector('.custom-select_2');
-  const choices = new Choices(element, {
-    searchEnabled: false,
-    itemSelectText: ''
-  });
-})
+// window.addEventListener('DOMContentLoaded', function(){
+//   const element = document.querySelector('.custom-select_2');
+//   const choices = new Choices(element, {
+//     searchEnabled: false,
+//     itemSelectText: ''
+//   });
+// })
 window.addEventListener('DOMContentLoaded', function() {
   var mySwiper = new Swiper('.swiper-container_1', {
     // Optional parameters
@@ -191,6 +201,8 @@ window.addEventListener('DOMContentLoaded',  function() {
   $('.catalog__France').click(function(){
     $('.country-active').removeClass('country-active');
     $('.catalog__list-of-artists:nth-child(1)').addClass('country-active');
+    $('.catalog__for-country-active').removeClass('catalog__for-country-active')
+    $('.catalog__France').parent().addClass('catalog__for-country-active')
     $('ul li').removeClass("link-active");
     $('.catalog__list-of-artists:nth-child(1) li:nth-child(1)').addClass("link-active");
     var formaction = $('.catalog__list-of-artists:nth-child(1) li:nth-child(1) button').attr('formaction');
@@ -203,6 +215,8 @@ window.addEventListener('DOMContentLoaded',  function() {
   $('.catalog__Germany').click(function(){
     $('.country-active').removeClass('country-active');
     $('.catalog__list-of-artists:nth-child(2)').addClass('country-active');
+    $('.catalog__for-country-active').removeClass('catalog__for-country-active')
+    $('.catalog__Germany').parent().addClass('catalog__for-country-active')
     $('ul li').removeClass("link-active");
     $('.catalog__list-of-artists:nth-child(2) li:nth-child(1)').addClass("link-active");
     var formaction = $('.catalog__list-of-artists:nth-child(2) li:nth-child(1) button').attr('formaction');
@@ -215,6 +229,8 @@ window.addEventListener('DOMContentLoaded',  function() {
   $('.catalog__Italy').click(function(){
     $('.country-active').removeClass('country-active');
     $('.catalog__list-of-artists:nth-child(3)').addClass('country-active');
+    $('.catalog__for-country-active').removeClass('catalog__for-country-active')
+    $('.catalog__Italy').parent().addClass('catalog__for-country-active')
     $('ul li').removeClass("link-active");
     $('.catalog__list-of-artists:nth-child(3) li:nth-child(1)').addClass("link-active");
     var formaction = $('.catalog__list-of-artists:nth-child(3) li:nth-child(1) button').attr('formaction');
@@ -227,6 +243,8 @@ window.addEventListener('DOMContentLoaded',  function() {
   $('.catalog__Russia').click(function(){
     $('.country-active').removeClass('country-active');
     $('.catalog__list-of-artists:nth-child(4)').addClass('country-active');
+    $('.catalog__for-country-active').removeClass('catalog__for-country-active')
+    $('.catalog__Russia').parent().addClass('catalog__for-country-active')
     $('ul li').removeClass("link-active");
     $('.catalog__list-of-artists:nth-child(4) li:nth-child(1)').addClass("link-active");
     var formaction = $('.catalog__list-of-artists:nth-child(4) li:nth-child(1) button').attr('formaction');
@@ -239,6 +257,8 @@ window.addEventListener('DOMContentLoaded',  function() {
   $('.catalog__Belgium').click(function(){
     $('.country-active').removeClass('country-active');
     $('.catalog__list-of-artists:nth-child(5)').addClass('country-active');
+    $('.catalog__for-country-active').removeClass('catalog__for-country-active')
+    $('.catalog__Belgium').parent().addClass('catalog__for-country-active')
     $('ul li').removeClass("link-active");
     $('.catalog__list-of-artists:nth-child(5) li:nth-child(1)').addClass("link-active");
     var formaction = $('.catalog__list-of-artists:nth-child(5) li:nth-child(1) button').attr('formaction');
