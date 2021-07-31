@@ -285,33 +285,50 @@ window.addEventListener('DOMContentLoaded',  function() {
 })
 
 window.addEventListener('DOMContentLoaded', function() {
-  var mySwiper = new Swiper('.swiper-container_2_5', {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: true,
-    slidesPerView: 1,
-    slidesPerColumnFill: 'string',
-    slidesPerGroup: 1,
-    speed: 600,
-  
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination_2_5',
-      type: 'bullets',
-      bulletElement: 'span', 
-    },
-  
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next_2_5',
-      prevEl: '.swiper-button-prev_2_5',
-    },
-  
-    // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar_2_5',
-    },
-  })
+  const Slider = document.querySelector('.swiper-container_2_5');
+  var mySwiper;
+  function mobileSlider() {
+    if (window.innerWidth <= 599 && slider.dataset.mobile == 'false') {
+      mySwiper = new Swiper(slider, {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+        slidesPerView: 1,
+        slidesPerColumnFill: 'string',
+        slidesPerGroup: 1,
+        speed: 600,
+      
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination_2_5',
+          type: 'bullets',
+          bulletElement: 'span', 
+        },
+      
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next_2_5',
+          prevEl: '.swiper-button-prev_2_5',
+        },
+      
+        // And if we need scrollbar
+        scrollbar: {
+          el: '.swiper-scrollbar_2_5',
+        },
+      })
+      slider.dataset.mobile = 'true';
+    }
+    else if (window.innerWidth > 599) {
+      slider.dataset.mobile = 'false';
+      if (slider.classList.contains('swiper-container-initialized')){
+        mySwiper.destroy();
+      }
+    }
+  }
+  mobileSlider();
+  window.addEventListener('resize', () => {
+    mobileSlider();
+  });
 })
 
 window.addEventListener('DOMContentLoaded',  function() {

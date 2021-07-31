@@ -595,6 +595,7 @@ input::placeholder {color: #cacaca;}
   line-height: 32px;
 }
 .flex, .all-events {display: -webkit-box;display: -ms-flexbox;display: flex;}
+.catalog__left-right {display: flex;}
 .catalog__left {width: 100%;}
 .catalog__left-img {width: 100%;}
 .catalog__left-blank {
@@ -631,7 +632,6 @@ input::placeholder {color: #cacaca;}
   background-color: #9d5cd0;
   color: white;
 }
-.catalog__right:nth-child(3) {display: none;}
 .catalog__list-of-artists {
   display: none;
   padding-top: 25px;
@@ -818,7 +818,7 @@ input::placeholder {color: #cacaca;}
   font-weight: 700;
   transition-property: color, background-color;
 }
-.event-hidden {display: none;}
+.event-hidden:nth-child(n+4) {display: none;}
 .books {
   padding-top: 85px;
   min-height: 763px;
@@ -1212,6 +1212,7 @@ input::placeholder {color: #cacaca;}
   .books__left {min-width: 295px;}
   .details {display: block;}
   .catalog__right {padding-top: 3px;}
+  .event-hidden {display: block;}
   .books .section-top {
     -webkit-transform: translate(0, 0);
         -ms-transform: translate(0, 0);
@@ -1263,6 +1264,7 @@ input::placeholder {color: #cacaca;}
     background-color: #7943A4;
     border: 1px solid black;
   }
+  .gallery__left .gallery__info {display: none;}
   .books [class*="swiper-button-"]:active .pagination-button-image {
     background-color: #7943A4;
     border: 1px solid black;
@@ -1295,6 +1297,7 @@ input::placeholder {color: #cacaca;}
     color: #7943a4;
     font-weight: 600;
   }
+  .catalog__left-right {flex-direction: column-reverse;}
   .catalog__blank-link:active {color: #7943a4;}
   .event-more-about:active {
     border-bottom: 1px solid #7943a4;
@@ -2002,6 +2005,8 @@ input::placeholder {color: #cacaca;}
     margin-right: 19px;
   }
   .gallery__left {min-width: 317px;}
+  .choices {width: 309px;}
+  .event-hidden:nth-child(n+3) {display: none;}
   .event__img:nth-child(3) {display: none;}
   .choices[data-type*=select-one]:after {
     top: 26%;
@@ -2029,7 +2034,6 @@ input::placeholder {color: #cacaca;}
     margin-bottom: 20px;
   }
   .swiper-container_2 .swiper-slide {height: 290px;}
-  .choices {width: 311px;}
   .choices[data-type*=select-one]:after {right: 51px;}
   .choices__inner {padding: 0px 0px 0px 11px;}
   .container:nth-child(4) {margin-bottom: 74px;}
@@ -2098,7 +2102,6 @@ input::placeholder {color: #cacaca;}
   }
   .gallery__right {padding-top: 50px;}
   .gallery__right .gallery__info {padding-left: 0px;}
-  .choices {width: 309px;}
   .choices__inner {padding: 0px 0px 0px 11px;}
   .swiper-pagination_2, .swiper-pagination_3 {margin-right: 19px;}
   .swiper-container_2 {
@@ -2348,6 +2351,7 @@ input::placeholder {color: #cacaca;}
     height: 1249px;
     padding-top: 35px;
   }
+  .gallery__left .gallery__info {display: none;}
   .gallery__right {padding-top: 140px;}
   .swiper-container_2 .swiper-wrapper {margin-bottom: -10px;}
   .swiper-container_2, .swiper-container_3 {width: 734px;}
@@ -2365,6 +2369,7 @@ input::placeholder {color: #cacaca;}
         -ms-transform: translate(0px, 10px);
             transform: translate(0px, 10px);
   }
+  .catalog__left-right {flex-direction: column-reverse;}
   .catalog__list-of-artists {margin-bottom: 30px;}
   .grid {width: 95%;}
   .country-active {width: 498px;}
@@ -2411,7 +2416,8 @@ input::placeholder {color: #cacaca;}
     height: 1249px;
     padding-top: 35px;
   }
-  .gallery__right {padding-top: 140px;}
+  .gallery__left .gallery__info {display: none;}
+  .gallery__right {padding-top: 80px;}
   .swiper-container_2, .swiper-container_3 {width: 718px;}
   .swiper-container_2 .swiper-slide {
     width: 342px!important;
@@ -2439,8 +2445,6 @@ input::placeholder {color: #cacaca;}
     padding-top: 36px;
     margin-bottom: 53px;
   }
-  .catalog__right:nth-child(1) {display: none;}
-  .catalog__right:nth-child(3) {display: block;}
   .grid {width: 95%;}
   .country-active {width: 498px;}
   .catalog__for-artist {columns: 249px;}
@@ -2488,8 +2492,6 @@ input::placeholder {color: #cacaca;}
     margin-bottom: 39px;
   }
   .catalog__left {width: 760px;}
-  .catalog__right:nth-child(1) {display: none;}
-  .catalog__right:nth-child(3), .event-hidden:nth-child(3) {display: block;}
   .books {background-image: url('../img/books-background-2.jpg');}
   .books .container {display: -webkit-box;display: -ms-flexbox;display: flex;}
   .books__prices {margin-right: 0px;}
