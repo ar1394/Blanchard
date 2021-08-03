@@ -566,7 +566,6 @@ input::placeholder {color: #cacaca;}
 }
 .catalog__for-country-active:nth-child(5) {margin-right: 0!important;}
 .catalog__choose-country {
-  margin-bottom: 10px;
   width: 46px;
   height: 46px;
   border: 2px solid rgba(0, 0, 0, 0);
@@ -723,6 +722,7 @@ input::placeholder {color: #cacaca;}
 .catalog__artist-name {
   padding-top: 24px;
   font-size: 23px;
+  font-weight: 700;
 }
 .catalog__artist-born, .event__place-and-time {
   color: #999;
@@ -732,10 +732,10 @@ input::placeholder {color: #cacaca;}
   padding-top: 7px;
   margin-bottom: 5px;
 }
+.catalog__artist-text {margin: 0;}
 .catalog__artist-text, .event__about {line-height: 32px;}
 .catalog__right {margin-bottom: 50px;}
 .container:nth-child(4) {margin-bottom: 77px;}
-.swiper-container_2_5 {display: none;}
 .swiper-container_2_5 .swiper-pagination-bullet {background: #cacaca;}
 .swiper-container_2_5 .swiper-pagination-bullet-active {background: #666;}
 .all-events {
@@ -1204,7 +1204,7 @@ input::placeholder {color: #cacaca;}
     margin-right: 19px;
   }
   .catalog .section-top {display: block;}
-  .swiper-container_2_5, .contacts__all, .contacts__up-down {display: block;}
+  .contacts__all, .contacts__up-down {display: block;}
   .catalog__for-artist {columns: 212px;}
   .all-events, .event__for-button, .books-categories, .contacts__left {display: none;}
   .align + .books__form-checkbox {display: none;}

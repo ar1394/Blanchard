@@ -285,7 +285,7 @@ window.addEventListener('DOMContentLoaded',  function() {
 })
 
 window.addEventListener('DOMContentLoaded', function() {
-  const Slider = document.querySelector('.swiper-container_2_5');
+  const slider = document.querySelector('.swiper-container_2_5');
   var mySwiper;
   function mobileSlider() {
     if (window.innerWidth <= 599 && slider.dataset.mobile == 'false') {
