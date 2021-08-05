@@ -447,7 +447,7 @@ input::placeholder {color: #cacaca;}
 }
 .choices[data-type*=select-one].is-open:after {margin-top: -2px;}
 .choices {width: 98%;}
-.choices__list--single {padding: 6px 16px 0px 4px;}
+.choices__list--single {padding: 4px 16px 0px 4px;}
 .choices__list--dropdown {
   margin-top: 0;
   border-radius: 6px;
@@ -2540,7 +2540,7 @@ input::placeholder {color: #cacaca;}
   }
   .choices[data-type*=select-one]:after {
     top: 26%;
-    right: 56px;
+    right: 57px;
   }
   .catalog .section-top {margin-right: 32px;}
   .catalog__for-country {
