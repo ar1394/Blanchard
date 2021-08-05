@@ -717,7 +717,12 @@ input::placeholder {color: #cacaca;}
   border: 1px solid #9d5cd0;
   background-color: #9d5cd0;
 }
-.ui-state-active .catalog__periods-image {transform: rotate(180deg);}
+.ui-state-active .catalog__period {color: #7943a4;}
+.ui-state-active .catalog__periods-image {
+  transform: rotate(180deg);
+  border: 1px solid #9d5cd0;
+  background-color: #D1A9F0;
+}
 .ui-icon {display:none;}
 .catalog__artist-name {
   padding-top: 24px;
@@ -736,6 +741,7 @@ input::placeholder {color: #cacaca;}
 .catalog__artist-text, .event__about {line-height: 32px;}
 .catalog__right {margin-bottom: 50px;}
 .container:nth-child(4) {margin-bottom: 77px;}
+.swiper-pagination_2_5 {display: none;}
 .swiper-container_2_5 .swiper-pagination-bullet {background: #cacaca;}
 .swiper-container_2_5 .swiper-pagination-bullet-active {background: #666;}
 .all-events {
@@ -754,6 +760,7 @@ input::placeholder {color: #cacaca;}
   border: 1px solid #cacaca;
   margin-bottom: 27px;
 }
+.event:nth-child(6) {border: none;}
 .event__img {width: 100%;}
 .event__for-place-and-time {
   display: flex;
@@ -1209,10 +1216,12 @@ input::placeholder {color: #cacaca;}
   .all-events, .event__for-button, .books-categories, .contacts__left {display: none;}
   .align + .books__form-checkbox {display: none;}
   .grid, .event {width: 100%;}
+  .event:nth-child(6) {display: none;}
   .books__left {min-width: 295px;}
   .details {display: block;}
   .catalog__right {padding-top: 3px;}
   .event-hidden {display: block;}
+  .swiper-pagination_2_5 {display: block;}
   .books .section-top {
     -webkit-transform: translate(0, 0);
         -ms-transform: translate(0, 0);
@@ -2045,7 +2054,7 @@ input::placeholder {color: #cacaca;}
     margin-bottom: 91px;
   }
   .grid {width: 100%;}
-  .catalog__for-artist {columns: 212px;}
+  .catalog__for-artist {columns: 299px;}
   .catalog__empty-flex {width: 550px;}
   .event {
     margin-bottom: 50px;
@@ -2140,7 +2149,8 @@ input::placeholder {color: #cacaca;}
     margin-bottom: 29px;
   }
   .grid {width: 100%;}
-  .catalog__for-artist {columns: 222px;}
+  .catalog__for-artist {columns: 237px;}
+  .catalog__for-artist:nth-child(3n) {columns: 178px;}
   .catalog__left-blank-img {width: 236px;}
   .catalog__left-blank {
     padding-top: 79px;
@@ -2372,8 +2382,8 @@ input::placeholder {color: #cacaca;}
   .catalog__left-right {flex-direction: column-reverse;}
   .catalog__list-of-artists {margin-bottom: 30px;}
   .grid {width: 95%;}
-  .country-active {width: 498px;}
   .catalog__for-artist {columns: 249px;}
+  .catalog__for-artist:nth-child(3n) {columns: 190px;}
   .ui-accordion-header, .ui-accordion-content {width: 95%;}
   .catalog__empty-flex {width: 690px;}
   .catalog__left {padding-left: 10px;}
@@ -2446,8 +2456,8 @@ input::placeholder {color: #cacaca;}
     margin-bottom: 53px;
   }
   .grid {width: 95%;}
-  .country-active {width: 498px;}
   .catalog__for-artist {columns: 249px;}
+  .catalog__for-artist:nth-child(2n) {columns: 187px;}
   .ui-accordion-header, .ui-accordion-content {width: 436px;}
   .catalog__empty-flex {width: 436px;}
   .catalog__empty-image {
@@ -2555,8 +2565,8 @@ input::placeholder {color: #cacaca;}
   }
   .catalog__artist-text {width: 101%;}
   .grid {width: 95%;}
-  .country-active {width: 498px;}
-  .catalog__for-artist {columns: 249px;}
+  .catalog__for-artist {columns: 260px;}
+  .catalog__for-artist:nth-child(2n) {columns: 176px;}
   .ui-accordion-header, .ui-accordion-content {width: 436px;}
   .catalog__empty-flex {width: 436px;}
   .catalog__empty-image {
@@ -2625,8 +2635,8 @@ input::placeholder {color: #cacaca;}
     margin-bottom: 65px;
   }
   .grid {width: 95%;}
-  .country-active {width: 516px;}
-  .catalog__for-artist {columns: 258px;}
+  .catalog__for-artist {columns: 262px;}
+  .catalog__for-artist:nth-child(2n) {columns: 186px;}
   .ui-accordion-header, .ui-accordion-content {width: 450px;}
   .catalog__empty-image {
     padding: 8px;
