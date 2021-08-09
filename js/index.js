@@ -278,7 +278,7 @@ window.addEventListener('DOMContentLoaded',  function() {
 })
 
 window.addEventListener('DOMContentLoaded',  function() {
-  jQuery('.align .grid h3').on('click', function (e) {
+  jQuery('.catalog__right .grid h3').on('click', function (e) {
     e.about();return false; // этот код предотвращает стандартное поведение браузера по клику
     // остальной код
   });
