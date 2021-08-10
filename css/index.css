@@ -1245,6 +1245,15 @@ input::placeholder {color: #cacaca;}
     margin-bottom: 1px;
   }
   .swiper-container_4 .swiper-slide {height: 65px;}
+  .partner-1 {width: 54.28%;}
+  .partner-2 {width: 73.14%;}
+  .partner-3 {width: 60.47;}
+  .partner-4 {width: 27.62%;}
+  .partner-5 {width: 38.85%;}
+  .partner-6 {width: 56.59%;}
+  .partner-7 {width: 64.22%;}
+  .partner-8 {width: 41.54%;}
+  .partner-9 {width: 51.42%;}
   .contacts__address {
     margin-bottom: 0;
     font-size: 14px;
@@ -1554,7 +1563,6 @@ input::placeholder {color: #cacaca;}
     margin-bottom: 13px;
     font-size: 18px;
   }
-  [class*='partner-'] {height: 65px!important;}
   .contacts .section-top {
     margin-bottom: 8px;
     line-height: 53px;
@@ -2034,6 +2042,15 @@ input::placeholder {color: #cacaca;}
   }
   .books {min-height: 1048px;}
   .books__left {min-width: 295px;}
+  .partner-1 {width: 80.16%;}
+  .partner-2 {width: 82.83%;}
+  .partner-3 {width: 74.43%;}
+  .partner-4 {width: 40.06%;}
+  .partner-5 {width: 46.19%;}
+  .partner-6 {width: 67.18%;}
+  .partner-7 {width: 74.05%;}
+  .partner-8 {width: 62.22%;}
+  .partner-9 {width: 69.47%;}
   .contacts__address {margin-bottom: 37px;}
   .contacts__call-input {width: 84%;}
 }
@@ -2606,6 +2623,15 @@ input::placeholder {color: #cacaca;}
     width: 818px;
   }
   .swiper-container_4 .swiper-slide {height: 128px;}
+  .partner-1 {width: 54.98%;}
+  .partner-2 {width: 74.09%;}
+  .partner-3 {width: 59.95%;}
+  .partner-4 {width: 27.23%;}
+  .partner-5 {width: 38.49%;}
+  .partner-6 {width: 56.3%;}
+  .partner-7 {width: 63.9%;}
+  .partner-8 {width: 41.1%;}
+  .partner-9 {width: 51.05%;}
   .contacts__left {
     min-width: 474px;
     padding-top: 130px;
@@ -2837,6 +2863,15 @@ input::placeholder {color: #cacaca;}
     width: 1450px;
     margin-bottom: 84px;
   }
+  .partner-1 {width: 244px;}
+  .partner-2 {width: 330px;}
+  .partner-3 {width: 229px;}
+  .partner-4 {width: 123px;}
+  .partner-5 {width: 173px;}
+  .partner-6 {width: 252px;}
+  .partner-7 {width: 286px;}
+  .partner-8 {width: 185px;}
+  .partner-9 {width: 229px;}
   .contacts__left {
     padding-left: 152px;
     padding-top: 130px;
