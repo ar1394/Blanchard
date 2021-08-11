@@ -655,7 +655,6 @@ input::placeholder {color: #cacaca;}
   width: 100%;
 }
 .tab-active {display: inline-block;}
-.border-top {border-top: 1px solid #cacaca;}
 .invisible {
   margin: 0;
   padding: 0;
@@ -706,8 +705,11 @@ input::placeholder {color: #cacaca;}
      -ms-flex-pack: justify;
   justify-content: space-between;
   outline: none;
+  border-top: 1px solid #cacaca;
+  border-bottom: none;
   padding: 31px 0px 33px 0px;
 }
+.ui-accordion-header:nth-last-child(2) {border-bottom: 1px solid #cacaca;}
 .ui-accordion-header:focus-visible .catalog__period {
   background-color: #7943a4;
   color: #fff;
@@ -717,6 +719,10 @@ input::placeholder {color: #cacaca;}
   border: 1px solid #9d5cd0;
   background-color: #9d5cd0;
 }
+.ui-state-active {
+  border-top: 1px solid #7943a4;
+  border-bottom: 1px solid #7943a4!important;
+}
 .ui-state-active .catalog__period {color: #7943a4;}
 .ui-state-active .catalog__periods-image {
   transform: rotate(180deg);
@@ -724,6 +730,8 @@ input::placeholder {color: #cacaca;}
   background-color: #D1A9F0;
 }
 .ui-icon {display:none;}
+.ui-accordion-content {border-bottom: none;}
+.ui-accordion-content:last-child {border-bottom: 1px solid #cacaca;}
 .catalog__artist-name {
   padding-top: 24px;
   font-size: 23px;
@@ -936,7 +944,7 @@ input::placeholder {color: #cacaca;}
 }
 .books__prices .without-outline, .books__input {padding-top: 3px;}
 .books__for-input {
-  border: 1px solid #fff;
+  border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 6px;
   transform: translateY(11px);
   margin-bottom: 16px;
@@ -957,7 +965,7 @@ input::placeholder {color: #cacaca;}
   color: #fff;
   padding-left: 9px;
   padding-right: 2px;
-  height: 37px;
+  height: 38px;
   transform: translateX(10px);
   margin-right: 20px;
   transition-property: border, background-color;
@@ -1060,6 +1068,9 @@ input::placeholder {color: #cacaca;}
   height: 42px;
   transform: translate(-109px, -38px);
 }
+.projects__i-1:focus-visible + .projects__i-1-tooltip {display: inline-block;}
+.projects__i-2:focus-visible + .projects__i-2-tooltip {display: inline-block;}
+.projects__i-3:focus-visible + .projects__i-3-tooltip {display: inline-block;}
 .project-about {
   color: #9d5cd0;
   font-weight: 600;
@@ -1342,7 +1353,6 @@ input::placeholder {color: #cacaca;}
   }
   .check + span:active {border: 1px solid #7943a4;}
   label:active .check + span {border: 1px solid #c283f3;}
-  .books__prices {width: 277px;}
   .books__buy-book:active {
     border: 3px solid #c283f3;
     padding: 6px 18px;
@@ -1719,7 +1729,6 @@ input::placeholder {color: #cacaca;}
   }
   .books__book-description {width: 230px;}
   .books__right {padding-top: 51px;}
-  .books__prices {width: 97%;}
   .swiper-container_3 {
     padding-left: 27px;
     padding-top: 30px;
@@ -1824,7 +1833,6 @@ input::placeholder {color: #cacaca;}
   }
   .books__book-description {width: 230px;}
   .books__right {padding-top: 51px;}
-  .books__prices {width: 97%;}
   .swiper-container_3 {
     padding-left: 27px;
     padding-top: 30px;
@@ -2532,6 +2540,15 @@ input::placeholder {color: #cacaca;}
   .books {background-image: url('../img/books-background-2.jpg');}
   .books .container {display: -webkit-box;display: -ms-flexbox;display: flex;}
   .books__prices {margin-right: 0px;}
+  .partner-1 {width: 54.98%;}
+  .partner-2 {width: 74.09%;}
+  .partner-3 {width: 59.95%;}
+  .partner-4 {width: 27.23%;}
+  .partner-5 {width: 38.49%;}
+  .partner-6 {width: 56.3%;}
+  .partner-7 {width: 63.9%;}
+  .partner-8 {width: 41.1%;}
+  .partner-9 {width: 51.05%;}
 }
 @media (min-width:924px) and (max-width: 1024px){
   .header__nav, .header__nav-2 {width: 924px;}
@@ -2623,15 +2640,6 @@ input::placeholder {color: #cacaca;}
     width: 818px;
   }
   .swiper-container_4 .swiper-slide {height: 128px;}
-  .partner-1 {width: 54.98%;}
-  .partner-2 {width: 74.09%;}
-  .partner-3 {width: 59.95%;}
-  .partner-4 {width: 27.23%;}
-  .partner-5 {width: 38.49%;}
-  .partner-6 {width: 56.3%;}
-  .partner-7 {width: 63.9%;}
-  .partner-8 {width: 41.1%;}
-  .partner-9 {width: 51.05%;}
   .contacts__left {
     min-width: 474px;
     padding-top: 130px;
@@ -2679,7 +2687,6 @@ input::placeholder {color: #cacaca;}
   .event__text .event__inside {width: 90%;}
   .event__about {width: 90%;}
   .books__left {margin-right: 80px;}
-  .books__prices {width: 341px;}
   .swiper-container_3 .swiper-slide {width: 310px!important;}
   .swiper-container_4 {
     width: 910px;
@@ -2776,7 +2783,6 @@ input::placeholder {color: #cacaca;}
   .event__about:nth-child(2) {display: none;}
   .event__about:nth-child(3) {display: block;}
   .books__left {margin-right: 80px;}
-  .books__prices {width: 320px;}
   .books__about-book {
     padding-top: 35px;
     margin-bottom: 34px;
@@ -2814,9 +2820,10 @@ input::placeholder {color: #cacaca;}
   .choices__list--single {padding: 4px 16px 0px 4px;}
   .choices[data-type*=select-one]:after {
     top: 25%;
-    right: 68px;
+    right: 66px;
   }
-  .gallery__left .gallery__info {transform: translateX(-3px);}
+  .choices__inner {min-width: 91%;}
+  .gallery__right {padding-top: 21px;}
   .swiper-container_2, .swiper-container_3 {width: 1150px;}
   .swiper-container_2 .swiper-slide {
     width: 350px!important;
@@ -2824,7 +2831,6 @@ input::placeholder {color: #cacaca;}
   }
   .country-active {width: 774px;}
   .catalog__for-artist {columns: 258px;}
-  .container:nth-child(4) {margin-bottom: 80px;}
   .catalog .section-top {margin-right: 30px;}
   .catalog__text {margin-bottom: 38px;}
   .catalog__left {padding-right: 10px;}
@@ -2832,9 +2838,10 @@ input::placeholder {color: #cacaca;}
     padding-top: 104px;
     margin-bottom: 101px;
   }
+  .catalog__artist-born {margin-bottom: 5px;}
   .catalog__list-of-artists {margin-bottom: 28px;}
   .catalog__empty-flex {width: 790px;}
-  .all-events {padding-top: 16px;}
+  .all-events {padding-top: 19px;}
   .events {margin-bottom: 83px;}
   .event {
     width: 500px;
@@ -2856,9 +2863,11 @@ input::placeholder {color: #cacaca;}
   .swiper-container_3 .swiper-slide {
     width: 350px!important;
   }
-  .books__about-book {padding-top: 17px;}
+  .books__about-book {padding-top: 19px;}
+  .books__book-price {font-size: 15px;}
   .projects .section-top {transform: translateY(2px);}
   .projects__text {padding-top: 22px;}
+  .projects__partners {transform: translateX(0);}
   .swiper-container_4 {
     width: 1450px;
     margin-bottom: 84px;
