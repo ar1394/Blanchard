@@ -423,11 +423,11 @@ window.addEventListener('DOMContentLoaded',  function() {
   })
 })
 
-window.addEventListener('DOMContentLoaded',  function() {
-  $('.select-check').on('change', function(){
-    $('label[for='+this.id+']').toggleClass('label-active', this.checked)
-  })
-})
+// window.addEventListener('DOMContentLoaded',  function() {
+//   $('.check').onfocus('change', function(){
+//     $('label[for='+this.id+']').toggleClass('label-active', this.checked)
+//   })
+// })
 
 window.addEventListener('DOMContentLoaded', function() {
   var mySwiper = new Swiper('.swiper-container_4', {

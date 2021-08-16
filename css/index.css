@@ -900,17 +900,15 @@ input::placeholder {color: #cacaca;}
 .books__label-checkbox {
   display: flex;
   flex-direction: row-reverse;
-  -webkit-transition-duration: 0.28s;
-       -o-transition-duration: 0.28s;
-          transition-duration: 0.28s;
-  -webkit-transition-timing-function: ease-in-out;
-       -o-transition-timing-function: ease-in-out;
-          transition-timing-function: ease-in-out;
 }
 .books__label-checkbox:focus-visible {color: #c283f3;}
 .label-active {color: #c283f3;}
-.check {display: none;}
-.check + span {
+.check {
+  opacity: 0;
+  width: 0;
+  border: none;
+}
+.custom-check {
   width: 12px;
   height: 12px;
   transform: translateY(9px);
@@ -919,9 +917,9 @@ input::placeholder {color: #cacaca;}
   text-align: center;
   transition-property: border;
 }
-.check:checked + span {border: 1px solid #c283f3;}
-.books__label-checkbox:focus-visible span {border: 1px solid #c283f3;}
-.check + span::before {
+.check:checked + .custom-check {border: 1px solid #c283f3;}
+.check:focus-visible + .custom-check {border: 1px solid #c283f3;}
+.custom-check::before {
   position: relative;
   bottom: 12px;
   opacity: 0;
@@ -931,7 +929,9 @@ input::placeholder {color: #cacaca;}
        -o-transition: opacity 0.3s ease-in-out;
           transition: opacity 0.3s ease-in-out;
 }
-.check:checked + span::before {opacity: 1;}
+.check:checked + .custom-check::before {opacity: 1;}
+label:focus-visible {color: #c283f3;}
+label:focus-visible .custom-check {border: 1px solid #c283f3;}
 .books__prices {
   margin-right: 29px;
   width: 277px;
@@ -969,6 +969,13 @@ input::placeholder {color: #cacaca;}
   transform: translateX(10px);
   margin-right: 20px;
   transition-property: border, background-color;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input[type='number'] {
+  -moz-appearance: textfield;
 }
 .books__input:focus-visible {
   border: 1px solid #fff;
@@ -1030,16 +1037,19 @@ input::placeholder {color: #cacaca;}
 }
 .projects__i-1, .projects__i-2, .projects__i-3 {
   position: absolute;
+  padding: 0;
+}
+.projects__i-1 {transform: translate(-2px, 8px);}
+.projects__i-2 {transform: translate(-3px, 9px);}
+.projects__i-3 {transform: translate(-4px, 8px);}
+[class*="projects__i-"]:focus-visible .projects__i-image {background-color: #d1a9f0;}
+.projects__i-image {
   width: 16px;
   height: 16px;
   border: 1px solid #9d5cd0;
   border-radius: 100px;
   fill: black;
 }
-.projects__i-1 {transform: translate(-2px, 8px);}
-.projects__i-2 {transform: translate(-3px, 9px);}
-.projects__i-3 {transform: translate(-4px, 8px);}
-.projects__i-1:focus-visible, .projects__i-2:focus-visible, .projects__i-3:focus-visible {background-color: #d1a9f0;}
 .projects__i-1-tooltip, .projects__i-2-tooltip, .projects__i-3-tooltip {
   position: absolute;
   display: none;
@@ -1068,9 +1078,6 @@ input::placeholder {color: #cacaca;}
   height: 42px;
   transform: translate(-109px, -38px);
 }
-.projects__i-1:focus-visible + .projects__i-1-tooltip {display: inline-block;}
-.projects__i-2:focus-visible + .projects__i-2-tooltip {display: inline-block;}
-.projects__i-3:focus-visible + .projects__i-3-tooltip {display: inline-block;}
 .project-about {
   color: #9d5cd0;
   font-weight: 600;
@@ -1351,14 +1358,14 @@ input::placeholder {color: #cacaca;}
     color: #7943a4;
     font-weight: 700;
   }
-  .check + span:active {border: 1px solid #7943a4;}
-  label:active .check + span {border: 1px solid #c283f3;}
+  .custom-check:active {border: 1px solid #7943a4;}
+  label:active .custom-check {border: 1px solid #c283f3;}
   .books__buy-book:active {
     border: 3px solid #c283f3;
     padding: 6px 18px;
     background-color: #7943A4;
   }
-  .projects__i-1:active, .projects__i-2:active, .projects__i-3:active {
+  [class*="projects__i-"]:active .projects__i-image {
     background-color: #9d5cd0;
     fill: white;
   }
@@ -1563,6 +1570,9 @@ input::placeholder {color: #cacaca;}
     padding-top: 1px;
     margin-bottom: 13px;
   }
+  .projects__i-1 {transform: translate(-2px, 10px);}
+  .projects__i-2 {transform: translate(0px, 9px);}
+  .projects__i-3 {transform: translate(1px, 9px);}
   .swiper-button-prev_4, .swiper-button-next_4 {margin-top: calc(-1 * var(--swiper-navigation-size) / 1);}
   .swiper-container_4 {
     margin-bottom: 43px;
@@ -1594,7 +1604,7 @@ input::placeholder {color: #cacaca;}
     padding: 12px 33px;
     font-size: 12px;
   }
-  .contacts__showroom:nth-child(3) {padding-top: 28px;}
+  .contacts__address {margin-bottom: 28px;}
   .contacts__whatsapp, .contacts__telegram, .footer__link-image {
     width: 50px;
     height: 50px;
@@ -2218,6 +2228,8 @@ input::placeholder {color: #cacaca;}
     margin-bottom: 24px;
     max-width: 660px;
   }
+  .projects__i-1 {transform: translate(-2px, 9px);}
+  .projects__i-3 {transform: translate(-2px, 9px);}
   .projects__partners {
     margin-bottom: 27px;
     transform: translateX(0);
@@ -2366,8 +2378,9 @@ input::placeholder {color: #cacaca;}
     background-color: #9d5cd0;
     color: #fff;
   }
-  .check + span:hover {border: 1px solid #c283f3;}
-  label:hover .check + span {border: 1px solid #c283f3;}
+  .custom-check:hover {border: 1px solid #c283f3;}
+  label:hover {color: #c283f3;}
+  label:hover .custom-check {border: 1px solid #c283f3;}
   .books__input:hover {
     border: 1px solid #9d5cd0;
     background-color: #9d5cd0;
@@ -2382,8 +2395,8 @@ input::placeholder {color: #cacaca;}
     padding: 6px 18px;
     background-color: #7943A4;
   }
-  .projects__i-1:hover, .projects__i-2:hover, .projects__i-3:hover {background-color: #d1a9f0;}
-  .projects__i-1:active, .projects__i-2:active, .projects__i-3:active {
+  [class*="projects__i-"]:hover .projects__i-image {background-color: #d1a9f0;}
+  [class*="projects__i-"]:active .projects__i-image {
     background-color: #9d5cd0;
     fill: white;
   }
@@ -2645,7 +2658,6 @@ input::placeholder {color: #cacaca;}
     padding-top: 130px;
     padding-left: 35px;
   }
-  .contacts__showroom:nth-child(3) {padding-top: 39px;}
   .contacts__call-input {width: 84%;}
   .footer .logo {padding-left: 2px;}
 }
@@ -2867,6 +2879,9 @@ input::placeholder {color: #cacaca;}
   .books__book-price {font-size: 15px;}
   .projects .section-top {transform: translateY(2px);}
   .projects__text {padding-top: 22px;}
+  .projects__i-1 {transform: translate(-1px, 8px);}
+  .projects__i-2 {transform: translate(-1px, 8px);}
+  .projects__i-3 {transform: translate(-1px, 8px);}
   .projects__partners {transform: translateX(0);}
   .swiper-container_4 {
     width: 1450px;
