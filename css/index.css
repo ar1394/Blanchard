@@ -897,12 +897,6 @@ input::placeholder {color: #cacaca;}
   flex-direction: column;
   align-items: flex-start;
 }
-.books__label-checkbox {
-  display: flex;
-  flex-direction: row-reverse;
-}
-.books__label-checkbox:focus-visible {color: #c283f3;}
-.label-active {color: #c283f3;}
 .check {
   opacity: 0;
   width: 0;
@@ -930,8 +924,9 @@ input::placeholder {color: #cacaca;}
           transition: opacity 0.3s ease-in-out;
 }
 .check:checked + .custom-check::before {opacity: 1;}
-label:focus-visible {color: #c283f3;}
-label:focus-visible .custom-check {border: 1px solid #c283f3;}
+.check:checked + .custom-check + .books__label-text {color: #c283f3;}
+.check:focus-visible + .custom-check + .books__label-text {color: #c283f3;}
+/* .books__label-text {} */
 .books__prices {
   margin-right: 29px;
   width: 277px;
@@ -2187,7 +2182,7 @@ input[type='number'] {
   }
   .catalog__list-of-artists {
     padding-top: 25px;
-    margin-bottom: 29px;
+    margin-bottom: 57px;
   }
   .grid {width: 100%;}
   .catalog__for-artist {columns: 237px;}
@@ -2217,8 +2212,8 @@ input[type='number'] {
     margin-bottom: 25px;
   }
   .books__right {padding-top: 45px;}
-  .books__label-checkbox:nth-child(1) {padding-right: 57px;}
-  .books__label-checkbox:nth-child(7) {padding-right: 57px;}
+  .books__label-text:nth-child(1) {padding-right: 57px;}
+  .books__label-text:nth-child(7) {padding-right: 57px;}
   .swiper-container_3 {
     width: 614px;
     padding-top: 30px;
@@ -2851,7 +2846,7 @@ input[type='number'] {
     margin-bottom: 101px;
   }
   .catalog__artist-born {margin-bottom: 5px;}
-  .catalog__list-of-artists {margin-bottom: 28px;}
+  .catalog__list-of-artists {margin-bottom: 57px;}
   .catalog__empty-flex {width: 790px;}
   .all-events {padding-top: 19px;}
   .events {margin-bottom: 83px;}

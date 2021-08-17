@@ -417,14 +417,8 @@ window.addEventListener('DOMContentLoaded', function() {
   })
 })
 
-window.addEventListener('DOMContentLoaded',  function() {
-  $('.check').on('change', function(){
-    $('label[for='+this.id+']').toggleClass('label-active', this.checked)
-  })
-})
-
 // window.addEventListener('DOMContentLoaded',  function() {
-//   $('.check').onfocus('change', function(){
+//   $('.check').on('change', function(){
 //     $('label[for='+this.id+']').toggleClass('label-active', this.checked)
 //   })
 // })
