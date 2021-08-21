@@ -907,6 +907,9 @@ input::placeholder {color: #cacaca;}
   height: 12px;
   transform: translateY(9px);
   margin-right: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 1px solid #fff;
   text-align: center;
   transition-property: border;
@@ -915,7 +918,6 @@ input::placeholder {color: #cacaca;}
 .check:focus-visible + .custom-check {border: 1px solid #c283f3;}
 .custom-check::before {
   position: relative;
-  bottom: 12px;
   opacity: 0;
   content: '\2022';
   color: #c283f3;
@@ -1073,6 +1075,9 @@ input[type='number'] {
   height: 42px;
   transform: translate(-109px, -38px);
 }
+.projects__i-1:focus-visible + .projects__i-1-tooltip {display: inline-block;}
+.projects__i-2:focus-visible + .projects__i-2-tooltip {display: inline-block;}
+.projects__i-3:focus-visible + .projects__i-3-tooltip {display: inline-block;}
 .project-about {
   color: #9d5cd0;
   font-weight: 600;
@@ -1158,10 +1163,11 @@ input[type='number'] {
   color: black;
 }
 .contacts__call-button {
-  border: 1px solid #9d5cd0;
+  border: 2px solid #9d5cd0;
   border-radius: 30px;
-  padding: 19px 38px;
+  padding: 17px 34px;
   color: #9d5cd0;
+  font-size: 18px;
   font-weight: 700;
   transform: translateY(23px);
   margin-bottom: 68px;
@@ -2880,7 +2886,7 @@ input[type='number'] {
   .projects__partners {transform: translateX(0);}
   .swiper-container_4 {
     width: 1450px;
-    margin-bottom: 84px;
+    margin-bottom: 83px;
   }
   .partner-1 {width: 244px;}
   .partner-2 {width: 330px;}
@@ -2895,6 +2901,8 @@ input[type='number'] {
     padding-left: 152px;
     padding-top: 130px;
   }
+  .contacts__address {margin-bottom: 39px;}
+  .contacts__call-input {padding-left: 22px;}
   .contacts__whatsapp, .contacts__telegram {
     width: 40px;
     height: 40px;
