@@ -371,8 +371,8 @@ window.addEventListener('DOMContentLoaded', function() {
       769: {
         spaceBetween: 50,
       },
-      824: {
-        spaceBetween: 34,
+      900: {
+        spaceBetween: 65,
       },
       924: {
         spaceBetween: 50,
@@ -382,6 +382,9 @@ window.addEventListener('DOMContentLoaded', function() {
       },
       1200: {
         spaceBetween: 50,
+      },
+      1300: {
+        spaceBetween: 70,
       },
       1400: {
         spaceBetween: 34,
@@ -531,3 +534,42 @@ window.addEventListener('DOMContentLoaded', function() {
     active:2
   });
 })
+
+window.addEventListener('DOMContentLoaded', function(){
+  if(document.documentElement.clientWidth < 500) {
+    $(window).resize(function(){
+      $('.swiper-container_2 .swiper-slide').height($('.swiper-container_2 .swiper-slide').width()*1.2655);
+    });
+  }
+  })
+window.addEventListener('DOMContentLoaded', function(){
+    if(document.documentElement.clientWidth < 500) {
+      $('.swiper-container_2 .swiper-slide').height($('.swiper-container_2 .swiper-slide').width()*1.2655);
+    }
+  })
+
+window.addEventListener('DOMContentLoaded', function(){
+  if(document.documentElement.clientWidth >= 500 && document.documentElement.clientWidth < 769) {
+    $(window).resize(function(){
+      $('.swiper-container_2 .swiper-slide').height($('.swiper-container_2 .swiper-slide').width()*0.885);
+    });
+  }
+  })
+window.addEventListener('DOMContentLoaded', function(){
+    if(document.documentElement.clientWidth >= 500 && document.documentElement.clientWidth < 769) {
+      $('.swiper-container_2 .swiper-slide').height($('.swiper-container_2 .swiper-slide').width()*0.885);
+    }
+  })
+
+window.addEventListener('DOMContentLoaded', function(){
+  if(document.documentElement.clientWidth >= 769) {
+    $(window).resize(function(){
+      $('.swiper-container_2 .swiper-slide').height($('.swiper-container_2 .swiper-slide').width()*1);
+    });
+  }
+  })
+window.addEventListener('DOMContentLoaded', function(){
+    if(document.documentElement.clientWidth >= 769) {
+      $('.swiper-container_2 .swiper-slide').height($('.swiper-container_2 .swiper-slide').width()*1);
+    }
+  })
