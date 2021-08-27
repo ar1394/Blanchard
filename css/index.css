@@ -2603,7 +2603,7 @@ input[type='number'] {
   }
   .event {
     margin-bottom: 50px;
-    width: 31.5%;
+    width: 32.5%;
   }
   .event__place-and-time {margin-bottom: 3px;}
   .event__img:nth-child(3) {display: none;}
@@ -2660,7 +2660,7 @@ input[type='number'] {
   }
   .event__img:nth-child(2) {display: none;}
   .event__text {min-height: 331px;}
-  .event__text .event__inside {width: 90%;}
+  .event__text .event__inside {width: 96%;}
   .event__about {width: 90%;}
   .books__left {margin-right: 80px;}
   .swiper-container_4 {
@@ -2678,9 +2678,11 @@ input[type='number'] {
 @media (min-width:1200px) and (max-width: 1399px){
   .header__burger, .header__search, .event__img:nth-child(2) {display: none;}
   .header__nav .logo {margin-right: -24%;}
-  .header__nav-list-item {margin-right: 7.9%;}
-  .header__nav-list, .header__login {display: -webkit-box;display: -ms-flexbox;display: flex;}
+  .header__nav-list {transform: translateX(20px);}
+  .header__nav-list, .header__login {display: -webkit-box;display: -ms-flexbox;display: flex;} 
+  .header__nav-list-item {margin-right: 6%;}
   .header__down {display: block;}
+  .header__nav-list-2 {width: 74%;}
   .gallery {height: 995px;}
   .gallery__left {width: 450px;}
   .gallery__filter {
