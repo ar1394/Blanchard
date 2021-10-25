@@ -137,47 +137,35 @@ window.addEventListener('DOMContentLoaded', function() {
       500: {
         spaceBetween: 34,
         slidesPerView: 2,
-        grid: {
-          rows: 2,
-        },
+        slidesPerColumn: 2,
       },
       769: {
         spaceBetween: 50,
         slidesPerView: 2,
-        grid: {
-          rows: 2,
-        },
+        slidesPerColumn: 2,
       },
       824: {
         spaceBetween: 34,
         slidesPerView: 2,
-        grid: {
-          rows: 2,
-        },
+        slidesPerColumn: 2,
       },
       1200: {
         spaceBetween: 50,
         slidesPerView: 2,
-        grid: {
-          rows: 2,
-        },
+        slidesPerColumn: 2,
       },
       1400: {
         spaceBetween: 34,
         slidesPerView: 3,
+        slidesPerColumn: 2,
         slidesPerGroup: 3,
-        grid: {
-          rows: 2,
-        },
       },
 
       1600: {
         spaceBetween: 50,
         slidesPerView: 3,
+        slidesPerColumn: 2,
         slidesPerGroup: 3,
-        grid: {
-          rows: 2,
-        },
       },
     },
   
