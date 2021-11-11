@@ -139,16 +139,6 @@ window.addEventListener('DOMContentLoaded', function() {
         slidesPerView: 2,
         slidesPerColumn: 2,
       },
-      769: {
-        spaceBetween: 50,
-        slidesPerView: 2,
-        slidesPerColumn: 2,
-      },
-      824: {
-        spaceBetween: 34,
-        slidesPerView: 2,
-        slidesPerColumn: 2,
-      },
       1200: {
         spaceBetween: 50,
         slidesPerView: 2,
@@ -454,7 +444,7 @@ window.addEventListener('DOMContentLoaded', function() {
       769: {
         spaceBetween: 50,
       },
-      1024: {
+      1025: {
         spaceBetween: 62,
       },
       1200: {
