@@ -730,8 +730,9 @@ input::placeholder {color: #cacaca;}
 .ui-icon {display:none;}
 .ui-accordion-content {border-bottom: none;}
 .ui-accordion-content:last-child {border-bottom: 1px solid #cacaca;}
+.catalog__left-img {margin-bottom: 24px;}
 .catalog__artist-name {
-  padding-top: 24px;
+  margin-bottom: 7px;
   font-size: 23px;
   font-weight: 700;
 }
@@ -739,10 +740,7 @@ input::placeholder {color: #cacaca;}
   color: #999;
   font-size: 12px;
 }
-.catalog__artist-born {
-  padding-top: 7px;
-  margin-bottom: 5px;
-}
+.catalog__artist-born {margin-bottom: 5px;}
 .catalog__artist-text {margin: 0;}
 .catalog__artist-text, .event__about {line-height: 32px;}
 .catalog__right {margin-bottom: 50px;}
@@ -1035,12 +1033,14 @@ input[type='number'] {
 }
 .projects__i-1-tooltip, .projects__i-2-tooltip, .projects__i-3-tooltip {
   position: absolute;
-  display: none;
+  display: inline-block;
+  opacity: 0;
+  visibility: hidden;
   color: #fff;
   font-size: 12px;
   line-height: 16px;
   background-size: cover;
-  transition-property: display;
+  transition-property: opacity, visibility;
   align-items: center;
 }
 .projects__i-1-tooltip {
@@ -1515,8 +1515,8 @@ input[type='number'] {
     height: 10px;
     margin: 0px 7px 0px 8px!important;
   }
-  .catalog__artist-name {padding-top: 14px;}
-  .catalog__artist-born {padding-top: 11px;}
+  .catalog__left-img {margin-bottom: 14px;}
+  .catalog__artist-name {margin-bottom: 11px;}
   .catalog__artist-text, .event__about {width: 99%;}
   .catalog__empty-flex {width: 290px;}
   .catalog__empty-image {
@@ -2317,12 +2317,30 @@ input[type='number'] {
     background-color: #9d5cd0;
     fill: white;
   }
-  .projects__i-1:hover + .projects__i-1-tooltip {display: inline-block;}
-  .projects__i-2:hover + .projects__i-2-tooltip {display: inline-block;}
-  .projects__i-3:hover + .projects__i-3-tooltip {display: inline-block;}
-  .projects__i-1:active + .projects__i-1-tooltip {display: inline-block;}
-  .projects__i-2:active + .projects__i-2-tooltip {display: inline-block;}
-  .projects__i-3:active + .projects__i-3-tooltip {display: inline-block;}
+  .projects__i-1:hover + .projects__i-1-tooltip {
+    visibility: visible;
+    opacity: 1;
+  }
+  .projects__i-2:hover + .projects__i-2-tooltip {
+    visibility: visible;
+    opacity: 1;
+  }
+  .projects__i-3:hover + .projects__i-3-tooltip {
+    visibility: visible;
+    opacity: 1;
+  }
+  .projects__i-1:active + .projects__i-1-tooltip {
+    visibility: visible;
+    opacity: 1;
+  }
+  .projects__i-2:active + .projects__i-2-tooltip {
+    visibility: visible;
+    opacity: 1;
+  }
+  .projects__i-3:active + .projects__i-3-tooltip {
+    visibility: visible;
+    opacity: 1;
+  }
   .swiper-slide:hover .swiper_4-image {filter: none;}
   .swiper-container_4 .swiper-slide:active {border: 1px solid #9d5cd0;}
   .swiper-slide:active .swiper_4-image {filter: none;}
