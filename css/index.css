@@ -1059,7 +1059,7 @@ input[type='number'] {
   background-image: url('../img/i-tooltip-3.svg');
   width: 232px;
   height: 42px;
-  transform: translate(-109px, -38px);
+  transform: translate(-209px, -38px);
 }
 .projects__i-1:focus-visible + .projects__i-1-tooltip {display: inline-block;}
 .projects__i-2:focus-visible + .projects__i-2-tooltip {display: inline-block;}
