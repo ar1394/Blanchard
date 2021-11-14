@@ -458,14 +458,7 @@ input::placeholder {color: #cacaca;}
   padding-right: 10px;
   max-width: 370px;
 }
-.gallery__right, .books__right {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  color: #fff;
-}
+.gallery__right, .books__right {color: #fff;}
 .gallery__right {padding-top: 20px;}
 .gallery__authorize {
   color: #9d5cd0;
@@ -1255,7 +1248,7 @@ input[type='number'] {
   .catalog .section-top {display: block;}
   .contacts__all, .contacts__up-down {display: block;}
   .catalog__for-artist {columns: 212px;}
-  .all-events, .event__for-button, .books-categories, .contacts__left {display: none;}
+  .event__for-button, .books-categories, .contacts__left {display: none;}
   .align + .books__form-checkbox {display: none;}
   .grid, .event {width: 100%;}
   .event:nth-child(6) {display: none;}
@@ -2566,6 +2559,7 @@ input[type='number'] {
     margin-right: 10px;
     padding-top: 32px;
   }
+  .swiper-container_3 {padding-top: 31px;} 
   .books__book-price {font-size: 15px;}
   .custom-check {margin-right: 12px;}
   .swiper-container_4 {
