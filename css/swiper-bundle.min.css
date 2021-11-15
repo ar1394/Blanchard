@@ -17,7 +17,7 @@
     font-style:normal
 }
 :root{--swiper-theme-color:#007aff}
-[class*="swiper-container_"]{
+[class*="swiper-container-"]{
     margin-left:auto;
     margin-right:auto;
     position:relative;
@@ -78,7 +78,7 @@
 .swiper-container-horizontal.swiper-container-css-mode>.swiper-wrapper{scroll-snap-type:x mandatory}
 .swiper-container-vertical.swiper-container-css-mode>.swiper-wrapper{scroll-snap-type:y mandatory}
 :root{--swiper-navigation-size:44px}
-[class*="swiper-button-next_"],[class*="swiper-button-prev_"]{
+[class*="swiper-button-next-"],[class*="swiper-button-prev-"]{
     position:absolute;
     top:50%;
     width:calc(var(--swiper-navigation-size)/ 44 * 27);
@@ -91,12 +91,12 @@
     justify-content:center;
     color:var(--swiper-navigation-color,var(--swiper-theme-color))
 }
-[class*="swiper-button-next_"].swiper-button-disabled,[class*="swiper-button-prev_"].swiper-button-disabled{
+[class*="swiper-button-next-"].swiper-button-disabled,[class*="swiper-button-prev-"].swiper-button-disabled{
     opacity:.35;
     cursor:auto;
     pointer-events:none
 }
-[class*="swiper-button-next_"]:after,[class*="swiper-button-prev_"]:after{
+[class*="swiper-button-next-"]:after,[class*="swiper-button-prev-"]:after{
     font-family:swiper-icons;
     font-size:var(--swiper-navigation-size);
     text-transform:none!important;
@@ -105,21 +105,21 @@
     font-variant:initial;
     line-height:1
 }
-[class*="swiper-button-prev_"],.swiper-container-rtl [class*="swiper-button-next_"]{left:10px;right:auto}
-[class*="swiper-button-prev_"]:after,.swiper-container-rtl [class*="swiper-button-next_"]:after{content:'prev'}
-[class*="swiper-button-next_"],.swiper-container-rtl [class*="swiper-button-prev_"]{right:10px;left:auto}
-[class*="swiper-button-next_"]:after,.swiper-container-rtl [class*="swiper-button-prev_"]:after{content:'next'}
-[class*="swiper-button-next_"].swiper-button-white,[class*="swiper-button-prev_"].swiper-button-white{--swiper-navigation-color:#ffffff}
-[class*="swiper-button-next_"].swiper-button-black,[class*="swiper-button-prev_"].swiper-button-black{--swiper-navigation-color:#000000}
+[class*="swiper-button-prev-"],.swiper-container-rtl [class*="swiper-button-next-"]{left:10px;right:auto}
+[class*="swiper-button-prev-"]:after,.swiper-container-rtl [class*="swiper-button-next-"]:after{content:'prev'}
+[class*="swiper-button-next-"],.swiper-container-rtl [class*="swiper-button-prev-"]{right:10px;left:auto}
+[class*="swiper-button-next-"]:after,.swiper-container-rtl [class*="swiper-button-prev-"]:after{content:'next'}
+[class*="swiper-button-next-"].swiper-button-white,[class*="swiper-button-prev-"].swiper-button-white{--swiper-navigation-color:#ffffff}
+[class*="swiper-button-next-"].swiper-button-black,[class*="swiper-button-prev-"].swiper-button-black{--swiper-navigation-color:#000000}
 .swiper-button-lock{display:none}
-[class*="swiper-pagination_"]{
+[class*="swiper-pagination-"]{
     position:absolute;
     text-align:center;
     transition:.3s opacity;
     transform:translate3d(0,0,0);
     z-index:10
 }
-[class*="swiper-pagination_"].swiper-pagination-hidden{opacity:0}
+[class*="swiper-pagination-"].swiper-pagination-hidden{opacity:0}
 .swiper-container-horizontal>.swiper-pagination-bullets,.swiper-pagination-custom,.swiper-pagination-fraction{
     bottom:10px;
     left:0;
@@ -220,12 +220,12 @@ button.swiper-pagination-bullet{
 .swiper-pagination-white{--swiper-pagination-color:#ffffff}
 .swiper-pagination-black{--swiper-pagination-color:#000000}
 .swiper-pagination-lock{display:none}
-[class*="swiper-scrollbar_"]{
+[class*="swiper-scrollbar-"]{
     border-radius:10px;
     position:relative;
     -ms-touch-action:none;
     background:rgba(0,0,0,.1)
-}.swiper-container-horizontal>[class*="swiper-scrollbar_"]{
+}.swiper-container-horizontal>[class*="swiper-scrollbar-"]{
     position:absolute;
     left:1%;
     bottom:3px;
@@ -233,7 +233,7 @@ button.swiper-pagination-bullet{
     height:5px;
     width:98%
 }
-.swiper-container-vertical>[class*="swiper-scrollbar_"]{
+.swiper-container-vertical>[class*="swiper-scrollbar-"]{
     position:absolute;
     right:3px;
     top:1%;
@@ -283,7 +283,7 @@ button.swiper-pagination-bullet{
 .swiper-lazy-preloader-white{--swiper-preloader-color:#fff}
 .swiper-lazy-preloader-black{--swiper-preloader-color:#000}
 @keyframes swiper-preloader-spin{100%{transform:rotate(360deg)}}
-[class*="swiper-container_"] .swiper-notification{
+[class*="swiper-container-"] .swiper-notification{
     position:absolute;
     left:0;
     top:0;
