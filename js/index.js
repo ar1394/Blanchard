@@ -77,21 +77,21 @@ window.addEventListener('DOMContentLoaded',  function() {
 })
 
 window.addEventListener('DOMContentLoaded', function(){
-  const element = document.querySelector('.custom-select_1');
+  const element = document.querySelector('.custom-select-1');
   const choices = new Choices(element, {
     searchEnabled: false,
     itemSelectText: ''
   });
 })
 // window.addEventListener('DOMContentLoaded', function(){
-//   const element = document.querySelector('.custom-select_2');
+//   const element = document.querySelector('.custom-select-2');
 //   const choices = new Choices(element, {
 //     searchEnabled: false,
 //     itemSelectText: ''
 //   });
 // })
 window.addEventListener('DOMContentLoaded', function() {
-  var mySwiper = new Swiper('.swiper-container_1', {
+  var mySwiper = new Swiper('.swiper-container-1', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
@@ -99,7 +99,7 @@ window.addEventListener('DOMContentLoaded', function() {
   
     // If we need pagination
     pagination: {
-      el: '.swiper-pagination_1',
+      el: '.swiper-pagination-1',
       // String with type of pagination. Can be "bullets", "fraction", "progressbar" or "custom"
       type: 'bullets',
       bulletElement: 'span',
@@ -108,8 +108,8 @@ window.addEventListener('DOMContentLoaded', function() {
   
     // // Navigation arrows
     // navigation: {
-    //   nextEl: '.swiper-button-next_1',
-    //   prevEl: '.swiper-button-prev_1',
+    //   nextEl: '.swiper-button-next-1',
+    //   prevEl: '.swiper-button-prev-1',
     // },
 
     autoplay: {
@@ -120,7 +120,7 @@ window.addEventListener('DOMContentLoaded', function() {
 })
 
 window.addEventListener('DOMContentLoaded', function() {
-  var mySwiper = new Swiper('.swiper-container_2', {
+  var mySwiper = new Swiper('.swiper-container-2', {
     // Optional parameters
     direction: 'horizontal',
     // loop: true,
@@ -161,7 +161,7 @@ window.addEventListener('DOMContentLoaded', function() {
   
     // If we need pagination
     pagination: {
-      el: '.swiper-pagination_2',
+      el: '.swiper-pagination-2',
       type: 'fraction',
       bulletElement: 'span',
       clickable: true, 
@@ -169,13 +169,13 @@ window.addEventListener('DOMContentLoaded', function() {
   
     // Navigation arrows
     navigation: {
-      nextEl: '.swiper-button-next_2',
-      prevEl: '.swiper-button-prev_2',
+      nextEl: '.swiper-button-next-2',
+      prevEl: '.swiper-button-prev-2',
     },
   
     // And if we need scrollbar
     scrollbar: {
-      el: '.swiper-scrollbar_2',
+      el: '.swiper-scrollbar-2',
     },
   })
 })
@@ -184,6 +184,8 @@ window.addEventListener('DOMContentLoaded',  function() {
   $('.catalog__choose-country').click(function(){
     $('.catalog__choose-country-active').removeClass('catalog__choose-country-active');
     $(this).addClass('catalog__choose-country-active');
+    $('.catalog__for-country-active').removeClass('catalog__for-country-active');
+    $(this).parent().addClass('catalog__for-country-active');
   });
 })
 
@@ -191,8 +193,6 @@ window.addEventListener('DOMContentLoaded',  function() {
   $('.catalog__France').click(function(){
     $('.country-active').removeClass('country-active');
     $('.catalog__list-of-artists:nth-child(1)').addClass('country-active');
-    $('.catalog__for-country-active').removeClass('catalog__for-country-active')
-    $('.catalog__France').parent().addClass('catalog__for-country-active')
     $('ul li').removeClass("link-active");
     $('.catalog__list-of-artists:nth-child(1) li:nth-child(1)').addClass("link-active");
     var formaction = $('.catalog__list-of-artists:nth-child(1) li:nth-child(1) button').attr('formaction');
@@ -205,8 +205,6 @@ window.addEventListener('DOMContentLoaded',  function() {
   $('.catalog__Germany').click(function(){
     $('.country-active').removeClass('country-active');
     $('.catalog__list-of-artists:nth-child(2)').addClass('country-active');
-    $('.catalog__for-country-active').removeClass('catalog__for-country-active')
-    $('.catalog__Germany').parent().addClass('catalog__for-country-active')
     $('ul li').removeClass("link-active");
     $('.catalog__list-of-artists:nth-child(2) li:nth-child(1)').addClass("link-active");
     var formaction = $('.catalog__list-of-artists:nth-child(2) li:nth-child(1) button').attr('formaction');
@@ -219,8 +217,6 @@ window.addEventListener('DOMContentLoaded',  function() {
   $('.catalog__Italy').click(function(){
     $('.country-active').removeClass('country-active');
     $('.catalog__list-of-artists:nth-child(3)').addClass('country-active');
-    $('.catalog__for-country-active').removeClass('catalog__for-country-active')
-    $('.catalog__Italy').parent().addClass('catalog__for-country-active')
     $('ul li').removeClass("link-active");
     $('.catalog__list-of-artists:nth-child(3) li:nth-child(1)').addClass("link-active");
     var formaction = $('.catalog__list-of-artists:nth-child(3) li:nth-child(1) button').attr('formaction');
@@ -233,8 +229,6 @@ window.addEventListener('DOMContentLoaded',  function() {
   $('.catalog__Russia').click(function(){
     $('.country-active').removeClass('country-active');
     $('.catalog__list-of-artists:nth-child(4)').addClass('country-active');
-    $('.catalog__for-country-active').removeClass('catalog__for-country-active')
-    $('.catalog__Russia').parent().addClass('catalog__for-country-active')
     $('ul li').removeClass("link-active");
     $('.catalog__list-of-artists:nth-child(4) li:nth-child(1)').addClass("link-active");
     var formaction = $('.catalog__list-of-artists:nth-child(4) li:nth-child(1) button').attr('formaction');
@@ -247,8 +241,6 @@ window.addEventListener('DOMContentLoaded',  function() {
   $('.catalog__Belgium').click(function(){
     $('.country-active').removeClass('country-active');
     $('.catalog__list-of-artists:nth-child(5)').addClass('country-active');
-    $('.catalog__for-country-active').removeClass('catalog__for-country-active')
-    $('.catalog__Belgium').parent().addClass('catalog__for-country-active')
     $('ul li').removeClass("link-active");
     $('.catalog__list-of-artists:nth-child(5) li:nth-child(1)').addClass("link-active");
     var formaction = $('.catalog__list-of-artists:nth-child(5) li:nth-child(1) button').attr('formaction');
@@ -275,7 +267,7 @@ window.addEventListener('DOMContentLoaded',  function() {
 })
 
 window.addEventListener('DOMContentLoaded', function() {
-  const slider = document.querySelector('.swiper-container_2_5');
+  const slider = document.querySelector('.swiper-container-2-5');
   var mySwiper;
   function mobileSlider() {
     if (window.innerWidth <= 599 && slider.dataset.mobile == 'false') {
@@ -290,20 +282,20 @@ window.addEventListener('DOMContentLoaded', function() {
       
         // If we need pagination
         pagination: {
-          el: '.swiper-pagination_2_5',
+          el: '.swiper-pagination-2-5',
           type: 'bullets',
           bulletElement: 'span', 
         },
       
         // Navigation arrows
         navigation: {
-          nextEl: '.swiper-button-next_2_5',
-          prevEl: '.swiper-button-prev_2_5',
+          nextEl: '.swiper-button-next-2-5',
+          prevEl: '.swiper-button-prev-2-5',
         },
       
         // And if we need scrollbar
         scrollbar: {
-          el: '.swiper-scrollbar_2_5',
+          el: '.swiper-scrollbar-2-5',
         },
       })
       slider.dataset.mobile = 'true';
@@ -322,21 +314,21 @@ window.addEventListener('DOMContentLoaded', function() {
 })
 
 window.addEventListener('DOMContentLoaded',  function() {
-  jQuery('.event__show-all').on('click', function (e) {
+  jQuery('.events__show-all').on('click', function (e) {
     e.preventDefault(); // этот код предотвращает стандартное поведение браузера по клику
     // остальной код
   });
 })
 
 window.addEventListener('DOMContentLoaded',  function() {
-  $('.event__show-all').click(function(){
+  $('.events__show-all').click(function(){
     $('.event-hidden').removeClass('event-hidden');
-    $('.event__for-button').addClass('event-hidden');
+    $('.events__for-button').addClass('event-hidden');
   });
 })
 
 window.addEventListener('DOMContentLoaded', function() {
-  var mySwiper = new Swiper('.swiper-container_3', {
+  var mySwiper = new Swiper('.swiper-container-3', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
@@ -391,7 +383,7 @@ window.addEventListener('DOMContentLoaded', function() {
   
     // If we need pagination
     pagination: {
-      el: '.swiper-pagination_3',
+      el: '.swiper-pagination-3',
       type: 'fraction',
       bulletElement: 'span',
       clickable: true, 
@@ -399,13 +391,13 @@ window.addEventListener('DOMContentLoaded', function() {
   
     // Navigation arrows
     navigation: {
-      nextEl: '.swiper-button-next_3',
-      prevEl: '.swiper-button-prev_3',
+      nextEl: '.swiper-button-next-3',
+      prevEl: '.swiper-button-prev-3',
     },
   
     // And if we need scrollbar
     scrollbar: {
-      el: '.swiper-scrollbar_3',
+      el: '.swiper-scrollbar-3',
     },
   })
 })
@@ -417,7 +409,7 @@ window.addEventListener('DOMContentLoaded', function() {
 // })
 
 window.addEventListener('DOMContentLoaded', function() {
-  var mySwiper = new Swiper('.swiper-container_4', {
+  var mySwiper = new Swiper('.swiper-container-4', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
@@ -464,7 +456,7 @@ window.addEventListener('DOMContentLoaded', function() {
     },
     // If we need pagination
     pagination: {
-      el: '.swiper-pagination_4',
+      el: '.swiper-pagination-4',
       type: 'fraction',
       bulletElement: 'span',
       clickable: true, 
@@ -472,13 +464,13 @@ window.addEventListener('DOMContentLoaded', function() {
   
     // Navigation arrows
     navigation: {
-      nextEl: '.swiper-button-next_4',
-      prevEl: '.swiper-button-prev_4',
+      nextEl: '.swiper-button-next-4',
+      prevEl: '.swiper-button-prev-4',
     },
   
     // And if we need scrollbar
     scrollbar: {
-      el: '.swiper-scrollbar_4',
+      el: '.swiper-scrollbar-4',
     },
   })
 })
@@ -528,38 +520,38 @@ window.addEventListener('DOMContentLoaded', function() {
 window.addEventListener('DOMContentLoaded', function(){
   if(document.documentElement.clientWidth < 500) {
     $(window).resize(function(){
-      $('.swiper-container_2 .swiper-slide').height($('.swiper-container_2 .swiper-slide').width()*1.2655);
+      $('.swiper-container-2 .swiper-slide').height($('.swiper-container-2 .swiper-slide').width()*1.2655);
     });
   }
   })
 window.addEventListener('DOMContentLoaded', function(){
     if(document.documentElement.clientWidth < 500) {
-      $('.swiper-container_2 .swiper-slide').height($('.swiper-container_2 .swiper-slide').width()*1.2655);
+      $('.swiper-container-2 .swiper-slide').height($('.swiper-container-2 .swiper-slide').width()*1.2655);
     }
   })
 
 window.addEventListener('DOMContentLoaded', function(){
   if(document.documentElement.clientWidth >= 500 && document.documentElement.clientWidth < 769) {
     $(window).resize(function(){
-      $('.swiper-container_2 .swiper-slide').height($('.swiper-container_2 .swiper-slide').width()*0.885);
+      $('.swiper-container-2 .swiper-slide').height($('.swiper-container-2 .swiper-slide').width()*0.885);
     });
   }
   })
 window.addEventListener('DOMContentLoaded', function(){
     if(document.documentElement.clientWidth >= 500 && document.documentElement.clientWidth < 769) {
-      $('.swiper-container_2 .swiper-slide').height($('.swiper-container_2 .swiper-slide').width()*0.885);
+      $('.swiper-container-2 .swiper-slide').height($('.swiper-container-2 .swiper-slide').width()*0.885);
     }
   })
 
 window.addEventListener('DOMContentLoaded', function(){
   if(document.documentElement.clientWidth >= 769) {
     $(window).resize(function(){
-      $('.swiper-container_2 .swiper-slide').height($('.swiper-container_2 .swiper-slide').width()*1);
+      $('.swiper-container-2 .swiper-slide').height($('.swiper-container-2 .swiper-slide').width()*1);
     });
   }
   })
 window.addEventListener('DOMContentLoaded', function(){
     if(document.documentElement.clientWidth >= 769) {
-      $('.swiper-container_2 .swiper-slide').height($('.swiper-container_2 .swiper-slide').width()*1);
+      $('.swiper-container-2 .swiper-slide').height($('.swiper-container-2 .swiper-slide').width()*1);
     }
   })
