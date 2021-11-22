@@ -279,6 +279,7 @@ window.addEventListener('DOMContentLoaded', function() {
         slidesPerColumnFill: 'string',
         slidesPerGroup: 1,
         speed: 600,
+        spaceBetween: 10,
       
         // If we need pagination
         pagination: {
@@ -340,7 +341,7 @@ window.addEventListener('DOMContentLoaded', function() {
     spaceBetween: 34,
 
     breakpoints: {
-      330: {
+      321: {
         spaceBetween: 34,
         slidesPerView: 1,
         slidesPerGroup: 1,
@@ -510,10 +511,35 @@ var myPlacemark = new ymaps.Placemark([55.758463, 37.601079], {}, {
     }  
 })
 
-// закрыть аккордеон по-умолчанию
 window.addEventListener('DOMContentLoaded', function() {
-  $( '.details').accordion({
-    active:2
+  const btn = document.querySelector('.books__spoiler');
+  const arrow = document.querySelector('.books__spoiler-arrow');
+  const blocks = document.querySelectorAll('.books__spoiler-element');
+  const close = document.querySelector('.books__spoiler-close')
+
+  btn.addEventListener('click', () => {
+    if (!arrow.classList.contains('books__spoiler-arrow-active')) {
+      blocks.forEach(el => {
+        el.classList.add('books__spoiler-element-active');
+        close.classList.remove('books__spoiler-close-active');
+      });
+      
+      arrow.classList.add('books__spoiler-arrow-active');
+    } else {
+      blocks.forEach(el => {
+        el.classList.remove('books__spoiler-element-active');
+        if (el.querySelector('input').checked) {
+          el.classList.add('books__spoiler-element-active');
+          close.classList.add('books__spoiler-close-active');
+          close.addEventListener('click', () => {
+            close.classList.remove('books__spoiler-close-active');
+            el.classList.remove('books__spoiler-element-active');
+          });
+        }
+      });
+      
+      arrow.classList.remove('books__spoiler-arrow-active');
+    }
   });
 })
 
