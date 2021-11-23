@@ -1071,6 +1071,10 @@ input::placeholder {
   height: 12px;
   background: url('../img/arrow-gallery.svg') no-repeat;
   background-size: contain;
+  transition-property: transform;
+}
+.books__spoiler-arrow-active {
+  transform: rotate(180deg) translateY(5px);
 }
 .books__spoiler-close {
   display: none;
