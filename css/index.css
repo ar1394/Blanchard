@@ -204,7 +204,16 @@ header {
   width: 27px;
   height: 27px;
 }
-.hidden-title {display: none;}
+.hidden-title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0)
+}
 .header__down {
   display: none;
   background-color: rgba(0, 0, 0, 0.4);
@@ -995,6 +1004,9 @@ input::placeholder {
       -ms-flex-pack: center;
           justify-content: center;
 }
+.events__for-button-hidden {
+  display: none;
+}
 .events__show-all {
   border: 2px solid #9d5cd0;
   border-radius: 30px;
@@ -1498,6 +1510,9 @@ input[type='number'] {
 }
 
 @media (max-width: 419px){
+  .event__text {
+    min-height: 381px;
+  }
   .contacts__call-form {
     width: 100%;
   }
@@ -1581,6 +1596,14 @@ input[type='number'] {
   }
   .event:nth-child(6) {
     border: 1px solid #cacaca;
+  }
+  .event__about {
+    width: 90%;
+  }
+  .swiper-pagination-2-5 .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    margin: 0px 7px 0px 8px!important;
   }
   .books__form-checkbox {
     display: none;
@@ -1991,11 +2014,6 @@ input[type='number'] {
     width: 30px;
     height: 30px;
   }
-  .swiper-pagination-2-5 .swiper-pagination-bullet {
-    width: 10px;
-    height: 10px;
-    margin: 0px 7px 0px 8px!important;
-  }
   .catalog__left-img {
     margin-bottom: 14px;
   }
@@ -2028,14 +2046,8 @@ input[type='number'] {
     margin-right: 10px;
     margin-bottom: 2px;
   }
-  .event__text {
-    min-height: 381px;
-  }
   .event__text .event__inside {
     width: 90.5%;
-  }
-  .event__about {
-    width: 90%;
   }
   .event__h3 {
     width: 100%;
@@ -2309,9 +2321,6 @@ input[type='number'] {
   .event {
     margin-bottom: 50px;
   }
-  .event__text {
-    min-height: 295px;
-  }
   .books {
     min-height: 858px;
   }
@@ -2537,9 +2546,6 @@ input[type='number'] {
   .event {
     margin-bottom: 50px;
   }
-  .event__text {
-    min-height: 295px;
-  }
   .books {
     min-height: 858px;
   }
@@ -2699,7 +2705,7 @@ input[type='number'] {
     margin-bottom: 50px;
   }
   .event__text {
-    min-height: 245px;
+    min-height: 290px;
   }
   .books {
     min-height: 858px;

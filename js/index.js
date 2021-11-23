@@ -324,7 +324,7 @@ window.addEventListener('DOMContentLoaded',  function() {
 window.addEventListener('DOMContentLoaded',  function() {
   $('.events__show-all').click(function(){
     $('.event-hidden').removeClass('event-hidden');
-    $('.events__for-button').addClass('event-hidden');
+    $('.events__for-button').addClass('events__for-button-hidden');
   });
 })
 
