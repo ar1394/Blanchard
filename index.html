@@ -110,6 +110,12 @@
 				
 	        <a aria-label="Авторизация" class="header__login transition-100ms transition-color focus-visible" href="#"><svg class="header__login-image transition-100ms transition-fill"><use xlink:href="#login"></use></svg>Войти</a>
 	        <button aria-label="Поиск" class="header__search focus-visible"><svg class="header__search-button-image transition-100ms"><use xlink:href="#search"></use></svg></button>
+					<form class="header__search-form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
+	  	      <input required type="search" name="search" class="header__search-input transition-100ms focus-visible" placeholder="Поиск по сайту" value="">
+	  	      <button aria-label="Поиск" class="header__search-button focus-visible">
+	  	        <svg class="header__search-button-image transition-100ms transition-fill"><use xlink:href="#search"></use></svg>
+	  	      </button>
+	  	    </form>
 	      </nav>
 	    </div>
 	  	<div class="header__down">
@@ -267,125 +273,127 @@
 	            <a aria-label="Авторизация" class="gallery__authorize transition-200ms focus-visible" href="#">авторизуйтесь</a>, либо воспользуйтесь лицензией.</div>
 	        </div>
 	        <div class="gallery__right">
-	          <div class="flex">
-	            <button aria-label="Перейти к предыдущим слайдам" class="swiper-button-prev-2 without-outline"><svg class="pagination-button-image transition-100ms without-outline"><use xlink:href="#pagination-prev"></use></svg></button>
-	            <div class="swiper-pagination-2"></div>
-	            <button aria-label="Перейти к следующим слайдам" class="swiper-button-next-2 without-outline"><svg class="pagination-button-image transition-100ms without-outline"><use xlink:href="#pagination-next"></use></svg></button>
-	          </div>                            
-	          <div class="swiper-container-2">
-	            <!-- Additional required wrapper -->
-	            <div class="swiper-wrapper">
-	              <!-- Slides -->
-	              <div class="swiper-slide">
-	                <div class="swiper-slide-hover-active transition-200ms">
-	                  <img class="slide-hover-image" src="img/gallery-slide-hover.svg" alt="plus">
-	                </div>
-	                <img class="swiper-container-2-img" src="img/picture-1.jpg" alt="Картина">
-	              </div>
-	              <div class="swiper-slide">
-	                <div class="swiper-slide-hover-active transition-200ms">
-	                  <img class="slide-hover-image" src="img/gallery-slide-hover.svg" alt="plus">
-	                </div>
-	                <img class="swiper-container-2-img" src="img/picture-2.jpg" alt="Картина">
-	              </div>
-	              <div class="swiper-slide">
-	                <div class="swiper-slide-hover-active transition-200ms">
-	                  <img class="slide-hover-image" src="img/gallery-slide-hover.svg" alt="plus">
-	                </div>
-	                <img class="swiper-container-2-img" src="img/picture-3.jpg" alt="Картина">
-	              </div>
-	              <div class="swiper-slide">
-	                <div class="swiper-slide-hover-active transition-200ms">
-	                  <img class="slide-hover-image" src="img/gallery-slide-hover.svg" alt="plus">
-	                </div>
-	                <img class="swiper-container-2-img" src="img/picture-4.jpg" alt="Картина">
-	              </div>
-	              <div class="swiper-slide">
-	                <div class="swiper-slide-hover-active transition-200ms">
-	                  <img class="slide-hover-image" src="img/gallery-slide-hover.svg" alt="plus">
-	                </div>
-	                <img class="swiper-container-2-img" src="img/picture-5.jpg" alt="Картина">
-	              </div>
-	              <div class="swiper-slide">
-	                <div class="swiper-slide-hover-active transition-200ms">
-	                  <img class="slide-hover-image" src="img/gallery-slide-hover.svg" alt="plus">
-	                </div>
-	                <img class="swiper-container-2-img" src="img/picture-6.jpg" alt="Картина">
-	              </div>
-	              <div class="swiper-slide">
-	                <div class="swiper-slide-hover-active transition-200ms">
-	                  <img class="slide-hover-image" src="img/gallery-slide-hover.svg" alt="plus">
-	                </div>
-	                <img class="swiper-container-2-img" src="img/picture-7.jpg" alt="Картина">
-	              </div>
-	              <div class="swiper-slide">
-	                <div class="swiper-slide-hover-active transition-200ms">
-	                  <img class="slide-hover-image" src="img/gallery-slide-hover.svg" alt="plus">
-	                </div>
-	                <img class="swiper-container-2-img" src="img/picture-8.jpg" alt="Картина">
-	              </div>
-	              <div class="swiper-slide">
-	                <div class="swiper-slide-hover-active transition-200ms">
-	                  <img class="slide-hover-image" src="img/gallery-slide-hover.svg" alt="plus">
-	                </div>
-	                <img class="swiper-container-2-img" src="img/picture-9.jpg" alt="Картина">
-	              </div>
-	              <div class="swiper-slide">
-	                <div class="swiper-slide-hover-active transition-200ms">
-	                  <img class="slide-hover-image" src="img/gallery-slide-hover.svg" alt="plus">
-	                </div>
-	                <img class="swiper-container-2-img" src="img/picture-10.jpg" alt="Картина">
-	              </div>
-	              <div class="swiper-slide">
-	                <div class="swiper-slide-hover-active transition-200ms">
-	                  <img class="slide-hover-image" src="img/gallery-slide-hover.svg" alt="plus">
-	                </div>
-	                <img class="swiper-container-2-img" src="img/picture-11.jpg" alt="Картина">
-	              </div>
-	              <div class="swiper-slide">
-	                <div class="swiper-slide-hover-active transition-200ms">
-	                  <img class="slide-hover-image" src="img/gallery-slide-hover.svg" alt="plus">
-	                </div>
-	                <img class="swiper-container-2-img" src="img/picture-12.jpg" alt="Картина">
-	              </div>
-	              <div class="swiper-slide">
-	                <div class="swiper-slide-hover-active transition-200ms">
-	                  <img class="slide-hover-image" src="img/gallery-slide-hover.svg" alt="plus">
-	                </div>
-	                <img class="swiper-container-2-img" src="img/picture-13.jpg" alt="Картина">
-	              </div>
-	              <div class="swiper-slide">
-	                <div class="swiper-slide-hover-active transition-200ms">
-	                  <img class="slide-hover-image" src="img/gallery-slide-hover.svg" alt="plus">
-	                </div>
-	                <img class="swiper-container-2-img" src="img/picture-14.jpg" alt="Картина">
-	              </div>
-	              <div class="swiper-slide">
-	                <div class="swiper-slide-hover-active transition-200ms">
-	                  <img class="slide-hover-image" src="img/gallery-slide-hover.svg" alt="plus">
-	                </div>
-	                <img class="swiper-container-2-img" src="img/picture-15.jpg" alt="Картина">
-	              </div>
-	              <div class="swiper-slide">
-	                <div class="swiper-slide-hover-active transition-200ms">
-	                  <img class="slide-hover-image" src="img/gallery-slide-hover.svg" alt="plus">
-	                </div>
-	                <img class="swiper-container-2-img" src="img/picture-16.jpg" alt="Картина">
-	              </div>
-	              <div class="swiper-slide">
-	                <div class="swiper-slide-hover-active transition-200ms">
-	                  <img class="slide-hover-image" src="img/gallery-slide-hover.svg" alt="plus">
-	                </div>
-	                <img class="swiper-container-2-img" src="img/picture-17.jpg" alt="Картина">
-	              </div>
-	              <div class="swiper-slide">
-	                <div class="swiper-slide-hover-active transition-200ms">
-	                  <img class="slide-hover-image" src="img/gallery-slide-hover.svg" alt="plus">
-	                </div>
-	                <img class="swiper-container-2-img" src="img/picture-18.jpg" alt="Картина">
-	              </div>
-	            </div>
-	          </div>
+						<div class="gallery__right-for-slider">
+							<div class="flex">
+								<button aria-label="Перейти к предыдущим слайдам" class="swiper-button-prev-2 without-outline"><svg class="pagination-button-image transition-100ms without-outline"><use xlink:href="#pagination-prev"></use></svg></button>
+								<div class="swiper-pagination-2"></div>
+								<button aria-label="Перейти к следующим слайдам" class="swiper-button-next-2 without-outline"><svg class="pagination-button-image transition-100ms without-outline"><use xlink:href="#pagination-next"></use></svg></button>
+							</div>                            
+							<div class="swiper-container-2">
+								<!-- Additional required wrapper -->
+								<div class="swiper-wrapper">
+									<!-- Slides -->
+									<div class="swiper-slide">
+										<div class="swiper-slide-hover-active transition-200ms">
+											<img class="slide-hover-image" src="img/gallery-slide-hover.svg" alt="plus">
+										</div>
+										<img class="swiper-container-2-img" src="img/picture-1.jpg" alt="Картина">
+									</div>
+									<div class="swiper-slide">
+										<div class="swiper-slide-hover-active transition-200ms">
+											<img class="slide-hover-image" src="img/gallery-slide-hover.svg" alt="plus">
+										</div>
+										<img class="swiper-container-2-img" src="img/picture-2.jpg" alt="Картина">
+									</div>
+									<div class="swiper-slide">
+										<div class="swiper-slide-hover-active transition-200ms">
+											<img class="slide-hover-image" src="img/gallery-slide-hover.svg" alt="plus">
+										</div>
+										<img class="swiper-container-2-img" src="img/picture-3.jpg" alt="Картина">
+									</div>
+									<div class="swiper-slide">
+										<div class="swiper-slide-hover-active transition-200ms">
+											<img class="slide-hover-image" src="img/gallery-slide-hover.svg" alt="plus">
+										</div>
+										<img class="swiper-container-2-img" src="img/picture-4.jpg" alt="Картина">
+									</div>
+									<div class="swiper-slide">
+										<div class="swiper-slide-hover-active transition-200ms">
+											<img class="slide-hover-image" src="img/gallery-slide-hover.svg" alt="plus">
+										</div>
+										<img class="swiper-container-2-img" src="img/picture-5.jpg" alt="Картина">
+									</div>
+									<div class="swiper-slide">
+										<div class="swiper-slide-hover-active transition-200ms">
+											<img class="slide-hover-image" src="img/gallery-slide-hover.svg" alt="plus">
+										</div>
+										<img class="swiper-container-2-img" src="img/picture-6.jpg" alt="Картина">
+									</div>
+									<div class="swiper-slide">
+										<div class="swiper-slide-hover-active transition-200ms">
+											<img class="slide-hover-image" src="img/gallery-slide-hover.svg" alt="plus">
+										</div>
+										<img class="swiper-container-2-img" src="img/picture-7.jpg" alt="Картина">
+									</div>
+									<div class="swiper-slide">
+										<div class="swiper-slide-hover-active transition-200ms">
+											<img class="slide-hover-image" src="img/gallery-slide-hover.svg" alt="plus">
+										</div>
+										<img class="swiper-container-2-img" src="img/picture-8.jpg" alt="Картина">
+									</div>
+									<div class="swiper-slide">
+										<div class="swiper-slide-hover-active transition-200ms">
+											<img class="slide-hover-image" src="img/gallery-slide-hover.svg" alt="plus">
+										</div>
+										<img class="swiper-container-2-img" src="img/picture-9.jpg" alt="Картина">
+									</div>
+									<div class="swiper-slide">
+										<div class="swiper-slide-hover-active transition-200ms">
+											<img class="slide-hover-image" src="img/gallery-slide-hover.svg" alt="plus">
+										</div>
+										<img class="swiper-container-2-img" src="img/picture-10.jpg" alt="Картина">
+									</div>
+									<div class="swiper-slide">
+										<div class="swiper-slide-hover-active transition-200ms">
+											<img class="slide-hover-image" src="img/gallery-slide-hover.svg" alt="plus">
+										</div>
+										<img class="swiper-container-2-img" src="img/picture-11.jpg" alt="Картина">
+									</div>
+									<div class="swiper-slide">
+										<div class="swiper-slide-hover-active transition-200ms">
+											<img class="slide-hover-image" src="img/gallery-slide-hover.svg" alt="plus">
+										</div>
+										<img class="swiper-container-2-img" src="img/picture-12.jpg" alt="Картина">
+									</div>
+									<div class="swiper-slide">
+										<div class="swiper-slide-hover-active transition-200ms">
+											<img class="slide-hover-image" src="img/gallery-slide-hover.svg" alt="plus">
+										</div>
+										<img class="swiper-container-2-img" src="img/picture-13.jpg" alt="Картина">
+									</div>
+									<div class="swiper-slide">
+										<div class="swiper-slide-hover-active transition-200ms">
+											<img class="slide-hover-image" src="img/gallery-slide-hover.svg" alt="plus">
+										</div>
+										<img class="swiper-container-2-img" src="img/picture-14.jpg" alt="Картина">
+									</div>
+									<div class="swiper-slide">
+										<div class="swiper-slide-hover-active transition-200ms">
+											<img class="slide-hover-image" src="img/gallery-slide-hover.svg" alt="plus">
+										</div>
+										<img class="swiper-container-2-img" src="img/picture-15.jpg" alt="Картина">
+									</div>
+									<div class="swiper-slide">
+										<div class="swiper-slide-hover-active transition-200ms">
+											<img class="slide-hover-image" src="img/gallery-slide-hover.svg" alt="plus">
+										</div>
+										<img class="swiper-container-2-img" src="img/picture-16.jpg" alt="Картина">
+									</div>
+									<div class="swiper-slide">
+										<div class="swiper-slide-hover-active transition-200ms">
+											<img class="slide-hover-image" src="img/gallery-slide-hover.svg" alt="plus">
+										</div>
+										<img class="swiper-container-2-img" src="img/picture-17.jpg" alt="Картина">
+									</div>
+									<div class="swiper-slide">
+										<div class="swiper-slide-hover-active transition-200ms">
+											<img class="slide-hover-image" src="img/gallery-slide-hover.svg" alt="plus">
+										</div>
+										<img class="swiper-container-2-img" src="img/picture-18.jpg" alt="Картина">
+									</div>
+								</div>
+							</div>
+						</div>
 	          <div class="gallery__info">
 							Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний 
 	            <a aria-label="Авторизация" class="gallery__authorize transition-100ms focus-visible" href="#">авторизуйтесь</a>, либо воспользуйтесь лицензией.

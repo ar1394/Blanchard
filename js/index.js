@@ -53,6 +53,52 @@ window.addEventListener('DOMContentLoaded',  function() {
   })
 })
 
+window.addEventListener('DOMContentLoaded',  function() {
+  const button = document.querySelectorAll('.header__search');
+  const form = document.querySelectorAll('.header__search-form');
+
+  button.forEach(el => {
+    el.addEventListener('click', (e) => {
+      button.forEach(el => {el.classList.remove(('header__search-active'))})
+      form.forEach(el => {el.classList.remove(('header__search-form-active'))})
+      e.currentTarget.closest('button').querySelector('.header__search').classList.toggle('header__search-active');
+      e.currentTarget.closest('form').querySelector('.header__search-form').classList.toggle('header__search-form-active');
+    });
+  });
+
+  document.addEventListener('click', (e) => {
+    console.log(e.target)
+    if (!e.target.classList.contains('header__search-form') && !e.target.classList.contains('header__search')) {
+      button.forEach(el => {el.classList.remove(('header__search-active'))})
+      form.forEach(el => {el.classList.remove(('header__search-form-active'))})
+    }
+  });
+})
+
+// window.addEventListener('DOMContentLoaded',  function() {
+//   const btn = document.querySelector('.header__search');
+//   const form = document.querySelector('header__search-form');
+//   const toggleForm = function() {
+//       form.classList.add('header__search-form-active');
+//   }
+
+//   btn.addEventListener('click', function(e) {
+//       e.stopPropagation();
+//       toggleForm();
+//   });
+
+//   document.addEventListener('click', function(e) {
+//       const target = e.target;
+//       const its_form = target == form || form.contains(target);
+//       const its_btn = target == btn;
+//       const form_is_active = form.classList.contains('header__search-form-active');
+
+//       if (!its_form && !its_btn && form_is_active) {
+//           toggleForm();
+//       }
+//   });
+// })
+
 // переключение меню
 window.addEventListener('DOMContentLoaded',  function() {
   const button = document.querySelectorAll('.header__nav-list-2-item');
@@ -333,15 +379,13 @@ window.addEventListener('DOMContentLoaded', function() {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
-    slidesPerView: 2,
     slidesPerColumn: 1,
     slidesPerColumnFill: 'string',
-    slidesPerGroup: 2,
     speed: 600,
     spaceBetween: 34,
 
     breakpoints: {
-      321: {
+      376: {
         spaceBetween: 34,
         slidesPerView: 1,
         slidesPerGroup: 1,
@@ -353,28 +397,44 @@ window.addEventListener('DOMContentLoaded', function() {
       },
       769: {
         spaceBetween: 50,
+        slidesPerView: 2,
+        slidesPerGroup: 2,
       },
       900: {
         spaceBetween: 65,
+        slidesPerView: 2,
+        slidesPerGroup: 2,
       },
       924: {
         spaceBetween: 50,
+        slidesPerView: 2,
+        slidesPerGroup: 2,
       },
       1025: {
         spaceBetween: 34,
+        slidesPerView: 2,
+        slidesPerGroup: 2,
       },
       1200: {
         spaceBetween: 50,
+        slidesPerView: 2,
+        slidesPerGroup: 2,
       },
       1300: {
         spaceBetween: 70,
+        slidesPerView: 2,
+        slidesPerGroup: 2,
       },
       1400: {
+        spaceBetween: 20,
+        slidesPerView: 3,
+        slidesPerGroup: 3,
+      },
+      1480: {
         spaceBetween: 34,
         slidesPerView: 3,
         slidesPerGroup: 3,
       },
-
       1600: {
         spaceBetween: 50,
         slidesPerView: 3,
@@ -414,10 +474,8 @@ window.addEventListener('DOMContentLoaded', function() {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
-    slidesPerView: 2,
     // slidesPerColumn: 1,
     slidesPerColumnFill: 'string',
-    slidesPerGroup: 2,
     speed: 600,
 
     breakpoints: {
@@ -433,15 +491,23 @@ window.addEventListener('DOMContentLoaded', function() {
       },
       668: {
         spaceBetween: 34,
+        slidesPerView: 2,
+        slidesPerGroup: 2,
       },
       769: {
         spaceBetween: 50,
+        slidesPerView: 2,
+        slidesPerGroup: 2,
       },
       1025: {
         spaceBetween: 62,
+        slidesPerView: 2,
+        slidesPerGroup: 2,
       },
       1200: {
         spaceBetween: 95,
+        slidesPerView: 2,
+        slidesPerGroup: 2,
       },
       1400: {
         spaceBetween: 34,
@@ -521,26 +587,26 @@ window.addEventListener('DOMContentLoaded', function() {
     if (!arrow.classList.contains('books__spoiler-arrow-active')) {
       blocks.forEach(el => {
         el.classList.add('books__spoiler-element-active');
-        close.classList.remove('books__spoiler-close-active');
       });
-      
       arrow.classList.add('books__spoiler-arrow-active');
-    } else {
+    } 
+    else {
       blocks.forEach(el => {
         el.classList.remove('books__spoiler-element-active');
         if (el.querySelector('input').checked) {
-          el.classList.add('books__spoiler-element-active');
-          close.classList.add('books__spoiler-close-active');
-          close.addEventListener('click', () => {
-            close.classList.remove('books__spoiler-close-active');
-            el.classList.remove('books__spoiler-element-active');
-          });
+          el.classList.add('books__spoiler-element-active'); 
         }
-      });
-      
+      }); 
       arrow.classList.remove('books__spoiler-arrow-active');
     }
   });
+  // close.addEventListener('click', () => {
+  //   close.parent('.books__spoiler-element-active').classList.remove('books__spoiler-element-active');
+  // });
+  $(".books__spoiler-close").click(function() {
+    $(this).parents(".books__spoiler-element-active").removeClass("books__spoiler-element-active"); //добавляем класс текущей (нажатой)
+    $(".check").prop("checked", false);
+ })
 })
 
 window.addEventListener('DOMContentLoaded', function(){
