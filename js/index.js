@@ -604,7 +604,7 @@ window.addEventListener('DOMContentLoaded', function() {
   //   close.parent('.books__spoiler-element-active').classList.remove('books__spoiler-element-active');
   // });
   $(".books__spoiler-close").click(function() {
-    $(this).parents(".books__spoiler-element-active").removeClass("books__spoiler-element-active"); //добавляем класс текущей (нажатой)
+    $(this).parents(".books__spoiler-element-active").removeClass("books__spoiler-element-active");
     $(".check").prop("checked", false);
  })
 })
