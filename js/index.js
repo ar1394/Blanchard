@@ -53,51 +53,30 @@ window.addEventListener('DOMContentLoaded',  function() {
   })
 })
 
+// включение формы поиска
 window.addEventListener('DOMContentLoaded',  function() {
-  const button = document.querySelectorAll('.header__search');
-  const form = document.querySelectorAll('.header__search-form');
-
-  button.forEach(el => {
-    el.addEventListener('click', (e) => {
-      button.forEach(el => {el.classList.remove(('header__search-active'))})
-      form.forEach(el => {el.classList.remove(('header__search-form-active'))})
-      e.currentTarget.closest('button').querySelector('.header__search').classList.toggle('header__search-active');
-      e.currentTarget.closest('form').querySelector('.header__search-form').classList.toggle('header__search-form-active');
-    });
-  });
-
-  document.addEventListener('click', (e) => {
-    console.log(e.target)
-    if (!e.target.classList.contains('header__search-form') && !e.target.classList.contains('header__search')) {
-      button.forEach(el => {el.classList.remove(('header__search-active'))})
-      form.forEach(el => {el.classList.remove(('header__search-form-active'))})
+  document.querySelector(".header__search").addEventListener("click", function() {
+    document.querySelector(".header__for-search-form").classList.add("header__for-search-form-active");
+    this.classList.add("header__search-active");
+  })
+  
+  document.addEventListener("click", function(e) {
+    let target = e.target;
+    let form = document.querySelector(".header__for-search-form");
+    if (!target.closest(".header__nav")) {
+    form.classList.remove("header__for-search-form-active");
+      form.querySelector("input").value = "";
+      document.querySelector(".header__search").classList.remove("header__search-active")
     }
-  });
+  })
+
+  document.querySelector(".header__search-close").addEventListener("click", function() {
+    let form = document.querySelector(".header__for-search-form");
+    form.classList.remove("header__for-search-form-active");
+    form.querySelector("input").value = "";
+    document.querySelector(".header__search").classList.remove("header__search-active")
+  })
 })
-
-// window.addEventListener('DOMContentLoaded',  function() {
-//   const btn = document.querySelector('.header__search');
-//   const form = document.querySelector('header__search-form');
-//   const toggleForm = function() {
-//       form.classList.add('header__search-form-active');
-//   }
-
-//   btn.addEventListener('click', function(e) {
-//       e.stopPropagation();
-//       toggleForm();
-//   });
-
-//   document.addEventListener('click', function(e) {
-//       const target = e.target;
-//       const its_form = target == form || form.contains(target);
-//       const its_btn = target == btn;
-//       const form_is_active = form.classList.contains('header__search-form-active');
-
-//       if (!its_form && !its_btn && form_is_active) {
-//           toggleForm();
-//       }
-//   });
-// })
 
 // переключение меню
 window.addEventListener('DOMContentLoaded',  function() {
@@ -604,7 +583,7 @@ window.addEventListener('DOMContentLoaded', function() {
   //   close.parent('.books__spoiler-element-active').classList.remove('books__spoiler-element-active');
   // });
   $(".books__spoiler-close").click(function() {
-    $(this).parents(".books__spoiler-element-active").removeClass("books__spoiler-element-active");
+    $(this).parents(".books__spoiler-element-active").removeClass("books__spoiler-element-active"); //добавляем класс текущей (нажатой)
     $(".check").prop("checked", false);
  })
 })

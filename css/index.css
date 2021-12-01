@@ -205,7 +205,7 @@ header {
   height: 27px;
 }
 .header__search-active {
-  display: none;
+  opacity: 0;
 }
 .hidden-title {
   position: absolute;
@@ -264,34 +264,39 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 25px;
+  padding-top: 4px;
   flex-direction: row-reverse;
   align-items: flex-start;
+  transition-property: display, opacity;
 }
-.header__search + .header__search-form {
+.header__for-search-form {
   display: none;
+  position: absolute;
+  right: 50px;
+  opacity: 0;
 }
-.header__search-form-active {
+.header__for-search-form-active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  opacity: 1;
 }
 .header__search-button {
-  padding-top: 2px;
   margin-right: 8px;
   border: none;
   font-size: 14px;
   color: #fff;
 }
 .header__search-button-image {
-  width: 23px;
-  height: 22px;
+  width: 30px;
+  height: 30px;
   fill: white;
 }
 .header__search-input {
-  width: 221px;
+  width: 220px;
   border: none;
   border-bottom: 1px solid #fff;
+  padding-top: 5px;
   padding-bottom: 3px;
   color: #fff;
   background-color: rgba(0, 0, 0, 0);
@@ -310,6 +315,14 @@ input::-ms-input-placeholder {color: #cacaca;
 }
 input::placeholder {
   color: #cacaca;
+}
+.header__search-close {
+  padding: 0;
+}
+.header__search-close-image {
+  width: 29px;
+  height: 29px;
+  fill: #fff;
 }
 .header__way-of-art {
   transform: translateY(45px);
@@ -1578,6 +1591,11 @@ input[type='number'] {
   .header__login {
     font-size: 12px;
   }
+  .header__for-search-form {
+    left: 15px;
+    right: 15px;
+    height: 100px;
+  }
   .section-hero__text-1 {
     font-size: 32px;
     line-height: 43px;
@@ -1728,6 +1746,18 @@ input[type='number'] {
   }
   .header__login:active {
     color: #9d5cd0;
+  }
+  .header__for-search-form {
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000;
+  }
+  .header__search-form {
+    margin-right: 23px;
+    width: 100%;
+  }
+  .header__search-input {
+    width: 100%;
   }
   .header__way-of-art-link:active {
     border: 2px solid #d1a9f0;
@@ -1901,6 +1931,39 @@ input[type='number'] {
   .header__search .header__search-button-image {
     width: 17px;
     height: 17px;
+  }
+  .header__for-search-form {
+    left: 0px;
+    right: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 105px;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+  .header__search-form {
+    padding-top: 38px;
+    padding-left: 7px;
+    margin-right: 0;
+    justify-content: center;
+  }
+  .header__search-button {
+    padding-top: 17px;
+    margin-right: 0;
+  }
+  .header__search-button-image {
+    width: 16px;
+    height: 16px;
+  }
+  .header__search-input {
+    padding-top: 8px;
+    width: 67%;
+  }
+  .header__search-close {
+    padding-top: 3px;
+  }
+  .header__search-close-image {
+    width: 15px;
+    height: 15px;
   }
   .swiper-container-1 + .container {
     display: flex;
@@ -2902,11 +2965,17 @@ input[type='number'] {
   }
 }
 @media (min-width:600px){
+
   .event-hidden:nth-child(n+4) {
     display: none;
   }
 }
 @media (min-width:600px) and (max-width: 667px){
+  .header__for-search-form {
+    left: 50px;
+    background-color: #000;
+    height: 100px;
+  }
   .section-hero__text-1 {
     font-size: 66px;
   }
@@ -3089,6 +3158,11 @@ input[type='number'] {
   }
 }
 @media (min-width:668px) and (max-width: 768px){
+  .header__for-search-form {
+    left: 50px;
+    background-color: #000;
+    height: 100px;
+  }
   .section-hero__text-2 {
     max-width: 660px;
   }
@@ -3295,6 +3369,9 @@ input[type='number'] {
   }
   .header__login:active .header__login-image {
     fill: #7943a4;
+  }
+  .header__search-close {
+    display: none;
   }
   .header__search:hover .header__search-button-image {
     fill: #c283f3;
@@ -4074,7 +4151,7 @@ input[type='number'] {
     margin-right: 20px;
   }
 }
-@media (min-width:1200px) and (max-width: 1399px){
+@media (min-width:1200px){
   .header__burger, .header__search {
     display: none;
   }
@@ -4082,12 +4159,42 @@ input[type='number'] {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-  } 
-  .header__nav-list-item:not(:last-child) {
-    margin-right: 34px;
+  }
+  .header__search-form {
+    padding-top: 25px;
+  }
+  .header__search-input {
+    padding-top: 0;
+    width: 221px;
+  }
+  .header__search-button {
+    padding-top: 2px;
+  }
+  .header__search-button-image {
+    width: 23px;
+    height: 22px;
   }
   .header__down {
     display: block;
+  }
+  .event__text .event__inside {
+    width: 90%;
+  }
+  .event__about {
+    width: 90%;
+  }
+  .contacts__whatsapp, .contacts__telegram {
+    width: 40px;
+    height: 40px;
+  }
+  .footer__link-image {
+    width: 45px;
+    height: 45px;
+  }
+}
+@media (min-width:1200px) and (max-width: 1399px){
+  .header__nav-list-item:not(:last-child) {
+    margin-right: 34px;
   }
   .header__nav-list-2 .flex:not(:last-child) {
     margin-right: 34px;
@@ -4129,12 +4236,6 @@ input[type='number'] {
   .event__text {
     min-height: 301px;
   }
-  .event__text .event__inside {
-    width: 90%;
-  }
-  .event__about {
-    width: 90%;
-  }
   .books__book-description {
     margin-bottom: 10px;
   }
@@ -4147,32 +4248,13 @@ input[type='number'] {
   .contacts__call-input {
     width: 380px;
   }
-  .contacts__whatsapp, .contacts__telegram {
-    width: 40px;
-    height: 40px;
-  }
-  .footer__link-image{
-    width: 45px;
-    height: 45px;
-  }
   .footer__link:not(:last-child) {
     margin-right: 20px;
   }
 }
 @media (min-width:1400px) and (max-width: 1599px){
-  .header__burger, .header__search {
-    display: none;
-  }
-  .header__nav-list, .header__login {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
   .header__nav-list-item:not(:last-child) {
     margin-right: 40px;
-  }
-  .header__down {
-    display: block;
   }
   .gallery {
     height: 930px;
@@ -4206,12 +4288,6 @@ input[type='number'] {
   .event__text {
     min-height: 371px;
   }
-  .event__text .event__inside {
-    width: 90%;
-  }
-  .event__about {
-    width: 90%;
-  }
   .books__left {
     margin-right: 40px;
   }
@@ -4228,33 +4304,16 @@ input[type='number'] {
   .contacts__left {
     padding-left: 52px;
   }
-  .contacts__whatsapp, .contacts__telegram {
-    width: 40px;
-    height: 40px;
-  }
-  .footer__link-image {
-    width: 45px;
-    height: 45px;
-  }
   .footer__link:not(:last-child) {
     margin-right: 20px;
   }
 }
 @media (min-width:1600px){
-  .header__burger, .header__search {
-    display: none;
-  }
-  .header__nav-list, .header__login {
-    display: -webkit-box;display: -ms-flexbox;display: flex;
-  }
   .header__nav-list {
     margin-right: 102px;
   }
   .header__nav-list-item:not(:last-child) {
     margin-right: 62.5px;
-  }
-  .header__down {
-    display: block;
   }
   .about-us {
     padding-bottom: 70px;
@@ -4332,12 +4391,6 @@ input[type='number'] {
     margin-bottom: 44px;
     min-height: 305px;
   }
-  .event__text .event__inside {
-    width: 90%;
-  }
-  .event__about {
-    width: 90%;
-  }
   .books {
     margin-bottom: 82px;
   }
@@ -4403,16 +4456,8 @@ input[type='number'] {
   .contacts__call-input {
     padding-left: 22px;
   }
-  .contacts__whatsapp, .contacts__telegram {
-    width: 40px;
-    height: 40px;
-  }
   .contacts__whatsapp, .contacts__telegram, .footer__link:not(:last-child) {
     margin-right: 20px;
-  }
-  .footer__link-image{
-    width: 45px;
-    height: 45px;
   }
 }
 

@@ -110,12 +110,16 @@
 				
 	        <a aria-label="Авторизация" class="header__login transition-100ms transition-color focus-visible" href="#"><svg class="header__login-image transition-100ms transition-fill"><use xlink:href="#login"></use></svg>Войти</a>
 	        <button aria-label="Поиск" class="header__search focus-visible"><svg class="header__search-button-image transition-100ms"><use xlink:href="#search"></use></svg></button>
-					<form class="header__search-form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
-	  	      <input required type="search" name="search" class="header__search-input transition-100ms focus-visible" placeholder="Поиск по сайту" value="">
-	  	      <button aria-label="Поиск" class="header__search-button focus-visible">
-	  	        <svg class="header__search-button-image transition-100ms transition-fill"><use xlink:href="#search"></use></svg>
-	  	      </button>
-	  	    </form>
+					<div class="header__for-search-form">
+						<form class="header__search-form transition-200ms" action="https://jsonplaceholder.typicode.com/posts" method="POST">
+	  	      	<input required type="search" name="search" class="header__search-input transition-100ms focus-visible" placeholder="" value="">
+	  	      	<button aria-label="Поиск" class="header__search-button focus-visible">
+	  	      	  <svg class="header__search-button-image transition-100ms transition-fill"><use xlink:href="#search"></use></svg>
+	  	      	</button>
+	  	    	</form>
+						<button class="header__search-close"><svg class="header__search-close-image transition-100ms"><use xlink:href="#close"></use></svg></button>
+					</div>
+					
 	      </nav>
 	    </div>
 	  	<div class="header__down">
