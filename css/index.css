@@ -1101,9 +1101,12 @@ input::placeholder {
   transform: rotate(180deg) translateY(5px);
 }
 .books__spoiler-close {
-  display: flex;
+  display: none;
   width: 12px;
   padding-top: 2px;
+}
+.books__spoiler-close-active {
+  display: flex;
 }
 .books__spoiler + .ui-accordion-content {
   display: flex;

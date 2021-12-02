@@ -577,15 +577,23 @@ window.addEventListener('DOMContentLoaded', function() {
         }
       }); 
       arrow.classList.remove('books__spoiler-arrow-active');
-    }
+    };
   });
-  // close.addEventListener('click', () => {
-  //   close.parent('.books__spoiler-element-active').classList.remove('books__spoiler-element-active');
-  // });
+
   $(".books__spoiler-close").click(function() {
-    $(this).parents(".books__spoiler-element-active").removeClass("books__spoiler-element-active"); //добавляем класс текущей (нажатой)
-    $(".check").prop("checked", false);
- })
+    $(this).parents(".books__spoiler-element-active").removeClass("books__spoiler-element-active");
+  });
+  // $(".books__spoiler-element").click(function() {
+  //   if ($(this).find("input").checked) {
+  //     $(this).find(".books__spoiler-close").add("books__spoiler-close-active");
+  //   }
+  //   else {
+  //     $(this).find(".books__spoiler-close").remove("books__spoiler-close-active");
+  //   }
+  // });
+  $(".books__spoiler-element").click(function() {
+    $(this).find(".books__spoiler-close").toggle("books__spoiler-close-active");
+  });
 })
 
 window.addEventListener('DOMContentLoaded', function(){
