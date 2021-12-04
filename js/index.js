@@ -580,19 +580,17 @@ window.addEventListener('DOMContentLoaded', function() {
     };
   });
 
-  $(".books__spoiler-close").click(function() {
-    $(this).parents(".books__spoiler-element-active").removeClass("books__spoiler-element-active");
+  $(".books__spoiler-element").click(function() {
+    $(this).children(".books__spoiler-close").toggle();
   });
   // $(".books__spoiler-element").click(function() {
-  //   if ($(this).find("input").checked) {
-  //     $(this).find(".books__spoiler-close").add("books__spoiler-close-active");
-  //   }
-  //   else {
-  //     $(this).find(".books__spoiler-close").remove("books__spoiler-close-active");
-  //   }
+  //   $(this).children(".books__spoiler-close").toggleClass("books__spoiler-close-active");
   // });
-  $(".books__spoiler-element").click(function() {
-    $(this).find(".books__spoiler-close").toggle("books__spoiler-close-active");
+  // $(".books__spoiler-element").click(function() {
+  //   $(this).children(".books__spoiler-close").toggle("books__spoiler-close-active");
+  // });
+  $(".books__spoiler-close").click(function() {
+    $(this).parents(".books__spoiler-element-active").removeClass("books__spoiler-element-active");
   });
 })
 
