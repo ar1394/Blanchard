@@ -500,9 +500,6 @@ input::placeholder {
   position: absolute;
   width: 100%;
   height: 100%;
-  left: 0;
-  top: 0;
-  overflow: hidden;
 }
 .swiper-container-1 .swiper-slide-active .section-hero__image {
   position: absolute;
@@ -615,7 +612,6 @@ input::placeholder {
   transition-property: opacity, background-color;
 }
 .slide-hover-image {
-  width: 85.715%;
   height: 85.715%;
 }
 .swiper-container-2-img {
@@ -1048,7 +1044,7 @@ input::placeholder {
 .books .section-top {
   color: #fff;
 }
-.books-categories {
+.books__categories-text {
   padding-top: 24px;
   margin-bottom: 4px;
   font-weight: 700;
@@ -1065,18 +1061,10 @@ input::placeholder {
   margin-bottom: 27px;
   line-height: 32px;
 }
-.details {
-  display: none;
-  width: 98%;
-  margin-bottom: 19px;
-}
-.books__spoiler {
+.books__categories {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-top: 1px solid #fff;
-  border-bottom: 1px solid #fff;
-  padding: 6px 0 8px 0!important;
   color: #fff;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -1085,11 +1073,12 @@ input::placeholder {
       -ms-flex-align: center;
           align-items: center;
 }
-.books__spoiler-categories {
+.books__categories-text {
   transform: translateX(-1px);
   font-weight: 700;
 }
-.books__spoiler-arrow {
+.books__categories-arrow {
+  display: none;
   margin-top: 9px;
   width: 12px;
   height: 12px;
@@ -1097,36 +1086,23 @@ input::placeholder {
   background-size: contain;
   transition-property: transform;
 }
-.books__spoiler-arrow-active {
-  transform: rotate(180deg) translateY(5px);
+.books__categories-arrow-active {
+  transform: rotate(180deg) translateY(6px);
 }
-.books__spoiler-close {
+.books__categories-close {
   display: none;
   width: 12px;
   padding-top: 2px;
 }
-.books__spoiler-close-active {
+.books__categories-close-active {
   display: flex;
 }
-.books__spoiler + .ui-accordion-content {
+.books__categories-element {
+  align-items: center;
+}
+.books__categories-element {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-.books__spoiler + .ui-accordion-content .flex {
   align-items: center;
-}
-.books__form-checkbox .flex {
-  align-items: center;
-}
-.books__spoiler-element {
-  display: none;
-  border-bottom: 1px solid #fff;
-  padding: 6px 0 8px 0;
-  align-items: center;
-}
-.books__spoiler-element-active {
-  display: flex;
 }
 .check {
   opacity: 0;
@@ -1627,7 +1603,7 @@ input[type='number'] {
   .catalog__for-artist {
     columns: 212px;
   }
-  .events__for-button, .books-categories, .contacts__left, .event-hidden:nth-child(7) {
+  .events__for-button, .contacts__left, .event-hidden:nth-child(7) {
     display: none;
   }
   .event:nth-child(6) {
@@ -1641,14 +1617,30 @@ input[type='number'] {
     height: 10px;
     margin: 0px 7px 0px 8px!important;
   }
-  .books__form-checkbox {
+  .books__categories {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    padding: 6px 0 8px 0;
+    width: 98%;
+  }
+  .books__categories-text {
+    margin-bottom: 0;
+    padding: 0;
+  }
+  .books__categories-arrow {
+    display: block;
+  }
+  .books__categories-element {
     display: none;
+    border-bottom: 1px solid #fff;
+    padding: 3px 0 3px 0;
+    width: 98%;
+  }
+  .books__categories-element-active {
+    display: flex;
   }
   .grid, .event {
     width: 100%;
-  }
-  .details .ui-accordion-header {
-    font-size: 16px;
   }
   .books__left {
     min-width: 295px;
@@ -1656,8 +1648,8 @@ input[type='number'] {
   .books__for-input {
     margin-bottom: 8px;
   }
-  .details {
-    display: block;
+  .books__form-checkbox {
+    margin-bottom: 19px;
   }
   .books__label-text {
     margin-right: auto;
@@ -2158,9 +2150,6 @@ input[type='number'] {
   .books .section-top {
     margin-bottom: 1px;
   }
-  .details .ui-accordion-header {
-    align-items: flex-end;
-  }
   .books__right {
     display: none;
   }
@@ -2174,9 +2163,6 @@ input[type='number'] {
     padding-top: 0px;
     margin-bottom: 15px;
     font-size: 12px;
-  }
-  .custom-check::before {
-    bottom: 8px;
   }
   .books__name {
     line-height: 16px;
@@ -3056,16 +3042,16 @@ input[type='number'] {
         flex-wrap: wrap;
     max-height: 180px;
   }
-  .books__form-checkbox .flex {
+  .books__categories-element {
     max-width: 184px;
   }
   .custom-check {
     min-width: 12px;
   }
-  .books__form-checkbox .flex:nth-child(7) {
+  .books__categories-element:nth-child(7) {
     align-items: flex-start;
   }
-  .flex:nth-child(7) .custom-check {
+  .books__categories-element:nth-child(7) .custom-check {
     margin-top: 10px;
   }
   .books__right {
@@ -3230,7 +3216,7 @@ input[type='number'] {
   .books__left {
     transform: translateX(-1px);
   }
-  .books-categories {
+  .books__categories-text {
     padding-top: 23px;
   }
   .books__form-checkbox {
@@ -3239,17 +3225,17 @@ input[type='number'] {
     max-height: 180px;
     margin-bottom: 26px;
   }
-  .books__form-checkbox .flex:not(:nth-last-child(-n+3)) {
+  .books__categories-element:not(:nth-last-child(-n+3)) {
     margin-right: 48px;
     width: 154px;
   }
   .custom-check {
     min-width: 12px;
   }
-  .books__form-checkbox .flex:nth-child(7) {
+  .books__categories-element:nth-child(7) {
     align-items: flex-start;
   }
-  .flex:nth-child(7) .custom-check {
+  .books__categories-element:nth-child(7) .custom-check {
     margin-top: 10px;
   }
   .books__right {

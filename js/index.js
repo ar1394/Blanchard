@@ -108,13 +108,7 @@ window.addEventListener('DOMContentLoaded', function(){
     itemSelectText: ''
   });
 })
-// window.addEventListener('DOMContentLoaded', function(){
-//   const element = document.querySelector('.custom-select-2');
-//   const choices = new Choices(element, {
-//     searchEnabled: false,
-//     itemSelectText: ''
-//   });
-// })
+
 window.addEventListener('DOMContentLoaded', function() {
   var mySwiper = new Swiper('.swiper-container-1', {
     // Optional parameters
@@ -557,40 +551,65 @@ var myPlacemark = new ymaps.Placemark([55.758463, 37.601079], {}, {
 })
 
 window.addEventListener('DOMContentLoaded', function() {
-  const btn = document.querySelector('.books__spoiler');
-  const arrow = document.querySelector('.books__spoiler-arrow');
-  const blocks = document.querySelectorAll('.books__spoiler-element');
-  const close = document.querySelector('.books__spoiler-close')
+  const btn = document.querySelector('.books__categories');
+  const arrow = document.querySelector('.books__categories-arrow');
+  const block = document.querySelector('.books__categories-element');
+  const blocks = document.querySelectorAll('.books__categories-element');
+  const close = document.querySelector('.books__categories-close')
 
   btn.addEventListener('click', () => {
-    if (!arrow.classList.contains('books__spoiler-arrow-active')) {
+    if (!arrow.classList.contains('books__categories-arrow-active')) {
       blocks.forEach(el => {
-        el.classList.add('books__spoiler-element-active');
+        el.classList.add('books__categories-element-active');
       });
-      arrow.classList.add('books__spoiler-arrow-active');
+      arrow.classList.add('books__categories-arrow-active');
     } 
     else {
       blocks.forEach(el => {
-        el.classList.remove('books__spoiler-element-active');
+        el.classList.remove('books__categories-element-active');
         if (el.querySelector('input').checked) {
-          el.classList.add('books__spoiler-element-active'); 
+          el.classList.add('books__categories-element-active'); 
         }
       }); 
-      arrow.classList.remove('books__spoiler-arrow-active');
-    };
+      arrow.classList.remove('books__categories-arrow-active');
+    };  
   });
 
-  $(".books__spoiler-element").click(function() {
-    $(this).children(".books__spoiler-close").toggle();
+  block.addEventListener('click', () => {
+    if (block.querySelector('input').checked) {
+      block.querySelector('.books__categories-close').classList.add('books__categories-close-active');
+    } 
+    else {
+      block.querySelector('.books__categories-close-active').classList.remove('books__categories-close-active'); 
+    };  
   });
-  // $(".books__spoiler-element").click(function() {
-  //   $(this).children(".books__spoiler-close").toggleClass("books__spoiler-close-active");
+
+  // block.addEventListener('click', () => {
+  //   const thisEl = event.target;
+  //   if (!thisEl.querySelector('input').checked) {
+  //     thisEl.querySelector('.books__categories-close').classList.add('books__categories-close-active');
+  //   } 
+  //   else {
+  //     thisEl.querySelector('.books__categories-close-active').classList.remove('books__categories-close-active'); 
+  //   }; 
   // });
-  // $(".books__spoiler-element").click(function() {
-  //   $(this).children(".books__spoiler-close").toggle("books__spoiler-close-active");
+
+  // block.addEventListener('click', () => {
+  //   const thisEl = event.target;
+  //   thisEl.querySelector('.books__categories-close').classList.toggle('books__categories-close-active'); 
   // });
-  $(".books__spoiler-close").click(function() {
-    $(this).parents(".books__spoiler-element-active").removeClass("books__spoiler-element-active");
+
+  // $(".books__categories-element").click(function() {
+  //   $(this).children(".books__categories-close").toggle();
+  // });
+  // $(".books__categories-element").click(function() {
+  //   $(this).children(".books__categories-close").toggleClass("books__categories-close-active");
+  // });
+  // $(".books__categories-element").click(function() {
+  //   $(this).children(".books__categories-close").toggle("books__categories-close-active");
+  // });
+  $(".books__categories-close").click(function() {
+    $(this).parents(".books__categories-element-active").removeClass("books__categories-element-active");
   });
 })
 
