@@ -1091,7 +1091,6 @@ input::placeholder {
 }
 .books__categories-close {
   display: none;
-  opacity: 0;
   width: 12px;
   padding-top: 2px;
   transition-property: display, opacity;
@@ -1638,8 +1637,11 @@ input[type='number'] {
   .books__categories-element-active {
     display: flex;
   }
-  input:checked + span + span + .books__categories-close {
+  .books__categories-close {
     display: flex;
+    opacity: 0;
+  }
+  input:checked + span + span + .books__categories-close {
     opacity: 1;
   }
   .grid, .event {
