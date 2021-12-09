@@ -575,39 +575,6 @@ window.addEventListener('DOMContentLoaded', function() {
     };  
   });
 
-  block.addEventListener('click', () => {
-    if (block.querySelector('input').checked) {
-      block.querySelector('.books__categories-close').classList.add('books__categories-close-active');
-    } 
-    else {
-      block.querySelector('.books__categories-close-active').classList.remove('books__categories-close-active'); 
-    };  
-  });
-
-  // block.addEventListener('click', () => {
-  //   const thisEl = event.target;
-  //   if (!thisEl.querySelector('input').checked) {
-  //     thisEl.querySelector('.books__categories-close').classList.add('books__categories-close-active');
-  //   } 
-  //   else {
-  //     thisEl.querySelector('.books__categories-close-active').classList.remove('books__categories-close-active'); 
-  //   }; 
-  // });
-
-  // block.addEventListener('click', () => {
-  //   const thisEl = event.target;
-  //   thisEl.querySelector('.books__categories-close').classList.toggle('books__categories-close-active'); 
-  // });
-
-  // $(".books__categories-element").click(function() {
-  //   $(this).children(".books__categories-close").toggle();
-  // });
-  // $(".books__categories-element").click(function() {
-  //   $(this).children(".books__categories-close").toggleClass("books__categories-close-active");
-  // });
-  // $(".books__categories-element").click(function() {
-  //   $(this).children(".books__categories-close").toggle("books__categories-close-active");
-  // });
   $(".books__categories-close").click(function() {
     $(this).parents(".books__categories-element-active").removeClass("books__categories-element-active");
   });
