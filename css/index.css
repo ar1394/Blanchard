@@ -1093,7 +1093,7 @@ input::placeholder {
   display: none;
   width: 12px;
   padding-top: 2px;
-  transition-property: display, opacity;
+  transition-property: opacity;
   pointer-events: none;
 }
 .books__categories-element {
