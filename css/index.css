@@ -1094,6 +1094,7 @@ input::placeholder {
   width: 12px;
   padding-top: 2px;
   transition-property: display, opacity;
+  pointer-events: none;
 }
 .books__categories-element {
   align-items: center;
@@ -1643,6 +1644,7 @@ input[type='number'] {
   }
   input:checked + span + span + .books__categories-close {
     opacity: 1;
+    pointer-events: auto;
   }
   .grid, .event {
     width: 100%;
