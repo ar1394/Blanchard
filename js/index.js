@@ -144,7 +144,6 @@ window.addEventListener('DOMContentLoaded', function() {
     direction: 'horizontal',
     // loop: true,
     slidesPerColumnFill: 'string',
-    slidesPerGroup: 2,
     speed: 600,
 
     breakpoints: {
@@ -152,16 +151,19 @@ window.addEventListener('DOMContentLoaded', function() {
         spaceBetween: 34,
         slidesPerView: 1,
         slidesPerColumn: 1,
+        slidesPerGroup: 1,
       },
       500: {
         spaceBetween: 34,
         slidesPerView: 2,
         slidesPerColumn: 2,
+        slidesPerGroup: 2,
       },
       1200: {
         spaceBetween: 50,
         slidesPerView: 2,
         slidesPerColumn: 2,
+        slidesPerGroup: 2,
       },
       1400: {
         spaceBetween: 34,
